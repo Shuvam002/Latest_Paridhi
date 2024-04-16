@@ -11,7 +11,7 @@ const Registration = () => {
       title: "Bug blitz",
       teamSize: 1,
       fee: 50,
-      Descriptions: `Open for all years. Competitive Programming Contest. <br />1. A participant can participate in the preliminary round only once. <br />2. Top participants from the preliminary rounds will advance to the final round. <br />3. The participant with the highest score and least time will be awarded <br /> 4. This will be a Proctored Competition.`,
+      Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
     },
     code_quset: {
       Image:

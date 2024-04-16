@@ -1,4 +1,4 @@
-import { useLocation } from "react-router-dom";
+import { useLocation  } from "react-router-dom";
 import {
   Banner,
   BannerImage,
@@ -12,10 +12,9 @@ import {
 } from "./InfoBanner.styled";
 
 const InfoBanner = ({ title, fee, teamSize, Descriptions, Image }) => {
-  const openRegistration = (event) => {
-    event.preventDefault();
-    window.location.href = "/login";
-  };
+  
+ 
+  
   const openRules = () => {
     window.open("https://www.google.com");
   };
@@ -32,7 +31,7 @@ console.log(location);
           <Description>{Descriptions}</Description>
           <ButtonSection>
           <RegisterBtn>
-          <a href={`${location.pathname}/register`}>
+          <a href={`${location.pathname}/register`} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}>
             <RegisterBtn>Register Now</RegisterBtn>
           </a> 
           </RegisterBtn> 
