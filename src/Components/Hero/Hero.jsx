@@ -138,56 +138,59 @@ const Hero = () => {
 
   return (
     <>
-     
-        <StyledContainer loaded={showContent ? "true" : "false"}>
-        
-          <HeroMain>
-            <HeroContainer>
-            
-              <div className="light-source" />
-              <Title>
-                {/* <Typewriter className="baffle" ref={baffleRef}> */}
-                <Typewriter className="baffle">
-                  {/* Paridhi <span> 2024</span> */}
-                  {/* <div> */}
-                  PARI
-                  <div className="paridhi-insider">
-                    <p>DHI</p>
-                    <p id="p2">{"'24"}</p>
-                  </div>
-                  {/* </div> */}
-                </Typewriter>
-                <HeroText style={{ fontSize: "20px", marginBottom: "40px" }}>
-                  See you on{" "}
-                  <span style={{ color: "red" }}>10th, 11th, 12th</span> May
-                </HeroText>
-              </Title>
-              <div className="timer-div">
-                <HeroText style={{ marginBottom: "-40px" }}>
-                  Events Releasing in
-                </HeroText>
-                <CountdownTimer targetDate={targetDate} />
-              </div>
-            </HeroContainer>
-            <Footer>
-              <Middle>
-                <Btn href="https://www.facebook.com/msitparidhi2023" target="_" >
-                  <FontAwesomeIconStyled icon={faFacebook} />
-                </Btn>
-                <Btn href="https://www.instagram.com/megatronix__msit/" target="_">
-                  <FontAwesomeIconStyled icon={faInstagram} />
-                </Btn>
-                <Btn href="https://www.linkedin.com/company/msitmegatronix/about/" target="_">
-                  <FontAwesomeIconStyled icon={faLinkedin} />
-                </Btn>
-                <Btn href="https://www.youtube.com/@megatronixmsit921" target="_">
-                  <FontAwesomeIconStyled icon={faYoutube} />
-                </Btn>
-              </Middle>
-            </Footer>
-          </HeroMain>
-        </StyledContainer>
-      )}
+      <StyledContainer loaded={showContent ? "true" : "false"}>
+        <HeroMain>
+          <HeroContainer>
+            <div className="light-source" />
+            <Title>
+              {/* <Typewriter className="baffle" ref={baffleRef}> */}
+              <Typewriter className="baffle">
+                {/* Paridhi <span> 2024</span> */}
+                {/* <div> */}
+                PARI
+                <div className="paridhi-insider">
+                  <p>DHI</p>
+                  <p id="p2">{"'24"}</p>
+                </div>
+                {/* </div> */}
+              </Typewriter>
+              <HeroText style={{ fontSize: "20px", marginBottom: "40px" }}>
+                See you on{" "}
+                <span style={{ color: "red" }}>10th, 11th, 12th</span> May
+              </HeroText>
+            </Title>
+            <div className="timer-div">
+              <HeroText style={{ marginBottom: "-40px" }}>
+                Events Releasing in
+              </HeroText>
+              <CountdownTimer targetDate={targetDate} />
+            </div>
+          </HeroContainer>
+          <Footer>
+            <Middle>
+              <Btn href="https://www.facebook.com/msitparidhi2023" target="_">
+                <FontAwesomeIconStyled icon={faFacebook} />
+              </Btn>
+              <Btn
+                href="https://www.instagram.com/megatronix__msit/"
+                target="_"
+              >
+                <FontAwesomeIconStyled icon={faInstagram} />
+              </Btn>
+              <Btn
+                href="https://www.linkedin.com/company/msitmegatronix/about/"
+                target="_"
+              >
+                <FontAwesomeIconStyled icon={faLinkedin} />
+              </Btn>
+              <Btn href="https://www.youtube.com/@megatronixmsit921" target="_">
+                <FontAwesomeIconStyled icon={faYoutube} />
+              </Btn>
+            </Middle>
+          </Footer>
+        </HeroMain>
+      </StyledContainer>
+      )
     </>
   );
 };

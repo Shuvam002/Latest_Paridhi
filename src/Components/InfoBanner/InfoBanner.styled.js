@@ -62,7 +62,7 @@ export const Title = styled.h1`
 export const RegFee = styled.h2`
   font-weight: bolder;
 
-  color: wheat;
+  color: white;
   @media (max-width: 600px) {
     font-size: 20px;
   }
