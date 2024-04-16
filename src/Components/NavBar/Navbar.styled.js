@@ -31,13 +31,12 @@ export const StyledContainer = styled.div`
   height: 10vh;
   width: 100%;
   position: fixed;
-  /* position: absolute; */
   z-index: 2;
-  bottom: 90vh;
+  top:0;
   animation: ${NavDownAnimation} 0.5s ease-out;
-  background: rgba( 255, 255, 255, 0.05 );
+  background: rgba( 255, 255, 255, 0.06 );
 
-backdrop-filter: blur( 0px );
+backdrop-filter: blur( 3px );
 -webkit-backdrop-filter: blur( 0px );
 
 border: 1px solid rgba( 255, 255, 255, 0.18 );

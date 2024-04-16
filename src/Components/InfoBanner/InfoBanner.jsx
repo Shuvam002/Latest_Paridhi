@@ -1,3 +1,4 @@
+import { useLocation } from "react-router-dom";
 import {
   Banner,
   BannerImage,
@@ -18,7 +19,8 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image }) => {
   const openRules = () => {
     window.open("https://www.google.com");
   };
-
+const location = useLocation();
+console.log(location);
   return (
     <>
       <Banner>
@@ -29,7 +31,11 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image }) => {
           <TeamSize>Team Size: {teamSize}</TeamSize>
           <Description>{Descriptions}</Description>
           <ButtonSection>
-            <RegisterBtn onClick={openRegistration}>Register Now</RegisterBtn>
+          <RegisterBtn>
+          <a href={`${location.pathname}/register`}>
+            <RegisterBtn>Register Now</RegisterBtn>
+          </a> 
+          </RegisterBtn> 
             <RegisterBtn onClick={openRules}>Rules</RegisterBtn>
           </ButtonSection>
         </BannerInfo>

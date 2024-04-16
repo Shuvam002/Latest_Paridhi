@@ -111,7 +111,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="login"
+        path="events/:Domain/:EventName/register"
         element={
           <Suspense fallback={<Spinner />}>
             <Login />

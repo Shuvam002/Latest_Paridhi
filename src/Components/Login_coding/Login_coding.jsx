@@ -32,6 +32,7 @@ import {
 } from "./Login_coding.styled";
 // import GoogleLogin from "react-google-login";
 import { gapi } from "gapi-script";
+import { useLocation } from "react-router-dom";
 
 const Login = () => {
   const [inputList, setinputList] = useState([]);
@@ -123,11 +124,13 @@ const Login = () => {
     console.log(e);
   };
   const [val, setVal] = useState("");
+  const location = useLocation();
+  const eventName = location.pathname.split("/")[3];
   return (
     <CenteredContainer>
       <Cover>
         <Container>
-          <Title>CODING</Title>
+          <Title>{eventName.toUpperCase()}</Title>
           <Underline />
 
           <IconContainer>
