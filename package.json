@@ -14,7 +14,6 @@
     "@fortawesome/free-brands-svg-icons": "^6.5.1",
     "@fortawesome/free-solid-svg-icons": "^6.5.1",
     "@fortawesome/react-fontawesome": "^0.2.0",
-    "@tsparticles/react": "^3.0.0",
     "axios": "^1.6.8",
     "baffle": "^0.3.6",
     "components": "^0.1.0",
@@ -32,7 +31,6 @@
     "styled": "^1.0.0",
     "styled-components": "^6.1.8",
     "swiper": "^11.0.6",
-    "tsparticles": "^3.2.2",
     "vanilla-tilt": "^1.8.1"
   },
   "devDependencies": {

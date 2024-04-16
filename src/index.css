@@ -4,11 +4,15 @@
   box-sizing: border-box;
   
 }
-
+@font-face {
+  font-family: "MyFont";
+  src: url("./assets/fonts/myFont.ttf") format("truetype");
+}
 body {
   font-family: 'Jost', sans-serif;
   
 }
+
 
 /* Set scrollbar width to 0 */
 body::-webkit-scrollbar {

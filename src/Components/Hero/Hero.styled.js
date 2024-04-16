@@ -5,13 +5,12 @@ export const StyledContainer = styled.div`
   /* background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
   background-size: cover;
   background-position: center; */
-  
+
   height: 100vh;
   width: 100%;
   opacity: ${({ loaded }) => (loaded ? 1 : 0)};
   transition: opacity 2s ease-in;
-  position:fixed;
- 
+  position: fixed;
 
   ${({ loaded }) =>
     !loaded &&
@@ -58,66 +57,17 @@ export const HeroContainer = styled.div`
   justify-content: center;
   justify-content: space-evenly;
   padding: 0 0 10% 0;
-
-  .timer-div {
-    /* margin-top: 30px; */
+  @media (max-width: 450px) {
+    #HT1 {
+      font-size: 0.7rem;
+    }
   }
-  /* .light-source::before {
-    content: "";
-    z-index: 0;
-    position: absolute;
-    top: -120px;
-    left: -50px;
-    height: 300px;
-    width: 300px;
-    background: #cb0000d5;
-    transform: perspective(15px) rotateX(10deg) scale(1, 0.4);
-    filter: blur(1em);
-    opacity: 0.5;
-  } */
 `;
 
 export const Title = styled.div`
+  text-align: center;
   font-size: 3rem;
   font-weight: 900;
-`;
-
-const glitchAnimation = keyframes`
-  0% {
-    text-shadow: .05em 0 0 rgba(255, 0, 0, .75),
-                -.05em -.025em 0 rgba(0, 255, 0, .75),
-                .025em .05em 0 rgba(0, 0, 255, .75);
-  }
-  14% {
-    text-shadow: .05em 0 0 rgba(255, 0, 0, .75),
-                -.05em -.025em 0 rgba(0, 255, 0, .75),
-                .025em .05em 0 rgba(0, 0, 255, .75);
-  }
-  15% {
-    text-shadow: -.05em -.025em 0 rgba(255, 0, 0, .75),
-                .025em .025em 0 rgba(0, 255, 0, .75),
-                -.05em -.05em 0 rgba(0, 0, 255, .75);
-  }
-  49% {
-    text-shadow: -.05em -.025em 0 rgba(255, 0, 0, .75),
-                .025em .025em 0 rgba(0, 255, 0, .75),
-                -.05em -.05em 0 rgba(0, 0, 255, .75);
-  }
-  50% {
-    text-shadow: .025em .05em 0 rgba(255, 0, 0, .75),
-                .05em 0 0 rgba(0, 255, 0, .75),
-                 0 -.05em 0 rgba(0, 0, 255, .75);
-  }
-  99% {
-    text-shadow: .025em .05em 0 rgba(255, 0, 0, .75),
-                .05em 0 0 rgba(0, 255, 0, .75),
-                 0 -.05em 0 rgba(0, 0, 255, .75);
-  }
-  100% {
-    text-shadow: -.025em 0 0 rgba(255, 0, 0, .75),
-                -.025em -.025em 0 rgba(0, 255, 0, .75),
-                -.025em -.05em 0 rgba(0, 0, 255, .75);
-  }
 `;
 
 export const HeroText = styled.div`
@@ -133,29 +83,55 @@ export const HeroText = styled.div`
   }
 `;
 
+export const HT1 = styled.div`
+  text-transform: uppercase;
+  font-family: "MyFont";
+  letter-spacing: 0.2em;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+  @media (max-width: 450px) {
+    font-size: 0.7rem;
+  }
+`;
+
 export const Typewriter = styled.div`
-  font-size: 100%;
+  font-size: 4rem;
   /* text-shadow: 0 0 20px rgb(255, 0, 0); */
+  font-family: "MyFont";
   position: relative;
   margin: 0;
   color: white;
-  font-size: 7rem;
-  font-weight: 900;
+  /* font-weight: 600; */
   position: relative;
-  letter-spacing: 0.2em;
   text-transform: uppercase;
   text-align: center;
   display: flex;
   width: 100%;
-  
+  letter-spacing: 0.2em;
+  &:before {
+    z-index: 0;
+    content: "";
+    position: absolute;
+    width: 200px;
+    height: 3px;
+    left: 25%;
+    margin-top: -15px;
+    background: red;
+  }
+  #pari {
+    font-size: 5rem;
+  }
   .paridhi-insider {
-    margin-top: 20px;
-    font-size: 3.5rem;
+    /* margin-top: 20px; */
+    #p1 {
+      font-size: 2.5rem;
+    }
     #p2 {
+      /* margin-left: -10px; */
       text-shadow: 0 0 2px rgba(255, 0, 0, 0.75);
       color: rgb(231, 0, 0);
-      margin-top: -10px;
-      font-size: 2.5rem;
+      /* margin-top: -20px; */
+      font-size: 1.8rem;
     }
     &:before {
       z-index: 0;
@@ -164,47 +140,25 @@ export const Typewriter = styled.div`
       width: 200px;
       height: 3px;
       left: 25%;
+      margin-top: -10px;
       background: red;
     }
-    @media (max-width:450px) {
-      font-size: 2rem;
-      
-      .paridhi-insider{
-        font-size :2rem ;
-        
+    @media (max-width: 450px) {
+      font-size: 2.5rem;
+
+      #p1 {
+        margin-top: 5px;
       }
+      /* font-size :5rem ; */
+      #p2 {
+        margin-top: -13px;
+      }
+      /* } */
     }
   }
-  /* text-shadow: 0.05em 0 0 rgba(255, 0, 0, 0.75),
-    -0.05em -0.025em 0 rgba(0, 255, 0, 0.75),
-    0.025em 0.05em 0 rgba(0, 0, 255, 0.75);
-  animation: ${glitchAnimation} 625ms infinite;
-
-  &::before,
-  &::after {
-    content: attr(data-text);
-    position: absolute;
-    letter-spacing: 0.025em;
-    top: 0;
-    left: 0;
-    opacity: 0.7;
+  @media (max-width: 450px) {
+    font-size: 2.5rem;
   }
-
-  &::before {
-    animation: ${glitchAnimation} 675ms infinite;
-    transform: translate(-0.035em, -0.025em);
-    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 45%);
-  }
-
-  &::after {
-    animation: ${glitchAnimation} 333ms infinite;
-    transform: translate(0.035em, 0.025em);
-    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
-  } */
-
-  /* @media (max-width: 600px) {
-    font-size: 3.9rem;
-  } */
 `;
 
 export const CountdownContainer = styled.div`
@@ -307,7 +261,7 @@ export const Footer = styled.footer`
   display: flex;
   justify-content: center;
   align-items: center;
-  bottom: 2%;
+  bottom: 50px;
 `;
 
 export const Middle = styled.div`

@@ -1,5 +1,4 @@
 import { useState, useEffect, useRef } from "react";
-import baffle from "baffle";
 import {
   faFacebook,
   faInstagram,
@@ -8,7 +7,6 @@ import {
 } from "@fortawesome/free-brands-svg-icons";
 
 import {
-  PreloaderVideoWrapper,
   HeroMain,
   CountdownContainer,
   CountdownItem,
@@ -23,8 +21,8 @@ import {
   FontAwesomeIconStyled,
   DrippingDigit,
   StyledContainer,
+  HT1,
 } from "./Hero.styled.js";
-import BackgroundAnimation from "../BackGroundAnimation/BackgroundAnimation.jsx";
 
 export const CountdownTimer = ({ targetDate }) => {
   const calculateTimeLeft = () => {
@@ -106,27 +104,10 @@ export const CountdownTimer = ({ targetDate }) => {
 };
 
 const Hero = () => {
-  const targetDate = new Date("2024-04-13T23:59:59");
+  const targetDate = new Date("2024-05-01T23:59:59");
 
   const [videoPlayed, setVideoPlayed] = useState(false);
   const [showContent, setShowContent] = useState(false);
-
-  // const baffleRef = useRef(null);
-
-  // useEffect(() => {
-  //   const text = baffle(baffleRef.current);
-  //   text.set({
-  //     characters: "!/|~#.^+*$#%nwf@%^&*!",
-  //     speed: 250,
-  //   });
-  //   text.start();
-  //   text.reveal(2000);
-
-  //   // Clean up baffle instance on unmount
-  //   return () => {
-  //     text.stop();
-  //   };
-  // }, []);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -143,25 +124,38 @@ const Hero = () => {
           <HeroContainer>
             <div className="light-source" />
             <Title>
-              {/* <Typewriter className="baffle" ref={baffleRef}> */}
-              <Typewriter className="baffle">
-                {/* Paridhi <span> 2024</span> */}
-                {/* <div> */}
-                PARI
-                <div className="paridhi-insider">
-                  <p>DHI</p>
-                  <p id="p2">{"'24"}</p>
-                </div>
-                {/* </div> */}
+              <Typewriter className="baffle" style={{fontFamily:"MyFont",textAlign:"center",width:"100%"}}>
+                Paridhi <span style={{ color: "#e70000" }}>{"'24"}</span>
               </Typewriter>
-              <HeroText style={{ fontSize: "20px", marginBottom: "40px" }}>
-                See you on{" "}
-                <span style={{ color: "red" }}>10th, 11th, 12th</span> May
-              </HeroText>
             </Title>
+            <HT1
+              id="HT1"
+              style={{
+                
+              }}
+            >
+              The Annual{" "}
+              <span style={{ color: "#ce0000" }}> technical fest</span> of MSIT
+            </HT1>
+            <HeroText
+              style={{
+                marginBottom: "40px",
+                textTransform: "uppercase",
+                fontSize: "1rem",
+              }}
+            >
+              See you on{" "}
+              <span style={{ color: "#e70000" }}>10th, 11th, 12th</span> May
+            </HeroText>
             <div className="timer-div">
-              <HeroText style={{ marginBottom: "-40px" }}>
-                Events Releasing in
+              <HeroText
+                style={{
+                  marginBottom: "-40px",
+                  textTransform: "uppercase",
+                  fontSize: "1rem",
+                }}
+              >
+                Registration Begins in
               </HeroText>
               <CountdownTimer targetDate={targetDate} />
             </div>
@@ -190,7 +184,6 @@ const Hero = () => {
           </Footer>
         </HeroMain>
       </StyledContainer>
-      )
     </>
   );
 };
