@@ -1,4 +1,3 @@
-
 import {
   Banner,
   BannerImage,
@@ -11,11 +10,9 @@ import {
   ButtonSection,
 } from "./InfoBanner.styled";
 
-
-
 const InfoBanner = ({ title, fee, teamSize, Descriptions, Image }) => {
   const openRegistration = (event) => {
-    event.preventDefault(); // Prevent default behavior (e.g., page navigation)
+    event.preventDefault();
     window.location.href = "/login";
   };
   const openRules = () => {

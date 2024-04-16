@@ -1,6 +1,7 @@
 import React from "react";
 import { StyledContainer } from "./WorkShop.styled";
 import { Card2 } from "../Cards/Card2";
+import { motion } from "framer-motion";
 
 const WorkShop = () => {
   const WorkshopData = [
@@ -30,13 +31,24 @@ const WorkShop = () => {
   return (
     <>
       <StyledContainer>
-        {WorkshopData.map((data) => (
-          <Card2
-            key={data.TitleText}
-            ImageLink={data.ImageLink}
-            TitleText={data.TitleText}
-            Description={data.Description}
-          />
+        {WorkshopData.map((data , index) => (
+          <motion.div
+            key={index}
+            initial={{ scale: 0 }}
+            animate={{ scale: 1 }}
+            transition={{
+              ease: "easeOut",
+              duration: 0.3,
+              delay: index * 0.2,
+            }}
+          >
+            <Card2
+              key={data.TitleText}
+              ImageLink={data.ImageLink}
+              TitleText={data.TitleText}
+              Description={data.Description}
+            />
+          </motion.div>
         ))}
       </StyledContainer>
     </>

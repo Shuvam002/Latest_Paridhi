@@ -19,9 +19,9 @@ export const CardWrapper = styled.div`
   align-items: flex-start;
   flex-wrap: wrap;
   margin-top: 8rem;
-  
+
   @media (max-width: 1000px) {
-    margin-top: 5rem; 
+    margin-top: 5rem;
   }
 `;
 
@@ -47,7 +47,7 @@ export const CardContainer1 = styled.div`
   backdrop-filter: blur(3px);
 
   border-radius: 10px;
-   @media (max-width: 1400px) {
+  @media (max-width: 1400px) {
     margin: 1rem;
     width: calc(50% - 2rem);
   }

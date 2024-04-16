@@ -35,6 +35,12 @@ export const StyledContainer = styled.div`
   z-index: 2;
   bottom: 90vh;
   animation: ${NavDownAnimation} 0.5s ease-out;
+  background: rgba( 255, 255, 255, 0.05 );
+
+backdrop-filter: blur( 0px );
+-webkit-backdrop-filter: blur( 0px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 `;
 
 export const NavbarContainer = styled.nav`
