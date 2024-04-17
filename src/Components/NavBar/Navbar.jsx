@@ -78,7 +78,7 @@ const Navbar = () => {
               to="pre_paredhi_events"
               onClick={handleClick}
             >
-              PreEvents-Paredhi
+              PreEvents-Paridhi
             </NavLinkName>
           </NavItem>
           <NavItem>

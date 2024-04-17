@@ -19,7 +19,7 @@ const Registration = () => {
       title: "Code quest",
       teamSize: 2,
       fee: 150,
-      Descriptions: `Open for all years. UI/UX Design Challenge. <br />1. Participants must submit their designs before the deadline. <br />2. Top designs will be showcased at the event. <br />3. Winners will be chosen based on creativity and usability.`,
+      Descriptions: `Competitive Programming contest consists of two rounds: prelims and finals. Top performers in prelims advance to finals for a chance to win lucrative cash prizes. Open to all participants across all years, it promises an exhilarating challenge and rewards excellence in coding prowess.`,
     },
     MobileAppDevelopment: {
       Image:
@@ -35,7 +35,7 @@ const Registration = () => {
       title: "Codezen",
       teamSize: 2,
       fee: 100,
-      Descriptions: `Open for all years. Data Science Challenge. <br />1. Participants must analyze a given dataset and provide insights. <br />2. Top performers will present their findings at the event. <br />3. Winners will be chosen based on the accuracy and relevance of their analysis.`,
+      Descriptions: `Join our exclusive CP contest tailored for first-year students and school attendees. The competition features two rounds: prelims and finals. Top performers advance to the finals for a chance to win enticing cash prizes. Don't miss this opportunity to showcase your skills and compete at the highest level!`,
     },
     web_minds: {
       Image:
@@ -43,8 +43,9 @@ const Registration = () => {
       title: "Web minds",
       teamSize: 2,
       fee: 100,
-      Descriptions: `Open for all years. Cybersecurity Capture the Flag. <br />1. Participants must form teams of 5. <br />2. Teams will compete in various cybersecurity challenges. <br />3. The team with the most flags captured wins.`,
+      Descriptions: `Engage in the Web Development Challenge spanning two rounds. Top performers advance to the finals, crafting captivating web pages. Finalists vie for cash prizes. Open to all years, this competition offers a platform to showcase skills, with excellence leading to recognition and rewards.`,
     },
+
   };
 
   const data = DomainEvents[EvnetRegistration];

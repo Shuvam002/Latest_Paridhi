@@ -1,4 +1,4 @@
-import { useLocation  } from "react-router-dom";
+import { Link, useLocation  } from "react-router-dom";
 import {
   Banner,
   BannerImage,
@@ -31,9 +31,9 @@ console.log(location);
           <Description>{Descriptions}</Description>
           <ButtonSection>
           <RegisterBtn>
-          <a href={`${location.pathname}/register`} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}>
+          {/* <Link to={`register`} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}> */}
             <RegisterBtn>Register Now</RegisterBtn>
-          </a> 
+          {/* </Link>  */}
           </RegisterBtn> 
             <RegisterBtn onClick={openRules}>Rules</RegisterBtn>
           </ButtonSection>
