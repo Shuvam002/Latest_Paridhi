@@ -25,6 +25,10 @@ const Merchandise = ({ title, content }) => {
     setSelectedImageIndex2(index);
   };
 
+  const openFormInNewWindow = () => {
+    window.open("https://forms.gle/ms67u7MocZEnPJGP7", "_blank");
+  };
+
   return (
     <Background>
       <CardWrapper>
@@ -42,7 +46,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex1 === 0 ? "block" : "none",
                 }}
               />{" "}
-              {/* Using the imported image */}
+              
               <img
                 src={whiteBackImage}
                 alt=""
@@ -50,7 +54,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex1 === 1 ? "block" : "none",
                 }}
               />{" "}
-              {/* Using the imported image */}
+              
             </ImageContainer>
             <div>
               <span
@@ -76,12 +80,12 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome White merchendize</p>
+              <p>Try this awesome White merchandise</p>
               <div className="price">
-                <del> Rs 300</del> Rs 200
+                <del> Rs 299</del> Rs 149
               </div>
 
-              <button style={{ cursor: "pointer" }}>Buy Now</button>
+              <button style={{ cursor: "pointer" }} onClick={openFormInNewWindow}>Buy Now</button>
             </div>
           </CardContainer1>
         </motion.div>
@@ -100,7 +104,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex2 === 0 ? "block" : "none",
                 }}
               />{" "}
-              {/* Using the imported image */}
+              
               <img
                 src={blackBackImage}
                 alt=""
@@ -108,7 +112,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex2 === 1 ? "block" : "none",
                 }}
               />{" "}
-              {/* Using the imported image */}
+              
             </ImageContainer>
             <div>
               <span
@@ -134,12 +138,12 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome Black merchendize</p>
+              <p>Try this awesome Black merchandise</p>
               <div className="price">
-                <del>Rs 300</del> Rs 200
+                <del>Rs 299</del> Rs 149
               </div>
 
-              <button style={{ cursor: "pointer" }}>Buy Now</button>
+              <button style={{ cursor: "pointer" }} onClick={openFormInNewWindow}>Buy Now</button>
             </div>
           </CardContainer2>
         </motion.div>

@@ -19,7 +19,7 @@ const DomainEvents = () => {
       {
         TitleText: "Code quest",
         Description:
-          "Join an exclusive two-round competition, comprising prelims and finals, open to all years. Click here to register now!",
+          "Join an exclusive two-round cp competition, comprising prelims and finals, open to all years. Click here to register now!",
         ImageLink:
           "https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/design/code_quset",
@@ -28,7 +28,7 @@ const DomainEvents = () => {
       {
         TitleText: "Codezen",
         Description:
-          "Exclusive competition with two rounds, prelims and finals, tailored for school students and first-year participants. Click here to register!",
+          "Exclusive cp & mcq competition with two rounds, prelims and finals, tailored for school students and first-year participants. Click here to register!",
         ImageLink:
           "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/robotics/codezen",

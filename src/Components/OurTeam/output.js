@@ -70,7 +70,7 @@ export const team_data = [
       },
       {
         "Timestamp": "3/23/2024 13:29:25",
-        "Image": "https://drive.google.com/file/d/1Ifq1MnvEywiH96nikmdwwIoftzY_bKML/view?usp=drive_link",
+        "Image": "https://drive.google.com/uc?id=13rVs6CR2YfAMbC-X4bfLtcgYMupFyQJn",
         "Name": "Atul Singh",
         "Year": "2nd ",
         

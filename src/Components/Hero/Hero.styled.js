@@ -95,7 +95,7 @@ export const HT1 = styled.div`
 `;
 
 export const Typewriter = styled.div`
-  font-size: 4rem;
+  font-size: 4.5rem;
   /* text-shadow: 0 0 20px rgb(255, 0, 0); */
   font-family: "MyFont";
   position: relative;
