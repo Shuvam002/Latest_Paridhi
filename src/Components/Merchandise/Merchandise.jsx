@@ -46,7 +46,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex1 === 0 ? "block" : "none",
                 }}
               />{" "}
-              
+              {/* Using the imported image */}
               <img
                 src={whiteBackImage}
                 alt=""
@@ -54,7 +54,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex1 === 1 ? "block" : "none",
                 }}
               />{" "}
-              
+              {/* Using the imported image */}
             </ImageContainer>
             <div>
               <span
@@ -80,7 +80,7 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome White merchandise</p>
+              <p>Try this awesome White merchendize</p>
               <div className="price">
                 <del> Rs 299</del> Rs 149
               </div>
@@ -104,7 +104,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex2 === 0 ? "block" : "none",
                 }}
               />{" "}
-              
+              {/* Using the imported image */}
               <img
                 src={blackBackImage}
                 alt=""
@@ -112,7 +112,7 @@ const Merchandise = ({ title, content }) => {
                   display: selectedImageIndex2 === 1 ? "block" : "none",
                 }}
               />{" "}
-              
+              {/* Using the imported image */}
             </ImageContainer>
             <div>
               <span
@@ -138,7 +138,7 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome Black merchandise</p>
+              <p>Try this awesome Black merchendize</p>
               <div className="price">
                 <del>Rs 299</del> Rs 149
               </div>
