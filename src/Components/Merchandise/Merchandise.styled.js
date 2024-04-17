@@ -49,7 +49,7 @@ export const CardContainer1 = styled.div`
   border-radius: 10px;
   @media (max-width: 1400px) {
     margin: 1rem;
-    width: calc(50% - 2rem);
+    width: calc(90% - 2rem);
   }
   @media (max-width: 768px) {
     width: calc(100% - 2rem);
@@ -81,7 +81,7 @@ export const CardContainer1 = styled.div`
 export const CardContainer2 = styled(CardContainer1)`
   margin-bottom: 5rem;
   @media (max-width: 1000px) {
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
 `;
 
