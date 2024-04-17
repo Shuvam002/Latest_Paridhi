@@ -110,7 +110,7 @@ export const team_data = [
       },
       {
         "Timestamp": "2/26/2024 22:06:43",
-        
+        "Image":"https://drive.google.com/uc?id=1YU9sMMOXQPmxFjV5J6ur40bTD17GAmMk",
         "Name": "Dandasi Puneet",
         "Year": "3rd ",
         "fb_link": "https://www.facebook.com/puneet.puneet.92754?mibextid=ZbWKwL",
