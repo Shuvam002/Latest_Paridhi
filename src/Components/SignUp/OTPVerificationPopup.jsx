@@ -26,12 +26,10 @@ const OTPVerificationPopup = ({ onSubmit, onClose }) => {
   const [otp, setOTP] = useState("");
 
   const handleSubmit = () => {
-    // Call the onSubmit function with the entered OTP
     onSubmit(otp);
-    // Simulating OTP verification success
-    // You can replace this with your actual OTP verification logic
+
     setTimeout(() => {
-      onClose(); // Close the popup after submission
+      onClose(); 
     }, 1000);
   };
 

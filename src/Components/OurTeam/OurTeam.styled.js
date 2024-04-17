@@ -75,7 +75,7 @@ export const StyledContainer = styled.div`
 export const Container = styled.div`
   flex: 0 2 calc(20% - 0px); 
   padding: 10px;
-  border-radius: 10px;
+  border-radius: 20px;
   background: linear-gradient(
     75.16deg,
     rgba(0, 0, 0, 0.95) 70.4%,

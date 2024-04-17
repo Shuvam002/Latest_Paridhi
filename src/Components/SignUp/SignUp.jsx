@@ -1,3 +1,4 @@
+// signup.js
 import React, { useEffect, useState } from "react";
 import {
   AltLogin,
@@ -96,10 +97,10 @@ const SignUp = () => {
   };
 
   const handleSignUp = () => {
-    // Email validation
+
     if (!email.includes("@") || !email.includes(".")) {
       alert("Please enter a valid email address.");
-      return; // Exit early if email is invalid
+      return; 
     }
   
     // Handle sign up logic here

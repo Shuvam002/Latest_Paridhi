@@ -22,7 +22,7 @@ export const Cover = styled.div`
   @media (max-width: 800px) {
     width: 80%;
   }
-  margin-top:2.5rem;
+  margin-top:3rem;
 `;
 
 export const BackgroundImage = styled.div`
@@ -33,7 +33,7 @@ export const BackgroundImage = styled.div`
 
 export const Container = styled.div`
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 12px;
+  border-radius: 20px;
   border: 1px solid rgba(209, 213, 219, 0.9);
   position: relative;
   border-radius: 0.1rem;

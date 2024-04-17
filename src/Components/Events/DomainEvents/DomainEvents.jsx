@@ -10,7 +10,7 @@ const DomainEvents = () => {
       {
         TitleText: "Bug blitz",
         Description:
-          "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam corporis porro tempore laborum.",
+          "Join our CP debugging competition, open to all, featuring on-the-spot challenges. Click now to register for this exclusive event!",
         ImageLink:
           "https://images.unsplash.com/photo-1585079374502-415f8516dcc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/coding/Bug_blitz",
@@ -19,7 +19,7 @@ const DomainEvents = () => {
       {
         TitleText: "Code quest",
         Description:
-          "Join us for a hands-on workshop exploring the fundamentals of graphic design.",
+          "Join an exclusive two-round competition, comprising prelims and finals, open to all years. Click here to register now!",
         ImageLink:
           "https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/design/code_quset",
@@ -28,7 +28,7 @@ const DomainEvents = () => {
       {
         TitleText: "Codezen",
         Description:
-          "Compete with teams from around the world in this thrilling robotics competition.",
+          "Exclusive competition with two rounds, prelims and finals, tailored for school students and first-year participants. Click here to register!",
         ImageLink:
           "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/robotics/codezen",
@@ -37,7 +37,7 @@ const DomainEvents = () => {
       {
         TitleText: "Web minds",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Join our website development competition featuring prelims and finals, open to all, with registration and rules available here",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/web_minds",
@@ -47,7 +47,7 @@ const DomainEvents = () => {
       {
         TitleText: "Triathlon",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+        "Join our exclusive bot racing competition, open to all years! Click to register and learn the rules for the challenge.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -55,7 +55,7 @@ const DomainEvents = () => {
       {
         TitleText: "Robo Klassiker",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+        "Join our exclusive bot soccer competition! Bots vie for goals while minimizing penalties. Register now and learn the rules!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -63,7 +63,7 @@ const DomainEvents = () => {
       {
         TitleText: "Chakravyuh",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+        "Compete in the maze-solving bot challenge, navigate tunnels, reach the exclusive destination. Click to register and learn rules!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -71,7 +71,7 @@ const DomainEvents = () => {
       {
         TitleText: "Striker Clash",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Join the exclusive Robo Carrom competition for all, register now, and discover the rules for this thrilling event!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -81,7 +81,7 @@ const DomainEvents = () => {
       {
         TitleText: "Line Trekker",
         Description:
-          "Join us for a hands-on workshop exploring the fundamentals of graphic design.",
+        "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
         ImageLink:
           "https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/design/UIUXDesign",
@@ -91,7 +91,7 @@ const DomainEvents = () => {
       {
         TitleText: "Setu bandhan",
         Description:
-          "Compete with teams from around the world in this thrilling robotics competition.",
+          "Create a sturdy bridge using provided ice-cream sticks and glue; the strongest design, exclusive for all years, wins. Register now!",
         ImageLink:
           "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/robotics/MobileAppDevelopment",
@@ -99,7 +99,7 @@ const DomainEvents = () => {
       {
         TitleText: "Track O Treasure",
         Description:
-          "Compete with teams from around the world in this thrilling robotics competition.",
+        "Unravel the challenge, solve riddles, and discover the treasure in this exclusive treasure hunt adventure. Register now and learn the rules!",
         ImageLink:
           "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/robotics/MobileAppDevelopment",
@@ -107,7 +107,7 @@ const DomainEvents = () => {
       {
         TitleText: "CAD_O_MANIA",
         Description:
-          "Compete with teams from around the world in this thrilling robotics competition.",
+          "Embark on the challenge: an AutoCAD drawing competition open to all. Click to register and unveil the competition rules.",
         ImageLink:
           "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/robotics/MobileAppDevelopment",
@@ -115,7 +115,7 @@ const DomainEvents = () => {
       {
         TitleText: "Mega Arch",
         Description:
-          "Compete with teams from around the world in this thrilling robotics competition.",
+        "Construct a load-bearing bridge using provided sand and bricks within a set time. The most robust design wins. Register for details.",
         ImageLink:
           "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/robotics/MobileAppDevelopment",
@@ -159,7 +159,7 @@ const DomainEvents = () => {
       {
         TitleText: "Carrom",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -167,7 +167,7 @@ const DomainEvents = () => {
       {
         TitleText: "Table Tennis",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Embark on a thrilling table tennis journey to rediscover your childhood joy. Click to register and uncover the rules today!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -175,7 +175,7 @@ const DomainEvents = () => {
       {
         TitleText: "Binge Quiz",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+        "Embark on an intriguing quiz journey! Click to register and unveil the rules of this captivating binge-worthy challenge.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -183,7 +183,7 @@ const DomainEvents = () => {
       {
         TitleText: "Chess",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+        "Register for a chess competition to test your skills & intellect. Click to unravel the challenge and learn the rules elegantly.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
@@ -191,7 +191,7 @@ const DomainEvents = () => {
       {
         TitleText: "Darts",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+        "Test your aim with dart challenges! Click to register and learn the rules. Unveil your aiming prowess in this thrilling game.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/marketing/DataScience",
