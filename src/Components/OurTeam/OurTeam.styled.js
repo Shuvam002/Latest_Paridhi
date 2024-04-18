@@ -83,7 +83,7 @@ export const Container = styled.div`
   );
   border: 1px solid rgba(255 , 0 , 0, 0.3);
   text-align: center;
-  height: 20rem;
+  min-height: 20rem;
   width:20rem;
   
 `;

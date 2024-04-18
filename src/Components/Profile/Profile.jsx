@@ -1,4 +1,4 @@
-
+import { useState, useEffect } from "react";
 import {
   StyledContainer,
   Domains,
@@ -6,76 +6,6 @@ import {
   CardsSection,
 } from "./Profile.styled";
 
-const testUserData = {
-  id: 3,
-  name: "soumya dey",
-  college: "msit",
-  year: "3rd",
-  department: "cse",
-  roll: "115",
-  email: "soumyadeep_d.cse2021@msit.edu.in",
-  phoneNumber: "8282866698",
-  gid: "paridhi2000021020521024",
-  megaArchTid: "paridhi12002105202024",
-  setuBandhanTid: "paridhi12002105202024",
-  cp1styearTid: "paridhi12002105202024",
-  cpAllyearTid: "paridhi12002105202024",
-  webTid: "paridhi12002105202024",
-  electrical1Tid: "paridhi12002105202024",
-  electrical2Tid: "paridhi12002105202024",
-  gaming1Tid: "paridhi12002105202024",
-  gaming2Tid: "paridhi12002105202024",
-  gaming3Tid: "paridhi12002105202024",
-  roboraceTid: "paridhi12002105202024",
-  roboSoccerTid: "paridhi12002105202024",
-  roboWar8kgTid: "paridhi12002105202024",
-  roboWar15kgTid: "paridhi12002105202024",
-  lfrtid: "paridhi12002105202024",
-  trackoteasureTid: "paridhi12002105202024",
-};
-
-const userData = {
-  id: testUserData.id,
-  name: testUserData.name,
-  college: testUserData.college,
-  year: testUserData.year,
-  department: testUserData.department,
-  roll: testUserData.roll,
-  email: testUserData.email,
-  phoneNumber: testUserData.phoneNumber,
-  gid: testUserData.gid,
-};
-
-const domainCivil = {
-  "Mega Arch TID": testUserData.megaArchTid,
-  "SetuBandhan TID": testUserData.setuBandhanTid,
-  "TrackOteasure TID": testUserData.trackoteasureTid,
-};
-
-const domainCoding = {
-  "CP  1styear TID": testUserData.cp1styearTid,
-  "CP All year TID": testUserData.cp1styearTid,
-  "WEB TID": testUserData.webTid,
-};
-
-const domainElectrical = {
-  "Electrical-1 TID": testUserData.electrical1Tid,
-  "Electrical-2 TID ": testUserData.electrical2Tid,
-};
-
-const domainRobotics = {
-  "Roborace TID": testUserData.roboraceTid,
-  "RoboSoccer TID": testUserData.roboSoccerTid,
-  "RoboWar-8kg TID ": testUserData.roboWar8kgTid,
-  "RoboWar-15kg TID": testUserData.roboWar15kgTid,
-  "LFR TID": testUserData.lfrtid,
-};
-
-const domainGaming = {
-  "Gaming-1 TID": null,
-  "Gaming-2 TID": "paridhi12002105202024",
-  "Gaming-3 TID ": "paridhi12002105202024",
-};
 
 function showCardHandler(obj) {
   for (let key in obj) {
@@ -97,79 +27,152 @@ function showOptionsHandler(obj) {
 }
 
 const Profile = () => {
+  const [testUserData, setTestUserData] = useState(null);
+
+  const doSomething = async () => {
+    try {
+      const GID = JSON.parse(localStorage.getItem("userGID"));
+      const response = await axios.get(`/your-backend-endpoint/${GID}`);
+      setTestUserData(response.data);
+    } catch (error) {
+      console.error("Error fetching data: >>>>", error);
+    }
+  };
+
+  useEffect(() => {
+    doSomething();
+  }, []);
+
+  const {
+    id,
+    name,
+    college,
+    year,
+    department,
+    roll,
+    email,
+    phoneNumber,
+    gid,
+    megaArchTid,
+    setuBandhanTid,
+    trackoteasureTid,
+    cp1styearTid,
+    webTid,
+    electrical1Tid,
+    electrical2Tid,
+    roboraceTid,
+    roboSoccerTid,
+    roboWar8kgTid,
+    roboWar15kgTid,
+    lfrtid,
+    gaming1Tid,
+    gaming2Tid,
+    gaming3Tid,
+  } = testUserData || {};
+
+  const domainCivil = {
+    "Mega Arch TID": megaArchTid,
+    "SetuBandhan TID": setuBandhanTid,
+    "TrackOteasure TID": trackoteasureTid,
+  };
+
+  const domainCoding = {
+    "CP  1styear TID": cp1styearTid,
+    "CP All year TID": cp1styearTid,
+    "WEB TID": webTid,
+  };
+
+  const domainElectrical = {
+    "Electrical-1 TID": electrical1Tid,
+    "Electrical-2 TID ": electrical2Tid,
+  };
+
+  const domainRobotics = {
+    "Roborace TID": roboraceTid,
+    "RoboSoccer TID": roboSoccerTid,
+    "RoboWar-8kg TID ": roboWar8kgTid,
+    "RoboWar-15kg TID": roboWar15kgTid,
+    "LFR TID": lfrtid,
+  };
+
+  const domainGaming = {
+    "Gaming-1 TID": gaming1Tid,
+    "Gaming-2 TID": gaming2Tid,
+    "Gaming-3 TID ": gaming3Tid,
+  };
+
   return (
-    <>
-      <StyledContainer>
-        {userData ? (
-          <>
-            <MainInfo>
-              <img
-                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
-                alt="Profile Image"
-                width="100"
-                srcSet="Profile Image "
-                style={{ borderRadius: "50px", margin: "auto" }}
-              />
-              <h1>Name : {userData.name} </h1>
-              <h1>GID : {userData.gid} </h1>
-              <h1>Year : {userData.year}</h1>
-              <h1>Department : {userData.department}</h1>
-              <h1>Roll No. : {userData.roll}</h1>
-              <h1>E - Mail : {userData.email}</h1>
-              <h1>Phone : {userData.phoneNumber}</h1>
-              <h1>College : {userData.college} </h1>
-            </MainInfo>
-          </>
-        ) : (
-          <h1>"YOU ARE NOT LOGGED IN !!!"</h1>
-        )}
-        {
-          // the cards section
-        }
-        <CardsSection>
-          {showCardHandler(domainCivil) ? (
-            <Domains>
-              <h2 style={{ borderBottom: '2px solid red', width: '7vh' }}>Civil</h2>
-              {showOptionsHandler(domainCivil).map((main) => main)}
-            </Domains>
-          ) : (
-            <></>
-          )}
-          {showCardHandler(domainCoding) ? (
-            <Domains>
-              <h2 style={{ borderBottom: '2px solid red', width: '10vh' }}>Coding</h2>
-              {showOptionsHandler(domainCoding).map((main) => main)}
-            </Domains>
-          ) : (
-            <></>
-          )}
-          {showCardHandler(domainElectrical) ? (
-            <Domains>
-              <h2 style={{ borderBottom: '2px solid red', width: '12vh' }}>Electrical</h2>
-              {showOptionsHandler(domainElectrical).map((main) => main)}
-            </Domains>
-          ) : (
-            <></>
-          )}
-          {showCardHandler(domainRobotics) ? (
-            <Domains>
-              <h2 style={{ borderBottom: '2px solid red', width: '11vh' }}>Robotics</h2>
-              {showOptionsHandler(domainRobotics).map((main) => main)}
-            </Domains>
-          ) : (
-            <></>
-          )}
-          {showCardHandler(domainGaming) ? (
-            <Domains>
-              <h2 style={{ borderBottom: '2px solid red', width: '10vh' }}>Gaming</h2>
-              {showOptionsHandler(domainGaming).map((main) => main)}
-            </Domains>
-          ) : (
-            <></>
-          )}
-        </CardsSection>
-      </StyledContainer>
-    </>
+    <StyledContainer>
+      {null ? (
+        <>
+          <MainInfo>
+            <img
+              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
+              alt="Profile Image"
+              width="100"
+              srcSet="Profile Image "
+              style={{ borderRadius: "50px", margin: "auto" }}
+            />
+            <h1>Name : {userData.name} </h1>
+            <h1>GID : {userData.gid} </h1>
+            <h1>Year : {userData.year}</h1>
+            <h1>Department : {userData.department}</h1>
+            <h1>Roll No. : {userData.roll}</h1>
+            <h1>E - Mail : {userData.email}</h1>
+            <h1>Phone : {userData.phoneNumber}</h1>
+            <h1>College : {userData.college} </h1>
+          </MainInfo>
+
+          {
+            // the cards section
+          }
+          <CardsSection>
+            {showCardHandler(domainCivil) ? (
+              <Domains>
+                <h1>Civil</h1>
+                {showOptionsHandler(domainCivil).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
+            {showCardHandler(domainCoding) ? (
+              <Domains>
+                <h1>CODING</h1>
+                {showOptionsHandler(domainCoding).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
+            {showCardHandler(domainGaming) ? (
+              <Domains>
+                <h1>GAMING</h1>
+                {showOptionsHandler(domainGaming).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
+            {showCardHandler(domainElectrical) ? (
+              <Domains>
+                <h1>Electricl</h1>
+                {showOptionsHandler(domainElectrical).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
+            {showCardHandler(domainRobotics) ? (
+              <Domains>
+                <h1>Robotics</h1>
+                {showOptionsHandler(domainRobotics).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
+          </CardsSection>
+        </>
+      ) : (
+        <h1 style={{ color: "white" }}>YOU ARE NOT LOGED IN !!!</h1>
+      )}
+    </StyledContainer>
   );
 };
 
