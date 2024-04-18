@@ -527,16 +527,7 @@ export const team_data = [
         insta_link: "https://www.instagram.com/_sneha__bose?igsh=MTRlZDBxYjRzbDNsag==",
         
       },
-      {
-        Timestamp: "2/26/2024 21:49:01",
-       
-        Name: "Sreeja Basu",
-        Year: "3rd ",
-        fb_link: "https://www.facebook.com/sreeja.basu.54?mibextid=JRoKGi",
-        insta_link: "https://www.instagram.com/sreeja_1108?igsh=MTNjcG1vdTFveDV0aA==",
-        
-        gmail: "sreejabasumsit@gmail.com"
-      },
+     
       {
         Timestamp: "4/12/2024 23:46:20",
         Image: "https://drive.google.com/uc?id=1pylhB00bFO8oCH3EDFb5HnK90YHTQ0VO",
