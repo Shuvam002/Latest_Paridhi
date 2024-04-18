@@ -54,14 +54,14 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-      {/* <Route
+      <Route
         path="workshop"
         element={
           <Suspense fallback={<Spinner />}>
             <WorkShop />
           </Suspense>
         }
-      /> */}
+      />
       <Route
         path="our_team"
         element={
@@ -70,15 +70,15 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-      {/* <Route
+      <Route
         path="sponsors"
         element={
           <Suspense fallback={<Spinner />}>
             <Sponsors />
           </Suspense>
         }
-      /> */}
-      {/* <Route
+      />
+      <Route
         path="pre_paredhi_events"
         element={
           <Suspense fallback={<Spinner />}>
