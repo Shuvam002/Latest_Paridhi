@@ -12,7 +12,7 @@ const DomainEvents = () => {
         Description:
           "Join our CP debugging competition, open to all, featuring on-the-spot challenges. Click now to register for this exclusive event!",
         ImageLink:
-          "https://images.unsplash.com/photo-1585079374502-415f8516dcc3?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg?width=500&height=300",
         link: "/events/coding/Bug_blitz",
       },
 
@@ -21,8 +21,8 @@ const DomainEvents = () => {
         Description:
           "Join an exclusive two-round cp competition, comprising prelims and finals, open to all years. Click here to register now!",
         ImageLink:
-          "https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/design/code_quset",
+          "https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg?width=500&height=300",
+        link: "/events/coding/code_quset",
       },
 
       {
@@ -30,8 +30,8 @@ const DomainEvents = () => {
         Description:
           "Exclusive cp & mcq competition with two rounds, prelims and finals, tailored for school students and first-year participants. Click here to register!",
         ImageLink:
-          "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/robotics/codezen",
+          "https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg?width=500&height=300",
+        link: "/events/coding/codezen",
       },
 
       {
@@ -39,52 +39,52 @@ const DomainEvents = () => {
         Description:
           "Join our website development competition featuring prelims and finals, open to all, with registration and rules available here",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/web_minds",
+          "https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg?width=500&height=300",
+        link: "/events/coding/web_minds",
       },
     ],
     manual_robitics: [
       {
         TitleText: "Triathlon",
         Description:
-        "Join our exclusive bot racing competition, open to all years! Click to register and learn the rules for the challenge.",
+          "Join our exclusive bot racing competition, open to all years! Click to register and learn the rules for the challenge.",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        link: "/events/manual_robitics/triathlon",
       },
       {
         TitleText: "Robo Klassiker",
         Description:
-        "Join our exclusive bot soccer competition! Bots vie for goals while minimizing penalties. Register now and learn the rules!",
+          "Join our exclusive bot soccer competition! Bots vie for goals while minimizing penalties. Register now and learn the rules!",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        link: "/events/manual_robitics/robo_klassiker",
       },
       {
         TitleText: "Chakravyuh",
         Description:
-        "Compete in the maze-solving bot challenge, navigate tunnels, reach the exclusive destination. Click to register and learn rules!",
+          "Compete in the maze-solving bot challenge, navigate tunnels, reach the exclusive destination. Click to register and learn rules!",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        link: "/events/manual_robitics/chakravyuh",
       },
       {
         TitleText: "Striker Clash",
         Description:
           "Join the exclusive Robo Carrom competition for all, register now, and discover the rules for this thrilling event!",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        link: "/events/manual_robitics/striker_clash",
       },
     ],
     autonomous_robotics: [
       {
         TitleText: "Line Trekker",
         Description:
-        "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
+          "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
         ImageLink:
-          "https://images.unsplash.com/photo-1535136104956-115a2cd67fc4?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/design/UIUXDesign",
+          "https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/science/us-robot-head.jpg",
+        link: "/events/autonomous_robotics/line_trekker",
       },
     ],
     civil: [
@@ -93,66 +93,66 @@ const DomainEvents = () => {
         Description:
           "Create a sturdy bridge using provided ice-cream sticks and glue; the strongest design, exclusive for all years, wins. Register now!",
         ImageLink:
-          "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/robotics/MobileAppDevelopment",
+          "https://static.wixstatic.com/media/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg",
+        link: "/events/civil/setu_bandhan",
       },
       {
         TitleText: "Track O Treasure",
         Description:
-        "Unravel the challenge, solve riddles, and discover the treasure in this exclusive treasure hunt adventure. Register now and learn the rules!",
+          "Unravel the challenge, solve riddles, and discover the treasure in this exclusive treasure hunt adventure. Register now and learn the rules!",
         ImageLink:
-          "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/robotics/MobileAppDevelopment",
+          "https://static.wixstatic.com/media/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg",
+        link: "/events/civil/trackOtreasure",
       },
       {
         TitleText: "CAD_O_MANIA",
         Description:
           "Embark on the challenge: an AutoCAD drawing competition open to all. Click to register and unveil the competition rules.",
         ImageLink:
-          "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/robotics/MobileAppDevelopment",
+          "https://static.wixstatic.com/media/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg",
+        link: "/events/civil/cad_O_mania",
       },
       {
         TitleText: "Mega Arch",
         Description:
-        "Construct a load-bearing bridge using provided sand and bricks within a set time. The most robust design wins. Register for details.",
+          "Construct a load-bearing bridge using provided sand and bricks within a set time. The most robust design wins. Register for details.",
         ImageLink:
-          "https://images.unsplash.com/photo-1523329110005-297cf111f8de?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/robotics/MobileAppDevelopment",
+          "https://static.wixstatic.com/media/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg",
+        link: "/events/civil/mega_arch",
       },
     ],
     gaming: [
       {
         TitleText: "Valorant Lan",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Valorant: Tactical prowess meets precise aim in dynamic multiplayer battles.",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://t3.ftcdn.net/jpg/02/85/90/44/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg",
+        link: "/events/gaming/valorent_lan",
       },
       {
         TitleText: "Bgmi Lan",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "BGMI: Strategic survival, intense firefights, and victory in immersive battlegrounds.",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://t3.ftcdn.net/jpg/02/85/90/44/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg",
+        link: "/events/gaming/bgmi_lan",
       },
       {
         TitleText: "E-football",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "E-Football: Experience the virtual pitch with skill, strategy, and teamwork.",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://t3.ftcdn.net/jpg/02/85/90/44/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg",
+        link: "/events/gaming/eFootball",
       },
       {
         TitleText: "Fifa 24",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "FIFA 2024: Unleash your football mastery in thrilling global competitions.",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://t3.ftcdn.net/jpg/02/85/90/44/360_F_285904463_52tKiXp592qUhmg24eS3f4k1kGQSji3f.jpg",
+        link: "/events/gaming/fifa",
       },
     ],
     general: [
@@ -162,7 +162,7 @@ const DomainEvents = () => {
           "Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+        link: "/events/general/carrom",
       },
       {
         TitleText: "Table Tennis",
@@ -170,49 +170,49 @@ const DomainEvents = () => {
           "Embark on a thrilling table tennis journey to rediscover your childhood joy. Click to register and uncover the rules today!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+        link: "/events/general/table_tennis",
       },
       {
         TitleText: "Binge Quiz",
         Description:
-        "Embark on an intriguing quiz journey! Click to register and unveil the rules of this captivating binge-worthy challenge.",
+          "Embark on an intriguing quiz journey! Click to register and unveil the rules of this captivating binge-worthy challenge.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+        link: "/events/general/binge_quiz",
       },
       {
         TitleText: "Chess",
         Description:
-        "Register for a chess competition to test your skills & intellect. Click to unravel the challenge and learn the rules elegantly.",
+          "Register for a chess competition to test your skills & intellect. Click to unravel the challenge and learn the rules elegantly.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+        link: "/events/general/chess",
       },
       {
         TitleText: "Darts",
         Description:
-        "Test your aim with dart challenges! Click to register and learn the rules. Unveil your aiming prowess in this thrilling game.",
+          "Test your aim with dart challenges! Click to register and learn the rules. Unveil your aiming prowess in this thrilling game.",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+        link: "/events/general/darts",
       },
     ],
     electrical: [
       {
         TitleText: "ElectriQuest",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
         ImageLink:
-          "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+          "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
+        link: "/events/electrical/electriQuest",
       },
       {
         TitleText: "PowerBlitz",
         Description:
-          "Learn the latest strategies and techniques in digital marketing from industry experts.",
+          "Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/marketing/DataScience",
+        link: "/events/electrical/powerBlitz",
       },
     ],
   };

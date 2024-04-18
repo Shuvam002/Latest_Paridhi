@@ -1,6 +1,6 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export const TeamStyles = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
@@ -56,60 +56,51 @@ export const TeamStyles = createGlobalStyle`
 `;
 
 export const StyledContainer = styled.div`
-  /* background-image: url(${"https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"});
-  background-size: cover;
-  background-position: center; */
-  height:100%;
+  height: 100%;
   width: 100%;
-  padding:7rem;
-  overflow-y: auto;
-  overflow-x : hidden;
-  background-size:100px;
-  
-  @media (max-width: 1280px) {
-    height:700vh;
-  }
-
+  padding: 7rem;
+  /* overflow-y: ; */
+  overflow-x: hidden;
+  background-size: 100px;
 `;
 
 export const Container = styled.div`
-  flex: 0 2 calc(20% - 0px); 
-  padding: 10px;
-  border-radius: 20px;
-  background: linear-gradient(
-    75.16deg,
-    rgba(0, 0, 0, 0.95) 70.4%,
-    rgba(255, 255, 255, 0.15) 100.55%
-  );
-  border: 1px solid rgba(255 , 0 , 0, 0.3);
-  text-align: center;
-  height: 20rem;
-  width:20rem;
-  
-`;
-
-export const CardContainer = styled.div`
-  display :flex;
-  flex-wrap: wrap;
-  gap: 1rem; 
-  justify-content: space-between; 
-  
-
-  @media (max-width: 765px) {
-    display : flex;
-    justify-content:center;
+  /* height: 20rem;
+  width: 20rem; */
+  #mem_card {
+    flex: 0 2 calc(20% - 0px);
+    padding: 10px;
+    border-radius: 20px;
+    background: linear-gradient(
+      75.16deg,
+      rgba(0, 0, 0, 0.95) 70.4%,
+      rgba(255, 255, 255, 0.15) 100.55%
+    );
+    border: 1px solid rgba(255, 0, 0, 0.3);
+    text-align: center;
   }
 `;
 
+export const CardContainer = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+
+  @media (max-width: 765px) {
+    display: flex;
+    justify-content: center;
+  }
+`;
 
 export const Image = styled.div`
-  width: 150px;
-  height: 150px;
+  width: 130px;
+  height: 130px;
   border-radius: 50%;
   border: 5px solid rgba(255, 255, 255, 0.5);
   margin: 0 auto;
   overflow: hidden;
-  object-fit: cover; 
+  object-fit: cover;
 
   img {
     width: 100%;
@@ -120,11 +111,10 @@ export const Image = styled.div`
 
 export const Title = styled.div`
   margin: 30px 0;
-  margin-top:1rem;
+  margin-top: 1rem;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 1fr;
-  
 
   h1 {
     font-size: 1.3rem;
@@ -134,8 +124,8 @@ export const Title = styled.div`
 
   p {
     font-size: 1.3rem;
-    color:white;
-    margin-top:1rem;
+    color: white;
+    margin-top: 1rem;
   }
 `;
 
@@ -196,7 +186,7 @@ export const SocialMedia = styled.div`
   display: flex;
   justify-content: space-between;
   padding: 0px 30px;
-  gap:7px;
+  gap: 7px;
 
   .icons {
     height: 35px;
@@ -205,7 +195,7 @@ export const SocialMedia = styled.div`
     background: linear-gradient(
       108.16deg,
       rgba(255, 255, 255, 0.9) 0.4%,
-      rgba(0 , 0 , 0, 0.95) 00.55%
+      rgba(0, 0, 0, 0.95) 00.55%
     );
     border: 0.5px solid rgba(255, 255, 255, 0.5);
     border-radius: 50%;
@@ -214,13 +204,13 @@ export const SocialMedia = styled.div`
     align-items: center;
     justify-content: center;
     transition: all 0.3s;
-    margin-top:-1.3rem;
+    margin-top: -1.3rem;
 
     .icon {
-      color:white;
+      color: white;
       font-size: 18px;
-      justify-content:center;
-      margin-top:3px;
+      justify-content: center;
+      margin-top: 3px;
     }
   }
 
@@ -234,10 +224,5 @@ export const SocialMedia = styled.div`
     color: white;
     font-size: 21px;
     color: #ffffff;
-   
-
-}
-
-
-
+  }
 `;

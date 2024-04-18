@@ -53,7 +53,7 @@ export const CardsSection = styled.section`
   }
 `;
 
-export const Domains = styled.h1`
+export const Domains = styled.span`
   padding: 20px;
   min-height: 200px;
   width: 48%;
