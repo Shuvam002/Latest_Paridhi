@@ -21,6 +21,7 @@ export const BannerImage = styled.div`
   background-position: center;
   height: 100%;
   width: 40%;
+  background-repeat: no-repeat;
   @media (max-width: 600px) {
     flex-direction: column;
     height: 30%;
