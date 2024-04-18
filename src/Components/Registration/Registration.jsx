@@ -53,26 +53,26 @@ const DomainEvents = {
       "https://lh6.googleusercontent.com/proxy/jK39yGBhSgpcgneAE_-ZhZbV6FKKqF_iPQq7a5_CaTXugcV2Afy1dviVyFFVn0Vt5XudShI9eQXBp5vYaV6Zq7QYF9cG35vLKiPx7cr0aKlcBDFpiRKMnKpX6_UtlRU",
     title: "Triathlon",
     teamSize: 5,
-    fee: 500,
+    fee: 400,
     Descriptions: `"Join our bot racing contest, open to all! Click to sign up and learn the rules for this thrilling challenge. Let the excitement begin!"`,
-    rule: "https://drive.google.com/file/d/1AiLKzuFaDTV1FNH-DWpw4c3zEeY8XyHD/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1H4nvTMy17kmb-M-QO5yi2omS0Kf6-8JF/view?usp=drive_link",
   },
   robo_klassiker: {
     Image:
     "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/627f59e8450c5_robo-scoccer.jpg",
     title: "Robo Klassiker",
     teamSize: 5,
-    fee: 350,
+    fee: 450,
     Descriptions: `Participate in our exclusive bot soccer contest! Bots compete for goals while avoiding penalties. Enroll now and familiarize yourself with the regulations!`,
-    rule: "https://drive.google.com/file/d/1BQe107uZ0M0YT7A3458xjWO4iGj6fhfz/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1LI768THK0ewj_GUghM4eljnyZUiU0kJv/view?usp=drive_link",
   },
   chakravyuh: {
     Image:
       "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
     title: "Chakravyuh",
     teamSize: 1,
-    fee: 50,
-    Descriptions: `Compete in our maze-solving bot challenge: navigate tunnels and reach the exclusive destination. Click to register and learn the rules!`,
+    fee: 60,
+    Descriptions: `Compete in our onspot maze-solving bot challenge: navigate tunnels and reach the exclusive destination. Click to register and learn the rules!`,
     rule: "https://drive.google.com/file/d/1h0SY0c43S8h_q-tHRhcqAA3Tvt2xc7nF/view?usp=sharing",
   },
   striker_clash: {
@@ -81,7 +81,7 @@ const DomainEvents = {
     title: "Striker Clash",
     teamSize: 1,
     fee: 40,
-    Descriptions: `Join our exclusive Robo Carrom competition for all! Register now and uncover the rules for this thrilling event!`,
+    Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
   line_trekker: {

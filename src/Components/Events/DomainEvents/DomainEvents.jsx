@@ -63,7 +63,7 @@ const DomainEvents = () => {
       {
         TitleText: "Chakravyuh",
         Description:
-          "Compete in the maze-solving bot challenge, navigate tunnels, reach the exclusive destination. Click to register and learn rules!",
+          "Compete in the onspot maze-solving bot challenge, navigate tunnels, reach the exclusive destination. Click to register and learn rules!",
         ImageLink:
           "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
         link: "/events/manual_robitics/chakravyuh",
@@ -71,7 +71,7 @@ const DomainEvents = () => {
       {
         TitleText: "Striker Clash",
         Description:
-          "Join the exclusive Robo Carrom competition for all, register now, and discover the rules for this thrilling event!",
+          "Join the exclusive onspot robo carrom competition for all, register now, and discover the rules for this thrilling event!",
         ImageLink:
           "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/manual_robitics/striker_clash",
