@@ -2,7 +2,7 @@ import React, { useEffect } from "react";
 
 const BackgroundAnimation = () => {
   useEffect(() => {
-    const particleCount = 140;
+    const particleCount = window.innerWidth <= 600 ? 40 : 140;
     window.particlesJS("particles-js", {
       particles: {
         number: {

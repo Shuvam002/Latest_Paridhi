@@ -31,7 +31,7 @@ export const Main = styled(Link)`
   align-items: center;
   text-decoration: none;
   @media (max-width: 600px) {
-    height: 331px;
+    min-height: 331px;
     width: 225px;
   }
 `;
@@ -59,7 +59,7 @@ export const Title = styled.div`
   text-align: center;
 `;
 export const SubText = styled.div`
-  height: 25%;
+ min-height: 25%;
   width: 100%;
   color: white;
   padding: 2%;
