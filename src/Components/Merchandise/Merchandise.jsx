@@ -82,7 +82,7 @@ const Merchandise = ({ title, content }) => {
             <div>
               <p>Try this awesome White merchendize</p>
               <div className="price">
-                <del> Rs 299</del> Rs 149
+                <del> Rs 349</del> Rs 299
               </div>
 
               <button style={{ cursor: "pointer" }} onClick={openFormInNewWindow}>Buy Now</button>
@@ -140,7 +140,7 @@ const Merchandise = ({ title, content }) => {
             <div>
               <p>Try this awesome Black merchendize</p>
               <div className="price">
-                <del>Rs 299</del> Rs 149
+                <del>Rs 349</del> Rs 299
               </div>
 
               <button style={{ cursor: "pointer" }} onClick={openFormInNewWindow}>Buy Now</button>
