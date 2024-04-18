@@ -31,8 +31,8 @@ export const Main = styled(Link)`
   align-items: center;
   text-decoration: none;
   @media (max-width: 600px) {
-    height: 331px;
-    width: 225px;
+    /* height: 350px; */
+    width: 300px;
   }
 `;
 
