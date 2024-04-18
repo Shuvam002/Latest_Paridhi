@@ -65,7 +65,6 @@ export const StyledContainer = styled.div`
 `;
 
 export const Container = styled.div`
-<<<<<<< HEAD
   /* height: 20rem;
   width: 20rem; */
   #mem_card {
@@ -79,23 +78,8 @@ export const Container = styled.div`
     );
     border: 1px solid rgba(255, 0, 0, 0.3);
     text-align: center;
-=======
-  flex: 0 2 calc(20% - 0px); 
-  padding: 10px;
-  border-radius: 20px;
-  background: linear-gradient(
-    75.16deg,
-    rgba(0, 0, 0, 0.95) 70.4%,
-    rgba(255, 255, 255, 0.15) 100.55%
-  );
-  border: 1px solid rgba(255 , 0 , 0, 0.3);
-  text-align: center;
-  min-height: 20rem;
-  width:20rem;
-  
+  }
 `;
-
-
 
 export const CardContainer = styled.div`
   display: flex;
