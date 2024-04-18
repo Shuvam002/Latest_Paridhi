@@ -85,7 +85,7 @@ const router = createBrowserRouter(
             <PrePredhiEvents />
           </Suspense>
         }
-      />
+      /> */}
       <Route
         path="events/:Domain"
         element={
@@ -93,7 +93,7 @@ const router = createBrowserRouter(
             <DomainEvents />
           </Suspense>
         }
-      /> */}
+      />
       <Route
         path="profile"
         element={
@@ -110,14 +110,14 @@ const router = createBrowserRouter(
           </Suspense>
         }
       />
-      <Route
+      {/* <Route
         path="events/:Domain/:EventName/register"
         element={
           <Suspense fallback={<Spinner />}>
             <Login />
           </Suspense>
         }
-      />
+      /> */}
       <Route
         path="merchandise"
         element={
@@ -127,7 +127,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="events/:Domain/:EvnetRegistration"
+        path="events/:Domain/:EventName"
         element={
           <Suspense fallback={<Spinner />}>
             <Registration />
