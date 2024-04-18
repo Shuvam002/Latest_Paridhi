@@ -118,7 +118,8 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
-      <Cover>
+    <Title>REGISTRATION BEGINS SOON...STAY TUNED !!!</Title>
+      {/* <Cover>
         <Container>
           <Title>Registration</Title>
 
@@ -238,7 +239,7 @@ const SignUp = () => {
           onSubmit={handleOtpSubmit}
           onClose={() => setOtpPopup(false)}
         />
-      )}
+      )} */}
     </CenteredContainer>
   );
 };

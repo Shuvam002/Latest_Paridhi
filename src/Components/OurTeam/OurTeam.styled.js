@@ -95,19 +95,7 @@ export const Container = styled.div`
   
 `;
 
-export const CardContainer = styled.div`
-  display :flex;
-  flex-wrap: wrap;
-  gap: 1rem; 
-  justify-content: space-between; 
-  
 
-  @media (max-width: 765px) {
-    display : flex;
-    justify-content:center;
->>>>>>> 773b536cc75a780ef352626a9702485d08d05c20
-  }
-`;
 
 export const CardContainer = styled.div`
   display: flex;

@@ -32,7 +32,7 @@ const Navbar = () => {
           )}
         </MenuBtn>
         <NavList $clicked={isClicked}>
-        <NavItem>
+        {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -43,7 +43,7 @@ const Navbar = () => {
             >
               Profile
             </NavLinkName>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
@@ -57,7 +57,7 @@ const Navbar = () => {
               Events
             </NavLinkName>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -68,8 +68,8 @@ const Navbar = () => {
             >
               Workshop
             </NavLinkName>
-          </NavItem>
-          <NavItem>
+          </NavItem> */}
+          {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -80,8 +80,8 @@ const Navbar = () => {
             >
               PreEvents-Paridhi
             </NavLinkName>
-          </NavItem>
-          <NavItem>
+          </NavItem> */}
+          {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -92,7 +92,7 @@ const Navbar = () => {
             >
               Sponsors
             </NavLinkName>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
@@ -127,7 +127,7 @@ const Navbar = () => {
               to="sign_up"
               onClick={handleClick}
             >
-              Sign Up
+              Register
             </NavLinkName>
           </NavItem>
         </NavList>

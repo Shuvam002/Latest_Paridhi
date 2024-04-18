@@ -170,7 +170,7 @@ const Profile = () => {
           </CardsSection>
         </>
       ) : (
-        <h1 style={{ color: "white" }}>YOU ARE NOT LOGED IN !!!</h1>
+        <h1 style={{ color: "white" }}>YOU ARE NOT LOGGED IN !!!</h1>
       )}
     </StyledContainer>
   );
