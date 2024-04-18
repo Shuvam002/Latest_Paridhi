@@ -63,6 +63,8 @@ const OurTeam = () => {
                     }`}
                     alt={data.Name}
                     loading="lazy"
+                    width={200}
+                    height={200}
                   />
                 )}
               </Image>
