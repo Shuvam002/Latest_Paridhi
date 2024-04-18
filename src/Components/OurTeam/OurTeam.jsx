@@ -101,13 +101,14 @@ const OurTeam = () => {
                   </a>
                 </div>
                 <div className="icons">
-                  <a
-                    href={data.gmail}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                <a
+                  href={`mailto:${data.gmail}`}
+                  target="_blank"
+                   rel="noopener noreferrer"
                   >
-                    <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                  </a>
+               <FontAwesomeIcon icon={faEnvelope} className="icon" />
+               </a>
+
                 </div>
               </SocialMedia>
             </motion.div>

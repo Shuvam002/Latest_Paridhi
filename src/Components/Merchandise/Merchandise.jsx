@@ -80,7 +80,7 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome White merchendize</p>
+              <p>Try this awesome White merchandise</p>
               <div className="price">
                 <del> Rs 349</del> Rs 299
               </div>
@@ -138,7 +138,7 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome Black merchendize</p>
+              <p>Try this awesome Black merchandise</p>
               <div className="price">
                 <del>Rs 349</del> Rs 299
               </div>
