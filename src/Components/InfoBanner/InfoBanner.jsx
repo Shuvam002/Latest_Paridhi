@@ -12,12 +12,12 @@ import {
 } from "./InfoBanner.styled";
 
 const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule}) => {
-  console.log("this is the link " , rule);
+  // console.log("this is the link " , rule);
   const openRules = () => {
     window.open(rule);
   };
   const location = useLocation();
-  console.log(location);
+  // console.log(location);
   return (
     <>
       <Banner>
