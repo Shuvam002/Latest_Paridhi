@@ -16,6 +16,7 @@ export const Banner = styled.section`
 export const BannerImage = styled.div`
   background-image: url(${({ $Image }) => $Image});
   background-size: contain;
+  background-repeat:no-repeat;
   border-bottom-left-radius: 30px;
   border-top-left-radius: 30px;
   background-position: center;
