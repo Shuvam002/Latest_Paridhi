@@ -7,7 +7,7 @@ export const Banner = styled.section`
   align-items: center;
   @media (max-width: 600px) {
     flex-direction: column;
-    height: 95%;
+    height: 500px;
     width: 80%;
   }
   border: 2px solid white;
@@ -115,7 +115,7 @@ export const RegisterBtn = styled.button`
   text-decoration: none;
 
   border: none;
-  padding: 0;
+  padding: 0 10px;
   font: inherit;
   cursor: pointer;
   outline: inherit;
@@ -127,6 +127,6 @@ export const RegisterBtn = styled.button`
     width: 80%;
     font-size: 15px;
     letter-spacing: 0.1em;
-    padding: 0.56em;
+    padding: 10px ;
   }
 `;
