@@ -43,20 +43,21 @@ export const ImageBox = styled.div`
   background-image: url(${({ $ImageLink }) => $ImageLink});
   background-size: cover;
   background-position: center;
-
 `;
 
 export const Title = styled.div`
+  text-transform: uppercase;
   display: grid;
   place-content: center;
   height: 20%;
   width: 100%;
-  font-size: x-large;
-  padding: 10%;
-  color: white  ;
+  /* font-size: x-large; */
+  /* padding: 10%; */
+  color: white;
   transform-style: preserve-3d;
   transform: translateZ(200px);
   text-align: center;
+  font-size: 1.4rem;
 `;
 export const SubText = styled.div`
   height: 25%;

@@ -52,15 +52,17 @@ const OurTeam = () => {
               variants={container}
               initial="hidden"
               whileInView="visible"
-              viewport={{once:true,amount:0.5}}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <Image>
                 {data.Image && data.Image.includes("id=") && (
                   <img
-                    src={`https://drive.google.com/thumbnail?id=${
+                    crossorigin="anonymous"
+                    src={`https://drive.lienuc.com/uc?id=${
                       data.Image.split("id=")[1]
                     }`}
                     alt={data.Name}
+                    loading="lazy"
                   />
                 )}
               </Image>

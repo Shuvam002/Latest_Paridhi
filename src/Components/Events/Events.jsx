@@ -14,7 +14,7 @@ const Events = () => {
       link: "/events/coding",
     },
     {
-      TitleText: "Manual_Robotics",
+      TitleText: "Manual Robotics",
       Description:
         "Embark on Paridhi's electrifying robotics challenges—wars, races, mazes, and more... Click for thrilling opportunities!",
       ImageLink:

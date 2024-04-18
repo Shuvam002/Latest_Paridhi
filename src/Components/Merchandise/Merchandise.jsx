@@ -33,9 +33,9 @@ const Merchandise = ({ title, content }) => {
     <Background>
       <CardWrapper>
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ ease: "easeOut", duration: 0.3, delay: 0.2 }}
+          initial={{ opacity:0 }}
+          animate={{ opacity:1 }}
+          transition={{ ease: "ease", duration: 0.3, delay: 0.1 }}
         >
           <CardContainer1>
             <ImageContainer>
