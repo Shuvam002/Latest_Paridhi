@@ -102,7 +102,7 @@ const OurTeam = () => {
                 </div>
                 <div className="icons">
                   <a
-                    href={data.gmail}
+                    href={`mailto:${data.gmail}`}
                     target="_blank"
                     rel="noopener noreferrer"
                   >
