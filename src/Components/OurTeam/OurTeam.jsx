@@ -102,8 +102,8 @@ const OurTeam = () => {
                 </div>
                 <div className="icons">
                 <a
-                  href={`mailto:${data.gmail}`}
-                  target="_blank"
+                   href={`mailto:${data.gmail}`}
+                   target="_blank"
                    rel="noopener noreferrer"
                   >
                <FontAwesomeIcon icon={faEnvelope} className="icon" />

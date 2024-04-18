@@ -89,7 +89,7 @@ export const team_data = [
       },
       {
         Timestamp: "3/2/2024 0:35:32",
-        Image: "https://drive.google.com/uc?id=1FELIfOLwMUiPV7mgM_PpYFujK762q6uc",
+        Image: "https://drive.google.com/open?id=1L0dqqbs7vEk9w84GEsby0Y0BB2FV6svB",
         Name: "Byaivab Sarkar",
         Year: "2nd ",
         fb_link: "https://www.facebook.com/byaivab.sarkar",
@@ -301,7 +301,7 @@ export const team_data = [
       },
       {
         Timestamp: "3/2/2024 0:08:28",
-        Image: "https://drive.google.com/uc?id=1EhxwM4UJ0O0a1K0fwtW1fz9uFwzeo9pn",
+        Image: "https://drive.google.com/open?id=1a-SDvRg1lsmdHJK6VlUjRMQRGuH3nZse",
         Name: "Priyanka Banerjee",
         Year: "4th ",
         fb_link: "https://www.facebook.com/profile.php?id=100065618739179&mibextid=ZbWKwL",
@@ -371,7 +371,7 @@ export const team_data = [
       },
       {
         Timestamp: "2/28/2024 20:59:46",
-       
+        Image: "https://drive.google.com/open?id=1_jANuxhIqpfHK6FqXZml104QML_fAMjP",
         Name: "Reshma Khatun",
         Year: "4th ",
         fb_link: "https://www.facebook.com/profile.php?id=100039947261244&mibextid=JRoKGi",
