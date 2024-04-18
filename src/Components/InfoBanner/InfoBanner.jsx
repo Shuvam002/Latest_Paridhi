@@ -1,4 +1,4 @@
-import { Link, useLocation  } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 import {
   Banner,
   BannerImage,
@@ -11,15 +11,13 @@ import {
   ButtonSection,
 } from "./InfoBanner.styled";
 
-const InfoBanner = ({ title, fee, teamSize, Descriptions, Image }) => {
-  
- 
-  
+const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule}) => {
+  console.log("this is the link " , rule);
   const openRules = () => {
-    window.open("https://www.google.com");
+    window.open(rule);
   };
-const location = useLocation();
-console.log(location);
+  const location = useLocation();
+  console.log(location);
   return (
     <>
       <Banner>
@@ -30,11 +28,11 @@ console.log(location);
           <TeamSize>Team Size: {teamSize}</TeamSize>
           <Description>{Descriptions}</Description>
           <ButtonSection>
-          <RegisterBtn>
-          {/* <Link to={`register`} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}> */}
-            <RegisterBtn>Register Now</RegisterBtn>
-          {/* </Link>  */}
-          </RegisterBtn> 
+            <RegisterBtn>
+              {/* <Link to={register} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}> */}
+              <RegisterBtn>Register Now</RegisterBtn>
+              {/* </Link>  */}
+            </RegisterBtn>
             <RegisterBtn onClick={openRules}>Rules</RegisterBtn>
           </ButtonSection>
         </BannerInfo>
