@@ -1,28 +1,29 @@
 import React, { useState, useEffect } from "react";
 import Layout from "./Layout/Layout";
 import Loading from "./Components/PreLoader/PreLoader";
-import Hero from "./Components/Hero/Hero";
-import Events from "./Components/Events/Events";
-import Profile from "./Components/Profile/Profile";
-import OurTeam from "./Components/OurTeam/OurTeam";
-import DomainEvents from "./Components/Events/DomainEvents/DomainEvents";
-import SignUp from "./Components/SignUp/SignUp";
-import Merchandise from "./Components/Merchandise/Merchandise";
-import Registration from "./Components/Registration/Registration";
 import Spinner from "./Components/Spinner/Spinner";
 import { Route, RouterProvider, createBrowserRouter, createRoutesFromElements } from "react-router-dom";
+
+const Hero = React.lazy(() => import("./Components/Hero/Hero"));
+const Events = React.lazy(() => import("./Components/Events/Events"));
+const Profile = React.lazy(() => import("./Components/Profile/Profile"));
+const OurTeam = React.lazy(() => import("./Components/OurTeam/OurTeam"));
+const DomainEvents = React.lazy(() => import("./Components/Events/DomainEvents/DomainEvents"));
+const SignUp = React.lazy(() => import("./Components/SignUp/SignUp"));
+const Merchandise = React.lazy(() => import("./Components/Merchandise/Merchandise"));
+const Registration = React.lazy(() => import("./Components/Registration/Registration"));
 
 const router = createBrowserRouter(
   createRoutesFromElements(
     <Route path="/" element={<Layout />}>
-      <Route path="" element={<Hero />} />
-      <Route path="events" element={<Events />} />
-      <Route path="our_team" element={<OurTeam />} />
-      <Route path="events/:Domain" element={<DomainEvents />} />
-      <Route path="profile" element={<Profile />} />
-      <Route path="sign_up" element={<SignUp />} />
-      <Route path="merchandise" element={<Merchandise />} />
-      <Route path="events/:Domain/:EventName" element={<Registration />} />
+      <Route path="" element={<React.Suspense fallback={<Spinner />}><Hero /></React.Suspense>} />
+      <Route path="events" element={<React.Suspense fallback={<Spinner />}><Events /></React.Suspense>} />
+      <Route path="our_team" element={<React.Suspense fallback={<Spinner />}><OurTeam /></React.Suspense>} />
+      <Route path="events/:Domain" element={<React.Suspense fallback={<Spinner />}><DomainEvents /></React.Suspense>} />
+      <Route path="profile" element={<React.Suspense fallback={<Spinner />}><Profile /></React.Suspense>} />
+      <Route path="sign_up" element={<React.Suspense fallback={<Spinner />}><SignUp /></React.Suspense>} />
+      <Route path="merchandise" element={<React.Suspense fallback={<Spinner />}><Merchandise /></React.Suspense>} />
+      <Route path="events/:Domain/:EventName" element={<React.Suspense fallback={<Spinner />}><Registration /></React.Suspense>} />
     </Route>
   )
 );
