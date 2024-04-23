@@ -77,6 +77,15 @@ const DomainEvents = {
     Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
+  throne_of_bots: {
+    Image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
+    title: "Throne of Bots",
+    teamSize: "updated soon",
+    fee: "updated soon",
+    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "",
+  },
   line_trekker: {
     Image:
       "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
