@@ -11,7 +11,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 50,
     Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
-    rule: "https://drive.google.com/file/d/1MFENXkvm38r9udH9syUIiUyYacd21wJ5/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1VLLssQKDlXSm8LUCuS2Ivi0ufREwdHK9/view?usp=drive_link",
   },
   web_minds: {
     Image: "https://bizmo.al/wp-content/uploads/2022/03/Web-Dev-Blog.png",
@@ -19,7 +19,7 @@ const DomainEvents = {
     teamSize: 2,
     fee: 100,
     Descriptions: `Engage in the Web Development Challenge spanning two rounds. Top performers advance to the finals, crafting captivating web pages. Finalists vie for cash prizes. Open to all years, this competition offers a platform to showcase skills, with excellence leading to recognition and rewards.`,
-    rule: "https://drive.google.com/file/d/1EP4AOF4C9kOFeG5EqFQgUM1nIL2CYj1Q/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1QHecZlZLDx7lpyY1SvYiGUHkPvoeaSrs/view?usp=drive_link",
   },
   code_quest: {
     Image:
@@ -28,16 +28,9 @@ const DomainEvents = {
     teamSize: 2,
     fee: 150,
     Descriptions: `Competitive Programming contest consists of two rounds: prelims and finals. Top performers in prelims advance to finals for a chance to win lucrative cash prizes. Open to all participants across all years, it promises an exhilarating challenge and rewards excellence in coding prowess.`,
-    rule: "https://drive.google.com/file/d/1dM4AxU0ralbuXRPC0Yy8jP9sRxGE1J_R/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1i0RAs5WzalGAaBnL5a41g4t6e3tCk0RA/view?usp=drive_link",
   },
-  // MobileAppDevelopment: {
-  //   Image:
-  //     "https://images.unsplash.com/photo-1517420704952-d9f39e95b43e?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-  //   title: "Mobile App Development",
-  //   teamSize: 4,
-  //   fee: 250,
-  //   Descriptions: `Open for all years. Mobile App Development Hackathon. <br />1. Participants must form teams of 4. <br />2. Participants will have 24 hours to develop a mobile app. <br />3. Judges will evaluate apps based on functionality, design, and innovation.`,
-  // },
+
   codezen: {
     Image:
       "https://varthana.com/school/wp-content/uploads/2023/02/B193.jpg",
@@ -45,7 +38,7 @@ const DomainEvents = {
     teamSize: 2,
     fee: 100,
     Descriptions: `Join our exclusive CP contest tailored for first-year students and school attendees. The competition features two rounds: prelims and finals. Top performers advance to the finals for a chance to win enticing cash prizes. Don't miss this opportunity to showcase your skills and compete at the highest level!`,
-    rule: "https://drive.google.com/file/d/1EP4AOF4C9kOFeG5EqFQgUM1nIL2CYj1Q/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1vx68j530eil1nM_3qHI3T6jLYQZp4-3p/view?usp=drive_link",
   },
 
   triathlon: {
@@ -214,19 +207,19 @@ const DomainEvents = {
     Image:
       "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
     title: "ElectriQuest",
-    teamSize: "NA",
-    fee: "NA",
+    teamSize: " Maximum 2",
+    fee: "60",
     Descriptions: `Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!`,
-    rule: "",
+    rule: "https://drive.google.com/file/d/1R8-ihJ0IVapK4m3ogxHBWmHs-g454q--/view?usp=sharing",
   },
   powerBlitz: {
     Image:
       "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
     title: "PowerBlitz",
-    teamSize: "NA",
-    fee: "NA",
+    teamSize: "1",
+    fee: "40",
     Descriptions: `Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!`,
-    rule: "",
+    rule: "https://drive.google.com/file/d/1NAubPc8fuwFogeJn886qMYfu3BJRoQ8R/view?usp=sharing",
   },
 };
 
