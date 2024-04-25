@@ -8,13 +8,16 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
-import WorkShop from "./Components/WorkShop/WorkShop";
-import PrePredhiEvents from "./Components/PreParedhiEvents/PrePredhiEvents";
 
 const Hero = React.lazy(() => import("./Components/Hero/Hero"));
 const Events = React.lazy(() => import("./Components/Events/Events"));
 const Profile = React.lazy(() => import("./Components/Profile/Profile"));
+const WorkShop = React.lazy(() => import("./Components/WorkShop/WorkShop"));
+const PrePredhiEvents = React.lazy(() =>
+  import("./Components/PreParedhiEvents/PrePredhiEvents")
+);
 const OurTeam = React.lazy(() => import("./Components/OurTeam/OurTeam"));
+
 const DomainEvents = React.lazy(() =>
   import("./Components/Events/DomainEvents/DomainEvents")
 );
