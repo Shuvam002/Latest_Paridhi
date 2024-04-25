@@ -25,21 +25,18 @@ from {
 `;
 
 export const StyledContainer = styled.div`
-  /* background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;
-  background-position: center; */
   height: 10vh;
   width: 100%;
   position: fixed;
   z-index: 2;
-  top:0;
+  top: 0;
   animation: ${NavDownAnimation} 0.5s ease-out;
-  background: rgba( 255, 255, 255, 0.06 );
+  background: rgba(255, 255, 255, 0.06);
 
-backdrop-filter: blur( 3px );
--webkit-backdrop-filter: blur( 0px );
+  backdrop-filter: blur(50px);
+  -webkit-backdrop-filter: blur(50px);
 
-border: 1px solid rgba( 255, 255, 255, 0.18 );
+  border: 1px solid rgba(255, 255, 255, 0.18);
 `;
 
 export const NavbarContainer = styled.nav`
@@ -87,16 +84,17 @@ export const NavList = styled.ul`
 
   @media (max-width: 1100px) {
     position: fixed;
-    overflow-x: hidden;
-    overflow-y: hidden;
     top: 10vh;
     right: ${({ $clicked }) => ($clicked ? "0" : "-100vw")};
-    background: black;
+
+    backdrop-filter: blur(50px);
     height: 90vh;
     width: 100%;
     display: flex;
     flex-direction: column;
     text-align: center;
+    justify-content: center;
+    /* align-items: center; */
     z-index: 1;
     transition: right 0.4s ease-in-out;
   }
@@ -116,9 +114,9 @@ export const NavItem = styled.li`
   }
 
   @media (max-width: 1100px) {
-    margin: 33px 0;
-    font-size: larger;
-    font-weight: 900;
+    margin: 24px 0;
+    font-size: 19px;
+    font-weight: 400;
 
     &:hover {
       transform: scale(1.2);
