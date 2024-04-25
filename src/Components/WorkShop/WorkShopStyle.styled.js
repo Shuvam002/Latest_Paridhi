@@ -38,7 +38,7 @@ export const Main = styled(Link)`
 `;
 
 export const ImageBox = styled.div`
-  height: 50%;
+  height: 100%;
   width: 100%;
   border-top-right-radius: 11%;
   border-top-left-radius: 11%;

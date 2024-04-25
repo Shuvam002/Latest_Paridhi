@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import { Main, ImageBox, Title, SubText, BtnBox, Button } from "./Card2.styled";
+import { Main, ImageBox, Title, SubText, BtnBox, Button  } from "./Card2.styled";
 
-export const Card2 = ({ ImageLink, TitleText, Description, link }) => {
+export const Card2 = ({ ImageLink, TitleText, Description, Rlink }) => {
   const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
@@ -9,29 +9,29 @@ export const Card2 = ({ ImageLink, TitleText, Description, link }) => {
   };
 
   const openNewTab = () => {
-    window.open("https://www.google.com");
+    window.open(Rlink);
   };
 
   return (
     <>
       <Main
         $height={isClicked ? 500 : 400}
-        $clicked={isClicked ? 560 : 331}
-        to={link}
+        $clicked={isClicked ? 590 : 331}
+        onClick={handleClick}
       >
         <ImageBox $ImageLink={ImageLink}></ImageBox>
         <Title>{TitleText}</Title>
 
         <SubText
           $height={isClicked ? "unset" : "2"}
-          onClick={handleClick}
-          $clicked={isClicked ? "unset" : "1"}
+        
+          $clicked={isClicked ? "unset" : "2"}
         >
           {Description}
         </SubText>
 
         <BtnBox>
-          <Button onClick={openNewTab}>Register Onspot</Button>
+          <Button onClick={openNewTab}>Register Now !</Button>
         </BtnBox>
       </Main>
     </>
