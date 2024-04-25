@@ -8,11 +8,9 @@ const Events = () => {
     {
       TitleText: "CODING",
       Description:
-<<<<<<< HEAD
-        "Explore Paridhi's exhilarating coding` contests—CP, web, debugging—tailored for college as weel as school students. Click the card for exciting opportunities!",
-=======
+
         "Explore Paridhi's exhilarating coding contests—CP, web, debugging—tailored for college as well as school students. Click the card for exciting opportunities!",
->>>>>>> 5a7573e87bc3c3396542af9368a7369755456707
+
       ImageLink:
         "https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg",
       link: "/events/coding",
