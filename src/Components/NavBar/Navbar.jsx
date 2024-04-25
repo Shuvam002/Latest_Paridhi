@@ -117,7 +117,7 @@ const Navbar = () => {
               Our Team
             </NavLinkName>
           </NavItem>
-          {/* <NavItem>
+          <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: "4px 4px 5px #ff0000",
@@ -128,7 +128,7 @@ const Navbar = () => {
             >
               Register
             </NavLinkName>
-          </NavItem> */}
+          </NavItem>
         </NavList>
       </NavbarContainer>
     </StyledContainer>
