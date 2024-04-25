@@ -6,25 +6,13 @@ import { motion } from "framer-motion";
 const PrePredhiEvents = () => {
   const WorkshopData = [
     {
-      TitleText: "Web Dev",
+      TitleText: "Gaming",
       Description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum necessitatibus vero inventore magni in voluptatibus quod nam facere enim iste aspernatur velit ut quisquam aut nobis temporibus, neque ipsa.",
+        "Join us at the Pre-Paridhi Gaming Bash, presented by The ESports Club & Megatronix. Compete in thrilling tournaments like Valorant 2v2, FIFA (1v1), and Mortal Kombat (1v1) for a chance to win big cash prizes. Mark your calendars for April 30th, 2024, at the CSE Seminar Hall. Entry is FREE! Don't miss this opportunity to level up your gaming experience and connect with fellow gamers.",
       ImageLink:
-        "https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      TitleText: "Another Title",
-      Description:
-        "Another description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum necessitatibus vero inventore magni in voluptatibus quod nam facere enim iste aspernatur velit ut quisquam aut nobis temporibus, neque ipsa.",
-      ImageLink:
-        "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      TitleText: "Yet Another Title",
-      Description:
-        "Yet another description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum necessitatibus vero inventore magni in voluptatibus quod nam facere enim iste aspernatur velit ut quisquam aut nobis temporibus, neque ipsa.",
-      ImageLink:
-        "https://images.unsplash.com/photo-1496065187959-7f07b8353c55?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihbcHufWpyG4QCMXaYtaiVKjmUMZ0BkP7an_UGjyRhVIsxyhYHfWd9LMieI1zpHyic9K19oQ7JbH3nSPylCAttm0yA_fbkqlTG0=w1920-h972-rw-v1",
+      Rlink:
+        "https://theesports.club/event/tec-arena-connect-meghand-saha-institute-of-technologyEAQiLR",
     },
   ];
   return (
@@ -46,6 +34,7 @@ const PrePredhiEvents = () => {
               ImageLink={data.ImageLink}
               TitleText={data.TitleText}
               Description={data.Description}
+              Rlink={data.Rlink}
             />
           </motion.div>
         ))}

@@ -8,7 +8,7 @@ const Events = () => {
     {
       TitleText: "CODING",
       Description:
-        "Explore Paridhi's exhilarating coding contests—CP, web, debugging—tailored for college as weel as school students. Click the card for exciting opportunities!",
+        "Explore Paridhi's exhilarating coding` contests—CP, web, debugging—tailored for college as weel as school students. Click the card for exciting opportunities!",
       ImageLink:
         "https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg?width=500&height=300",
       link: "/events/coding",
@@ -21,7 +21,8 @@ const Events = () => {
         "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "/events/manual_robitics",
     },
-    {
+    // a7 c 26
+    { 
       TitleText: "Autonomous Robotics",
       Description:
         "Dive into Paridhi's thrilling autonomous robotics challenges. Click the card for an exciting array of opportunities!",

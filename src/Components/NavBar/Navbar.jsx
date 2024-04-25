@@ -1,4 +1,4 @@
-import  { useState } from "react";
+import { useState } from "react";
 import {
   NavbarContainer,
   Logo,
@@ -32,7 +32,7 @@ const Navbar = () => {
           )}
         </MenuBtn>
         <NavList $clicked={isClicked}>
-        {/* <NavItem>
+          {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -57,7 +57,7 @@ const Navbar = () => {
               Events
             </NavLinkName>
           </NavItem>
-          {/* <NavItem>
+          <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -68,8 +68,8 @@ const Navbar = () => {
             >
               Workshop
             </NavLinkName>
-          </NavItem> */}
-          {/* <NavItem>
+          </NavItem>
+          <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -80,7 +80,7 @@ const Navbar = () => {
             >
               PreEvents-Paridhi
             </NavLinkName>
-          </NavItem> */}
+          </NavItem>
           {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
@@ -117,19 +117,18 @@ const Navbar = () => {
               Our Team
             </NavLinkName>
           </NavItem>
-          <NavItem>
+          {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: "4px 4px 5px #ff0000",
                 color: "#ff0000",
-                
               })}
               to="sign_up"
               onClick={handleClick}
             >
               Register
             </NavLinkName>
-          </NavItem>
+          </NavItem> */}
         </NavList>
       </NavbarContainer>
     </StyledContainer>

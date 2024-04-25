@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Main = styled.div`
-  height: ${({ $height }) => $height}px;
+  min-height: ${({ $height }) => $height}px;
   width: 300px;
   border-radius: 10%;
   padding: 10px;
@@ -19,7 +19,7 @@ export const Main = styled.div`
   transition: height 0.2s ease;
   @media (max-width: 600px) {
     height: ${({ $clicked }) => $clicked}px;
-    width: 225px;
+    width: 260px;
   }
 `;
 
@@ -31,8 +31,10 @@ export const ImageBox = styled.div`
   border-bottom-left-radius: 11%;
   border-bottom-right-radius: 11%;
   background-image: url(${({ $ImageLink }) => $ImageLink});
-  background-size: cover;
+  background-size: contain;
   background-position: center;
+
+  background-repeat: no-repeat;
 `;
 
 export const Title = styled.div`
@@ -63,6 +65,7 @@ export const SubText = styled.p`
   text-align: center;
   @media (max-width: 600px) {
     -webkit-line-clamp: ${({ $clicked }) => $clicked};
+   
   }
 `;
 

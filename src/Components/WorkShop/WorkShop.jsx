@@ -6,32 +6,19 @@ import { motion } from "framer-motion";
 const WorkShop = () => {
   const WorkshopData = [
     {
-      TitleText: "Web Dev",
+      TitleText: "Coding",
       Description:
-        "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum necessitatibus vero inventore magni in voluptatibus quod nam facere enim iste aspernatur velit ut quisquam aut nobis temporibus, neque ipsa.",
+        "Join us at our Competitive Programming and Problem Solving Workshop to refine your coding skills! Whether you're a beginner or an experienced coder, this session caters to all levels. Happening on April 26th, 3:30 PM to 6:00 PM, at the CSE Seminar Hall. Don't miss out on this opportunity to enhance your abilities!",
       ImageLink:
-        "https://github.githubassets.com/assets/GitHub-Mark-ea2971cee799.png",
-    },
-    {
-      TitleText: "Another Title",
-      Description:
-        "Another description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum necessitatibus vero inventore magni in voluptatibus quod nam facere enim iste aspernatur velit ut quisquam aut nobis temporibus, neque ipsa.",
-      ImageLink:
-        "https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    },
-    {
-      TitleText: "Yet Another Title",
-      Description:
-        "Yet another description Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, earum necessitatibus vero inventore magni in voluptatibus quod nam facere enim iste aspernatur velit ut quisquam aut nobis temporibus, neque ipsa.",
-      ImageLink:
-        "https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaW12q1DfAAa3LcM26v4azn7qGqEyZUo2h6mKXjBCTKefiX88M7PMTH1PRQp_aaSkaeMBfN9YEXU8rkpkGfpdveGwlA1nnH_gw=w1920-h972-rw-v1",
+        Rlink: "https://forms.gle/A1kRNvJ3n3fzbf8GA"
     },
   ];
 
   return (
     <>
       <StyledContainer>
-        {WorkshopData.map((data , index) => (
+        {WorkshopData.map((data, index) => (
           <motion.div
             key={index}
             initial={{ scale: 0 }}
@@ -47,6 +34,7 @@ const WorkShop = () => {
               ImageLink={data.ImageLink}
               TitleText={data.TitleText}
               Description={data.Description}
+              Rlink={data.Rlink}
             />
           </motion.div>
         ))}
