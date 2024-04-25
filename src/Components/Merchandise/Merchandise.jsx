@@ -33,9 +33,9 @@ const Merchandise = ({ title, content }) => {
     <Background>
       <CardWrapper>
         <motion.div
-          initial={{ scale: 0 }}
-          animate={{ scale: 1 }}
-          transition={{ ease: "easeOut", duration: 0.3, delay: 0.2 }}
+          initial={{ opacity:0 }}
+          animate={{ opacity:1 }}
+          transition={{ ease: "ease", duration: 0.3, delay: 0.1 }}
         >
           <CardContainer1>
             <ImageContainer>
@@ -80,9 +80,9 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome White merchendize</p>
+              <p>Try this awesome White merchandise</p>
               <div className="price">
-                <del> Rs 299</del> Rs 149
+                <del> Rs 349</del> Rs 299
               </div>
 
               <button style={{ cursor: "pointer" }} onClick={openFormInNewWindow}>Buy Now</button>
@@ -138,9 +138,9 @@ const Merchandise = ({ title, content }) => {
               </span>
             </div>
             <div>
-              <p>Try this awesome Black merchendize</p>
+              <p>Try this awesome Black merchandise</p>
               <div className="price">
-                <del>Rs 299</del> Rs 149
+                <del>Rs 349</del> Rs 299
               </div>
 
               <button style={{ cursor: "pointer" }} onClick={openFormInNewWindow}>Buy Now</button>

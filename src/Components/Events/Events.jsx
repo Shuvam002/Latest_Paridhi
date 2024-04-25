@@ -8,13 +8,17 @@ const Events = () => {
     {
       TitleText: "CODING",
       Description:
+<<<<<<< HEAD
         "Explore Paridhi's exhilarating coding` contests—CP, web, debugging—tailored for college as weel as school students. Click the card for exciting opportunities!",
+=======
+        "Explore Paridhi's exhilarating coding contests—CP, web, debugging—tailored for college as well as school students. Click the card for exciting opportunities!",
+>>>>>>> 5a7573e87bc3c3396542af9368a7369755456707
       ImageLink:
-        "https://assets.thehansindia.com/h-upload/2021/07/31/1092805-tech.jpg?width=500&height=300",
+        "https://assets.entrepreneur.com/content/3x2/2000/1649279368-Ent-2022Python.jpeg",
       link: "/events/coding",
     },
     {
-      TitleText: "Manual_Robotics",
+      TitleText: "Manual Robotics",
       Description:
         "Embark on Paridhi's electrifying robotics challenges—wars, races, mazes, and more... Click for thrilling opportunities!",
       ImageLink:
@@ -39,6 +43,14 @@ const Events = () => {
       link: "/events/civil",
     },
     {
+      TitleText: "Electrical ",
+      Description:
+        "Dive into Paridhi's dynamic electrical domain events: Electroiquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
+      ImageLink:
+        "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
+      link: "/events/electrical",
+    },
+    {
       TitleText: "Gaming ",
       Description:
         "Dive into Paridhi's sensational gaming tournaments featuring BGMI, FIFA, Valorant, and eFootball. Click to uncover thrilling opportunities in the world of gaming!",
@@ -53,14 +65,6 @@ const Events = () => {
       ImageLink:
         "https://images.unsplash.com/photo-1628867578021-c2eaad2ce46c?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "/events/general",
-    },
-    {
-      TitleText: "Electrical ",
-      Description:
-        "Dive into Paridhi's dynamic electrical domain events: Electroiquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
-      ImageLink:
-        "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
-      link: "/events/electrical",
     },
   ];
 

@@ -52,15 +52,19 @@ const OurTeam = () => {
               variants={container}
               initial="hidden"
               whileInView="visible"
-              viewport={{once:true,amount:0.5}}
+              viewport={{ once: true, amount: 0.2 }}
             >
               <Image>
                 {data.Image && data.Image.includes("id=") && (
                   <img
-                    src={`https://drive.google.com/thumbnail?id=${
+                    crossorigin="anonymous"
+                    src={`https://drive.lienuc.com/uc?id=${
                       data.Image.split("id=")[1]
                     }`}
                     alt={data.Name}
+                    loading="lazy"
+                    width={200}
+                    height={200}
                   />
                 )}
               </Image>
@@ -99,14 +103,15 @@ const OurTeam = () => {
                   </a>
                 </div>
                 <div className="icons">
-                  <a
-                    href={data.gmail}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <FontAwesomeIcon icon={faEnvelope} className="icon" />
-                  </a>
+                <a
+                   href={`mailto:${data.gmail}`}
+                   target="_blank"
+                   rel="noopener noreferrer"
+                >
+                       <FontAwesomeIcon icon={faEnvelope} className="icon" />
+                </a>
                 </div>
+                
               </SocialMedia>
             </motion.div>
           </Container>

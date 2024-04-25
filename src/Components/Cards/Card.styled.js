@@ -31,8 +31,13 @@ export const Main = styled(Link)`
   align-items: center;
   text-decoration: none;
   @media (max-width: 600px) {
+<<<<<<< HEAD
     min-height: 331px;
     width: 225px;
+=======
+    /* height: 350px; */
+    width: 300px;
+>>>>>>> 5a7573e87bc3c3396542af9368a7369755456707
   }
 `;
 
@@ -43,20 +48,21 @@ export const ImageBox = styled.div`
   background-image: url(${({ $ImageLink }) => $ImageLink});
   background-size: cover;
   background-position: center;
-
 `;
 
 export const Title = styled.div`
+  text-transform: uppercase;
   display: grid;
   place-content: center;
   height: 20%;
   width: 100%;
-  font-size: x-large;
-  padding: 10%;
-  color: white  ;
+  /* font-size: x-large; */
+  /* padding: 10%; */
+  color: white;
   transform-style: preserve-3d;
   transform: translateZ(200px);
   text-align: center;
+  font-size: 1.4rem;
 `;
 export const SubText = styled.div`
  min-height: 25%;

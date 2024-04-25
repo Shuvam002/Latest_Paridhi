@@ -7,7 +7,7 @@ export const Banner = styled.section`
   align-items: center;
   @media (max-width: 600px) {
     flex-direction: column;
-    height: 95%;
+    height: 600px;
     width: 80%;
   }
   border: 2px solid white;
@@ -23,6 +23,7 @@ export const BannerImage = styled.div`
   height: 100%;
   width: 40%;
   background-repeat: no-repeat;
+  background-size: cover;
   @media (max-width: 600px) {
     flex-direction: column;
     height: 30%;
@@ -45,7 +46,7 @@ export const BannerInfo = styled.section`
   border-top-right-radius: 30px;
   border: 2px solid white;
   @media (max-width: 600px) {
-    height: 80%;
+    height: 70%;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 30px;
@@ -59,28 +60,30 @@ export const Title = styled.h1`
 
   @media (max-width: 600px) {
     font-size: 25px;
+    margin-bottom: -40px;
   }
 `;
 export const RegFee = styled.h2`
   font-weight: bolder;
-
   color: white;
   @media (max-width: 600px) {
     font-size: 20px;
+    margin-bottom: -40px;
   }
 `;
 export const TeamSize = styled.h3`
   font-weight: bolder;
-
   color: white;
   @media (max-width: 600px) {
     font-size: 15px;
+    margin-bottom: -40px;
   }
 `;
 export const Description = styled.h5`
   color: white;
   font-size: larger;
   margin-bottom: 10px;
+  text-align: center;
   @media (max-width: 600px) {
     font-size: small;
     margin-bottom: 10px;
@@ -88,7 +91,7 @@ export const Description = styled.h5`
 `;
 
 export const ButtonSection = styled.div`
-  height: 10%;
+  /* height: 10%; */
   width: 100%;
   display: flex;
   align-items: center;
@@ -96,26 +99,26 @@ export const ButtonSection = styled.div`
   justify-content: space-between;
   justify-content: space-around;
   @media (max-width: 600px) {
+  margin-top: -30px;
     flex-direction: column;
     gap: 10px;
   }
 `;
 export const RegisterBtn = styled.button`
-  height: 100%;
+  height: 40px;
   width: 40%;
   font-family: inherit;
   background-color: #1a1a1a;
   display: flex;
   align-items: center;
   justify-content: center;
-
+  text-transform: uppercase;
   border-radius: 10px;
   background-color: #11172b;
   color: white;
   text-decoration: none;
-
   border: none;
-  padding: 0;
+  padding: 10px;
   font: inherit;
   cursor: pointer;
   outline: inherit;
@@ -123,10 +126,10 @@ export const RegisterBtn = styled.button`
 
   @media (max-width: 600px) {
     flex-direction: column;
-    height: 72%;
-    width: 80%;
+    /* height: 72%; */
+    width: 100%;
     font-size: 15px;
     letter-spacing: 0.1em;
-    padding: 0.56em;
+    padding: 10px;
   }
 `;
