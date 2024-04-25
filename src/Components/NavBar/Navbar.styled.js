@@ -87,7 +87,8 @@ export const NavList = styled.ul`
     top: 10vh;
     right: ${({ $clicked }) => ($clicked ? "0" : "-100vw")};
 
-    backdrop-filter: blur(50px);
+    background-color: rgba(0 , 0 , 0 , 0.95);
+    backdrop-filter:blur(100px);
     height: 90vh;
     width: 100%;
     display: flex;
