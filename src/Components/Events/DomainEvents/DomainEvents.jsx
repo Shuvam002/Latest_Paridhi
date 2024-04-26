@@ -166,7 +166,7 @@ const DomainEvents = () => {
       {
         TitleText: "8 Ball Pool",
         Description:
-          "8 Ball Pool: Unleash your football mastery in thrilling global competitions.",
+          "8 Ball Pool: Unleash the pool champion inside you in this thrilling competition.",
         ImageLink:
           "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgAzRDCGMgSw6OjSIX-7Cn1tOwiAfU8c37Mw&s",
         link: "/events/gaming/ball_pool",
