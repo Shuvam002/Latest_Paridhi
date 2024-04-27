@@ -9,7 +9,7 @@ const DomainEvents = {
       "https://bairesdev.mo.cloudinary.net/blog/2021/01/8-Debugging-Techniques.png?tx=w_1280,q_auto",
     title: "Bug blitz",
     teamSize: 1,
-    fee: 50,
+    fee: 30,
     Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
     rule: "https://drive.google.com/file/d/1VLLssQKDlXSm8LUCuS2Ivi0ufREwdHK9/view?usp=drive_link",
   },
@@ -76,8 +76,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
   throne_of_bots_8kg: {
-<<<<<<< HEAD
-=======
+
     Image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
     title: "Throne of Bots (8kg)",
@@ -96,7 +95,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1DaXcOF3KCYy_Kt3CvQBywKVk5jzkPUkJ/view?usp=sharing",
   },
   throne_of_bots_combo_8_15kg: {
->>>>>>> 872041a07d4e6cc8bba86e19ca521f8022aad4eb
+
     Image:
       "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
     title: "Throne of Bots (8kg)",
@@ -244,7 +243,7 @@ const DomainEvents = {
       "https://www.woodenearth.com/cdn/shop/articles/disadvantages-of-chess_1024x1024.jpg?v=1676970151",
     title: "Chess",
     teamSize: 1,
-    fee: 30,
+    fee: " Rs. 30 for onspot (10th & 12th May) & Rs. 500 for championship(11th May)",
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
     rule: null,
   },

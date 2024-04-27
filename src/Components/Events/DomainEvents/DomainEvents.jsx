@@ -80,11 +80,10 @@ const DomainEvents = () => {
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
-<<<<<<< HEAD
+
           "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
-=======
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
->>>>>>> 872041a07d4e6cc8bba86e19ca521f8022aad4eb
+          
+
         link: "/events/manual_robitics/throne_of_bots_8kg",
       },
       {
@@ -92,11 +91,9 @@ const DomainEvents = () => {
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
-<<<<<<< HEAD
           "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
-=======
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
->>>>>>> 872041a07d4e6cc8bba86e19ca521f8022aad4eb
+          
+
         link: "/events/manual_robitics/throne_of_bots_15kg",
       },
       {
@@ -104,11 +101,11 @@ const DomainEvents = () => {
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
-<<<<<<< HEAD
+
           "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-=======
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
->>>>>>> 872041a07d4e6cc8bba86e19ca521f8022aad4eb
+
+          
+
         link: "/events/manual_robitics/throne_of_bots_combo_8_15kg",
       },
     ],
