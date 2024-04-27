@@ -132,7 +132,7 @@ const DomainEvents = () => {
     ],
     gaming: [
       {
-        TitleText: "Valorant Lan",
+        TitleText: "Valorant LAN",
         Description:
           "Valorant: Tactical prowess meets precise aim in dynamic multiplayer battles.",
         ImageLink:
@@ -140,7 +140,7 @@ const DomainEvents = () => {
         link: "/events/gaming/valorant_lan",
       },
       {
-        TitleText: "Bgmi Lan",
+        TitleText: "BGMI",
         Description:
           "BGMI: Strategic survival, intense firefights, and victory in immersive battlegrounds.",
         ImageLink:
@@ -148,7 +148,7 @@ const DomainEvents = () => {
         link: "/events/gaming/bgmi_lan",
       },
       {
-        TitleText: "E-football",
+        TitleText: "E-football(PES)",
         Description:
           "E-Football: Experience the virtual pitch with skill, strategy, and teamwork.",
         ImageLink:
@@ -156,12 +156,20 @@ const DomainEvents = () => {
         link: "/events/gaming/eFootball",
       },
       {
-        TitleText: "Fifa 24",
+        TitleText: "EAFC 2024",
         Description:
-          "FIFA 2024: Unleash your football mastery in thrilling global competitions.",
+          "EAFC 2024: Dominate the digital pitch with your unrivaled football skills in electrifying worldwide tournaments.",
         ImageLink:
           "https://prod.assets.earlygamecdn.com/images/EA-FC-24-Cover-standard-edition.jpg?transform=banner2x_webp",
         link: "/events/gaming/fifa",
+      },
+      {
+        TitleText: "8 Ball Pool",
+        Description:
+          "8 Ball Pool: Showcase your cue-sport finesse in electrifying international tournaments.",
+        ImageLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgAzRDCGMgSw6OjSIX-7Cn1tOwiAfU8c37Mw&s",
+        link: "/events/gaming/ball_pool",
       },
     ],
     general: [

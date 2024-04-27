@@ -63,6 +63,10 @@ export const SubLogo = styled.img`
   height: 100%;
   width: 100%;
   background-size: cover;
+
+  @media (max-width: 1100px){
+    margin-left:-60px;
+  }
 `;
 
 export const MenuBtn = styled.label`
@@ -71,6 +75,7 @@ export const MenuBtn = styled.label`
   display: none;
 
   @media (max-width: 1100px) {
+    margin-right:-20px;
     display: block;
     color: white;
   }
@@ -84,6 +89,7 @@ export const NavList = styled.ul`
 
   @media (max-width: 1100px) {
     position: fixed;
+    
     top: 10vh;
     right: ${({ $clicked }) => ($clicked ? "0" : "-100vw")};
 

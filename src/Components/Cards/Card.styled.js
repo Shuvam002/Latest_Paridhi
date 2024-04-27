@@ -31,13 +31,11 @@ export const Main = styled(Link)`
   align-items: center;
   text-decoration: none;
   @media (max-width: 600px) {
-<<<<<<< HEAD
     min-height: 331px;
     width: 225px;
-=======
     /* height: 350px; */
     width: 300px;
->>>>>>> 5a7573e87bc3c3396542af9368a7369755456707
+
   }
 `;
 
