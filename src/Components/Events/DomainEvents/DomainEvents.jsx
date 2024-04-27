@@ -105,6 +105,13 @@ const DomainEvents = () => {
         "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
            link: "/events/manual_robitics/throne_of_bots_combo_8_15kg",
       },
+      {
+        TitleText: "Triathlon + Robo Klassiker (Combo)",
+        Description:
+          "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
+        ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+           link: "/events/manual_robitics/soccerandrace_combo",
+      },
     ],
     autonomous_robotics: [
       {

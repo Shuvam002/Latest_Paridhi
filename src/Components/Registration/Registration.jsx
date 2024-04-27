@@ -59,7 +59,7 @@ const DomainEvents = {
   },
   chakravyuh: {
     Image:
-      "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
+      "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
     title: "Chakravyuh",
     teamSize: 1,
     fee: 60,
@@ -121,6 +121,15 @@ const DomainEvents = {
     teamSize: "updated soon",
     fee: "1400",
     Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: null,
+  },
+  soccerandrace_combo: {
+    Image:
+      "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+    title: "Triathlon + Robo Klassiker (Combo)",
+    teamSize: "updated soon",
+    fee: "750",
+    Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
     rule: null,
   },
   line_trekker: {
@@ -219,7 +228,7 @@ const DomainEvents = {
     teamSize: 2,
     fee: 80,
     Descriptions: `Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
   },
   table_tennis: {
     Image:
