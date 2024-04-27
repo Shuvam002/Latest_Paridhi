@@ -1,5 +1,6 @@
 // signup.js
 import React, { useEffect, useState } from "react";
+// import axios from "axios";
 import {
   AltLogin,
   AltLoginButton,
@@ -28,12 +29,19 @@ import {
   CenteredContainer,
   Button,
 } from "./SignUp.styled";
-
+import GIDDisplayBox from "./GIDDisplayBox"; 
+import axios from "axios";
 
 import { gapi } from "gapi-script";
+
 import OTPVerificationPopup from "./OTPVerificationPopup";
 
+
+  
+
 const SignUp = () => {
+  const [showGIDBox, setShowGIDBox] = useState(false);
+
   useEffect(() => {
     function start() {
       gapi.client.init({
@@ -58,33 +66,75 @@ const SignUp = () => {
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
 
+  let config = {
+    url:`http://localhost:6001/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
+    method: "post",
+    headers: {
+      'Access-Control-Allow-Origin': '*',
+      'Access-Control-Allow-Headers': '*',
+      'Access-Control-Allow-Credentials': 'true',
+    }
+
+
+};
+
   const popup = () => {
     showPopup("login-popup");
     setTimeout(() => showPopup("hide"), 3000);
   };
 
-  const handleVerify = () => {
-    // Email validation
-    if (!email.includes("@") || !email.includes(".")) {
-      alert("Please enter a valid email address.");
-      return; // Exit early if email is invalid
-    }
-  
-    // Proceed with OTP verification process
-    setOtpPopup(true); 
-  };
   
 
-  const handleOtpSubmit = (otp) => {
-    if (otp === "123456") {
-      setIsOtpCorrect(true);
-      setOtpPopup(false);
-      setIsVerified(true);
-    } else {
-      setIsOtpCorrect(false);
-      alert("Incorrect OTP. Please enter the correct OTP.");
+  const handleVerify = async() => {
+    
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Please enter a valid email address.");
+       
     }
+
+    else {
+      const response = await axios.request(config);
+      console.log(response);
+      setOtpPopup(true);
+    }
+   
+   
+    
   };
+
+  // const handleOtpSubmit = (otp) => {
+  //   if (otp === "123456") {
+  //     setIsOtpCorrect(true);
+  //     setOtpPopup(false);
+  //     setIsVerified(true);
+  //   } else {
+  //     setIsOtpCorrect(false);
+  //     alert("Incorrect OTP. Please enter the correct OTP.");
+  //   }
+  // };
+
+  // const handleOtpSubmit = async (otp) => {
+  //   try {
+  //     // Make a POST request to the backend API endpoint to verify OTP
+  //     const response = await axios.post("YOUR_BACKEND_OTP_VERIFICATION_ENDPOINT", { email, otp });
+  
+  //     // Check if the OTP verification is successful
+  //     if (response.data.success) {
+  //       // If the OTP is correct, set isVerified to true and close the OTP popup
+  //       setIsVerified(true);
+  //       setOtpPopup(false);
+  //     } else {
+  //       // If OTP verification fails, display an error message
+  //       setIsOtpCorrect(false);
+  //       alert("Incorrect OTP. Please enter the correct OTP.");
+  //     }
+  //   } catch (error) {
+  //     // Handle error, such as displaying an alert or logging the error
+  //     console.error("Error verifying OTP:", error);
+  //     alert("Error verifying OTP. Please try again.");
+  //   }
+  // };
+  
 
   const handleYearChange = (e) => {
     const value = parseInt(e.target.value);
@@ -96,30 +146,49 @@ const SignUp = () => {
     }
   };
 
-  const handleSignUp = () => {
-
-    if (!email.includes("@") || !email.includes(".")) {
-      alert("Please enter a valid email address.");
-      return; 
+  const handleSignUp = async () => {
+    try {
+      const response = await axios.post("http://localhost:6001/megatronix/paridhi/user/registration", {
+        name: name,
+        college: college,
+        year: year,
+        department: department,
+        roll: roll,
+        email: email,
+        phoneNumber: phoneNumber
+      });
+      console.log("Sign up successful:", response.data);
+    } catch (error) {
+      console.error("Error signing up:", error);
     }
-  
-    // Handle sign up logic here
-    console.log("Sign Up details:", {
-      name,
-      college,
-      year,
-      department,
-      roll,
-      email,
-      phoneNumber
-    });
   };
-  
+
+  // const handleSignUp = () => {
+  //   if (!email.includes("@") || !email.includes(".")) {
+  //     alert("Please enter a valid email address.");
+  //     return;
+  //   }
+  //   if (!isVerified) {
+  //     alert("Please verify your email address before signing up.");
+  //     return;
+  //   }
+
+  //   // Handle sign up logic here
+  //   console.log("Sign Up details:", {
+  //     name,
+  //     college,
+  //     year,
+  //     department,
+  //     roll,
+  //     email,
+  //     phoneNumber,
+  //   });
+  //   setShowGIDBox(true);
+  // };
 
   return (
     <CenteredContainer>
-    <Title>REGISTRATION BEGINS SOON...STAY TUNED !!!</Title>
-      {/* <Cover>
+      <Cover>
         <Container>
           <Title>Registration</Title>
 
@@ -239,7 +308,13 @@ const SignUp = () => {
           onSubmit={handleOtpSubmit}
           onClose={() => setOtpPopup(false)}
         />
-      )} */}
+      )}
+      {showGIDBox && (
+        <GIDDisplayBox
+          gid="1234567890" // Dummy GID number
+          onClose={() => setShowGIDBox(false)}
+        />
+      )}
     </CenteredContainer>
   );
 };
