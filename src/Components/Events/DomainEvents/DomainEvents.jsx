@@ -80,14 +80,12 @@ const DomainEvents = () => {
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
-<<<<<<< HEAD
+
 
           "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
           
 
-=======
-          "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
->>>>>>> 865f35d7ca8ef5ab4519db778ba380dc620c5380
+
         link: "/events/manual_robitics/throne_of_bots_8kg",
       },
       {
@@ -97,10 +95,6 @@ const DomainEvents = () => {
         ImageLink:
           "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
           
-<<<<<<< HEAD
-
-=======
->>>>>>> 865f35d7ca8ef5ab4519db778ba380dc620c5380
         link: "/events/manual_robitics/throne_of_bots_15kg",
       },
       {
@@ -108,17 +102,8 @@ const DomainEvents = () => {
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
-<<<<<<< HEAD
-
-          "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-
-          
-
-=======
-          "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-
->>>>>>> 865f35d7ca8ef5ab4519db778ba380dc620c5380
-        link: "/events/manual_robitics/throne_of_bots_combo_8_15kg",
+        "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+           link: "/events/manual_robitics/throne_of_bots_combo_8_15kg",
       },
     ],
     autonomous_robotics: [
