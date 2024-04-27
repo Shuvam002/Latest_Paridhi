@@ -188,11 +188,11 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
-      <Cover>
-        <Container>
-          <Title>Registration</Title>
+      {/* <Cover>
+        <Container> */}
+          <Title>Registration Opens Soon ... Stay Tuned!!!</Title>
 
-          <Underline />
+          {/* <Underline />
 
           <IconContainer>
             <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
@@ -314,7 +314,7 @@ const SignUp = () => {
           gid="1234567890" // Dummy GID number
           onClose={() => setShowGIDBox(false)}
         />
-      )}
+      )} */}
     </CenteredContainer>
   );
 };

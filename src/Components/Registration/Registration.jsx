@@ -75,35 +75,17 @@ const DomainEvents = {
     Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
+  
+  
   throne_of_bots_8kg: {
-
-
-    Image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
-    title: "Throne of Bots (8kg)",
-    teamSize: "5",
-    fee: "600",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1cL4a5e8C6PCQmgjOxz0nG62AVX5Nqz9b/view?usp=sharing",
-  },
-  throne_of_bots_15kg: {
-    Image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
-    title: "Throne of Bots (15kg)",
-    teamSize: "5",
-    fee: "1000",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1DaXcOF3KCYy_Kt3CvQBywKVk5jzkPUkJ/view?usp=sharing",
-  },
-  throne_of_bots_combo_8_15kg: {
 
     Image:
       "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
     title: "Throne of Bots (8kg)",
     teamSize: "5",
     fee: "600",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1cL4a5e8C6PCQmgjOxz0nG62AVX5Nqz9b/view?usp=sharing",
+    Descriptions: `Join our heart-throbbing bot war unfer 8 kg category competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "https://drive.google.com/file/d/1Myrcu_sRe7P9Redloay5RvzU1sHYmoOC/view?usp=drive_link",
   },
   throne_of_bots_15kg: {
     Image:
@@ -111,13 +93,13 @@ const DomainEvents = {
     title: "Throne of Bots (15kg)",
     teamSize: "5",
     fee: "1000",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1DaXcOF3KCYy_Kt3CvQBywKVk5jzkPUkJ/view?usp=sharing",
+    Descriptions: `Join our heart-throbbing bot war competition under 15 kg category open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "https://drive.google.com/file/d/1h3gX_TWCwYn0U7kB_8U3wyFH0u8bvLRd/view?usp=drive_link",
   },
   throne_of_bots_combo_8_15kg: {
     Image:
       "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-    title: "Throne of Bots Combo",
+    title: "Throne of Bots Combo(8 kg + 15 kg)",
     teamSize: "updated soon",
     fee: "1400",
     Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
