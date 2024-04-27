@@ -26,8 +26,8 @@ function showOptionsHandler(obj) {
 }
 
 const Profile = () => {
-  const testUserData = null;
-  const doSomething = async () => {
+  let testUserData = null;
+  const backendRequest = async () => {
     try {
       const GID = JSON.parse(localStorage.getItem("userGID"));
       const response = await axios.get(`/your-backend-endpoint/${GID}`);
@@ -38,7 +38,7 @@ const Profile = () => {
   };
 
   useEffect(() => {
-    doSomething();
+    backendRequest();
   }, []);
 
   const {
