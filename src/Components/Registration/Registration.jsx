@@ -76,27 +76,6 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
   throne_of_bots_8kg: {
-<<<<<<< HEAD
-=======
-    Image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
-    title: "Throne of Bots (8kg)",
-    teamSize: "5",
-    fee: "600",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1cL4a5e8C6PCQmgjOxz0nG62AVX5Nqz9b/view?usp=sharing",
-  },
-  throne_of_bots_15kg: {
-    Image:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
-    title: "Throne of Bots (15kg)",
-    teamSize: "5",
-    fee: "1000",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1DaXcOF3KCYy_Kt3CvQBywKVk5jzkPUkJ/view?usp=sharing",
-  },
-  throne_of_bots_combo_8_15kg: {
->>>>>>> 872041a07d4e6cc8bba86e19ca521f8022aad4eb
     Image:
       "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
     title: "Throne of Bots (8kg)",
@@ -117,7 +96,7 @@ const DomainEvents = {
   throne_of_bots_combo_8_15kg: {
     Image:
       "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-    title: "Throne of Bots",
+    title: "Throne of Bots Combo",
     teamSize: "updated soon",
     fee: "1400",
     Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
@@ -183,7 +162,7 @@ const DomainEvents = {
     teamSize: "Max 5 , Min 4",
     fee: 500,
     Descriptions: `BGMI: Experience strategic survival, intense firefights, and victory in immersive battlegrounds.`,
-    rule: null,
+    rule: "Rules coming soon",
   },
   eFootball: {
     Image:
@@ -201,7 +180,7 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `FIFA 2024: Showcase your football mastery in thrilling global competitions.`,
-    rule: null,
+    rule: "Rules coming soon",
   },
   ball_pool: {
     Image:
@@ -210,7 +189,7 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `8 Ball Pool 2024: Showcase your cue-sport finesse in electrifying international tournaments`,
-    rule: null,
+    rule: "Rules coming soon",
   },
   carrom: {
     Image:
@@ -219,7 +198,7 @@ const DomainEvents = {
     teamSize: 2,
     fee: 80,
     Descriptions: `Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.`,
-    rule: null,
+    rule: "Rules coming soon",
   },
   table_tennis: {
     Image:
@@ -228,7 +207,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 70,
     Descriptions: `Embark on a thrilling table tennis journey to rediscover childhood joy. Click to register and uncover the rules today!`,
-    rule: null,
+    rule: "Rules coming soon",
   },
   binge_quiz: {
     Image:
@@ -246,7 +225,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 30,
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: null,
+    rule: "Rules coming soon",
   },
   darts: {
     Image:
