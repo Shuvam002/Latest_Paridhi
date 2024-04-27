@@ -30,10 +30,8 @@ const DomainEvents = {
     Descriptions: `Competitive Programming contest consists of two rounds: prelims and finals. Top performers in prelims advance to finals for a chance to win lucrative cash prizes. Open to all participants across all years, it promises an exhilarating challenge and rewards excellence in coding prowess.`,
     rule: "https://drive.google.com/file/d/1i0RAs5WzalGAaBnL5a41g4t6e3tCk0RA/view?usp=drive_link",
   },
-
   codezen: {
-    Image:
-      "https://varthana.com/school/wp-content/uploads/2023/02/B193.jpg",
+    Image: "https://varthana.com/school/wp-content/uploads/2023/02/B193.jpg",
     title: "Codezen",
     teamSize: 2,
     fee: 100,
@@ -52,7 +50,7 @@ const DomainEvents = {
   },
   robo_klassiker: {
     Image:
-    "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/627f59e8450c5_robo-scoccer.jpg",
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/627f59e8450c5_robo-scoccer.jpg",
     title: "Robo Klassiker",
     teamSize: 5,
     fee: 450,
@@ -77,14 +75,32 @@ const DomainEvents = {
     Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
-  throne_of_bots: {
+  throne_of_bots_8kg: {
+    Image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
+    title: "Throne of Bots (8kg)",
+    teamSize: "5",
+    fee: "600",
+    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "https://drive.google.com/file/d/1cL4a5e8C6PCQmgjOxz0nG62AVX5Nqz9b/view?usp=sharing",
+  },
+  throne_of_bots_15kg: {
+    Image:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
+    title: "Throne of Bots (15kg)",
+    teamSize: "5",
+    fee: "1000",
+    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "https://drive.google.com/file/d/1DaXcOF3KCYy_Kt3CvQBywKVk5jzkPUkJ/view?usp=sharing",
+  },
+  throne_of_bots_combo_8_15kg: {
     Image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
     title: "Throne of Bots",
     teamSize: "updated soon",
-    fee: "updated soon",
+    fee: "1400",
     Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "",
+    rule: null,
   },
   line_trekker: {
     Image:
@@ -132,22 +148,21 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/13nbgR0L5Lkf8mmQWeA-La8kbwOjVpMMw/view?usp=sharing",
   },
   valorant_lan: {
-    Image:
-      "https://stanforddaily.com/wp-content/uploads/2020/08/image-2.png",
+    Image: "https://stanforddaily.com/wp-content/uploads/2020/08/image-2.png",
     title: "Valorant Lan",
-    teamSize: "NA",
-    fee: "NA",
+    teamSize: "Max 6 , Min 5",
+    fee: 500,
     Descriptions: `"Valorant: Where tactical prowess meets precise aim in dynamic multiplayer battles."`,
-    rule: "",
+    rule: "https://drive.google.com/file/d/1Q_A8Hw-w6iLLZq6gxgaUJ159C6-UTmvd/view?usp=sharing",
   },
   bgmi_lan: {
     Image:
       "https://images.hindustantimes.com/tech/img/2021/11/28/960x540/986051-pubg-mobile-bgmi_1628314432587_1638104772146.jpg",
     title: "BGMI Lan",
-    teamSize: "NA",
-    fee: "NA",
+    teamSize: "Max 5 , Min 4",
+    fee: 500,
     Descriptions: `BGMI: Experience strategic survival, intense firefights, and victory in immersive battlegrounds.`,
-    rule: "",
+    rule: null,
   },
   eFootball: {
     Image:
@@ -156,7 +171,7 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `E-Football: Dive into the virtual pitch with skill, strategy, and teamwork.`,
-    rule: "",
+    rule: "https://drive.google.com/file/d/1sXw8a8PeVAq7_vCDTaxeTbgisSMhfhun/view?usp=sharing",
   },
   fifa: {
     Image:
@@ -165,7 +180,7 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `FIFA 2024: Showcase your football mastery in thrilling global competitions.`,
-    rule: "",
+    rule: null,
   },
   ball_pool: {
     Image:
@@ -174,9 +189,8 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `8 Ball Pool 2024: Showcase your cue-sport finesse in electrifying international tournaments`,
-    rule: "",
+    rule: null,
   },
-
   carrom: {
     Image:
       "https://www.mpl.live/blog/wp-content/uploads/2020/11/shutterstock_1106162195-scaled.jpg",
@@ -184,7 +198,7 @@ const DomainEvents = {
     teamSize: 2,
     fee: 80,
     Descriptions: `Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.`,
-    rule: "",
+    rule: null,
   },
   table_tennis: {
     Image:
@@ -193,7 +207,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 70,
     Descriptions: `Embark on a thrilling table tennis journey to rediscover childhood joy. Click to register and uncover the rules today!`,
-    rule: "",
+    rule: null,
   },
   binge_quiz: {
     Image:
@@ -211,7 +225,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 30,
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: "",
+    rule: null,
   },
   darts: {
     Image:
@@ -220,7 +234,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 30,
     Descriptions: `Test your aim with dart challenges! Click to register and learn the rules. Unveil your aiming prowess in this thrilling game.`,
-    rule: "",
+    rule: null,
   },
   electriQuest: {
     Image:

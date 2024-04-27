@@ -11,13 +11,11 @@ import {
   ButtonSection,
 } from "./InfoBanner.styled";
 
-const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule}) => {
-  // console.log("this is the link " , rule);
+const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule }) => {
   const openRules = () => {
-    window.open(rule);
+    rule ? window.open(rule) : NaN;
   };
-  const location = useLocation();
-  // console.log(location);
+
   return (
     <>
       <Banner>
@@ -29,11 +27,22 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule}) => {
           <Description>{Descriptions}</Description>
           <ButtonSection>
             {/* <RegisterBtn> */}
-              {/* <Link to={register} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}> */}
-              <RegisterBtn style={{background:"#151515",cursor:"not-allowed",padding:"10px"}} disabled>Registration opens soon</RegisterBtn>
-              {/* </Link>  */}
+            {/* <Link to={register} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}> */}
+            <RegisterBtn
+              style={{
+                background: "#151515",
+                cursor: "not-allowed",
+                padding: "10px",
+              }}
+              disabled
+            >
+              Registration opens soon
+            </RegisterBtn>
+            {/* </Link>  */}
             {/* </RegisterBtn> */}
-            <RegisterBtn onClick={openRules}>Rules</RegisterBtn>
+            <RegisterBtn onClick={openRules}>
+              {!rule ? "Rules will Be given soon" : "Rule"}
+            </RegisterBtn>
           </ButtonSection>
         </BannerInfo>
       </Banner>
