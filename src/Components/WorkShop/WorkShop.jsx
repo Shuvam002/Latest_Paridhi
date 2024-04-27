@@ -11,7 +11,7 @@ const WorkShop = () => {
         "Join us at our Competitive Programming and Problem Solving Workshop to refine your coding skills! Whether you're a beginner or an experienced coder, this session caters to all levels. Happening on April 26th, 3:30 PM to 6:00 PM, at the CSE Seminar Hall. Don't miss out on this opportunity to enhance your abilities!",
       ImageLink:
         "https://lh3.googleusercontent.com/u/0/drive-viewer/AKGpihaW12q1DfAAa3LcM26v4azn7qGqEyZUo2h6mKXjBCTKefiX88M7PMTH1PRQp_aaSkaeMBfN9YEXU8rkpkGfpdveGwlA1nnH_gw=w1920-h972-rw-v1",
-        Rlink: "https://forms.gle/A1kRNvJ3n3fzbf8GA"
+        Rlink: ""
     },
   ];
 

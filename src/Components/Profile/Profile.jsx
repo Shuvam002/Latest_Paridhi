@@ -6,7 +6,6 @@ import {
   CardsSection,
 } from "./Profile.styled";
 
-
 function showCardHandler(obj) {
   for (let key in obj) {
     if (obj[key]) {
@@ -27,20 +26,19 @@ function showOptionsHandler(obj) {
 }
 
 const Profile = () => {
-  const [testUserData, setTestUserData] = useState(null);
-
-  const doSomething = async () => {
+  let testUserData = null;
+  const backendRequest = async () => {
     try {
       const GID = JSON.parse(localStorage.getItem("userGID"));
       const response = await axios.get(`/your-backend-endpoint/${GID}`);
-      setTestUserData(response.data);
+      return (testUserData = JSON.parse(response.data) || null);
     } catch (error) {
       console.error("Error fetching data: >>>>", error);
     }
   };
 
   useEffect(() => {
-    doSomething();
+    backendRequest();
   }, []);
 
   const {
@@ -103,7 +101,7 @@ const Profile = () => {
 
   return (
     <StyledContainer>
-      {null ? (
+      {testUserData ? (
         <>
           <MainInfo>
             <img
@@ -113,14 +111,14 @@ const Profile = () => {
               srcSet="Profile Image "
               style={{ borderRadius: "50px", margin: "auto" }}
             />
-            <h1>Name : {userData.name} </h1>
-            <h1>GID : {userData.gid} </h1>
-            <h1>Year : {userData.year}</h1>
-            <h1>Department : {userData.department}</h1>
-            <h1>Roll No. : {userData.roll}</h1>
-            <h1>E - Mail : {userData.email}</h1>
-            <h1>Phone : {userData.phoneNumber}</h1>
-            <h1>College : {userData.college} </h1>
+            <h1>Name : {name} </h1>
+            <h1>GID : {gid} </h1>
+            <h1>Year : {year}</h1>
+            <h1>Department : {department}</h1>
+            <h1>Roll No. : {roll}</h1>
+            <h1>E - Mail : {email}</h1>
+            <h1>Phone : {phoneNumber}</h1>
+            <h1>College : {college} </h1>
           </MainInfo>
 
           {

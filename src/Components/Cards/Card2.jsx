@@ -31,7 +31,9 @@ export const Card2 = ({ ImageLink, TitleText, Description, Rlink }) => {
         </SubText>
 
         <BtnBox>
-          <Button onClick={openNewTab}>Register Now !</Button>
+          <Button onClick={Rlink ? openNewTab : null}>
+             {Rlink ? "Register Now!" : "Registration Closed"}
+          </Button>
         </BtnBox>
       </Main>
     </>

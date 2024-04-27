@@ -15,7 +15,7 @@ const DomainEvents = () => {
           "https://bairesdev.mo.cloudinary.net/blog/2021/01/8-Debugging-Techniques.png?tx=w_1280,q_auto",
         link: "/events/coding/Bug_blitz",
       },
-      
+
       {
         TitleText: "Web minds",
         Description:
@@ -41,7 +41,6 @@ const DomainEvents = () => {
           "https://varthana.com/school/wp-content/uploads/2023/02/B193.jpg",
         link: "/events/coding/codezen",
       },
-
     ],
     manual_robitics: [
       {
@@ -77,14 +76,29 @@ const DomainEvents = () => {
         link: "/events/manual_robitics/striker_clash",
       },
       {
-        TitleText: "Throne of Bots",
+        TitleText: "Throne of Bots (8kg)",
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
-          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ91W-T2QbTzyIhDKC_dnG8GMwBo4f7EiAgh5RR6m_7shXNdLb7gz9-PE9ENxAVhV2bUGY&usqp=CAU",
-        link: "/events/manual_robitics/throne_of_bots",
+          "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
+        link: "/events/manual_robitics/throne_of_bots_8kg",
       },
-      
+      {
+        TitleText: "Throne of Bots (15kg)",
+        Description:
+          "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
+        ImageLink:
+          "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
+        link: "/events/manual_robitics/throne_of_bots_15kg",
+      },
+      {
+        TitleText: "Throne of Bots (Combo 8kg & 15kg)",
+        Description:
+          "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
+        ImageLink:
+          "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+        link: "/events/manual_robitics/throne_of_bots_combo_8_15kg",
+      },
     ],
     autonomous_robotics: [
       {
