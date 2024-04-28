@@ -113,27 +113,27 @@ const SignUp = () => {
   //   }
   // };
 
-  // const handleOtpSubmit = async (otp) => {
-  //   try {
-  //     // Make a POST request to the backend API endpoint to verify OTP
-  //     const response = await axios.post("YOUR_BACKEND_OTP_VERIFICATION_ENDPOINT", { email, otp });
-  
-  //     // Check if the OTP verification is successful
-  //     if (response.data.success) {
-  //       // If the OTP is correct, set isVerified to true and close the OTP popup
-  //       setIsVerified(true);
-  //       setOtpPopup(false);
-  //     } else {
-  //       // If OTP verification fails, display an error message
-  //       setIsOtpCorrect(false);
-  //       alert("Incorrect OTP. Please enter the correct OTP.");
-  //     }
-  //   } catch (error) {
-  //     // Handle error, such as displaying an alert or logging the error
-  //     console.error("Error verifying OTP:", error);
-  //     alert("Error verifying OTP. Please try again.");
-  //   }
-  // };
+  const handleOtpSubmit = async (otp) => {
+    try {
+      // Make a POST request to the backend API endpoint to verify OTP
+      const response = await axios.post(`http://localhost:6001/megatronix/paridhi/user/registration/verify-otp`, { email, otp });
+      console.log(response);
+      // Check if the OTP verification is successful
+      if (response.status === 200) {
+        // If the OTP is correct, set isVerified to true and close the OTP popup
+        setIsVerified(true);
+        setOtpPopup(false);
+      } else {
+        // If OTP verification fails, display an error message
+        setIsOtpCorrect(false);
+        alert("Incorrect OTP. Please enter the correct OTP.");
+      }
+    } catch (error) {
+      // Handle error, such as displaying an alert or logging the error
+      console.error("Error verifying OTP:", error);
+      alert("Error verifying OTP. Please try again.");
+    }
+  };
   
 
   const handleYearChange = (e) => {
@@ -155,9 +155,11 @@ const SignUp = () => {
         department: department,
         roll: roll,
         email: email,
-        phoneNumber: phoneNumber
+        phoneNumber: phoneNumber,
+        emailVerified: isVerified
       });
       console.log("Sign up successful:", response.data);
+      localStorage.setItem("user", (response.data));
     } catch (error) {
       console.error("Error signing up:", error);
     }
@@ -188,11 +190,11 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
-      {/* <Cover>
-        <Container> */}
-          <Title>Registration Opens Soon ... Stay Tuned!!!</Title>
+      <Cover>
+        <Container> 
+          <Title>Registration</Title>
 
-          {/* <Underline />
+           <Underline />
 
           <IconContainer>
             <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
@@ -314,7 +316,7 @@ const SignUp = () => {
           gid="1234567890" // Dummy GID number
           onClose={() => setShowGIDBox(false)}
         />
-      )} */}
+      )} 
     </CenteredContainer>
   );
 };
