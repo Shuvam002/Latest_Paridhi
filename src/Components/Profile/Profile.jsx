@@ -30,7 +30,9 @@ const Profile = () => {
   const backendRequest = async () => {
     try {
       const GID = JSON.parse(localStorage.getItem("userGID"));
-      const response = await axios.get(`/your-backend-endpoint/${GID}`);
+      const response = await axios.get(
+        `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
+      );
       return (testUserData = JSON.parse(response.data) || null);
     } catch (error) {
       console.error("Error fetching data: >>>>", error);
