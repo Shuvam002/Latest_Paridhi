@@ -9,7 +9,7 @@ const DomainEvents = {
       "https://bairesdev.mo.cloudinary.net/blog/2021/01/8-Debugging-Techniques.png?tx=w_1280,q_auto",
     title: "Bug blitz",
     teamSize: 1,
-    fee: 50,
+    fee: 30,
     Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
     rule: "https://drive.google.com/file/d/1VLLssQKDlXSm8LUCuS2Ivi0ufREwdHK9/view?usp=drive_link",
   },
@@ -59,7 +59,7 @@ const DomainEvents = {
   },
   chakravyuh: {
     Image:
-      "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
+      "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
     title: "Chakravyuh",
     teamSize: 1,
     fee: 60,
@@ -75,14 +75,17 @@ const DomainEvents = {
     Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
   },
+  
+  
   throne_of_bots_8kg: {
+
     Image:
       "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
     title: "Throne of Bots (8kg)",
     teamSize: "5",
     fee: "600",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1cL4a5e8C6PCQmgjOxz0nG62AVX5Nqz9b/view?usp=sharing",
+    Descriptions: `Join our heart-throbbing bot war unfer 8 kg category competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "https://drive.google.com/file/d/1Myrcu_sRe7P9Redloay5RvzU1sHYmoOC/view?usp=drive_link",
   },
   throne_of_bots_15kg: {
     Image:
@@ -90,16 +93,25 @@ const DomainEvents = {
     title: "Throne of Bots (15kg)",
     teamSize: "5",
     fee: "1000",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1DaXcOF3KCYy_Kt3CvQBywKVk5jzkPUkJ/view?usp=sharing",
+    Descriptions: `Join our heart-throbbing bot war competition under 15 kg category open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: "https://drive.google.com/file/d/1h3gX_TWCwYn0U7kB_8U3wyFH0u8bvLRd/view?usp=drive_link",
   },
   throne_of_bots_combo_8_15kg: {
     Image:
       "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-    title: "Throne of Bots Combo",
+    title: "Throne of Bots Combo(8 kg + 15 kg)",
     teamSize: "updated soon",
     fee: "1400",
     Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+    rule: null,
+  },
+  soccerandrace_combo: {
+    Image:
+      "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+    title: "Triathlon + Robo Klassiker (Combo)",
+    teamSize: "updated soon",
+    fee: "750",
+    Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
     rule: null,
   },
   line_trekker: {
@@ -198,7 +210,7 @@ const DomainEvents = {
     teamSize: 2,
     fee: 80,
     Descriptions: `Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
   },
   table_tennis: {
     Image:
@@ -223,7 +235,7 @@ const DomainEvents = {
       "https://www.woodenearth.com/cdn/shop/articles/disadvantages-of-chess_1024x1024.jpg?v=1676970151",
     title: "Chess",
     teamSize: 1,
-    fee: 30,
+    fee: " Rs. 30 for onspot (10th & 12th May) & Rs. 500 for championship(11th May)",
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
     rule: "Rules coming soon",
   },

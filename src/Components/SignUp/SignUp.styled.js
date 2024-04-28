@@ -3,15 +3,15 @@ export const CenteredContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  overflow: hidden; /* Prevent scrolling */
   /* background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover; */
+  background-size: cover;  */
   height: 100vh;
-  width: 100vw;
-  position: fixed;
+  width: 100vw; /* Set width to 100vw to cover the whole page */
+  position: fixed; /* Fix the background position */
   top: 0;
   left: 0;
-  z-index: 1; 
+  z-index: 1; /* Send the background to the back */
 `;
 
 export const Cover = styled.div`
@@ -20,20 +20,20 @@ export const Cover = styled.div`
   font-family: "Jost", sans-serif;
   width: 30%;
   @media (max-width: 800px) {
-    width: 80%;
+    width: 80%; /* Adjust the width as per your requirements */
   }
-  margin-top:3rem;
+  height:70%;
 `;
 
 export const BackgroundImage = styled.div`
   background-size: cover;
   background-position: center;
-  height: 100%;
+  height: 100%; /* Set the height to cover the entire viewport */
 `;
 
 export const Container = styled.div`
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 20px;
+  border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.9);
   position: relative;
   border-radius: 0.1rem;
@@ -111,16 +111,18 @@ export const Underline = styled.div`
 `;
 
 export const SignUpButton = styled.div`
-  width: 35%;
-  padding:0.5rem;
+  width: 30%;
+  height: 3em;
   color: white;
-  background-color: rgb(255, 101, 96);n
+  background-color: rgb(255, 101, 96);
   display: flex;
   transition: 0.05s;
   border-radius: 4rem;
   cursor: pointer;
   margin-bottom: 2%;
+  justify-content:center;
   text-align:center;
+  padding-top:3%;
   font-size:1.2rem;
   &:hover {
     border: 3px solid rgb(231, 231, 231);
@@ -265,9 +267,12 @@ export const Button = styled.div`
   &.fa {
     color: rgb(125, 125, 125);
     margin-left: 1rem;
+    /* margin-right: 1rem; */
+    // margin-top: .7rem;
   }
   &.Verify {
     font-size: 1rem;
+    /* Add styles for the Verify button */
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 

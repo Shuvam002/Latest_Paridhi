@@ -5,6 +5,7 @@ import {
   MainInfo,
   CardsSection,
 } from "./Profile.styled";
+import axios from "axios";
 
 function showCardHandler(obj) {
   for (let key in obj) {
@@ -26,25 +27,41 @@ function showOptionsHandler(obj) {
 }
 
 const Profile = () => {
-  let testUserData = null;
+  const GID = localStorage.getItem("user");
+  const [testUserData, setTestUserData] = useState(null);
   const backendRequest = async () => {
     try {
+<<<<<<< HEAD
       const GID = JSON.parse(localStorage.getItem("userGID"));
       const response = await axios.get(
         `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
       );
       return (testUserData = JSON.parse(response.data) || null);
+=======
+      const GIDFetch = await fetch(`http://localhost:6001/megatronix/paridhi/user/profile/${GID}`)
+      .then((res) => {
+        return res.json();
+      })
+      .then((data) => {
+        console.log(data);
+        setTestUserData(data);
+        return data;
+      })
+      console.log(GIDFetch);
+      // testUserData=GIDFetch;
+>>>>>>> aeef0298ad5670888ae034dd5a1a3ee728000b0b
     } catch (error) {
       console.error("Error fetching data: >>>>", error);
     }
   };
 
+
   useEffect(() => {
     backendRequest();
   }, []);
 
+ console.log(testUserData);
   const {
-    id,
     name,
     college,
     year,
@@ -170,7 +187,7 @@ const Profile = () => {
           </CardsSection>
         </>
       ) : (
-        <h1 style={{ color: "white" }}>YOU ARE NOT LOGGED IN !!!</h1>
+        <h1 style={{ color: "white" }}>YOU ARE NOT REGISTERED YET !!!</h1>
       )}
     </StyledContainer>
   );
