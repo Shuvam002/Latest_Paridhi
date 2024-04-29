@@ -18,10 +18,18 @@ const Events = () => {
     {
       TitleText: "Manual Robotics",
       Description:
-        "Embark on Paridhi's electrifying robotics challenges—wars, races, mazes, and more... Click for thrilling opportunities!",
+        "Embark on Paridhi's electrifying robotics challenges, races, mazes, and more... Click for thrilling opportunities!",
       ImageLink:
         "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       link: "/events/manual_robitics",
+    },
+    {
+      TitleText: "Combat Robotics",
+      Description:
+        "Embark on Paridhi's electrifying robotics challenges—wars and more... Click for thrilling opportunities!",
+      ImageLink:
+        "https://i0.wp.com/makezine.com/wp-content/uploads/2022/04/10-rules-robo-combat__JB62062_3-Jon-C-R-Bennett.jpg?fit=1200%2C800&ssl=1",
+      link: "/events/combat_robitics",
     },
     // a7 c 26
     { 
