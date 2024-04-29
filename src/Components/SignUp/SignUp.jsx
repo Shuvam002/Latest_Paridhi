@@ -65,6 +65,7 @@ const SignUp = () => {
   const [isVerified, setIsVerified] = useState(false);
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
+  const[gidResponse, setGidResponse] = useState(null);
 
   let config = {
     url:`http://localhost:6001/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
@@ -156,10 +157,13 @@ const SignUp = () => {
         roll: roll,
         email: email,
         phoneNumber: phoneNumber,
-        emailVerified: isVerified
+        emailVerified: isVerified,
       });
       console.log("Sign up successful:", response.data);
+      setGidResponse(response.data);
       localStorage.setItem("user", (response.data));
+      //changed
+      setShowGIDBox(true);
     } catch (error) {
       console.error("Error signing up:", error);
     }
@@ -313,7 +317,9 @@ const SignUp = () => {
       )}
       {showGIDBox && (
         <GIDDisplayBox
-          gid="1234567890" // Dummy GID number
+          // gid="1234567890" // Dummy GID number
+          //changed
+          gid={gidResponse}
           onClose={() => setShowGIDBox(false)}
         />
       )} 
