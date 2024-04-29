@@ -211,15 +211,12 @@ const Profile = () => {
             )}
           </CardsSection>
         </>
-<<<<<<< HEAD
+
       )  : <h1 style={{ color: "white" }}>{
         GID ? "": "You are not Registered !!" }</h1>
       }
-=======
-      ) : (
-        <h1 style={{ color: "white" }}>{!testUserData?"YOU are not login !!": "" }</h1>
-      )}
->>>>>>> 49cc517c0a766a81f54e69728c4aeb42a750a1e3
+
+      
     </StyledContainer>
   );
 };

@@ -319,11 +319,7 @@ const SignUp = () => {
         <GIDDisplayBox
           // gid="1234567890" // Dummy GID number
           //changed
-<<<<<<< HEAD
           gid={gidResponse}
-=======
-          gid={response.data}
->>>>>>> 49cc517c0a766a81f54e69728c4aeb42a750a1e3
           onClose={() => setShowGIDBox(false)}
         />
       )} 
