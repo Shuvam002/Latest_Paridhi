@@ -160,6 +160,8 @@ const SignUp = () => {
       });
       console.log("Sign up successful:", response.data);
       localStorage.setItem("user", (response.data));
+      //changed
+      setShowGIDBox(true);
     } catch (error) {
       console.error("Error signing up:", error);
     }
@@ -313,7 +315,9 @@ const SignUp = () => {
       )}
       {showGIDBox && (
         <GIDDisplayBox
-          gid="1234567890" // Dummy GID number
+          // gid="1234567890" // Dummy GID number
+          //changed
+          gid={response.data}
           onClose={() => setShowGIDBox(false)}
         />
       )} 
