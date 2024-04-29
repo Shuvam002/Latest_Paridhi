@@ -39,7 +39,10 @@ const Profile = () => {
   const backendRequest = async () => {
     try {
       const GIDFetch = await fetch(
-       `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
+
+
+        `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
+
       )
         .then((res) => {
           return res.json();
@@ -61,6 +64,7 @@ const Profile = () => {
 
   console.log(testUserData);
   const {
+    id,
     name,
     college,
     year,
@@ -197,11 +201,25 @@ const Profile = () => {
             ) : (
               <></>
             )}
+            {showCardHandler(domainGenral) ? (
+              <Domains>
+                <h1>Genral</h1>
+                {showOptionsHandler(domainGenral).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
           </CardsSection>
         </>
+<<<<<<< HEAD
       )  : <h1 style={{ color: "white" }}>{
         GID ? "": "You are not Registered !!" }</h1>
       }
+=======
+      ) : (
+        <h1 style={{ color: "white" }}>{!testUserData?"YOU are not login !!": "" }</h1>
+      )}
+>>>>>>> 49cc517c0a766a81f54e69728c4aeb42a750a1e3
     </StyledContainer>
   );
 };
