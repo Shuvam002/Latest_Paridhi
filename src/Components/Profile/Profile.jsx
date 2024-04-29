@@ -31,15 +31,17 @@ const Profile = () => {
   const [testUserData, setTestUserData] = useState(null);
   const backendRequest = async () => {
     try {
-      const GIDFetch = await fetch(`http://localhost:6001/megatronix/paridhi/user/profile/${GID}`)
-      .then((res) => {
-        return res.json();
-      })
-      .then((data) => {
-        console.log(data);
-        setTestUserData(data);
-        return data;
-      })
+      const GIDFetch = await fetch(
+        `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
+      )
+        .then((res) => {
+          return res.json();
+        })
+        .then((data) => {
+          console.log(data);
+          setTestUserData(data);
+          return data;
+        });
       console.log(GIDFetch);
       // testUserData=GIDFetch;
     } catch (error) {
@@ -47,13 +49,13 @@ const Profile = () => {
     }
   };
 
-
   useEffect(() => {
     backendRequest();
   }, []);
 
- console.log(testUserData);
+  console.log(testUserData);
   const {
+    id,
     name,
     college,
     year,
@@ -64,52 +66,58 @@ const Profile = () => {
     gid,
     megaArchTid,
     setuBandhanTid,
-    trackoteasureTid,
-    cp1styearTid,
-    webTid,
-    electrical1Tid,
-    electrical2Tid,
-    roboraceTid,
-    roboSoccerTid,
+    codezenTid,
+    codeQuestTid,
+    webMindsTid,
+    electriQuestTid,
+    bgmiLanTid,
+    valorantLanTid,
+    pesLanTid,
+    bingeQuizTid,
+    tableTennisTid,
+    carromTid,
+    lineTrekkerTid,
+    triathlonTid,
+    roboKlassikerTid,
     roboWar8kgTid,
     roboWar15kgTid,
-    lfrtid,
-    gaming1Tid,
-    gaming2Tid,
-    gaming3Tid,
+    trackoteasureTid,
   } = testUserData || {};
 
   const domainCivil = {
     "Mega Arch TID": megaArchTid,
-    "SetuBandhan TID": setuBandhanTid,
-    "TrackOteasure TID": trackoteasureTid,
+    "Setu Bandhan TID": setuBandhanTid,
+    "Track O Treasure TID": trackoteasureTid,
   };
 
   const domainCoding = {
-    "CP  1styear TID": cp1styearTid,
-    "CP All year TID": cp1styearTid,
-    "WEB TID": webTid,
+    "Codzen TID ": codezenTid,
+    "Code Quest TID": codeQuestTid,
+    "Web Minds TID": webMindsTid,
   };
 
   const domainElectrical = {
-    "Electrical-1 TID": electrical1Tid,
-    "Electrical-2 TID ": electrical2Tid,
+    "ElectriQuest TID ": electriQuestTid,
   };
 
   const domainRobotics = {
-    "Roborace TID": roboraceTid,
-    "RoboSoccer TID": roboSoccerTid,
+    "Robo Klassiker TID": roboKlassikerTid,
+    "Triathlon TID": triathlonTid,
     "RoboWar-8kg TID ": roboWar8kgTid,
     "RoboWar-15kg TID": roboWar15kgTid,
-    "LFR TID": lfrtid,
+    "Line Trekker TID": lineTrekkerTid,
   };
 
   const domainGaming = {
-    "Gaming-1 TID": gaming1Tid,
-    "Gaming-2 TID": gaming2Tid,
-    "Gaming-3 TID ": gaming3Tid,
+    "BGMI Lan TID": bgmiLanTid,
+    "Valorant Lan TID": valorantLanTid,
+    "Pes Lan TID": pesLanTid,
   };
-
+  const domainGenral = {
+    "Carrom TID": carromTid,
+    "Table Tennis TID": tableTennisTid,
+    "Binge Quiz TID": bingeQuizTid,
+  };
   return (
     <StyledContainer>
       {testUserData ? (
@@ -176,10 +184,18 @@ const Profile = () => {
             ) : (
               <></>
             )}
+            {showCardHandler(domainGenral) ? (
+              <Domains>
+                <h1>Genral</h1>
+                {showOptionsHandler(domainGenral).map((main) => main)}
+              </Domains>
+            ) : (
+              <></>
+            )}
           </CardsSection>
         </>
       ) : (
-        <h1 style={{ color: "white" }}>YOU ARE NOT REGISTERED YET !!!</h1>
+        <h1 style={{ color: "white" }}>{!testUserData?"YOU are not login !!": "" }</h1>
       )}
     </StyledContainer>
   );
