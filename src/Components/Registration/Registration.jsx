@@ -246,7 +246,7 @@ const DomainEvents = {
     teamSize: "-",
     fee: " 500 ",
     Descriptions: `Register for a chess competition on 11.04.2024 to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
   },
   darts: {
     Image:
