@@ -25,7 +25,6 @@ import {
   Text,
   Title,
   Underline,
-  Popup,
   CenteredContainer,
   Button,
 } from "./SignUp.styled";
@@ -298,8 +297,7 @@ const SignUp = () => {
       )}
       {showGIDBox && (
         <GIDDisplayBox
-          // gid="1234567890" // Dummy GID number
-          //changed
+          
           gid={gidResponse}
           onClose={() => setShowGIDBox(false)}
         />
