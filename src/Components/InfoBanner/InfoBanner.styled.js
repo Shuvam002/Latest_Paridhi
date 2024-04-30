@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Banner = styled.section`
@@ -104,7 +105,7 @@ export const ButtonSection = styled.div`
     gap: 10px;
   }
 `;
-export const RegisterBtn = styled.button`
+export const RegisterBtn = styled(Link)`
   height: 40px;
   width: 40%;
   font-family: inherit;
