@@ -80,14 +80,14 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
-      <Route
+{/*       <Route
         path="profile"
         element={
           <React.Suspense fallback={<Spinner />}>
             <Profile />
           </React.Suspense>
         }
-      />
+      /> */}
 
       <Route
         path="sign_up"
