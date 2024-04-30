@@ -40,8 +40,7 @@ const DomainEvents = {
   },
 
   triathlon: {
-    Image:
-      "https://i.ytimg.com/vi/aCNAoAczJBk/sddefault.jpg",
+    Image: "https://i.ytimg.com/vi/aCNAoAczJBk/sddefault.jpg",
     title: "Triathlon",
     teamSize: "1-5",
     fee: 300,
@@ -75,10 +74,8 @@ const DomainEvents = {
     Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1iPraSPWocz9Y4C2LjFgeEUxv9_mNvA6k/view?usp=drive_link",
   },
-  
-  
-  throne_of_bots_8kg: {
 
+  throne_of_bots_8kg: {
     Image:
       "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
     title: "Throne of Bots (8kg)",
@@ -88,8 +85,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1h8F65IW-K9Im89GkQjOMg_yE7L3hCjZY/view?usp=drive_link",
   },
   throne_of_bots_15kg: {
-    Image:
-      "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
+    Image: "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
     title: "Throne of Bots (15kg)",
     teamSize: "1-5",
     fee: "1000",
@@ -97,8 +93,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
   },
   throne_of_bots_combo_8_15kg: {
-    Image:
-      "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+    Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
     title: "Throne of Bots Combo(8 kg + 15 kg)",
     teamSize: "1-5",
     fee: "1500",
@@ -118,10 +113,11 @@ const DomainEvents = {
     Image:
       "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
     title: "Line Trekker",
-    teamSize: 1-5,
+    teamSize: 1 - 5,
     fee: 300,
     Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
     rule: "https://drive.google.com/file/d/130HoyH1xz4AHDuW6IX1nS8bY04BYowiY/view?usp=drive_link",
+    regLink: "/events/autonomous_robotics/line_trekker/line_trekkerReg",
   },
   setu_bandhan: {
     Image:
@@ -292,6 +288,7 @@ const Registration = () => {
             teamSize={data.teamSize}
             Descriptions={data.Descriptions}
             rule={data.rule}
+            regLink={data.regLink}
           />
         )}
       </Main>

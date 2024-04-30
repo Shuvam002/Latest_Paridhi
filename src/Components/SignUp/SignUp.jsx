@@ -175,11 +175,11 @@ const SignUp = () => {
   
   return (
     <CenteredContainer>
-      {/* <Cover>
-        <Container>  */}
-          <Title>Registration Starts Soon ... Stay Tuned!!!</Title>
+      <Cover>
+        <Container> 
+          <Title>Register</Title>
 
-           {/* <Underline />
+           <Underline />
 
           <IconContainer>
             <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
@@ -303,7 +303,7 @@ const SignUp = () => {
           gid={gidResponse}
           onClose={() => setShowGIDBox(false)}
         />
-      )}  */}
+      )} 
     </CenteredContainer>
   );
 };

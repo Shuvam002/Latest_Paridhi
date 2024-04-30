@@ -100,6 +100,11 @@ export const Title = styled.h1`
   text-align: center;
   margin-top: 2%;
   margin-bottom: 1%;
+
+  @media (max-width: 767px) {
+    font-size: 1.5rem;
+  
+  }
 `;
 
 export const Underline = styled.div`
@@ -110,7 +115,8 @@ export const Underline = styled.div`
 `;
 
 export const SignUpButton = styled.div`
-  width: 25%;
+  /* width: 25%; */
+  padding:10px;
   height: 2em;
   color: white;
   background-color: rgb(255, 101, 96);

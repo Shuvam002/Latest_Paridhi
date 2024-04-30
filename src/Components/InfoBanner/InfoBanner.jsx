@@ -1,4 +1,4 @@
-import { Link, useLocation } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import {
   Banner,
   BannerImage,
@@ -11,14 +11,15 @@ import {
   ButtonSection,
 } from "./InfoBanner.styled";
 
-const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule }) => {
+const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule, regLink }) => {
   const openRules = () => {
     rule ? window.open(rule) : NaN;
   };
 
+  const navigate=useNavigate();
+
   return (
-    <>
-      <Banner>
+    <Banner>
         <BannerImage $Image={Image}></BannerImage>
         <BannerInfo>
           <Title>{title}</Title>
@@ -26,18 +27,23 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule }) => {
           <TeamSize>Team Size: {teamSize}</TeamSize>
           <Description>{Descriptions}</Description>
           <ButtonSection>
-            {/* <RegisterBtn> */}
-            {/* <Link to={register} style={{ whiteSpace: 'nowrap', textDecoration: 'none' }}> */}
-            <RegisterBtn
+          
+            <RegisterBtn to={regLink}>
+            Register
+            </RegisterBtn>
+          
+            {/* <RegisterBtn
               style={{
                 background: "#151515",
                 cursor: "not-allowed",
                 padding: "10px",
               }}
+
               disabled
+
             >
               Registration opens soon
-            </RegisterBtn>
+            </RegisterBtn> */}
             {rule != null ? (
               rule == "Rules coming soon" ? (
                 <RegisterBtn style={{cursor:"not-allowed"}}>{rule}</RegisterBtn>
@@ -50,7 +56,6 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule }) => {
           </ButtonSection>
         </BannerInfo>
       </Banner>
-    </>
   );
 };
 

@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import Layout from "./Layout/Layout";
 import Loading from "./Components/PreLoader/PreLoader";
 import Spinner from "./Components/Spinner/Spinner";
+
 import {
   Route,
   RouterProvider,
@@ -81,7 +82,7 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
-{/*       <Route
+      {/*       <Route
         path="profile"
         element={
           <React.Suspense fallback={<Spinner />}>
@@ -114,18 +115,15 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
-    <Route
-    path="events/:Domain/:EventName/register"
-    element={
-      <React.Suspense fallback={<Spinner />}>
-        <Codezen />
-      </React.Suspense>
-    }
-  />
+      <Route
+        path="events/:Domain/:EventName/:eventRegName"
+        element={
+          <React.Suspense fallback={<Spinner />}>
+            <Codezen />
+          </React.Suspense>
+        }
+      />
     </Route>
-    
-
-  
   )
 );
 
