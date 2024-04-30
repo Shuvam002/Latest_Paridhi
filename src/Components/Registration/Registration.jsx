@@ -11,7 +11,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 30,
     Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
-    rule: "https://drive.google.com/file/d/1VLLssQKDlXSm8LUCuS2Ivi0ufREwdHK9/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/1exu2-z0zN_d0wk7OTW6LKQIhCqrbFoi5/view?usp=drive_link",
   },
   web_minds: {
     Image: "https://bizmo.al/wp-content/uploads/2022/03/Web-Dev-Blog.png",

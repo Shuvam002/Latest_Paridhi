@@ -103,17 +103,6 @@ const SignUp = () => {
     
   };
 
-  // const handleOtpSubmit = (otp) => {
-  //   if (otp === "123456") {
-  //     setIsOtpCorrect(true);
-  //     setOtpPopup(false);
-  //     setIsVerified(true);
-  //   } else {
-  //     setIsOtpCorrect(false);
-  //     alert("Incorrect OTP. Please enter the correct OTP.");
-  //   }
-  // };
-
   const handleOtpSubmit = async (otp) => {
     try {
       // Make a POST request to the backend API endpoint to verify OTP
@@ -148,6 +137,19 @@ const SignUp = () => {
   };
 
   const handleSignUp = async () => {
+    if (!email.includes("@") || !email.includes(".")) {
+      alert("Please enter a valid email address.");
+      
+    }
+    if (!isVerified) {
+      alert("Please verify your email address before signing up.");
+     
+    }
+    if (!name || !college || !year || !department || !roll || !email || !phoneNumber) {
+      alert("Please fill in all required fields.");
+    }
+
+    else{
     try {
       const response = await axios.post("http://localhost:6001/megatronix/paridhi/user/registration", {
         name: name,
@@ -167,38 +169,17 @@ const SignUp = () => {
     } catch (error) {
       console.error("Error signing up:", error);
     }
-  };
+  }
+};
 
-  // const handleSignUp = () => {
-  //   if (!email.includes("@") || !email.includes(".")) {
-  //     alert("Please enter a valid email address.");
-  //     return;
-  //   }
-  //   if (!isVerified) {
-  //     alert("Please verify your email address before signing up.");
-  //     return;
-  //   }
-
-  //   // Handle sign up logic here
-  //   console.log("Sign Up details:", {
-  //     name,
-  //     college,
-  //     year,
-  //     department,
-  //     roll,
-  //     email,
-  //     phoneNumber,
-  //   });
-  //   setShowGIDBox(true);
-  // };
-
+  
   return (
     <CenteredContainer>
-      <Cover>
-        <Container> 
-          <Title>Registration</Title>
+      {/* <Cover>
+        <Container>  */}
+          <Title>Registration Starts Soon ... Stay Tuned!!!</Title>
 
-           <Underline />
+           {/* <Underline />
 
           <IconContainer>
             <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
@@ -305,7 +286,7 @@ const SignUp = () => {
             />
           </IconContainer>
 
-          <SignUpButton onClick={handleSignUp}>Sign Up</SignUpButton>
+          <SignUpButton onClick={handleSignUp}>Submit</SignUpButton>
         </Container>
       </Cover>
 
@@ -322,7 +303,7 @@ const SignUp = () => {
           gid={gidResponse}
           onClose={() => setShowGIDBox(false)}
         />
-      )} 
+      )}  */}
     </CenteredContainer>
   );
 };
