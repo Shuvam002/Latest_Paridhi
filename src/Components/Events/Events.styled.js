@@ -12,6 +12,4 @@ export const StyledContainer = styled.div`
   justify-content: space-between;
   justify-content: center;
   align-items: center;
- 
-
 `;
