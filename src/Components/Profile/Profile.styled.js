@@ -7,8 +7,8 @@ export const StyledContainer = styled.section`
   padding-top: 10vh;
   min-height: 100vh;
   width: 100%;
-  padding-left:2%;
-  padding-right:2%;
+  padding-left: 2%;
+  padding-right: 2%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -23,7 +23,7 @@ export const MainInfo = styled.div`
   padding: 20px;
   height: 30%;
   min-width: 35%;
-  font-size: 10px;
+  font-size: 13px;
   border: 2px solid white;
   background-color: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
@@ -39,13 +39,15 @@ export const MainInfo = styled.div`
 `;
 
 export const CardsSection = styled.section`
-  min-width: 30%;
+  /* min-width: 60%; */
   height: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   gap: 10px;
+  justify-content: space-around;
+  /* justify-content: space-evenly; */
 
   @media (max-width: 400px) {
     width: 100%;
@@ -56,7 +58,7 @@ export const CardsSection = styled.section`
 export const Domains = styled.span`
   padding: 20px;
   min-height: 200px;
-  width: 48%;
+
   background-color: rgba(255, 255, 255, 0.06);
   border: 1px solid rgba(255, 255, 255, 0.1);
   border-radius: 15px;
@@ -64,7 +66,7 @@ export const Domains = styled.span`
   color: white;
   display: flex;
   flex-direction: column;
- 
+  width: 45%;
 
   font-size: 14px;
   @media (max-width: 400px) {

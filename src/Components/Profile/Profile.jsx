@@ -5,8 +5,6 @@ import {
   MainInfo,
   CardsSection,
 } from "./Profile.styled";
-import axios from "axios";
-import { gapi } from "gapi-script";
 
 const GID = localStorage.getItem("user");
 const domainTitleStyle = {
@@ -39,10 +37,7 @@ const Profile = () => {
   const backendRequest = async () => {
     try {
       const GIDFetch = await fetch(
-
-
         `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
-
       )
         .then((res) => {
           return res.json();
@@ -53,6 +48,7 @@ const Profile = () => {
           return data;
         });
       console.log(GIDFetch);
+      setTestUserData(GIDFetch);
     } catch (error) {
       console.error("Error fetching data: >>>>", error);
     }
@@ -64,7 +60,6 @@ const Profile = () => {
 
   console.log(testUserData);
   const {
-    id,
     name,
     college,
     year,
@@ -127,6 +122,23 @@ const Profile = () => {
     "Table Tennis TID": tableTennisTid,
     "Binge Quiz TID": bingeQuizTid,
   };
+
+  function cardSectionhandle() {
+    const domainArr = [
+      domainCivil,
+      domainCoding,
+      domainElectrical,
+      domainGaming,
+      domainGenral,
+      domainRobotics,
+    ];
+    const result = domainArr.map((domaine) => {
+      if (showCardHandler(domaine)) return;
+    });
+    console.log(result);
+  }
+  cardSectionhandle();
+
   return (
     <StyledContainer>
       {testUserData ? (
@@ -152,71 +164,58 @@ const Profile = () => {
           {
             // the cards section
           }
+
           <CardsSection>
             {showCardHandler(domainCivil) ? (
               <Domains>
-                <h1 style={ domainTitleStyle }>Civil</h1><br />
+                <h1 style={domainTitleStyle}>Civil</h1>
+                <br />
                 {showOptionsHandler(domainCivil).map((main) => main)}
               </Domains>
-            ) : (
-              <></>
-            )}
+            ) : null}
             {showCardHandler(domainCoding) ? (
               <Domains>
-                <h1 style={ domainTitleStyle } >Coding</h1><br />
+                <h1 style={domainTitleStyle}>Coding</h1>
+                <br />
                 {showOptionsHandler(domainCoding).map((main) => main)}
               </Domains>
-            ) : (
-              <></>
-            )}
+            ) : null}
             {showCardHandler(domainGaming) ? (
               <Domains>
-                <h1 style={ domainTitleStyle } >Gaming</h1><br />
+                <h1 style={domainTitleStyle}>Gaming</h1>
+                <br />
                 {showOptionsHandler(domainGaming).map((main) => main)}
               </Domains>
-            ) : (
-              <></>
-            )}
+            ) : null}
             {showCardHandler(domainElectrical) ? (
               <Domains>
-                <h1 style={ domainTitleStyle } >Electrical</h1><br />
+                <h1 style={domainTitleStyle}>Electrical</h1>
+                <br />
                 {showOptionsHandler(domainElectrical).map((main) => main)}
               </Domains>
-            ) : (
-              <></>
-            )}
+            ) : null}
             {showCardHandler(domainGenral) ? (
               <Domains>
-                <h1 style={ domainTitleStyle } >General</h1><br />
+                <h1 style={domainTitleStyle}>General</h1>
+                <br />
                 {showOptionsHandler(domainGenral).map((main) => main)}
               </Domains>
-            ) : (
-              <></>
-            )}
+            ) : null}
+
             {showCardHandler(domainRobotics) ? (
               <Domains>
-                <h1 style={ domainTitleStyle } >Robotics</h1><br />
+                <h1 style={domainTitleStyle}>Robotics</h1>
+                <br />
                 {showOptionsHandler(domainRobotics).map((main) => main)}
               </Domains>
-            ) : (
-              <></>
-            )}
-            {showCardHandler(domainGenral) ? (
-              <Domains>
-                <h1>Genral</h1>
-                {showOptionsHandler(domainGenral).map((main) => main)}
-              </Domains>
-            ) : (
-              <></>
-            )}
+            ) : null}
           </CardsSection>
         </>
-
-      )  : <h1 style={{ color: "white" }}>{
-        GID ? "": "You are not Registered !!" }</h1>
-      }
-
-      
+      ) : (
+        <h1 style={{ color: "white" }}>
+          {GID ? "" : "You are not Registered !!"}
+        </h1>
+      )}
     </StyledContainer>
   );
 };
