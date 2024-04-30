@@ -48,7 +48,7 @@ const DomainEvents = () => {
         Description:
           "Join our exclusive bot racing competition, open to all years! Click to register and learn the rules for the challenge.",
         ImageLink:
-          "https://lh6.googleusercontent.com/proxy/jK39yGBhSgpcgneAE_-ZhZbV6FKKqF_iPQq7a5_CaTXugcV2Afy1dviVyFFVn0Vt5XudShI9eQXBp5vYaV6Zq7QYF9cG35vLKiPx7cr0aKlcBDFpiRKMnKpX6_UtlRU",
+          "https://i.ytimg.com/vi/aCNAoAczJBk/sddefault.jpg",
         link: "/events/manual_robitics/triathlon",
       },
       {
@@ -76,17 +76,20 @@ const DomainEvents = () => {
         link: "/events/manual_robitics/striker_clash",
       },
       {
+        TitleText: "Triathlon + Robo Klassiker (Combo)",
+        Description:
+          "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
+        ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+           link: "/events/manual_robitics/soccerandrace_combo",
+      },
+    ],
+      combat_robitics: [
+      {
         TitleText: "Throne of Bots (8kg)",
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
-        ImageLink:
-
-
-          "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
-          
-
-
-        link: "/events/manual_robitics/throne_of_bots_8kg",
+        ImageLink:"https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
+          link: "/events/combat_robitics/throne_of_bots_8kg",
       },
       {
         TitleText: "Throne of Bots (15kg)",
@@ -95,7 +98,7 @@ const DomainEvents = () => {
         ImageLink:
           "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
           
-        link: "/events/manual_robitics/throne_of_bots_15kg",
+        link: "/events/combat_robitics/throne_of_bots_15kg",
       },
       {
         TitleText: "Throne of Bots (Combo 8kg & 15kg)",
@@ -103,15 +106,9 @@ const DomainEvents = () => {
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:
         "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-           link: "/events/manual_robitics/throne_of_bots_combo_8_15kg",
+           link: "/events/combat_robitics/throne_of_bots_combo_8_15kg",
       },
-      {
-        TitleText: "Triathlon + Robo Klassiker (Combo)",
-        Description:
-          "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
-        ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-           link: "/events/manual_robitics/soccerandrace_combo",
-      },
+     
     ],
     autonomous_robotics: [
       {
@@ -227,10 +224,19 @@ const DomainEvents = () => {
       {
         TitleText: "Chess",
         Description:
-          "Register for a chess competition to test your skills & intellect. Click to unravel the challenge and learn the rules elegantly.",
+          "Register for an onspot chess competition to test your skills & intellect. Click to unravel the challenge and learn the rules elegantly.",
         ImageLink:
           "https://www.woodenearth.com/cdn/shop/articles/disadvantages-of-chess_1024x1024.jpg?v=1676970151",
         link: "/events/general/chess",
+      },
+
+      {
+        TitleText: "Chess Championship",
+        Description:
+          "Register for an inter-college Chess Tournament to test your skills & intellect. Click to unravel the challenge and learn the rules elegantly.",
+        ImageLink:
+          "https://npr.brightspotcdn.com/dims4/default/fdf3d80/2147483647/strip/true/crop/799x419+0+57/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F90%2Fe0%2Ffcf2474b4cefb43873d8d8f4a0e0%2F080420-provided-turkeytangochess.jpg",
+        link: "/events/general/chess_tour",
       },
       {
         TitleText: "Darts",

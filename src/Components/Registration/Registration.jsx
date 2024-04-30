@@ -41,30 +41,30 @@ const DomainEvents = {
 
   triathlon: {
     Image:
-      "https://lh6.googleusercontent.com/proxy/jK39yGBhSgpcgneAE_-ZhZbV6FKKqF_iPQq7a5_CaTXugcV2Afy1dviVyFFVn0Vt5XudShI9eQXBp5vYaV6Zq7QYF9cG35vLKiPx7cr0aKlcBDFpiRKMnKpX6_UtlRU",
+      "https://i.ytimg.com/vi/aCNAoAczJBk/sddefault.jpg",
     title: "Triathlon",
-    teamSize: 5,
-    fee: 400,
+    teamSize: "1-5",
+    fee: 300,
     Descriptions: `"Join our bot racing contest, open to all! Click to sign up and learn the rules for this thrilling challenge. Let the excitement begin!"`,
-    rule: "https://drive.google.com/file/d/1H4nvTMy17kmb-M-QO5yi2omS0Kf6-8JF/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/1M2aCGO10zqnr1rFa7R2gtj3gJq2HsF7t/view?usp=drive_link",
   },
   robo_klassiker: {
     Image:
       "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/627f59e8450c5_robo-scoccer.jpg",
     title: "Robo Klassiker",
-    teamSize: 5,
-    fee: 450,
+    teamSize: "1-5",
+    fee: 350,
     Descriptions: `Participate in our exclusive bot soccer contest! Bots compete for goals while avoiding penalties. Enroll now and familiarize yourself with the regulations!`,
-    rule: "https://drive.google.com/file/d/1LI768THK0ewj_GUghM4eljnyZUiU0kJv/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/1g8ZYiyuAsYPBuMxPOchBKbDc1xPN3-59/view?usp=drive_link",
   },
   chakravyuh: {
     Image:
       "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
     title: "Chakravyuh",
-    teamSize: 1,
+    teamSize: "1-5",
     fee: 60,
     Descriptions: `Compete in our onspot maze-solving bot challenge: navigate tunnels and reach the exclusive destination. Click to register and learn the rules!`,
-    rule: "https://drive.google.com/file/d/1h0SY0c43S8h_q-tHRhcqAA3Tvt2xc7nF/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1qtMgTyZIsjgQEeKnHA8de3AG7RAkXcP3/view?usp=drive_link",
   },
   striker_clash: {
     Image:
@@ -73,7 +73,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: 40,
     Descriptions: `Join our exclusive onspot robo carrom competition for all! Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1UB-hJF209ej-4cJqilfy_0gDu9WNw1ki/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1iPraSPWocz9Y4C2LjFgeEUxv9_mNvA6k/view?usp=drive_link",
   },
   
   
@@ -82,26 +82,26 @@ const DomainEvents = {
     Image:
       "https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
     title: "Throne of Bots (8kg)",
-    teamSize: "5",
+    teamSize: "1-5",
     fee: "600",
     Descriptions: `Join our heart-throbbing bot war unfer 8 kg category competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1Myrcu_sRe7P9Redloay5RvzU1sHYmoOC/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/1h8F65IW-K9Im89GkQjOMg_yE7L3hCjZY/view?usp=drive_link",
   },
   throne_of_bots_15kg: {
     Image:
       "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
     title: "Throne of Bots (15kg)",
-    teamSize: "5",
+    teamSize: "1-5",
     fee: "1000",
     Descriptions: `Join our heart-throbbing bot war competition under 15 kg category open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: "https://drive.google.com/file/d/1h3gX_TWCwYn0U7kB_8U3wyFH0u8bvLRd/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
   },
   throne_of_bots_combo_8_15kg: {
     Image:
       "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
     title: "Throne of Bots Combo(8 kg + 15 kg)",
-    teamSize: "updated soon",
-    fee: "1400",
+    teamSize: "1-5",
+    fee: "1500",
     Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
     rule: null,
   },
@@ -109,8 +109,8 @@ const DomainEvents = {
     Image:
       "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
     title: "Triathlon + Robo Klassiker (Combo)",
-    teamSize: "updated soon",
-    fee: "750",
+    teamSize: "1-5",
+    fee: "550",
     Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
     rule: null,
   },
@@ -118,10 +118,10 @@ const DomainEvents = {
     Image:
       "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
     title: "Line Trekker",
-    teamSize: 5,
+    teamSize: 1-5,
     fee: 300,
     Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
-    rule: "https://drive.google.com/file/d/14aZ7xP86NE54bNbzu7Wk011GWENIQZXO/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/130HoyH1xz4AHDuW6IX1nS8bY04BYowiY/view?usp=drive_link",
   },
   setu_bandhan: {
     Image:
@@ -162,8 +162,8 @@ const DomainEvents = {
   valorant_lan: {
     Image: "https://stanforddaily.com/wp-content/uploads/2020/08/image-2.png",
     title: "Valorant Lan",
-    teamSize: "Max 6 , Min 5",
-    fee: 500,
+    teamSize: "5-6",
+    fee: 750,
     Descriptions: `"Valorant: Where tactical prowess meets precise aim in dynamic multiplayer battles."`,
     rule: "https://drive.google.com/file/d/1Q_A8Hw-w6iLLZq6gxgaUJ159C6-UTmvd/view?usp=sharing",
   },
@@ -171,10 +171,10 @@ const DomainEvents = {
     Image:
       "https://images.hindustantimes.com/tech/img/2021/11/28/960x540/986051-pubg-mobile-bgmi_1628314432587_1638104772146.jpg",
     title: "BGMI Lan",
-    teamSize: "Max 5 , Min 4",
+    teamSize: "4-5",
     fee: 500,
     Descriptions: `BGMI: Experience strategic survival, intense firefights, and victory in immersive battlegrounds.`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/1Mb4TLR9zdxfa6GvpvZjfXbK-J5RTrK1-/view?usp=drive_link",
   },
   eFootball: {
     Image:
@@ -183,16 +183,16 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `E-Football: Dive into the virtual pitch with skill, strategy, and teamwork.`,
-    rule: "https://drive.google.com/file/d/1sXw8a8PeVAq7_vCDTaxeTbgisSMhfhun/view?usp=sharing",
+    rule: "https://drive.google.com/file/d/1wz5WkNk80bkb3z9ylR6s5710eZB36aLp/view?usp=drive_link",
   },
   fifa: {
     Image:
       "https://prod.assets.earlygamecdn.com/images/EA-FC-24-Cover-standard-edition.jpg?transform=banner2x_webp",
     title: "EAFC 2024",
     teamSize: "NA",
-    fee: "NA",
+    fee: "70",
     Descriptions: `FIFA 2024: Showcase your football mastery in thrilling global competitions.`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/1si2MJcA3p8CEZReBoag9qZQo3vbLC8eR/view?usp=drive_link",
   },
   ball_pool: {
     Image:
@@ -201,7 +201,7 @@ const DomainEvents = {
     teamSize: "NA",
     fee: "NA",
     Descriptions: `8 Ball Pool 2024: Showcase your cue-sport finesse in electrifying international tournaments`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/19gcr15BNxgdyW-g9S7_VwbSMKYOQyTlC/view?usp=drive_link",
   },
   carrom: {
     Image:
@@ -235,9 +235,18 @@ const DomainEvents = {
       "https://www.woodenearth.com/cdn/shop/articles/disadvantages-of-chess_1024x1024.jpg?v=1676970151",
     title: "Chess",
     teamSize: 1,
-    fee: " Rs. 30 for onspot (10th & 12th May) & Rs. 500 for championship(11th May)",
+    fee: " Rs. 30 (10th & 12th May)",
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: "Rules coming soon",
+    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
+  },
+  chess_tour: {
+    Image:
+      "https://npr.brightspotcdn.com/dims4/default/fdf3d80/2147483647/strip/true/crop/799x419+0+57/resize/1200x630!/quality/90/?url=http%3A%2F%2Fnpr-brightspot.s3.amazonaws.com%2F90%2Fe0%2Ffcf2474b4cefb43873d8d8f4a0e0%2F080420-provided-turkeytangochess.jpg",
+    title: "Chess Championship",
+    teamSize: "-",
+    fee: " 500 ",
+    Descriptions: `Register for a chess competition on 11.04.2024 to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
+    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
   },
   darts: {
     Image:
