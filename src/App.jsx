@@ -8,6 +8,7 @@ import {
   createBrowserRouter,
   createRoutesFromElements,
 } from "react-router-dom";
+import Codezen from "./Components/Login_coding/Login_coding";
 
 const Hero = React.lazy(() => import("./Components/Hero/Hero"));
 const Events = React.lazy(() => import("./Components/Events/Events"));
@@ -113,7 +114,18 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
+    <Route
+    path="events/:Domain/:EventName/register"
+    element={
+      <React.Suspense fallback={<Spinner />}>
+        <Codezen />
+      </React.Suspense>
+    }
+  />
     </Route>
+    
+
+  
   )
 );
 
