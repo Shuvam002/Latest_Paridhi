@@ -32,7 +32,7 @@ const Navbar = () => {
           )}
         </MenuBtn>
         <NavList $clicked={isClicked}>
-          <NavItem>
+          {/* <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -43,7 +43,7 @@ const Navbar = () => {
             >
               Profile
             </NavLinkName>
-          </NavItem>
+          </NavItem> */}
           <NavItem>
             <NavLinkName
               style={({ isActive }) => ({
