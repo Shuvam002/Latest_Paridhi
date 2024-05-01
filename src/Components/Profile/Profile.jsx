@@ -37,7 +37,7 @@ const Profile = () => {
   const backendRequest = async () => {
     try {
       const GIDFetch = await fetch(
-        `http://localhost:6001/megatronix/paridhi/user/profile/${GID}`
+        `https://api.msitparidhi.in/megatronix/paridhi/user/profile/${GID}`
       )
         .then((res) => {
           return res.json();

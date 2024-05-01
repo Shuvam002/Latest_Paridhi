@@ -11,6 +11,7 @@ export const StyledContainer = styled.div`
   justify-content: space-between;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
  
 
 `;
@@ -62,3 +63,7 @@ export const NavbarLink = styled.a`
     color: #ddd;
   }
 `;
+=======
+`;
+
+>>>>>>> f2ea6696ad3612d2d19990196694a7c5392e0a2d
