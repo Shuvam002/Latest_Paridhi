@@ -104,7 +104,7 @@ export const CountdownTimer = ({ targetDate }) => {
 };
 
 const Hero = () => {
-  const targetDate = new Date("2024-05-01T23:59:59");
+  const targetDate = new Date("2024-05-05T23:59:59");
 
   const [videoPlayed, setVideoPlayed] = useState(false);
   const [showContent, setShowContent] = useState(false);
