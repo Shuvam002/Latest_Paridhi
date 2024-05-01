@@ -116,10 +116,10 @@ export const Underline = styled.div`
   margin-bottom: 2%;
 `;
 
-export const SignUpButton = styled.div`
+export const SignUpButton = styled.button`
   width: 30%;
   padding: 0.3rem 0 0.3rem 0;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: white;
   background-color: rgb(255, 101, 96);
   display: flex;
@@ -131,10 +131,10 @@ export const SignUpButton = styled.div`
   text-align:center;
   font-size:1.2rem;
   border: 3px solid rgb(255, 101, 96);
-  &:hover {
+  /* &:hover {
     border: 3px solid rgb(231, 231, 231);
     background: transparent;
-  }
+  } */
 
   @media (max-width: 445px){
     font-size: 1rem;
