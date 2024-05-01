@@ -2,6 +2,11 @@ import { Main } from "./DomainEvents.styled";
 import { useParams } from "react-router-dom";
 import Card from "../../Cards/Card";
 import { motion } from "framer-motion";
+import { StyledContainer,BottomNavbar,StyledLink } from "../Events.styled";
+import { GiChessQueen, GiBattleGear  } from "react-icons/gi";
+import { FaUserGear } from "react-icons/fa6";
+
+
 
 const DomainEvents = () => {
   const { Domain } = useParams();
@@ -291,6 +296,16 @@ const DomainEvents = () => {
               />
             </motion.div>
           ))}
+          <BottomNavbar>
+          <StyledLink to="/events/coding"><i class="ri-code-s-slash-line"></i></StyledLink>
+          <StyledLink to="/events/manual_robitics"><i class="ri-robot-2-line"></i></StyledLink>
+          <StyledLink to="/events/combat_robitics"><GiBattleGear /></StyledLink>
+          <StyledLink to="/events/autonomous_robitics"><FaUserGear /></StyledLink>
+          <StyledLink to="/events/civil"><i class="ri-building-2-line"></i></StyledLink>
+          <StyledLink to="/events/electrical"><i class="ri-flashlight-line"></i></StyledLink>
+          <StyledLink to="/events/gaming"><i class="ri-gamepad-line"></i></StyledLink>
+          <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
+        </BottomNavbar>
       </Main>
     </>
   );

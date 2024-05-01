@@ -17,7 +17,7 @@ const GIDBoxOverlay = styled.div`
 const GIDBoxContainer = styled.div`
   background-color: rgb(0,0,0);
   color: white;
-  border: 1px solid rgb(255, 101, 96);
+  /* border: 1px solid rgb(255, 101, 96); */
   font-family: "Jost", sans-serif;
   font-size: large;
   padding: 20px;

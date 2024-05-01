@@ -30,18 +30,15 @@ const CloseButton = styled(Button)`
   cursor: pointer;
 `;
 
-const TIDDisplayBox = ({onClose }) => {
-  // Dummy TID number
-  const dummyTID = 1234;
-
-
-
+const TIDDisplayBox = ({ onClose, TID }) => {
   return (
     <TIDBoxOverlay>
       <TIDBoxContainer>
-        <CloseButton onClick={onClose}>Close</CloseButton>
+        <CloseButton onClick={onClose}>
+          <i class="ri-close-large-line"></i>
+        </CloseButton>
         <h2>TID Number</h2>
-        <p>{dummyTID}</p>
+        <p>{TID}</p>
       </TIDBoxContainer>
     </TIDBoxOverlay>
   );

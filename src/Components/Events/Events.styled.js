@@ -1,9 +1,8 @@
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 export const StyledContainer = styled.div`
-  /* background-image: url(${"https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"});
-  background-size: cover;
-  background-position: center; */
+  
   padding: 10vh;
   min-height: 100vh;
   width: 100%;
@@ -12,4 +11,59 @@ export const StyledContainer = styled.div`
   justify-content: space-between;
   justify-content: center;
   align-items: center;
+<<<<<<< HEAD
+ 
+
 `;
+export const BottomNavbar = styled.nav`
+  width: 100%;
+  background-color: #333; 
+  position: fixed;
+  bottom: 0;
+  display: none;
+  justify-content: space-around;
+  padding: 1rem 0;
+
+  @media (max-width: 1100px) {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+  }
+`;
+
+export const StyledLink = styled(Link)`
+  color: white; 
+  font-weight: bold;
+  text-decoration: none; 
+  margin-right: 10px; 
+`;
+
+export const NavbarLink = styled.a`
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  margin:0.5%;
+  
+  /* transition: color 0.3s ease; */
+  /* cursor: pointer;
+  @media (min-width: 560px) {
+  font-size: 1.2rem;
+  margin:2%;
+  } */
+  @media (max-width: 500px) {
+  font-size: 0.7rem;
+  margin:1%;
+  }
+  @media (min-width: 800px) {
+  font-size: 1.5rem;
+  margin:2%;
+  }
+
+  &:hover {
+    color: #ddd;
+  }
+`;
+=======
+`;
+
+>>>>>>> f2ea6696ad3612d2d19990196694a7c5392e0a2d

@@ -212,8 +212,8 @@ const SignUp = () => {
             ></InputIcon>
             <InputField
               name="year"
-              type="number"
-              placeholder="Year of studying"
+              type="text"
+              placeholder="Year/Class"
               value={year}
               onChange={handleYearChange}
             />
