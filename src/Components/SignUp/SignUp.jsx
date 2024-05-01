@@ -267,7 +267,7 @@ const SignUp = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <Button disabled style={{cursor:"not-allowed"}} className="Verify" onClick={handleVerify}>
+                <Button  style={{cursor:"not-allowed"}} className="Verify" onClick={handleVerify}>
                   Verify
                 </Button>
               </>
@@ -285,7 +285,7 @@ const SignUp = () => {
             />
           </IconContainer>
 
-          <SignUpButton disabled style={{cursor:"not-allowed"}} onClick={handleSignUp}>Submit</SignUpButton>
+          <SignUpButton  style={{cursor:"not-allowed"}} onClick={handleSignUp}>Submit</SignUpButton>
         </Container>
       </Cover>
 
