@@ -8,15 +8,27 @@ import {
   NavLinkName,
   StyledContainer,
   SubLogo,
+  DropdownMenu,
+  DropdownItem,
+  NavLinkNameParent,
 } from "./Navbar.styled";
 import megalogo from "./static/megaLogo.png";
 
 const Navbar = () => {
   const [isClicked, setIsClicked] = useState(false);
+  const [showEventsDropdown, setShowEventsDropdown] = useState(false);
 
   const handleClick = () => {
     setIsClicked(!isClicked);
   };
+
+  const toggleEventsDropdown = () => {
+    setShowEventsDropdown(!showEventsDropdown);
+  };
+  const closeEventsDropdown = () => {
+    setShowEventsDropdown(false);
+  };
+
 
   return (
     <StyledContainer>
@@ -44,7 +56,7 @@ const Navbar = () => {
               Profile
             </NavLinkName>
           </NavItem>
-          <NavItem>
+          <NavItem onMouseEnter={toggleEventsDropdown} onMouseLeave={closeEventsDropdown}>
             <NavLinkName
               style={({ isActive }) => ({
                 textShadow: isActive ? "4px 4px 5px #ff0000" : "",
@@ -52,10 +64,38 @@ const Navbar = () => {
                 borderBottom: isActive ? "#ff0000" : "",
               })}
               to="events"
-              onClick={handleClick}
+              onClick={toggleEventsDropdown,handleClick}
             >
               Events
             </NavLinkName>
+            {showEventsDropdown && (
+              <DropdownMenu>
+                <DropdownItem>
+                  <NavLinkNameParent  to="/events/coding">CODING</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/manual_robitics">MANUAL ROBOTICS</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/autonomous_robotics">AUTONOMOUS ROBOTICS</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/combat_robitics">COMBAT</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/civil">CIVIL</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/electrical">ELECTRICAL</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/gaming">GAMING</NavLinkNameParent>
+                </DropdownItem>
+                <DropdownItem>
+                  <NavLinkNameParent to="/events/general">GENERAL</NavLinkNameParent>
+                </DropdownItem>
+              </DropdownMenu>
+            )}
           </NavItem>
           <NavItem>
             <NavLinkName

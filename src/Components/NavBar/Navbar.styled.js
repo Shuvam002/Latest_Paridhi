@@ -13,15 +13,13 @@ const underlineAnimation = keyframes`
 `;
 
 const NavDownAnimation = keyframes`
-
-from {
-  bottom: 100vh;
+  from {
+    bottom: 100vh;
   }
 
   to {
     bottom: 90vh;
   }
-
 `;
 
 export const StyledContainer = styled.div`
@@ -64,8 +62,8 @@ export const SubLogo = styled.img`
   width: 100%;
   background-size: cover;
 
-  @media (max-width: 1100px){
-    margin-left:-60px;
+  @media (max-width: 1100px) {
+    margin-left: -60px;
   }
 `;
 
@@ -75,7 +73,7 @@ export const MenuBtn = styled.label`
   display: none;
 
   @media (max-width: 1100px) {
-    margin-right:-20px;
+    margin-right: -20px;
     display: block;
     color: white;
   }
@@ -89,12 +87,12 @@ export const NavList = styled.ul`
 
   @media (max-width: 1100px) {
     position: fixed;
-    
+
     top: 10vh;
     right: ${({ $clicked }) => ($clicked ? "0" : "-100vw")};
 
-    background-color: rgba(0 , 0 , 0 , 0.95);
-    backdrop-filter:blur(100px);
+    background-color: rgba(0, 0, 0, 0.95);
+    backdrop-filter: blur(100px);
     height: 90vh;
     width: 100%;
     display: flex;
@@ -174,4 +172,49 @@ export const NavLinkName = styled(NavLink)`
       width: 0;
     }
   }
+`;
+
+export const DropdownMenu = styled.ul`
+  list-style: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: rgb(0,0,0,0.94);
+  padding: 10px;
+  border-radius: 5px;
+  width: 230px;
+  z-index: 10;
+  
+  @media (max-width:1100px) {
+    display: none;
+  }
+`;
+
+export const DropdownItem = styled.li`
+  margin: 10px 0;
+`;
+
+export const SubDropdownMenu = styled.ul`
+  list-style: none;
+  position: absolute;
+  top: 0;
+  left: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  padding: 10px;
+  border-radius: 5px;
+  width: 200px;
+  z-index: 10;
+`;
+
+export const SubDropdownItem = styled.li`
+  margin: 10px 0;
+`;
+
+export const NavLinkNameParent =styled(NavLink)`
+color: white;
+text-decoration: none;
+&:hover{
+  color: #ff0000;
+  text-shadow: 4px 4px 5px #ff0000;
+}
 `;
