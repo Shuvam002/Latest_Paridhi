@@ -15,7 +15,7 @@ export const StyledContainer = styled.div`
 `;
 export const BottomNavbar = styled.nav`
   width: 100%;
-  background-color: #333; 
+  background-color: #101010db; 
   position: fixed;
   bottom: 0;
   display: none;
