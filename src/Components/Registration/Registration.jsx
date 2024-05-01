@@ -117,7 +117,7 @@ const DomainEvents = {
     fee: 300,
     Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
     rule: "https://drive.google.com/file/d/130HoyH1xz4AHDuW6IX1nS8bY04BYowiY/view?usp=drive_link",
-    regLink: "/events/autonomous_robotics/line_trekker/line_trekkerReg",
+    // regLink: "/events/autonomous_robotics/line_trekker/line_trekkerReg",
   },
   setu_bandhan: {
     Image:
