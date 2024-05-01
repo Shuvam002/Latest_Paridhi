@@ -27,12 +27,12 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule, regLink }
           <TeamSize>Team Size: {teamSize}</TeamSize>
           <Description>{Descriptions}</Description>
           <ButtonSection>
-          
+{/*           
             <RegisterBtn to={regLink}>
             Register
-            </RegisterBtn>
+            </RegisterBtn> */}
           
-            {/* <RegisterBtn
+            <RegisterBtn
               style={{
                 background: "#151515",
                 cursor: "not-allowed",
@@ -43,7 +43,7 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule, regLink }
 
             >
               Registration opens soon
-            </RegisterBtn> */}
+            </RegisterBtn>
             {rule != null ? (
               rule == "Rules coming soon" ? (
                 <RegisterBtn style={{cursor:"not-allowed"}}>{rule}</RegisterBtn>

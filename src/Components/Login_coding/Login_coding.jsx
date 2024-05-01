@@ -87,7 +87,8 @@ const Codezen = () => {
 
     line_trekkerReg: {
       name: "Line Trekker",
-      api: "",
+      gidVerifyApi: "",
+      getTidApi: "",
       min: 1,
       max: 2,
     },
@@ -129,7 +130,7 @@ const Codezen = () => {
       alert("Please Enter the Phone number !!!");
     } else {
       try {
-        const response = await axios.post(regData.api, {
+        const response = await axios.post(regData.getTidApi, {
           teamname: teamname,
           gid1: !gid1 ? null : gid1,
           gid2: !gid2 ? null : gid2,
@@ -174,9 +175,7 @@ const Codezen = () => {
 
   const verifyGID = async (value, index) => {
     try {
-      const response = await axios.get(
-        `http://localhost:6001/megatronix/paridhi/user/coding/codezen/${value}`
-      );
+      const response = await axios.get(`${regData.gidVerifyApi}${value}`);
       console.log(response);
       console.log(response.status);
       console.log(response.data);
@@ -221,7 +220,7 @@ const Codezen = () => {
     <CenteredContainer>
       <Cover>
         <Container>
-          <Title>{regData.n ame.toUpperCase()}</Title>
+          <Title>{regData.name.toUpperCase()}</Title>
           <Underline />
 
           <IconContainer>

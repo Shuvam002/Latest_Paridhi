@@ -3,24 +3,26 @@ export const CenteredContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; /* Prevent scrolling */
-  /* background-image: url("https://images.unsplash.com/photo-1603366615917-1fa6dad5c4fa?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
-  background-size: cover;  */
+  overflow: hidden; 
+  padding-top: 10vh;
   height: 100vh;
-  width: 100vw; /* Set width to 100vw to cover the whole page */
-  position: fixed; /* Fix the background position */
+  width: 100%;
+  position: fixed;
   top: 0;
   left: 0;
-  z-index: 1; /* Send the background to the back */
 `;
 
 export const Cover = styled.div`
+  display: flex;
+  
+  align-items: center;
+  justify-content: center;
   margin: 0;
   box-sizing: border-box;
   font-family: "Jost", sans-serif;
-  width: 30%;
+  width: 50%;
   @media (max-width: 800px) {
-    width: 80%; /* Adjust the width as per your requirements */
+    width: 80%;
   }
   height:70%;
 `;
@@ -28,20 +30,24 @@ export const Cover = styled.div`
 export const BackgroundImage = styled.div`
   background-size: cover;
   background-position: center;
-  height: 100%; /* Set the height to cover the entire viewport */
+  height: 100%;
 `;
 
 export const Container = styled.div`
   background-color: rgba(255, 255, 255, 0);
-  border-radius: 12px;
-  border: 1px solid rgba(209, 213, 219, 0.9);
+  border: 2px solid rgba(209, 213, 219, 0.9);
+  border-radius: 15px;
   position: relative;
-  border-radius: 0.1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
   padding: 0 0 0 0;
+  @media (min-width: 1100px)
+  {
+    width: 50%;
+  }
+
 `;
 
 export const Page = styled.div`
@@ -112,7 +118,8 @@ export const Underline = styled.div`
 
 export const SignUpButton = styled.div`
   width: 30%;
-  height: 3em;
+  padding: 0.3rem 0 0.3rem 0;
+  font-weight: bold;
   color: white;
   background-color: rgb(255, 101, 96);
   display: flex;
@@ -122,11 +129,17 @@ export const SignUpButton = styled.div`
   margin-bottom: 2%;
   justify-content:center;
   text-align:center;
-  padding-top:3%;
   font-size:1.2rem;
+  border: 3px solid rgb(255, 101, 96);
   &:hover {
     border: 3px solid rgb(231, 231, 231);
     background: transparent;
+  }
+
+  @media (max-width: 445px){
+    font-size: 1rem;
+    padding: 5px;
+    margin-bottom: 1rem;
   }
 `;
 
@@ -250,12 +263,6 @@ export const MobileInputField = styled(InputField)`
   }
 `;
 
-/* Add more styled components as needed */
-export const Popup = styled.div`
-  /* Define styles for the Popup component */
-`;
-
-
 export const Button = styled.div`
   margin-bottom: 0.5rem;
   margin-right: 0.5rem;
@@ -267,12 +274,9 @@ export const Button = styled.div`
   &.fa {
     color: rgb(125, 125, 125);
     margin-left: 1rem;
-    /* margin-right: 1rem; */
-    // margin-top: .7rem;
   }
   &.Verify {
     font-size: 1rem;
-    /* Add styles for the Verify button */
     margin-right: 0.5rem;
     margin-left: 0.5rem;
 
