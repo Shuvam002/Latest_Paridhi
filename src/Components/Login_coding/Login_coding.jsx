@@ -106,7 +106,7 @@ const Codezen = () => {
     } else {
       try {
         const response = await axios.post(
-          `http://localhost:6001/megatronix/paridhi/user/coding/codezen`,
+          `https://api.msitparidhi.in/megatronix/paridhi/user/coding/codezen`,
           {
             teamname: teamname,
             gid: gid1,
@@ -147,7 +147,7 @@ const Codezen = () => {
   const verifyGID = async (value, index) => {
     try {
       const response = await axios.get(
-        `http://localhost:6001/megatronix/paridhi/user/coding/codezen/${value}`
+        `https://api.msitparidhi.in/megatronix/paridhi/user/coding/codezen/${value}`
       );
       console.log(response);
       console.log(response.status);
