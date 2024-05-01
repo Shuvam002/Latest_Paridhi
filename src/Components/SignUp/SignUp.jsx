@@ -67,7 +67,7 @@ const SignUp = () => {
   const[gidResponse, setGidResponse] = useState(null);
 
   let config = {
-    url:`http://localhost:6001/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
+    url:`https://api.msitparidhi.in/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
     method: "post",
     headers: {
       'Access-Control-Allow-Origin': '*',
@@ -105,7 +105,7 @@ const SignUp = () => {
   const handleOtpSubmit = async (otp) => {
     try {
       // Make a POST request to the backend API endpoint to verify OTP
-      const response = await axios.post(`http://localhost:6001/megatronix/paridhi/user/registration/verify-otp`, { email, otp });
+      const response = await axios.post(`https://api.msitparidhi.in/megatronix/paridhi/user/registration/verify-otp`, { email, otp });
       console.log(response);
       // Check if the OTP verification is successful
       if (response.status === 200) {
@@ -150,7 +150,7 @@ const SignUp = () => {
 
     else{
     try {
-      const response = await axios.post("http://localhost:6001/megatronix/paridhi/user/registration", {
+      const response = await axios.post("https://api.msitparidhi.in/megatronix/paridhi/user/registration", {
         name: name,
         college: college,
         year: year,
