@@ -98,7 +98,7 @@ const Events = () => {
           <StyledLink to="/events/coding"><i class="ri-code-s-slash-line"></i></StyledLink>
           <StyledLink to="/events/manual_robitics"><i class="ri-robot-2-line"></i></StyledLink>
           <StyledLink to="/events/combat_robitics"><GiBattleGear /></StyledLink>
-          <StyledLink to="/events/autonomous_robitics"><FaUserGear /></StyledLink>
+          <StyledLink to="/events/autonomous_robotics"><FaUserGear /></StyledLink>
           <StyledLink to="/events/civil"><i class="ri-building-2-line"></i></StyledLink>
           <StyledLink to="/events/electrical"><i class="ri-flashlight-line"></i></StyledLink>
           <StyledLink to="/events/gaming"><i class="ri-gamepad-line"></i></StyledLink>
