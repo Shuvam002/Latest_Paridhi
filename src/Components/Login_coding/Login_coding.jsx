@@ -41,21 +41,18 @@ const mapping = {
   "war-15kg": { min: 1, max: 5 },
 };
 const Codezen = () => {
-  const maxEvent = 2;
   const location = useLocation();
   const event = location.pathname.split("/")[3];
-
   const [inputList, setinputList] = useState([]);
   const [verificationResults, setVerificationResults] = useState([]);
   const [verifiedCount, setVerifiedCount] = useState(0);
   const [val, setVal] = useState("");
   const [showTIDBox, setShowTIDBox] = useState(false); // State to control visibility of TIDDisplayBox
   const [teamname, setTeamname] = useState("");
-  const [gids, setGids] = useState("");
-
-
+  const [TID, setTID] = useState(null);
   const [Phone, setPhone] = useState(null);
   const { eventRegName } = useParams();
+
   const eventRegs = {
     // webMindReg: {
     //   api: "",
@@ -89,11 +86,16 @@ const Codezen = () => {
     // }
 
     line_trekkerReg: {
-      api: "",
+      name: "Line Trekker",
+      gidVerifyApi: "",
+      getTidApi: "",
       min: 1,
       max: 2,
     },
   };
+
+  const regData = eventRegs[eventRegName];
+
   const handleinputchange = (e) => {
     const { value } = e.target;
     setinputList([...inputList, value]);
@@ -101,32 +103,59 @@ const Codezen = () => {
   };
 
   const handleLogin = async () => {
+    const [gid1, gid2, gid3, gid4, gid5] = inputList;
+    console.log(
+      "Data that will be send to  Backend >>>> ",
+      " Team Name >>>",
+      teamname,
+      "gid1 >>>",
+      gid1,
+      "gid2 >>>",
+      gid2,
+      "gid3 >>>",
+      gid3,
+      "gid4 >>>",
+      gid4,
+      "gid5 >>>",
+      gid5,
+      "Phone >>> ",
+      Phone
+    );
+
     if (!teamname) {
-      alert("Please fill in all required fields.");
+      alert("Please fill Team Name !!!");
+    } else if (!gid1) {
+      alert("Please give minimum 1 Varified GID !!!");
+    } else if (!Phone) {
+      alert("Please Enter the Phone number !!!");
     } else {
       try {
-        const response = await axios.post(
-          `https://api.msitparidhi.in/megatronix/paridhi/user/coding/codezen`,
-          {
-            teamname: teamname,
-            gid: gid1,
-            number1: number1,
-          }
-        );
+        const response = await axios.post(regData.getTidApi, {
+          teamname: teamname,
+          gid1: !gid1 ? null : gid1,
+          gid2: !gid2 ? null : gid2,
+          gid3: !gid3 ? null : gid3,
+          gid4: !gid4 ? null : gid4,
+          gid5: !gid5 ? null : gid5,
+          phone: Phone,
+        });
+
         console.log("Sign up successful:", response.data);
         setGidResponse(response.data);
         localStorage.setItem("user", response.data);
-        //changed
+
+        console.log("sending the request !!!!!", inputList);
+        console.log("this is array of gids", inputList);
+
+        // Setting TID -----
+
+        setTID(response.tid);
         setShowTIDBox(true);
       } catch (error) {
         console.error("Error signing up:", error);
       }
     }
   };
-
-  const regData = eventRegs[eventRegName];
-
-  console.log("this is the data i want ", regData.max);
 
   const handleremove = (index) => {
     const list = [...inputList];
@@ -146,9 +175,7 @@ const Codezen = () => {
 
   const verifyGID = async (value, index) => {
     try {
-      const response = await axios.get(
-        `https://api.msitparidhi.in/megatronix/paridhi/user/coding/codezen/${value}`
-      );
+      const response = await axios.get(`${regData.gidVerifyApi}${value}`);
       console.log(response);
       console.log(response.status);
       console.log(response.data);
@@ -156,7 +183,7 @@ const Codezen = () => {
       if (response.status === 200) {
         if (!inputList.includes(value)) {
           setinputList([...inputList, value]);
-          console.log(inputList);
+
           setVerifiedCount(verifiedCount + 1);
           setVal("");
           console.log(`GID ${value} is valid`);
@@ -180,6 +207,7 @@ const Codezen = () => {
   };
 
   // Function to show TIDDisplayBox
+
   const showTIDBoxHandler = () => {
     if (verifiedCount === 2) {
       setShowTIDBox(true);
@@ -192,7 +220,7 @@ const Codezen = () => {
     <CenteredContainer>
       <Cover>
         <Container>
-          <Title>{event.toUpperCase()}</Title>
+          <Title>{regData.name.toUpperCase()}</Title>
           <Underline />
 
           <IconContainer>
@@ -225,13 +253,12 @@ const Codezen = () => {
               <Button
                 className="Verify"
                 onClick={() => {
-                  if (inputList.length < 2) {
-                    console.log(val);
+                  if (inputList.length < regData.max) {
+                    // console.log(val);
                     verifyGID(val);
                   } else {
                     alert("You can only verify up to 2 GIDs.");
                   }
-                  A;
                 }}
               >
                 Verify
@@ -252,14 +279,13 @@ const Codezen = () => {
                     placeholder={`GID ${idx + 1}`}
                     value={data}
                     disabled
-                                      
                   />
                   {verifiedCount > 0 && (
                     <Button
                       className="fa fa-minus"
                       onClick={() => handleremove(idx)}
                     >
-                      <i class="ri-subtract-line"></i>
+                      <i className="ri-subtract-line"></i>
                     </Button>
                   )}
                 </IconContainer>
@@ -284,7 +310,9 @@ const Codezen = () => {
           </IconContainer>
 
           <SignUpButton onClick={handleLogin}>Generate TID</SignUpButton>
-          {showTIDBox && <TIDDisplayBox onClose={() => setShowTIDBox(false)} />}
+          {showTIDBox && (
+            <TIDDisplayBox TID={TID} onClose={() => setShowTIDBox(false)} />
+          )}
         </Container>
       </Cover>
     </CenteredContainer>
