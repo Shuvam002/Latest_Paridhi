@@ -227,7 +227,7 @@ const ProfileInformation = () => {
             </CardsSection>
           </>
         ) : (
-          <h1 style={{ color: "white" }}>//Any Massage</h1>
+          <h1 style={{ color: "white" }}></h1>
         )}
       </StyledContainer>
     </>
