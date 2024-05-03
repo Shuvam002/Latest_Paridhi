@@ -3,7 +3,7 @@ export const CenteredContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden; 
+  overflow: hidden;
   padding-top: 10vh;
   height: 100vh;
   width: 100%;
@@ -14,7 +14,7 @@ export const CenteredContainer = styled.div`
 
 export const Cover = styled.div`
   display: flex;
-  
+
   align-items: center;
   justify-content: center;
   margin: 0;
@@ -24,7 +24,7 @@ export const Cover = styled.div`
   @media (max-width: 800px) {
     width: 80%;
   }
-  height:70%;
+  height: 70%;
 `;
 
 export const BackgroundImage = styled.div`
@@ -43,11 +43,9 @@ export const Container = styled.div`
   align-items: center;
   justify-content: space-around;
   padding: 0 0 0 0;
-  @media (min-width: 1100px)
-  {
+  @media (min-width: 1100px) {
     width: 50%;
   }
-
 `;
 
 export const Page = styled.div`
@@ -109,10 +107,10 @@ export const Underline = styled.div`
   margin-bottom: 2%;
 `;
 
-export const SignUpButton = styled.div`
+export const SignUpButton = styled.button`
   width: 30%;
   padding: 0.3rem 0 0.3rem 0;
-  font-weight: bold;
+  /* font-weight: bold; */
   color: white;
   background-color: rgb(255, 101, 96);
   display: flex;
@@ -120,16 +118,16 @@ export const SignUpButton = styled.div`
   border-radius: 4rem;
   cursor: pointer;
   margin-bottom: 2%;
-  justify-content:center;
-  text-align:center;
-  font-size:1.2rem;
+  justify-content: center;
+  text-align: center;
+  font-size: 1.2rem;
   border: 3px solid rgb(255, 101, 96);
-  &:hover {
+  /* &:hover {
     border: 3px solid rgb(231, 231, 231);
     background: transparent;
-  }
+  } */
 
-  @media (max-width: 445px){
+  @media (max-width: 445px) {
     font-size: 1rem;
     padding: 5px;
     margin-bottom: 1rem;
@@ -161,7 +159,7 @@ export const LoginPopup = styled.div`
 `;
 
 export const IconContainer = styled.div`
-display:flex;
+  display: flex;
   position: relative;
   text-align: center;
   width: 70%;

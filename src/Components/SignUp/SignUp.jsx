@@ -164,6 +164,7 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
+
       <Cover>
         <Container>
           <Title>Register</Title>
@@ -288,7 +289,140 @@ const SignUp = () => {
       {showGIDBox && (
         <GIDDisplayBox gid={gidResponse} onClose={() => setShowGIDBox(false)} />
       )}
+
+    <Title>Registration begins soon...</Title>
+
     </CenteredContainer>
+    // <CenteredContainer>
+    //   <Cover>
+    //     <Container> 
+    //       <Title>Registration begins soon...</Title>
+
+    //        <Underline />
+
+    //       <IconContainer>
+    //         <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
+    //         <InputField
+    //           name="name"
+    //           type="text"
+    //           placeholder="Name"
+    //           value={name}
+    //           onChange={(e) => setName(e.target.value)}
+    //         />
+    //       </IconContainer>
+
+    //       <IconContainer>
+    //         <InputIcon
+    //           className="fa fa-university"
+    //           aria-hidden="true"
+    //         ></InputIcon>
+    //         <InputField
+    //           name="college"
+    //           type="text"
+    //           placeholder="College"
+    //           value={college}
+    //           onChange={(e) => setCollege(e.target.value)}
+    //         />
+    //       </IconContainer>
+
+    //       <IconContainer>
+    //         <InputIcon
+    //           className="fa fa-calendar"
+    //           aria-hidden="true"
+    //         ></InputIcon>
+    //         <InputField
+    //           name="year"
+    //           type="text"
+    //           placeholder="Year/Class"
+    //           value={year}
+    //           onChange={handleYearChange}
+    //         />
+    //         {warning && <p style={{ color: "red" }}>{warning}</p>}
+    //       </IconContainer>
+
+    //       <IconContainer>
+    //         <InputIcon className="fa fa-book" aria-hidden="true"></InputIcon>
+    //         <InputField
+    //           name="department"
+    //           type="text"
+    //           placeholder="Department"
+    //           value={department}
+    //           onChange={(e) => setDepartment(e.target.value)}
+    //         />
+    //       </IconContainer>
+
+    //       <IconContainer>
+    //         <InputIcon
+    //           className="fa fa-id-card-o"
+    //           aria-hidden="true"
+    //         ></InputIcon>
+    //         <InputField
+    //           name="roll"
+    //           type="number"
+    //           placeholder="Roll No."
+    //           value={roll}
+    //           onChange={(e) => setRoll(e.target.value)}
+    //         />
+    //       </IconContainer>
+
+    //       <IconContainer>
+    //         <InputIcon
+    //           className="fa fa-envelope-o"
+    //           aria-hidden="true"
+    //         ></InputIcon>
+    //         {isVerified ? (
+    //           <InputField
+    //             name="email"
+    //             type="email"
+    //             placeholder="Verified"
+    //             readOnly
+    //             value={email}
+    //           />
+    //         ) : (
+    //           <>
+    //             <InputField
+    //               name="email"
+    //               type="email"
+    //               placeholder="Email id"
+    //               value={email}
+    //               onChange={(e) => setEmail(e.target.value)}
+    //             />
+    //             <Button disabled style={{cursor:"not-allowed"}} className="Verify" onClick={handleVerify}>
+    //               Verify
+    //             </Button>
+    //           </>
+    //         )}
+    //       </IconContainer>
+
+    //       <IconContainer>
+    //         <InputIcon className="fa fa-phone" aria-hidden="true"></InputIcon>
+    //         <InputField
+    //           name="phoneNumber"
+    //           type="tel"
+    //           placeholder="Phone Number"
+    //           value={phoneNumber}
+    //           onChange={(e) => setPhoneNumber(e.target.value)}
+    //         />
+    //       </IconContainer>
+
+    //       <SignUpButton disabled style={{cursor:"not-allowed"}} onClick={handleSignUp}>Submit</SignUpButton>
+    //     </Container>
+    //   </Cover>
+
+    //   {otpPopup && (
+    //     <OTPVerificationPopup
+    //       onSubmit={handleOtpSubmit}
+    //       onClose={() => setOtpPopup(false)}
+    //     />
+    //   )}
+    //   {showGIDBox && (
+    //     <GIDDisplayBox
+          
+    //       gid={gidResponse}
+    //       onClose={() => setShowGIDBox(false)}
+    //     />
+    //   )} 
+    // </CenteredContainer>
   );
 };
 
