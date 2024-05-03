@@ -18,11 +18,7 @@ const PopupOverlay = styled.div`
 const PopupContainer = styled.div`
   font-family: "Jost", sans-serif;
   background-color: rgb(0, 0, 0);
-<<<<<<< HEAD
   color: rgb(255, 255, 255);
-=======
-  color: rgb(255, 101, 96);
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -31,13 +27,13 @@ const PopupContainer = styled.div`
   text-align: center;
 `;
 const ButtonOTP = styled.div`
-<<<<<<< HEAD
+
   /* margin:0 0 1rem 0; */
   padding: 0.3rem;
-=======
+
   margin: 1rem 0 1rem 0;
   padding: 0.5rem;
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
+
   border: 2px solid red;
   border-radius: 5px;
   cursor: pointer;
@@ -67,20 +63,19 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
 
   const handleSubmit = () => {
     onSubmit(otp);
-<<<<<<< HEAD
+
 
     setTimeout(() => {
       onClose();
     }, 1000);
-=======
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
+
   };
   console.log("this is signUP");
   return (
     <PopupOverlay>
       <PopupContainer>
         <h2 style={{ textAlign: "center" }}>Enter OTP</h2>
-<<<<<<< HEAD
+
         <InputField
           type="number"
           value={otp}
@@ -95,19 +90,19 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
           }}
         />
         <Paragraph>*Please check you email</Paragraph>
-=======
+
         {!wrongOTP ? null : (
           <h4 style={{ textAlign: "center" }}>OTP is Incorrect</h4>
         )}
-        <input
+        {/* <input
           type="text"
           value={otp}
           onChange={(e) => setOTP(e.target.value)}
           placeholder="Enter OTP"
           style={{ height: "2rem" ,
         textAlign:"center"}}
-        />
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
+        /> */}
+
         <div
           style={{
             display: "flex",
@@ -115,7 +110,7 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
             textAlign: "center",
           }}
         >
-<<<<<<< HEAD
+
           <ButtonOTP
             style={{
               border: "2px solid green",
@@ -129,9 +124,9 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
             Submit
           </ButtonOTP>
 
-=======
-          <ButtonOTP onClick={handleSubmit}>Submit</ButtonOTP>
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
+
+          
+
           <ButtonOTP onClick={onClose}>Cancel</ButtonOTP>
         </div>
       </PopupContainer>

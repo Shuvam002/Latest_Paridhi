@@ -11,10 +11,7 @@ export const StyledContainer = styled.div`
   justify-content: space-between;
   justify-content: center;
   align-items: center;
-<<<<<<< HEAD
 
-=======
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
  
 `;
 export const BottomNavbar = styled.nav`
@@ -65,7 +62,6 @@ export const NavbarLink = styled.a`
     color: #ddd;
   }
 `;
-<<<<<<< HEAD
 
-=======
->>>>>>> 4be942a43e85ba18bac8a421c00b7f8adcf4b051
+
+

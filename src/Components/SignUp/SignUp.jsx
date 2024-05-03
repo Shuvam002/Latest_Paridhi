@@ -290,7 +290,7 @@ const SignUp = () => {
         <GIDDisplayBox gid={gidResponse} onClose={() => setShowGIDBox(false)} />
       )}
 
-    <Title>Registration begins soon...</Title>
+    {/* <Title>Registration begins soon...</Title> */}
 
     </CenteredContainer>
     // <CenteredContainer>
