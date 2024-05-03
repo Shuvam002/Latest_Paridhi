@@ -15,7 +15,7 @@ const PopupOverlay = styled.div`
 
 const PopupContainer = styled.div`
   font-family: "Jost", sans-serif;
-  background-color: rgb(0,0,0);
+  background-color: rgb(0, 0, 0);
   color: rgb(255, 101, 96);
   padding: 20px;
   border-radius: 8px;
@@ -23,49 +23,50 @@ const PopupContainer = styled.div`
   border: 1px solid rgb(255, 101, 96);
 `;
 const ButtonOTP = styled.div`
-  margin:1rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   padding: 0.5rem;
   border: 2px solid red;
   border-radius: 5px;
   cursor: pointer;
   transition: 0.1s;
 
-  &:hover{
+  &:hover {
     background-color: rgb(255, 101, 96);
     color: white;
   }
 `;
 
-const OTPVerificationPopup = ({ onSubmit, onClose }) => {
-  const [otp, setOTP] = useState("");
+const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
+  const [otp, setOTP] = useState(null);
 
   const handleSubmit = () => {
     onSubmit(otp);
-
-    setTimeout(() => {
-      onClose(); 
-    }, 1000);
   };
 
   return (
     <PopupOverlay>
       <PopupContainer>
-        <h2
-        style={{textAlign:'center'}}>Enter OTP</h2>
+        <h2 style={{ textAlign: "center" }}>Enter OTP</h2>
+        {!wrongOTP ? null : (
+          <h4 style={{ textAlign: "center" }}>OTP is Incorrect</h4>
+        )}
         <input
           type="text"
           value={otp}
           onChange={(e) => setOTP(e.target.value)}
           placeholder="Enter OTP"
-          style={{height:'2rem'}}
+          style={{ height: "2rem" ,
+        textAlign:"center"}}
         />
-        <div style={{
-          display:'flex',
-          justifyContent:'space-around',
-          textAlign:'center',
-          }}>
-        <ButtonOTP onClick={handleSubmit}>Submit</ButtonOTP>
-        <ButtonOTP onClick={onClose}>Cancel</ButtonOTP>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "space-around",
+            textAlign: "center",
+          }}
+        >
+          <ButtonOTP onClick={handleSubmit}>Submit</ButtonOTP>
+          <ButtonOTP onClick={onClose}>Cancel</ButtonOTP>
         </div>
       </PopupContainer>
     </PopupOverlay>
