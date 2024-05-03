@@ -53,6 +53,8 @@ const Codezen = () => {
   const [Phone, setPhone] = useState(null);
   const { eventRegName } = useParams();
 
+  const apiUrl=String(import.meta.env.VITE_API_MAIN);
+
   const eventRegs = {
     // webMindReg: {
     //   api: "",
@@ -87,11 +89,131 @@ const Codezen = () => {
 
     line_trekkerReg: {
       name: "Line Trekker",
-      gidVerifyApi: "",
-      getTidApi: "",
+      gidVerifyApi: `${apiUrl}/robotics/line-trekker/`,
+      getTidApi: `${apiUrl}/robotics/line-trekker`,
       min: 1,
       max: 2,
     },
+    robo_klassikerReg: {
+      name: "Robo Klassiker",
+      gidVerifyApi: `${apiUrl}/robotics/robo-klassiker/`,
+      getTidApi: `${apiUrl}/robotics/robo-klassiker`,
+      min: 1,
+      max: 5,
+    },
+    triathlonReg: {
+      name: "Triathlon",
+      gidVerifyApi: `${apiUrl}/robotics/triathlon/`,
+      getTidApi: `${apiUrl}/robotics/triathlon`,
+      min: 1,
+      max: 5,
+    },
+    war_8kgReg: {
+      name: "War 8kg",
+      gidVerifyApi: `${apiUrl}/robotics/war-8kg/`,
+      getTidApi: `${apiUrl}/robotics/war-8kg`,
+      min: 1,
+      max: 5,
+    },
+    war_15kgReg: {
+      name: "War 15kg",
+      gidVerifyApi: `${apiUrl}/robotics/war-15kg/`,
+      getTidApi: `${apiUrl}/robotics/war-15kg`,
+      min: 1,
+      max: 5,
+    },
+    mega_archReg: {
+      name: "Mega Arch",
+      gidVerifyApi: `${apiUrl}/civil/mega-arch/`,
+      getTidApi: `${apiUrl}/civil/mega-arch`,
+      min: 3,
+      max: 5,
+    },
+    setu_bandhanReg: {
+      name: "Setu Bandhan",
+      gidVerifyApi: `${apiUrl}/civil/setu-bandhan/`,
+      getTidApi: `${apiUrl}/civil/setu-bandhan`,
+      min: 2,
+      max: 3,
+    },
+    totReg: {
+      name: "TOT",
+      gidVerifyApi: `${apiUrl}/civil/tot/`,
+      getTidApi: `${apiUrl}/civil/tot`,
+      min: 2,
+      max: 3,
+    },
+    code_zenReg: {
+      name: "Code Zen",
+      gidVerifyApi: `${apiUrl}/coding/codezen/`,
+      getTidApi: `${apiUrl}/coding/codezen`,
+      min: 1,
+      max: 2,
+    },
+    code_questReg: {
+      name: "Code Quest",
+      gidVerifyApi: `${apiUrl}/coding/code-quest/`,
+      getTidApi: `${apiUrl}/coding/code-quest`,
+      min: 1,
+      max: 2,
+    },
+    web_mindsReg: {
+      name: "Web Minds",
+      gidVerifyApi: `${apiUrl}/coding/web-minds/`,
+      getTidApi: `${apiUrl}/coding/web-minds`,
+      min: 1,
+      max: 2,
+    },
+    electri_questReg: {
+      name: "Electri Quest",
+      gidVerifyApi: `${apiUrl}/electrical/electri-quest/`,
+      getTidApi: `${apiUrl}/electrical/electri-quest`,
+      min: 1,
+      max: 2,
+    },
+    table_tennisReg: {
+      name: "Table Tennis",
+      gidVerifyApi: `${apiUrl}/general/table-tennis/`,
+      getTidApi: `${apiUrl}/general/table-tennis`,
+      min: 1,
+      max: 2,
+    },
+    carromReg: {
+      name: "Carrom",
+      gidVerifyApi: `${apiUrl}/general/carrom/`,
+      getTidApi: `${apiUrl}/general/carrom`,
+      min: 1,
+      max: 2,
+    },
+    valorantReg: {
+      name: "Valorant",
+      gidVerifyApi: `${apiUrl}/gaming/valorant/`,
+      getTidApi: `${apiUrl}/gaming/valorant`,
+      min: 5,
+      max: 6,
+    },
+    bgmiReg: {
+      name: "BGMI",
+      gidVerifyApi: `${apiUrl}/gaming/bgmi/`,
+      getTidApi: `${apiUrl}/gaming/bgmi`,
+      min: 4,
+      max: 6,
+    },
+    pesReg: {
+      name: "PES",
+      gidVerifyApi: `${apiUrl}/gaming/pes/`,
+      getTidApi: `${apiUrl}/gaming/pes`,
+      min: 4,
+      max: 6,
+    },
+    binge_quizReg: {
+      name: "Binge Quiz",
+      gidVerifyApi: `${apiUrl}/general/binge-quiz/`,
+      getTidApi: `${apiUrl}/general/binge-quiz`,
+      min: 1,
+      max: 2,
+    },
+    
   };
 
   const regData = eventRegs[eventRegName];
@@ -141,15 +263,16 @@ const Codezen = () => {
         });
 
         console.log("Sign up successful:", response.data);
-        setGidResponse(response.data);
-        localStorage.setItem("user", response.data);
+        // setGidResponse(response.data);
+        // localStorage.setItem("user", response.data);
 
         console.log("sending the request !!!!!", inputList);
         console.log("this is array of gids", inputList);
 
         // Setting TID -----
 
-        setTID(response.tid);
+        setTID(response.data);
+        console.log(response.data);
         setShowTIDBox(true);
       } catch (error) {
         console.error("Error signing up:", error);

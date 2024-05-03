@@ -2,8 +2,12 @@ import React from "react";
 import { Main } from "./Registration.styled";
 import { useParams } from "react-router-dom";
 import InfoBanner from "../InfoBanner/InfoBanner";
-import { StyledContainer,BottomNavbar,StyledLink } from "../Events/Events.styled";
-import { GiChessQueen, GiBattleGear  } from "react-icons/gi";
+import {
+  StyledContainer,
+  BottomNavbar,
+  StyledLink,
+} from "../Events/Events.styled";
+import { GiChessQueen, GiBattleGear } from "react-icons/gi";
 import { FaUserGear } from "react-icons/fa6";
 
 const DomainEvents = {
@@ -15,6 +19,7 @@ const DomainEvents = {
     fee: 30,
     Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
     rule: "https://drive.google.com/file/d/1exu2-z0zN_d0wk7OTW6LKQIhCqrbFoi5/view?usp=drive_link",
+    
   },
   web_minds: {
     Image: "https://bizmo.al/wp-content/uploads/2022/03/Web-Dev-Blog.png",
@@ -23,6 +28,8 @@ const DomainEvents = {
     fee: 100,
     Descriptions: `Engage in the Web Development Challenge spanning two rounds. Top performers advance to the finals, crafting captivating web pages. Finalists vie for cash prizes. Open to all years, this competition offers a platform to showcase skills, with excellence leading to recognition and rewards.`,
     rule: "https://drive.google.com/file/d/1QHecZlZLDx7lpyY1SvYiGUHkPvoeaSrs/view?usp=drive_link",
+    regLink: "/events/coding/web_minds/web_mindsReg",
+
   },
   code_quest: {
     Image:
@@ -32,6 +39,7 @@ const DomainEvents = {
     fee: 150,
     Descriptions: `Competitive Programming contest consists of two rounds: prelims and finals. Top performers in prelims advance to finals for a chance to win lucrative cash prizes. Open to all participants across all years, it promises an exhilarating challenge and rewards excellence in coding prowess.`,
     rule: "https://drive.google.com/file/d/1i0RAs5WzalGAaBnL5a41g4t6e3tCk0RA/view?usp=drive_link",
+    regLink: "/events/coding/code_quest/code_questReg",
   },
   codezen: {
     Image: "https://varthana.com/school/wp-content/uploads/2023/02/B193.jpg",
@@ -40,6 +48,7 @@ const DomainEvents = {
     fee: 100,
     Descriptions: `Join our exclusive CP contest tailored for first-year students and school attendees. The competition features two rounds: prelims and finals. Top performers advance to the finals for a chance to win enticing cash prizes. Don't miss this opportunity to showcase your skills and compete at the highest level!`,
     rule: "https://drive.google.com/file/d/1vx68j530eil1nM_3qHI3T6jLYQZp4-3p/view?usp=drive_link",
+    regLink: "/events/coding/codezen/codezenReg",
   },
 
   triathlon: {
@@ -49,6 +58,7 @@ const DomainEvents = {
     fee: 300,
     Descriptions: `"Join our bot racing contest, open to all! Click to sign up and learn the rules for this thrilling challenge. Let the excitement begin!"`,
     rule: "https://drive.google.com/file/d/1M2aCGO10zqnr1rFa7R2gtj3gJq2HsF7t/view?usp=drive_link",
+    regLink: "/events/manual_robotics/triathlon/triathlonReg",
   },
   robo_klassiker: {
     Image:
@@ -58,6 +68,7 @@ const DomainEvents = {
     fee: 350,
     Descriptions: `Participate in our exclusive bot soccer contest! Bots compete for goals while avoiding penalties. Enroll now and familiarize yourself with the regulations!`,
     rule: "https://drive.google.com/file/d/1g8ZYiyuAsYPBuMxPOchBKbDc1xPN3-59/view?usp=drive_link",
+    regLink: "/events/manual_robotics/robo_klassiker/robo_klassikerReg",
   },
   chakravyuh: {
     Image:
@@ -86,6 +97,7 @@ const DomainEvents = {
     fee: "600",
     Descriptions: `Join our heart-throbbing bot war unfer 8 kg category competition open for all!Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1h8F65IW-K9Im89GkQjOMg_yE7L3hCjZY/view?usp=drive_link",
+    regLink: "/events/combat_robotics/throne_of_bots_8kg/war_8kgReg",
   },
   throne_of_bots_15kg: {
     Image: "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
@@ -94,6 +106,7 @@ const DomainEvents = {
     fee: "1000",
     Descriptions: `Join our heart-throbbing bot war competition under 15 kg category open for all!Register now and uncover the rules for this thrilling event!`,
     rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
+    regLink: "/events/combat_robotics/throne_of_bots_15kg/war_15kgReg",
   },
   throne_of_bots_combo_8_15kg: {
     Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
@@ -120,7 +133,7 @@ const DomainEvents = {
     fee: 300,
     Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
     rule: "https://drive.google.com/file/d/130HoyH1xz4AHDuW6IX1nS8bY04BYowiY/view?usp=drive_link",
-    // regLink: "/events/autonomous_robotics/line_trekker/line_trekkerReg",
+    regLink: "/events/autonomous_robotics/line_trekker/line_trekkerReg",
   },
   setu_bandhan: {
     Image:
@@ -130,6 +143,7 @@ const DomainEvents = {
     fee: "75(college) / 60(school)",
     Descriptions: `Craft a sturdy bridge with provided ice-cream sticks and glue. The strongest design, open to all years, wins! Register now to participate!`,
     rule: "https://drive.google.com/file/d/1MUOXxXL_KRz8TzHN6BCEU3xH-bUwspGv/view?usp=sharing",
+    regLink: "/events/civil/setu_bandhan/setu_bandhanReg",
   },
   trackOtreasure: {
     Image:
@@ -139,6 +153,7 @@ const DomainEvents = {
     fee: "90(College) / 75(school)",
     Descriptions: `Embark on the challenge, solve riddles, and unearth the treasure in our exclusive treasure hunt adventure. Register now to uncover the rules and join the excitement!`,
     rule: "https://drive.google.com/file/d/1-pr-6ocmzwH-XRaUx8skRWWAtn9a4LzW/view?usp=sharing",
+    regLink: "/events/civil/trackOtreasure/trackOtreasureReg",
   },
   cad_O_mania: {
     Image:
@@ -157,6 +172,7 @@ const DomainEvents = {
     fee: 150,
     Descriptions: `Build a load-bearing bridge using provided sand and bricks within a set time. The strongest design wins. Register for more details on this exciting challenge!`,
     rule: "https://drive.google.com/file/d/13nbgR0L5Lkf8mmQWeA-La8kbwOjVpMMw/view?usp=sharing",
+    regLink: "/events/civil/mega_arch/mega_archReg",
   },
   valorant_lan: {
     Image: "https://stanforddaily.com/wp-content/uploads/2020/08/image-2.png",
@@ -165,6 +181,7 @@ const DomainEvents = {
     fee: 750,
     Descriptions: `"Valorant: Where tactical prowess meets precise aim in dynamic multiplayer battles."`,
     rule: "https://drive.google.com/file/d/1Q_A8Hw-w6iLLZq6gxgaUJ159C6-UTmvd/view?usp=sharing",
+    regLink: "/events/gaming/valorant_lan/valorantReg",
   },
   bgmi_lan: {
     Image:
@@ -174,6 +191,7 @@ const DomainEvents = {
     fee: 500,
     Descriptions: `BGMI: Experience strategic survival, intense firefights, and victory in immersive battlegrounds.`,
     rule: "https://drive.google.com/file/d/1Mb4TLR9zdxfa6GvpvZjfXbK-J5RTrK1-/view?usp=drive_link",
+    regLink: "/events/gaming/bgmi_lan/bgmiReg",
   },
   eFootball: {
     Image:
@@ -183,6 +201,7 @@ const DomainEvents = {
     fee: "NA",
     Descriptions: `E-Football: Dive into the virtual pitch with skill, strategy, and teamwork.`,
     rule: "https://drive.google.com/file/d/1wz5WkNk80bkb3z9ylR6s5710eZB36aLp/view?usp=drive_link",
+    regLink: "/events/gaming/eFootball/pesReg",
   },
   fifa: {
     Image:
@@ -210,7 +229,9 @@ const DomainEvents = {
     fee: 80,
     Descriptions: `Experience the thrill of a carrom tournament. Click to register and uncover the rules for this exciting event.`,
     rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
+    regLink: "/events/gaming/carrom/carromReg",
   },
+  
   table_tennis: {
     Image:
       "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/momhllweruehw0ud2m2r",
@@ -219,6 +240,7 @@ const DomainEvents = {
     fee: 70,
     Descriptions: `Embark on a thrilling table tennis journey to rediscover childhood joy. Click to register and uncover the rules today!`,
     rule: "Rules coming soon",
+    regLink: "/events/gaming/table_tennis/table_tennisReg",
   },
   binge_quiz: {
     Image:
@@ -228,6 +250,7 @@ const DomainEvents = {
     fee: 40,
     Descriptions: `Embark on an intriguing quiz journey! Click to register and unveil the rules of this captivating binge-worthy challenge.`,
     rule: "https://drive.google.com/file/d/1NNiXESBPHj7p2nbuIMjUM9E7MJwgkvEl/view?usp=sharing",
+    regLink: "/events/gaming/binge_quiz/binge_quizReg",
   },
   chess: {
     Image:
@@ -296,18 +319,32 @@ const Registration = () => {
         )}
       </Main>
       <BottomNavbar>
-          <StyledLink to="/events/coding"><i class="ri-code-s-slash-line"></i></StyledLink>
-          <StyledLink to="/events/manual_robitics"><i class="ri-robot-2-line"></i></StyledLink>
-          <StyledLink to="/events/combat_robitics"><GiBattleGear /></StyledLink>
-          <StyledLink to="/events/autonomous_robitics"><FaUserGear /></StyledLink>
-          <StyledLink to="/events/civil"><i class="ri-building-2-line"></i></StyledLink>
-          <StyledLink to="/events/electrical"><i class="ri-flashlight-line"></i></StyledLink>
-          <StyledLink to="/events/gaming"><i class="ri-gamepad-line"></i></StyledLink>
-          <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
-        </BottomNavbar>
+        <StyledLink to="/events/coding">
+          <i class="ri-code-s-slash-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/manual_robitics">
+          <i class="ri-robot-2-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/combat_robitics">
+          <GiBattleGear />
+        </StyledLink>
+        <StyledLink to="/events/autonomous_robitics">
+          <FaUserGear />
+        </StyledLink>
+        <StyledLink to="/events/civil">
+          <i class="ri-building-2-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/electrical">
+          <i class="ri-flashlight-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/gaming">
+          <i class="ri-gamepad-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/general">
+          <GiChessQueen />
+        </StyledLink>
+      </BottomNavbar>
     </>
-
-    
   );
 };
 export default Registration;

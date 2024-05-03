@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import { Button } from "./SignUp.styled.js";
+import { Button } from "./SignUp.styled";
 
 const GIDBoxOverlay = styled.div`
   position: fixed;
@@ -17,14 +17,14 @@ const GIDBoxOverlay = styled.div`
 const GIDBoxContainer = styled.div`
   background-color: rgb(0,0,0);
   color: white;
-  /* border: 1px solid rgb(255, 101, 96); */
+  border: 1px solid rgb(255 , 255 , 255);
   font-family: "Jost", sans-serif;
   font-size: large;
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative; /* Ensure close button is positioned relative to the container */
-  min-width: 20%;
+  /* width: 20%; */
   text-align: center;
 `;
 
@@ -44,11 +44,11 @@ const GIDDisplayBox = ({ gid, onClose }) => {
   return (
     <GIDBoxOverlay>
       <GIDBoxContainer>
-        <CloseButton onClick={onClose}><i class="ri-close-large-fill"></i></CloseButton>
+        <CloseButton onClick={onClose}><i className="ri-close-large-fill"></i></CloseButton>
         <h2>Your GID</h2>
         <p style={{fontSize:'1.5rem'}}>{gid}</p>
         <p style={{fontSize:'0.85rem',
-      fontWeight:'bold',
+      fontWeight:'bold', margin:'1rem',
       color:'rgb(178, 178, 178)'}}>*Please visit the college to complete your registration payment</p>
       </GIDBoxContainer>
     </GIDBoxOverlay>

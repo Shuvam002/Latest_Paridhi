@@ -2,41 +2,24 @@
 import React, { useEffect, useState } from "react";
 // import axios from "axios";
 import {
-  AltLogin,
-  AltLoginButton,
-  BackgroundImage,
   Container,
   Cover,
-  DesktopOptimization,
-  FacebookButton,
-  GoogleButton,
   IconContainer,
-  IconContainerResponsive,
-  IconInputResponsive,
   InputField,
   InputIcon,
-  LoginPopup,
-  MaxWidth450px,
-  MobileIconContainer,
-  MobileInputField,
-  Page,
   SignUpButton,
-  TabletOptimization,
-  Text,
   Title,
   Underline,
   CenteredContainer,
   Button,
 } from "./SignUp.styled";
-import GIDDisplayBox from "./GIDDisplayBox"; 
+import GIDDisplayBox from "./GIDDisplayBox";
 import axios from "axios";
+// import process 
 
 import { gapi } from "gapi-script";
 
 import OTPVerificationPopup from "./OTPVerificationPopup";
-
-
-  
 
 const SignUp = () => {
   const [showGIDBox, setShowGIDBox] = useState(false);
@@ -64,48 +47,49 @@ const SignUp = () => {
   const [isVerified, setIsVerified] = useState(false);
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
-  const[gidResponse, setGidResponse] = useState(null);
+  const [gidResponse, setGidResponse] = useState(null);
+  
+  const apiUrl=String(import.meta.env.VITE_API_MAIN);
 
   let config = {
-    url:`https://api.msitparidhi.in/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
+    url: `${apiUrl}/generate-otp?name=${name}&email=${email}`,
     method: "post",
     headers: {
-      'Access-Control-Allow-Origin': '*',
-      'Access-Control-Allow-Headers': '*',
-      'Access-Control-Allow-Credentials': 'true',
-    }
-
-
-};
+      "Access-Control-Allow-Origin": "*",
+      "Access-Control-Allow-Headers": "*",
+      "Access-Control-Allow-Credentials": "true",
+    },
+  };
 
   const popup = () => {
     showPopup("login-popup");
     setTimeout(() => showPopup("hide"), 3000);
   };
 
-  
-
-  const handleVerify = async() => {
-    
+  const handleVerify = async () => {
     if (!email.includes("@") || !email.includes(".")) {
       alert("Please enter a valid email address.");
-       
-    }
-
-    else {
-      const response = await axios.request(config);
+    } else {
+      const response = await axios.post(`${apiUrl}/generate-otp?name=${name}&email=${email}`, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Headers": "*",
+          "Access-Control-Allow-Credentials": "true",
+        }
+      });
       console.log(response);
       setOtpPopup(true);
     }
-   
-   
-    
   };
 
   const handleOtpSubmit = async (otp) => {
     try {
       // Make a POST request to the backend API endpoint to verify OTP
-      const response = await axios.post(`https://api.msitparidhi.in/megatronix/paridhi/user/registration/verify-otp`, { email, otp });
+      const response = await axios.post(
+        `${apiUrl}/verify-otp`,
+        { email, otp }
+      );
+      // console.log(apiUrl)
       console.log(response);
       // Check if the OTP verification is successful
       if (response.status === 200) {
@@ -123,7 +107,6 @@ const SignUp = () => {
       alert("Error verifying OTP. Please try again.");
     }
   };
-  
 
   const handleYearChange = (e) => {
     const value = parseInt(e.target.value);
@@ -138,47 +121,54 @@ const SignUp = () => {
   const handleSignUp = async () => {
     if (!email.includes("@") || !email.includes(".")) {
       alert("Please enter a valid email address.");
-      
     }
     if (!isVerified) {
       alert("Please verify your email address before signing up.");
-     
     }
-    if (!name || !college || !year || !department || !roll || !email || !phoneNumber) {
+    if (
+      !name ||
+      !college ||
+      !year ||
+      !department ||
+      !roll ||
+      !email ||
+      !phoneNumber
+    ) {
       alert("Please fill in all required fields.");
+    } else {
+      try {
+        const response = await axios.post(
+          `${apiUrl}/registration`,
+          {
+            name: name,
+            college: college,
+            year: year,
+            department: department,
+            roll: roll,
+            email: email,
+            phoneNumber: phoneNumber,
+            emailVerified: true,
+          }
+        );
+        console.log("Sign up successful:", response.data);
+        setGidResponse(response.data);
+        localStorage.setItem("user", response.data);
+        //changed
+        setShowGIDBox(true);
+        console.log(apiUrl);
+      } catch (error) {
+        console.error("Error signing up:", error);
+      }
     }
+  };
 
-    else{
-    try {
-      const response = await axios.post("https://api.msitparidhi.in/megatronix/paridhi/user/registration", {
-        name: name,
-        college: college,
-        year: year,
-        department: department,
-        roll: roll,
-        email: email,
-        phoneNumber: phoneNumber,
-        emailVerified: isVerified,
-      });
-      console.log("Sign up successful:", response.data);
-      setGidResponse(response.data);
-      localStorage.setItem("user", (response.data));
-      //changed
-      setShowGIDBox(true);
-    } catch (error) {
-      console.error("Error signing up:", error);
-    }
-  }
-};
-
-  
   return (
     <CenteredContainer>
       <Cover>
-        <Container> 
+        <Container>
           <Title>Register</Title>
 
-           <Underline />
+          <Underline />
 
           <IconContainer>
             <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
@@ -296,12 +286,8 @@ const SignUp = () => {
         />
       )}
       {showGIDBox && (
-        <GIDDisplayBox
-          
-          gid={gidResponse}
-          onClose={() => setShowGIDBox(false)}
-        />
-      )} 
+        <GIDDisplayBox gid={gidResponse} onClose={() => setShowGIDBox(false)} />
+      )}
     </CenteredContainer>
   );
 };

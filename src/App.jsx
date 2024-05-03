@@ -11,6 +11,7 @@ import {
 } from "react-router-dom";
 import Codezen from "./Components/Login_coding/Login_coding";
 import Header from "./Components/Test/Header";
+
 const Hero = React.lazy(() => import("./Components/Hero/Hero"));
 const Events = React.lazy(() => import("./Components/Events/Events"));
 const Profile = React.lazy(() => import("./Components/Profile/Profile"));
@@ -18,6 +19,11 @@ const WorkShop = React.lazy(() => import("./Components/WorkShop/WorkShop"));
 const PrePredhiEvents = React.lazy(() =>
   import("./Components/PreParedhiEvents/PrePredhiEvents")
 );
+// const ProfileInformation = React.lazy(() =>
+//   import("./Components/ProfileInformation/ProfileInformation")
+// );
+
+import ProfileInformation from "./Components/ProfileInformation/ProfileInformation";
 const OurTeam = React.lazy(() => import("./Components/OurTeam/OurTeam"));
 
 const DomainEvents = React.lazy(() =>
@@ -82,7 +88,7 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
-            <Route
+      <Route
         path="profile"
         element={
           <React.Suspense fallback={<Spinner />}>
@@ -120,6 +126,14 @@ const router = createBrowserRouter(
         element={
           <React.Suspense fallback={<Spinner />}>
             <Codezen />
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="/profile/:GID"
+        element={
+          <React.Suspense fallback={<Spinner />}>
+            <ProfileInformation />
           </React.Suspense>
         }
       />
