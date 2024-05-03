@@ -1,220 +1,236 @@
 import { useState, useEffect } from "react";
+import OTPVerificationPopup from "../SignUp/OTPVerificationPopup";
+import axios from "axios";
 import {
   StyledContainer,
-  Domains,
   MainInfo,
-  CardsSection,
+  Container,
+  CenteredContainer,
+  InputField,
+  Button,
+  Cover,
+  IconContainer,
+  SubmitButton,
 } from "./Profile.styled";
 
-const GID = localStorage.getItem("user");
-const domainTitleStyle = {
-  textDecoration: "underline",
-  textDecorationThickness: "2px",
-  textDecorationColor: "red",
-};
-
-function showCardHandler(obj) {
-  for (let key in obj) {
-    if (obj[key]) {
-      return true;
-    }
-  }
-  return false;
-}
-
-function showOptionsHandler(obj) {
-  let elements = [];
-  for (let key in obj) {
-    if (obj[key] !== null) {
-      elements.push(<h1 key={key}>{` ${key} : ${obj[key]}`}</h1>);
-    }
-  }
-  return elements;
-}
-
 const Profile = () => {
-  const [testUserData, setTestUserData] = useState(null);
-  const backendRequest = async () => {
+  const [emailVerified, setEmailVerified] = useState(false);
+  const [userEmail, setUserEmail] = useState("");
+  const [otpPopup, setOtpPopup] = useState(false);
+  const [emailFound, setEmailFound] = useState(false);
+  const [inCorrectOTP, setInCorrectOTP] = useState(false);
+  const [showProfile, setShowProfile] = useState();
+  const [userProfileInfo, setUserProfileInfo] = useState([]);
+
+  // Email Verification
+  const handleVerify = async () => {
     try {
-      const GIDFetch = await fetch(
-        `https://api.msitparidhi.in/megatronix/paridhi/user/profile/${GID}`
-      )
-        .then((res) => {
-          return res.json();
-        })
-        .then((data) => {
-          console.log(data);
-          setTestUserData(data);
-          return data;
-        });
-      console.log(GIDFetch);
-      setTestUserData(GIDFetch);
+      if (!userEmail.includes("@") || !userEmail.includes(".")) {
+        alert("Please enter a valid email address.");
+      } else {
+        // Mock response for testing
+        const response = {
+          status: 200,
+          data: "Test-Email",
+        };
+        console.log(response);
+
+        if (response.status === 200) {
+          setOtpPopup(true);
+          setEmailFound(false);
+        } else if (response.status === 404) {
+          setEmailFound(true);
+        }
+      }
     } catch (error) {
-      console.error("Error fetching data: >>>>", error);
+      console.log("Email verification ERROR >>> ", error);
+      alert("Something Went Wrong Please Try Again !!!");
     }
   };
 
-  useEffect(() => {
-    backendRequest();
-  }, []);
+  // OTP verification
+  const handleOtpSubmit = async (otp) => {
+    try {
+      // Mock response for testing
+      const response = {
+        status: 200,
+        data: "test-Verifying-OTP",
+      };
+      console.log(response);
+      // Check if the OTP verification is successful
+      if (response.status === 200) {
+        // If the OTP is correct, set isVerified to true and close the OTP popup
+        setEmailVerified(true);
+        sessionStorage.setItem("email", userEmail);
+        sessionStorage.setItem("isEmailVarified", true);
 
-  console.log(testUserData);
-  const {
-    name,
-    college,
-    year,
-    department,
-    roll,
-    email,
-    phoneNumber,
-    gid,
-    megaArchTid,
-    setuBandhanTid,
-    codezenTid,
-    codeQuestTid,
-    webMindsTid,
-    electriQuestTid,
-    bgmiLanTid,
-    valorantLanTid,
-    pesLanTid,
-    bingeQuizTid,
-    tableTennisTid,
-    carromTid,
-    lineTrekkerTid,
-    triathlonTid,
-    roboKlassikerTid,
-    roboWar8kgTid,
-    roboWar15kgTid,
-    trackoteasureTid,
-  } = testUserData || {};
-
-  const domainCivil = {
-    "Mega Arch TID": megaArchTid,
-    "Setu Bandhan TID": setuBandhanTid,
-    "Track O Treasure TID": trackoteasureTid,
+        setOtpPopup(false);
+        setInCorrectOTP(true);
+      } else if (response.status === 404) {
+        setInCorrectOTP(false);
+      }
+      console.log(otp);
+    } catch (error) {
+      // Handle error, such as displaying an alert or logging the error
+      console.error("Error verifying OTP:", error);
+      alert(
+        "Something Went Wrong while Verifying The OTP Please TRY Again !!!"
+      );
+    }
   };
 
-  const domainCoding = {
-    "Codzen TID ": codezenTid,
-    "Code Quest TID": codeQuestTid,
-    "Web Minds TID": webMindsTid,
+  // Submitting the email to get the Profile Information
+  const emailSubmittingHandler = async () => {
+    if (!sessionStorage.getItem("isEmailVarified")) {
+      alert("Verify The Email First !!!");
+    } else {
+      try {
+        // const response = await axios.get(`api to get profile information ${userEmail}`);
+
+        const response = {
+          status: 200,
+          data: [
+            {
+              id: 1,
+              name: "hello",
+              college: "XYZ College",
+              year: "2023",
+              department: "Computer Science",
+              roll: "CS001",
+              email: "cocatul11@gmail.com",
+              phoneNumber: "9876543210",
+              gid: "paridhi2000022020522024",
+              megaArchTid: "paridhi12002105202024",
+              setuBandhanTid: "paridhi12002105202024",
+              codezenTid: null,
+              codeQuestTid: null,
+              webMindsTid: null,
+              electriQuestTid: null,
+              electrical2Tid: null,
+              bgmiLanTid: "paridhi12002105202024",
+              valorantLanTid: null,
+              pesLanTid: null,
+              bingeQuizTid: null,
+              tableTennisTid: null,
+              carromTid: null,
+              lineTrekkerTid: null,
+              triathlonTid: "paridhi22002205202024",
+              roboKlassikerTid: "paridhi22002205202024",
+              roboWar8kgTid: "paridhi22002205202024",
+              roboWar15kgTid: null,
+              trackoteasureTid: null,
+            },
+          ],
+        };
+        console.log(response);
+        console.log(showProfile);
+        if (response.status === 200) {
+          setShowProfile(true);
+          console.log(showProfile);
+          setUserProfileInfo(response.data);
+          console.log(userProfileInfo);
+        } else if (response.status === 404) {
+          alert("Email not Found  !!!");
+        } else {
+          alert("Something went wrong !!!");
+        }
+      } catch (error) {
+        console.log("Error while getting the Profile Information >>> ", error);
+        alert("Something Went Wrong while getting the Profile Information");
+      }
+    }
   };
 
-  const domainElectrical = {
-    "ElectriQuest TID ": electriQuestTid,
-  };
+  // useEffect(
+  //   () => {
+  //     const storedEmail = sessionStorage.getItem("email");
+  //     console.log("Stored email:", storedEmail);
 
-  const domainRobotics = {
-    "Robo Klassiker TID": roboKlassikerTid,
-    "Triathlon TID": triathlonTid,
-    "RoboWar-8kg TID ": roboWar8kgTid,
-    "RoboWar-15kg TID": roboWar15kgTid,
-    "Line Trekker TID": lineTrekkerTid,
-  };
+  //     // Assuming you have other state variables like emailFound, inCorrectOTP, etc.
+  //     // Make sure they are being updated correctly.
 
-  const domainGaming = {
-    "BGMI Lan TID": bgmiLanTid,
-    "Valorant Lan TID": valorantLanTid,
-    "Pes Lan TID": pesLanTid,
-  };
-  const domainGenral = {
-    "Carrom TID": carromTid,
-    "Table Tennis TID": tableTennisTid,
-    "Binge Quiz TID": bingeQuizTid,
-  };
+  //     if (storedEmail !== null) {
+  //       setUserEmail(storedEmail);
+  //       setEmailFound(true);
+  //       setInCorrectOTP(true);
+  //       setEmailVerified(true);
 
-  function cardSectionhandle() {
-    const domainArr = [
-      domainCivil,
-      domainCoding,
-      domainElectrical,
-      domainGaming,
-      domainGenral,
-      domainRobotics,
-    ];
-    const result = domainArr.map((domaine) => {
-      if (showCardHandler(domaine)) return;
-    });
-    console.log(result);
-  }
-  cardSectionhandle();
+  //       // Assuming emailSubmittingHandler() performs some action related to email submission
+  //       emailSubmittingHandler();
+  //     }
+  //   },
+  //   [
+  //     /* Add relevant dependencies here */
+  //   ]
+  // );
 
   return (
     <StyledContainer>
-      {testUserData ? (
-        <>
-          <MainInfo>
+      {sessionStorage.getItem("email") === null && !emailVerified ? (
+        !showProfile ? (
+          <CenteredContainer>
+            <Cover>
+              <Container>
+                <h1 style={{ color: "white" }}>Enter Your Email </h1>2
+                <IconContainer>
+                  <InputField
+                    name="email"
+                    type="email"
+                    placeholder="Email id"
+                    value={userEmail}
+                    onChange={(e) => setUserEmail(e.target.value)}
+                  />
+                  <Button className="Verify" onClick={handleVerify}>
+                    {!emailVerified ? "Verify" : "Verified"}
+                  </Button>
+                </IconContainer>
+                {!emailFound ? null : (
+                  <h4 style={{ color: "white" }}>Email Does Not Found </h4>
+                )}
+                <SubmitButton onClick={emailSubmittingHandler}>
+                  Submit
+                </SubmitButton>
+              </Container>
+            </Cover>
+            {otpPopup && (
+              <OTPVerificationPopup
+                onSubmit={handleOtpSubmit}
+                onClose={() => setOtpPopup(false)}
+                wrongOTP={inCorrectOTP}
+              />
+            )}
+          </CenteredContainer>
+        ) : (
+          userProfileInfo.map((data) => (
+            <MainInfo to={`/profile/${data.gid}`}>
+              {console.log("this is my data ", data)}
+              <img
+                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
+                alt="Profile Image"
+                width="100"
+                srcSet="Profile Image"
+                style={{ borderRadius: "50px", margin: "auto" }}
+              />
+              <h1>Name : {data.name} </h1>
+              <h1>GID : {data.gid} </h1>
+            </MainInfo>
+          ))
+        )
+      ) : (
+        userProfileInfo.map((data) => (
+          <MainInfo to={`/profile/${data.gid}`}>
+            {emailSubmittingHandler}
             <img
               src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
               alt="Profile Image"
               width="100"
-              srcSet="Profile Image "
+              srcSet="Profile Image"
               style={{ borderRadius: "50px", margin: "auto" }}
             />
-            <h1>Name : {name} </h1>
-            <h1>GID : {gid} </h1>
-            <h1>Year : {year}</h1>
-            <h1>Department : {department}</h1>
-            <h1>Roll No. : {roll}</h1>
-            <h1>E - Mail : {email}</h1>
-            <h1>Phone : {phoneNumber}</h1>
-            <h1>College : {college} </h1>
+            <h1>Name : {data.name} </h1>
+            <h1>GID : {data.gid} </h1>
           </MainInfo>
-
-          {
-            // the cards section
-          }
-
-          <CardsSection>
-            {showCardHandler(domainCivil) ? (
-              <Domains>
-                <h1 style={domainTitleStyle}>Civil</h1>
-                <br />
-                {showOptionsHandler(domainCivil).map((main) => main)}
-              </Domains>
-            ) : null}
-            {showCardHandler(domainCoding) ? (
-              <Domains>
-                <h1 style={domainTitleStyle}>Coding</h1>
-                <br />
-                {showOptionsHandler(domainCoding).map((main) => main)}
-              </Domains>
-            ) : null}
-            {showCardHandler(domainGaming) ? (
-              <Domains>
-                <h1 style={domainTitleStyle}>Gaming</h1>
-                <br />
-                {showOptionsHandler(domainGaming).map((main) => main)}
-              </Domains>
-            ) : null}
-            {showCardHandler(domainElectrical) ? (
-              <Domains>
-                <h1 style={domainTitleStyle}>Electrical</h1>
-                <br />
-                {showOptionsHandler(domainElectrical).map((main) => main)}
-              </Domains>
-            ) : null}
-            {showCardHandler(domainGenral) ? (
-              <Domains>
-                <h1 style={domainTitleStyle}>General</h1>
-                <br />
-                {showOptionsHandler(domainGenral).map((main) => main)}
-              </Domains>
-            ) : null}
-
-            {showCardHandler(domainRobotics) ? (
-              <Domains>
-                <h1 style={domainTitleStyle}>Robotics</h1>
-                <br />
-                {showOptionsHandler(domainRobotics).map((main) => main)}
-              </Domains>
-            ) : null}
-          </CardsSection>
-        </>
-      ) : (
-        <h1 style={{ color: "white" }}>
-          {GID ? "" : "You are not Registered !!"}
-        </h1>
+        ))
       )}
     </StyledContainer>
   );
