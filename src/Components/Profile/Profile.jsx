@@ -81,12 +81,16 @@ const Profile = () => {
 
   // Submitting the email to get the Profile Information
   const emailSubmittingHandler = async () => {
-    if (!sessionStorage.getItem("isEmailVarified")) {
+    if (!sessionStorage.getItem("email")) {
       alert("Verify The Email First !!!");
     } else {
       try {
-        // const response = await axios.get(`api to get profile information ${userEmail}`);
-
+        const emmailSendToBackend = sessionStorage.getItem("email")
+          ? sessionStorage.getItem("email")
+          : userEmail;
+        // const response = await axios.get(
+        //   `backend End Point ${emmailSendToBackend}`
+        // );
         const response = {
           status: 200,
           data: [
@@ -122,9 +126,13 @@ const Profile = () => {
             },
           ],
         };
-        console.log(response);
-        console.log(showProfile);
+
         if (response.status === 200) {
+          const storedEmail = sessionStorage.getItem("email");
+          setUserEmail(storedEmail);
+          setEmailFound(true);
+          setInCorrectOTP(true);
+          setEmailVerified(true);
           setShowProfile(true);
           console.log(showProfile);
           setUserProfileInfo(response.data);
@@ -141,85 +149,55 @@ const Profile = () => {
     }
   };
 
-  // useEffect(
-  //   () => {
-  //     const storedEmail = sessionStorage.getItem("email");
-  //     console.log("Stored email:", storedEmail);
+  const userEmailExist = () => {
+    if (sessionStorage.getItem("email")) {
+      emailSubmittingHandler();
+    }
+  };
 
-  //     // Assuming you have other state variables like emailFound, inCorrectOTP, etc.
-  //     // Make sure they are being updated correctly.
-
-  //     if (storedEmail !== null) {
-  //       setUserEmail(storedEmail);
-  //       setEmailFound(true);
-  //       setInCorrectOTP(true);
-  //       setEmailVerified(true);
-
-  //       // Assuming emailSubmittingHandler() performs some action related to email submission
-  //       emailSubmittingHandler();
-  //     }
-  //   },
-  //   [
-  //     /* Add relevant dependencies here */
-  //   ]
-  // );
+  useEffect(() => {
+    userEmailExist();
+  }, []);
 
   return (
     <StyledContainer>
-      {sessionStorage.getItem("email") === null && !emailVerified ? (
-        !showProfile ? (
-          <CenteredContainer>
-            <Cover>
-              <Container>
-                <h1 style={{ color: "white" }}>Enter Your Email </h1>2
-                <IconContainer>
-                  <InputField
-                    name="email"
-                    type="email"
-                    placeholder="Email id"
-                    value={userEmail}
-                    onChange={(e) => setUserEmail(e.target.value)}
-                  />
-                  <Button className="Verify" onClick={handleVerify}>
-                    {!emailVerified ? "Verify" : "Verified"}
-                  </Button>
-                </IconContainer>
-                {!emailFound ? null : (
-                  <h4 style={{ color: "white" }}>Email Does Not Found </h4>
-                )}
-                <SubmitButton onClick={emailSubmittingHandler}>
-                  Submit
-                </SubmitButton>
-              </Container>
-            </Cover>
-            {otpPopup && (
-              <OTPVerificationPopup
-                onSubmit={handleOtpSubmit}
-                onClose={() => setOtpPopup(false)}
-                wrongOTP={inCorrectOTP}
-              />
-            )}
-          </CenteredContainer>
-        ) : (
-          userProfileInfo.map((data) => (
-            <MainInfo to={`/profile/${data.gid}`}>
-              {console.log("this is my data ", data)}
-              <img
-                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
-                alt="Profile Image"
-                width="100"
-                srcSet="Profile Image"
-                style={{ borderRadius: "50px", margin: "auto" }}
-              />
-              <h1>Name : {data.name} </h1>
-              <h1>GID : {data.gid} </h1>
-            </MainInfo>
-          ))
-        )
+      {!showProfile ? (
+        <CenteredContainer>
+          <Cover>
+            <Container>
+              <h1 style={{ color: "white" }}>Enter Your Email </h1>2
+              <IconContainer>
+                <InputField
+                  name="email"
+                  type="email"
+                  placeholder="Email id"
+                  value={userEmail}
+                  onChange={(e) => setUserEmail(e.target.value)}
+                />
+                <Button className="Verify" onClick={handleVerify}>
+                  {!emailVerified ? "Verify" : "Verified"}
+                </Button>
+              </IconContainer>
+              {!emailFound ? null : (
+                <h4 style={{ color: "white" }}>Email Does Not Found </h4>
+              )}
+              <SubmitButton onClick={emailSubmittingHandler}>
+                Submit
+              </SubmitButton>
+            </Container>
+          </Cover>
+          {otpPopup && (
+            <OTPVerificationPopup
+              onSubmit={handleOtpSubmit}
+              onClose={() => setOtpPopup(false)}
+              wrongOTP={inCorrectOTP}
+            />
+          )}
+        </CenteredContainer>
       ) : (
         userProfileInfo.map((data) => (
           <MainInfo to={`/profile/${data.gid}`}>
-            {emailSubmittingHandler}
+            {console.log("this is my data ", data)}
             <img
               src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
               alt="Profile Image"
