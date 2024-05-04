@@ -80,9 +80,7 @@ const Events = () => {
       ))}
       <BottomNavbar>
           <StyledLink to="/events/coding"><i className="ri-code-s-slash-line"></i></StyledLink>
-          <StyledLink to="/events/manual_robitics"><i className="ri-robot-2-line"></i></StyledLink>
-          <StyledLink to="/events/combat_robitics"><GiBattleGear /></StyledLink>
-          <StyledLink to="/events/autonomous_robotics"><FaUserGear /></StyledLink>
+          <StyledLink to="/events/robotics"><i className="ri-robot-2-line"></i></StyledLink>
           <StyledLink to="/events/civil"><i className="ri-building-2-line"></i></StyledLink>
           <StyledLink to="/events/electrical"><i className="ri-flashlight-line"></i></StyledLink>
           <StyledLink to="/events/gaming"><i className="ri-gamepad-line"></i></StyledLink>

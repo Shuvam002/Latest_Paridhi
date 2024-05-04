@@ -74,13 +74,7 @@ const Navbar = () => {
                   <NavLinkNameParent  to="/events/coding">CODING</NavLinkNameParent>
                 </DropdownItem>
                 <DropdownItem>
-                  <NavLinkNameParent to="/events/manual_robitics">MANUAL ROBOTICS</NavLinkNameParent>
-                </DropdownItem>
-                <DropdownItem>
-                  <NavLinkNameParent to="/events/autonomous_robotics">AUTONOMOUS ROBOTICS</NavLinkNameParent>
-                </DropdownItem>
-                <DropdownItem>
-                  <NavLinkNameParent to="/events/combat_robitics">COMBAT</NavLinkNameParent>
+                  <NavLinkNameParent to="/events/robotics">ROBOTICS</NavLinkNameParent>
                 </DropdownItem>
                 <DropdownItem>
                   <NavLinkNameParent to="/events/civil">CIVIL</NavLinkNameParent>

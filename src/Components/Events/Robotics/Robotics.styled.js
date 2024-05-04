@@ -35,6 +35,7 @@ export const StyledLink = styled(Link)`
   font-weight: bold;
   text-decoration: none; 
   margin-right: 10px; 
+  font-size: 1.5rem;
 `;
 
 export const NavbarLink = styled.a`
