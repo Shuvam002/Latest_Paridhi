@@ -1,66 +1,48 @@
 import React, { useState, useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import {
   StyledContainer,
   Domains,
   MainInfo,
   CardsSection,
 } from "./ProfileInformation.styled";
-import { useParams } from "react-router-dom";
-import axios from "axios";
-
-const domainTitleStyle = {
-  textDecoration: "underline",
-  textDecorationThickness: "2px",
-  textDecorationColor: "red",
-};
-
-function showCardHandler(obj) {
-  for (let key in obj) {
-    if (obj[key]) {
-      return true;
-    }
-  }
-  return false;
-}
-
-function showOptionsHandler(obj) {
-  let elements = [];
-  for (let key in obj) {
-    if (obj[key] !== null) {
-      elements.push(<h1 key={key}>{` ${key} : ${obj[key]}`}</h1>);
-    }
-  }
-  return elements;
-}
 
 const ProfileInformation = () => {
+  const domainTitleStyle = {
+    textDecoration: "underline",
+    textDecorationThickness: "2px",
+    textDecorationColor: "red",
+  };
+
+  function showCardHandler(obj) {
+    for (let key in obj) {
+      if (obj[key]) {
+        return true;
+      }
+    }
+    return false;
+  }
+
+  function showOptionsHandler(obj) {
+    let elements = [];
+    for (let key in obj) {
+      if (obj[key] !== null) {
+        elements.push(<h1 key={key}>{` ${key} : ${obj[key]}`}</h1>);
+      }
+    }
+    return elements;
+  }
+
   const [UserData, setUserData] = useState({});
   const [ShowProfile, setShowProfile] = useState(false);
-  const { GID } = useParams();
+  const location = useLocation();
+  console.log(location + "this is location data");
   //To get the Related Information about Of the GID
-  const backendRequest = async () => {
-    try {
-      const response = await axios.get(
-        `http://localhost:6001/megatronix/paridhi/user/profile/getProfile/${GID}`
-      );
-
-      console.log(response);
-      // if (response.status === 200) {
-      setUserData(response.data);
-      setShowProfile(true);
-      // } else if (response.status === 404) {
-      //   alert("Profile Information not found !!!");
-      // } else {
-      //   alert("Something Went Wrong !!!");
-      // }
-    } catch (error) {
-      console.error("Error fetching data: >>>>", error);
-      alert("Something went Wrong While getting the GID Data !!!");
-    }
-  };
   useEffect(() => {
-    backendRequest();
-  }, []);
+    const response = location.state;
+    setUserData(response);
+    setShowProfile(true);
+  }, [location.state]);
   const {
     name,
     paid,
@@ -124,7 +106,7 @@ const ProfileInformation = () => {
   return (
     <>
       <StyledContainer>
-        {ShowProfile ? (
+        {UserData ? (
           <>
             <MainInfo>
               <img
@@ -155,7 +137,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainCoding) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Coding</h1>
-                  <h1>Registration fees : {paid ? "paid" : "not paid"}</h1>
+
                   <br />
                   {showOptionsHandler(domainCoding).map((main) => main)}
                 </Domains>
@@ -163,7 +145,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainGaming) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Gaming</h1>
-                  <h1>Registration fees : {data.paid ? "paid" : "not paid"}</h1>
+
                   <br />
                   {showOptionsHandler(domainGaming).map((main) => main)}
                 </Domains>
@@ -171,7 +153,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainElectrical) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Electrical</h1>
-                  <h1>Registration fees : {data.paid ? "paid" : "not paid"}</h1>
+                  <h1>Registration fees : {paid ? "paid" : "not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainElectrical).map((main) => main)}
                 </Domains>
@@ -194,7 +176,7 @@ const ProfileInformation = () => {
             </CardsSection>
           </>
         ) : (
-          <h1 style={{ color: "white" }}></h1>
+          <h1 style={{ color: "white" }}>Verify Your Email First </h1>
         )}
       </StyledContainer>
     </>

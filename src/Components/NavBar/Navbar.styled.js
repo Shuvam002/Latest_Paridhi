@@ -177,13 +177,14 @@ export const NavLinkName = styled(NavLink)`
 export const DropdownMenu = styled.ul`
   list-style: none;
   position: absolute;
-  top: 100%;
+  top: 200%;
   left: 0;
-  background-color: rgb(0,0,0,0.94);
+  background-color: rgb(16 , 16 , 16,0.99);
   padding: 10px;
-  border-radius: 5px;
-  width: 230px;
+  border-radius: 10px;
+  width: 180px;
   z-index: 10;
+ 
   
   @media (max-width:1100px) {
     display: none;
@@ -213,6 +214,7 @@ export const SubDropdownItem = styled.li`
 export const NavLinkNameParent =styled(NavLink)`
 color: white;
 text-decoration: none;
+font-size:small;
 &:hover{
   color: #ff0000;
   text-shadow: 4px 4px 5px #ff0000;
