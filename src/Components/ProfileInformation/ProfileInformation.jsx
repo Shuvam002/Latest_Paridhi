@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
@@ -41,7 +40,6 @@ const ProfileInformation = () => {
   //To get the Related Information about Of the GID
   const backendRequest = async () => {
     try {
-
       const response = await axios.get(
         `http://localhost:6001/megatronix/paridhi/user/profile/getProfile/${GID}`
       );
@@ -84,7 +82,6 @@ const ProfileInformation = () => {
       //   `https://api.msitparidhi.in/megatronix/paridhi/user/profile/${GID}`
       // )
 
-      
       console.log(response);
       if (response.status === 200) {
         setUserData(response.data);
@@ -245,6 +242,4 @@ const ProfileInformation = () => {
   );
 };
 
-
 export default ProfileInformation;
-

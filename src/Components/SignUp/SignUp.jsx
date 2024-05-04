@@ -15,7 +15,7 @@ import {
 } from "./SignUp.styled";
 import GIDDisplayBox from "./GIDDisplayBox";
 import axios from "axios";
-// import process 
+// import process
 
 import { gapi } from "gapi-script";
 
@@ -48,8 +48,8 @@ const SignUp = () => {
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
   const [gidResponse, setGidResponse] = useState(null);
-  
-  const apiUrl=String(import.meta.env.VITE_API_MAIN);
+
+  const apiUrl = String(import.meta.env.VITE_API_MAIN);
 
   let config = {
     url: `${apiUrl}/generate-otp?name=${name}&email=${email}`,
@@ -70,13 +70,16 @@ const SignUp = () => {
     if (!email.includes("@") || !email.includes(".")) {
       alert("Please enter a valid email address.");
     } else {
-      const response = await axios.post(`${apiUrl}/generate-otp?name=${name}&email=${email}`, {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Headers": "*",
-          "Access-Control-Allow-Credentials": "true",
+      const response = await axios.post(
+        `${apiUrl}/generate-otp?name=${name}&email=${email}`,
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Credentials": "true",
+          },
         }
-      });
+      );
       console.log(response);
       setOtpPopup(true);
     }
@@ -85,10 +88,7 @@ const SignUp = () => {
   const handleOtpSubmit = async (otp) => {
     try {
       // Make a POST request to the backend API endpoint to verify OTP
-      const response = await axios.post(
-        `${apiUrl}/verify-otp`,
-        { email, otp }
-      );
+      const response = await axios.post(`${apiUrl}/verify-otp`, { email, otp });
       // console.log(apiUrl)
       console.log(response);
       // Check if the OTP verification is successful
@@ -150,6 +150,9 @@ const SignUp = () => {
             emailVerified: isVerified,
           }
         );
+
+       
+
         console.log("Sign up successful:", response.data);
         setGidResponse(response.data);
         localStorage.setItem("user", response.data);
@@ -164,7 +167,6 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
-
       <Cover>
         <Container>
           <Title>Register</Title>
@@ -290,12 +292,11 @@ const SignUp = () => {
         <GIDDisplayBox gid={gidResponse} onClose={() => setShowGIDBox(false)} />
       )}
 
-    {/* <Title>Registration begins soon...</Title> */}
-
+      {/* <Title>Registration begins soon...</Title> */}
     </CenteredContainer>
     // <CenteredContainer>
     //   <Cover>
-    //     <Container> 
+    //     <Container>
     //       <Title>Registration begins soon...</Title>
 
     //        <Underline />
@@ -417,11 +418,11 @@ const SignUp = () => {
     //   )}
     //   {showGIDBox && (
     //     <GIDDisplayBox
-          
+
     //       gid={gidResponse}
     //       onClose={() => setShowGIDBox(false)}
     //     />
-    //   )} 
+    //   )}
     // </CenteredContainer>
   );
 };

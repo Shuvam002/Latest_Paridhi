@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import OTPVerificationPopup from "../SignUp/OTPVerificationPopup";
 import axios from "axios";
 import {
@@ -21,9 +21,7 @@ const Profile = () => {
   const [inCorrectOTP, setInCorrectOTP] = useState(false);
   const [showProfile, setShowProfile] = useState();
   const [userProfileInfo, setUserProfileInfo] = useState([]);
-
-  const apiUrl=String(import.meta.env.VITE_API_MAIN);
-
+  const apiUrl = String(import.meta.env.VITE_API_MAIN);
 
   // Email Verification
   const handleVerify = async () => {
@@ -32,28 +30,21 @@ const Profile = () => {
         alert("Please enter a valid email address.");
       } else {
         // Mock response for testing
-
-        // const response = {
-        //   status: 200,
-        //   data: "Test-Email",
-        // };
-        const response = await axios.post(`${apiUrl}/generate-otp?name=null&email=${userEmail}`, {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Headers": "*",
-            "Access-Control-Allow-Credentials": "true",
+        const response = await axios.post(
+          `${apiUrl}/generate-otp?name=null&email=${userEmail}`,
+          {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Headers": "*",
+              "Access-Control-Allow-Credentials": "true",
+            },
           }
-        });
-        console.log(response);
-
-
-
+        );
         // const response = {
         //   status: 200,
         //   data: "Test-Email",
         // };
         console.log(response);
-
 
         if (response.status === 200) {
           setOtpPopup(true);
@@ -72,23 +63,17 @@ const Profile = () => {
   const handleOtpSubmit = async (otp) => {
     try {
       // Mock response for testing
+      const response = await axios.post(`${apiUrl}/verify-otp`, {
+        email: userEmail,
+        otp,
+      });
 
-      // const response = {
-      //   status: 200,
-      //   data: "test-Verifying-OTP",
-      // };
-      const response = await axios.post(
-        `${apiUrl}/verify-otp`,
-        { email:userEmail, otp }
-      );    
-        console.log(response);
-
+      console.log(otp);
       // const response = {
       //   status: 200,
       //   data: "test-Verifying-OTP",
       // };
       console.log(response);
-
       // Check if the OTP verification is successful
       if (response.status === 200) {
         // If the OTP is correct, set isVerified to true and close the OTP popup
@@ -120,13 +105,9 @@ const Profile = () => {
         const emmailSendToBackend = sessionStorage.getItem("email")
           ? sessionStorage.getItem("email")
           : userEmail;
-
         const response = await axios.get(
           `http://localhost:6001/megatronix/paridhi/user/profile/getProfile?email=${emmailSendToBackend}`
         );
-        // const response = await axios.get(
-        //   `backend End Point ${emmailSendToBackend}`
-        // );
         // const response = {
         //   status: 200,
         //   data: [
@@ -163,7 +144,6 @@ const Profile = () => {
         //   ],
         // };
 
-
         if (response.status === 200) {
           const storedEmail = sessionStorage.getItem("email");
           setUserEmail(storedEmail);
@@ -171,9 +151,8 @@ const Profile = () => {
           setInCorrectOTP(true);
           setEmailVerified(true);
           setShowProfile(true);
-          console.log(showProfile);
+
           setUserProfileInfo(response.data);
-          console.log(userProfileInfo);
         } else if (response.status === 404) {
           alert("Email not Found  !!!");
         } else {
@@ -186,11 +165,12 @@ const Profile = () => {
     }
   };
 
-  const userEmailExist = () => {
+  const userEmailExist = useCallback(() => {
+    console.log("I'm running !!! >>>>>>>");
     if (sessionStorage.getItem("email")) {
       emailSubmittingHandler();
     }
-  };
+  }, [emailSubmittingHandler]);
 
   useEffect(() => {
     userEmailExist();
@@ -202,7 +182,7 @@ const Profile = () => {
         <CenteredContainer>
           <Cover>
             <Container>
-              <h1 style={{ color: "white" }}>Enter Your Email </h1>2
+              <h1 style={{ color: "white" }}>Enter Your Email </h1>
               <IconContainer>
                 <InputField
                   name="email"

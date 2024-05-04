@@ -27,7 +27,6 @@ const PopupContainer = styled.div`
   text-align: center;
 `;
 const ButtonOTP = styled.div`
-
   /* margin:0 0 1rem 0; */
   padding: 0.3rem;
 
@@ -64,11 +63,9 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
   const handleSubmit = () => {
     onSubmit(otp);
 
-
     setTimeout(() => {
       onClose();
     }, 1000);
-
   };
   console.log("this is signUP");
   return (
@@ -112,7 +109,6 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
             textAlign: "center",
           }}
         >
-
           <ButtonOTP
             style={{
               border: "2px solid green",
@@ -125,9 +121,6 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
           >
             Submit
           </ButtonOTP>
-
-
-          
 
           <ButtonOTP onClick={onClose}>Cancel</ButtonOTP>
         </div>
