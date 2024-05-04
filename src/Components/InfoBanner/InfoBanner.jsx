@@ -15,9 +15,6 @@ const InfoBanner = ({ title, fee, teamSize, Descriptions, Image, rule, regLink }
   const openRules = () => {
     rule ? window.open(rule) : NaN;
   };
-
-  const navigate=useNavigate();
-
   return (
     <Banner>
         <BannerImage $Image={Image}></BannerImage>
