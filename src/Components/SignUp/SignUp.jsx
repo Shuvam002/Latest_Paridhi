@@ -260,7 +260,10 @@ const SignUp = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                <Button className="Verify" onClick={handleVerify}>
+                {/* <Button  className="Verify" onClick={handleVerify}>
+                  Verify
+                </Button> */}
+                <Button  className="Verify" style={{cursor:"not-allowed"}}>
                   Verify
                 </Button>
               </>
@@ -278,7 +281,8 @@ const SignUp = () => {
             />
           </IconContainer>
 
-          <SignUpButton onClick={handleSignUp}>Submit</SignUpButton>
+          {/* <SignUpButton  onClick={handleSignUp}>Submit</SignUpButton> */}
+          <SignUpButton disabled style={{cursor:"not-allowed"}}>Submit</SignUpButton>
         </Container>
       </Cover>
 
