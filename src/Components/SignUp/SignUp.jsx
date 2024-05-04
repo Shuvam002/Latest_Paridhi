@@ -1,13 +1,5 @@
 // signup.js
 import React, { useEffect, useState } from "react";
-<<<<<<< HEAD
-import axios from "axios";
-import { Title, CenteredContainer } from "./SignUp.styled";
-
-
-import { gapi } from "gapi-script";
-
-=======
 // import axios from "axios";
 import {
   Container,
@@ -23,13 +15,12 @@ import {
 } from "./SignUp.styled";
 import GIDDisplayBox from "./GIDDisplayBox";
 import axios from "axios";
-// import process 
+// import process
 
 import { gapi } from "gapi-script";
 
 import OTPVerificationPopup from "./OTPVerificationPopup";
 
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
 const SignUp = () => {
   const [showGIDBox, setShowGIDBox] = useState(false);
 
@@ -57,17 +48,11 @@ const SignUp = () => {
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
   const [gidResponse, setGidResponse] = useState(null);
-<<<<<<< HEAD
 
-  let config = {
-    url: `https://api.msitparidhi.in/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
-=======
-  
-  const apiUrl=String(import.meta.env.VITE_API_MAIN);
+  const apiUrl = String(import.meta.env.VITE_API_MAIN);
 
   let config = {
     url: `${apiUrl}/generate-otp?name=${name}&email=${email}`,
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
     method: "post",
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -85,17 +70,16 @@ const SignUp = () => {
     if (!email.includes("@") || !email.includes(".")) {
       alert("Please enter a valid email address.");
     } else {
-<<<<<<< HEAD
-      const response = await axios.request(config);
-=======
-      const response = await axios.post(`${apiUrl}/generate-otp?name=${name}&email=${email}`, {
-        headers: {
-          "Access-Control-Allow-Origin": "*",
-          "Access-Control-Allow-Headers": "*",
-          "Access-Control-Allow-Credentials": "true",
+      const response = await axios.post(
+        `${apiUrl}/generate-otp?name=${name}&email=${email}`,
+        {
+          headers: {
+            "Access-Control-Allow-Origin": "*",
+            "Access-Control-Allow-Headers": "*",
+            "Access-Control-Allow-Credentials": "true",
+          },
         }
-      });
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
+      );
       console.log(response);
       setOtpPopup(true);
     }
@@ -104,17 +88,8 @@ const SignUp = () => {
   const handleOtpSubmit = async (otp) => {
     try {
       // Make a POST request to the backend API endpoint to verify OTP
-      const response = await axios.post(
-<<<<<<< HEAD
-        `https://api.msitparidhi.in/megatronix/paridhi/user/registration/verify-otp`,
-        { email, otp }
-      );
-=======
-        `${apiUrl}/verify-otp`,
-        { email, otp }
-      );
+      const response = await axios.post(`${apiUrl}/verify-otp`, { email, otp });
       // console.log(apiUrl)
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
       console.log(response);
       // Check if the OTP verification is successful
       if (response.status === 200) {
@@ -162,36 +137,22 @@ const SignUp = () => {
       alert("Please fill in all required fields.");
     } else {
       try {
-        const response = await axios.post(
-<<<<<<< HEAD
-          "https://api.msitparidhi.in/megatronix/paridhi/user/registration",
-=======
-          `${apiUrl}/registration`,
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
-          {
-            name: name,
-            college: college,
-            year: year,
-            department: department,
-            roll: roll,
-            email: email,
-            phoneNumber: phoneNumber,
-<<<<<<< HEAD
-            emailVerified: isVerified,
-=======
-            emailVerified: true,
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
-          }
-        );
+        const response = await axios.post(`${apiUrl}/registration`, {
+          name: name,
+          college: college,
+          year: year,
+          department: department,
+          roll: roll,
+          email: email,
+          phoneNumber: phoneNumber,
+          emailVerified: true,
+        });
         console.log("Sign up successful:", response.data);
         setGidResponse(response.data);
         localStorage.setItem("user", response.data);
         //changed
         setShowGIDBox(true);
-<<<<<<< HEAD
-=======
         console.log(apiUrl);
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
       } catch (error) {
         console.error("Error signing up:", error);
       }
@@ -200,10 +161,6 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
-<<<<<<< HEAD
-      <Title>Registration begins soon...</Title>
-=======
-
       <Cover>
         <Container>
           <Title>Register</Title>
@@ -329,9 +286,7 @@ const SignUp = () => {
         <GIDDisplayBox gid={gidResponse} onClose={() => setShowGIDBox(false)} />
       )}
 
-    {/* <Title>Registration begins soon...</Title> */}
-
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
+      {/* <Title>Registration begins soon...</Title> */}
     </CenteredContainer>
     // <CenteredContainer>
     //   <Cover>
