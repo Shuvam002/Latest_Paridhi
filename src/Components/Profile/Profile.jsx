@@ -1,5 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import OTPVerificationPopup from "../SignUp/OTPVerificationPopup";
+import { useNavigate } from "react-router-dom";
+
 import axios from "axios";
 import {
   StyledContainer,
@@ -22,6 +24,7 @@ const Profile = () => {
   const [showProfile, setShowProfile] = useState();
   const [userProfileInfo, setUserProfileInfo] = useState([]);
   const apiUrl = String(import.meta.env.VITE_API_MAIN);
+  const navigate = useNavigate();
 
   // Email Verification
   const handleVerify = async () => {
@@ -44,7 +47,7 @@ const Profile = () => {
         //   status: 200,
         //   data: "Test-Email",
         // };
-        console.log(response);
+        // console.log(response);
 
         if (response.status === 200) {
           setOtpPopup(true);
@@ -68,12 +71,12 @@ const Profile = () => {
         otp,
       });
 
-      console.log(otp);
+      // console.log(otp);
       // const response = {
       //   status: 200,
       //   data: "test-Verifying-OTP",
       // };
-      console.log(response);
+
       // Check if the OTP verification is successful
       if (response.status === 200) {
         // If the OTP is correct, set isVerified to true and close the OTP popup
@@ -86,7 +89,6 @@ const Profile = () => {
       } else if (response.status === 404) {
         setInCorrectOTP(false);
       }
-      console.log(otp);
     } catch (error) {
       // Handle error, such as displaying an alert or logging the error
       console.error("Error verifying OTP:", error);
@@ -141,6 +143,156 @@ const Profile = () => {
         //       roboWar15kgTid: null,
         //       trackoteasureTid: null,
         //     },
+        //     {
+        //       id: 2,
+        //       name: "hello",
+        //       college: "XYZ College",
+        //       year: "2023",
+        //       department: "Computer Science",
+        //       roll: "CS001",
+        //       email: "cocatul11@gmail.com",
+        //       phoneNumber: "9876543210",
+        //       gid: "paridhi2000023020523024",
+        //       megaArchTid: null,
+        //       setuBandhanTid: null,
+        //       codezenTid: null,
+        //       codeQuestTid: null,
+        //       webMindsTid: null,
+        //       electriQuestTid: null,
+        //       electrical2Tid: null,
+        //       bgmiLanTid: "paridhi12002105202024",
+        //       valorantLanTid: null,
+        //       pesLanTid: null,
+        //       bingeQuizTid: null,
+        //       tableTennisTid: null,
+        //       carromTid: null,
+        //       lineTrekkerTid: null,
+        //       triathlonTid: "paridhi32002305202024",
+        //       roboKlassikerTid: "paridhi32002305202024",
+        //       roboWar8kgTid: null,
+        //       roboWar15kgTid: "paridhi22002205202024",
+        //       trackoteasureTid: null,
+        //     },
+        //     {
+        //       id: 3,
+        //       name: "hello",
+        //       college: "XYZ College",
+        //       year: "2023",
+        //       department: "Computer Science",
+        //       roll: "CS001",
+        //       email: "cocatul11@gmail.com",
+        //       phoneNumber: "9876543210",
+        //       gid: "paridhi2000024020524024",
+        //       megaArchTid: null,
+        //       setuBandhanTid: null,
+        //       codezenTid: null,
+        //       codeQuestTid: null,
+        //       webMindsTid: null,
+        //       electriQuestTid: null,
+        //       electrical2Tid: null,
+        //       bgmiLanTid: "paridhi12002105202024",
+        //       valorantLanTid: null,
+        //       pesLanTid: null,
+        //       bingeQuizTid: null,
+        //       tableTennisTid: null,
+        //       carromTid: null,
+        //       lineTrekkerTid: null,
+        //       triathlonTid: "paridhi32002305202024",
+        //       roboKlassikerTid: "paridhi32002305202024",
+        //       roboWar8kgTid: null,
+        //       roboWar15kgTid: "paridhi22002205202024",
+        //       trackoteasureTid: null,
+        //     },
+        //     {
+        //       id: 4,
+        //       name: "hello",
+        //       college: "XYZ College",
+        //       year: "2023",
+        //       department: "Computer Science",
+        //       roll: "CS001",
+        //       email: "cocatul11@gmail.com",
+        //       phoneNumber: "9876543210",
+        //       gid: "paridhi2000025020525024",
+        //       megaArchTid: null,
+        //       setuBandhanTid: null,
+        //       codezenTid: null,
+        //       codeQuestTid: null,
+        //       webMindsTid: null,
+        //       electriQuestTid: null,
+        //       electrical2Tid: null,
+        //       bgmiLanTid: null,
+        //       valorantLanTid: null,
+        //       pesLanTid: null,
+        //       bingeQuizTid: null,
+        //       tableTennisTid: null,
+        //       carromTid: null,
+        //       lineTrekkerTid: null,
+        //       triathlonTid: "paridhi42002405202024",
+        //       roboKlassikerTid: "paridhi42002405202024",
+        //       roboWar8kgTid: "paridhi32002305202024",
+        //       roboWar15kgTid: "paridhi32002305202024",
+        //       trackoteasureTid: null,
+        //     },
+        //     {
+        //       id: 5,
+        //       name: "hello",
+        //       college: "XYZ College",
+        //       year: "2023",
+        //       department: "Computer Science",
+        //       roll: "CS001",
+        //       email: "cocatul11@gmail.com",
+        //       phoneNumber: "9876543210",
+        //       gid: "paridhi2000026020526024",
+        //       megaArchTid: null,
+        //       setuBandhanTid: null,
+        //       codezenTid: null,
+        //       codeQuestTid: null,
+        //       webMindsTid: null,
+        //       electriQuestTid: null,
+        //       electrical2Tid: null,
+        //       bgmiLanTid: null,
+        //       valorantLanTid: null,
+        //       pesLanTid: null,
+        //       bingeQuizTid: null,
+        //       tableTennisTid: null,
+        //       carromTid: null,
+        //       lineTrekkerTid: null,
+        //       triathlonTid: null,
+        //       roboKlassikerTid: null,
+        //       roboWar8kgTid: null,
+        //       roboWar15kgTid: null,
+        //       trackoteasureTid: null,
+        //     },
+        //     {
+        //       id: 6,
+        //       name: "hello",
+        //       college: "XYZ College",
+        //       year: "2023",
+        //       department: "Computer Science",
+        //       roll: "CS001",
+        //       email: "cocatul11@gmail.com",
+        //       phoneNumber: "9876543210",
+        //       gid: "paridhi2000027020527024",
+        //       megaArchTid: null,
+        //       setuBandhanTid: null,
+        //       codezenTid: null,
+        //       codeQuestTid: null,
+        //       webMindsTid: null,
+        //       electriQuestTid: null,
+        //       electrical2Tid: null,
+        //       bgmiLanTid: null,
+        //       valorantLanTid: null,
+        //       pesLanTid: null,
+        //       bingeQuizTid: null,
+        //       tableTennisTid: null,
+        //       carromTid: null,
+        //       lineTrekkerTid: null,
+        //       triathlonTid: null,
+        //       roboKlassikerTid: null,
+        //       roboWar8kgTid: null,
+        //       roboWar15kgTid: null,
+        //       trackoteasureTid: null,
+        //     },
         //   ],
         // };
 
@@ -166,7 +318,6 @@ const Profile = () => {
   };
 
   const userEmailExist = useCallback(() => {
-    console.log("I'm running !!! >>>>>>>");
     if (sessionStorage.getItem("email")) {
       emailSubmittingHandler();
     }
@@ -213,19 +364,25 @@ const Profile = () => {
         </CenteredContainer>
       ) : (
         userProfileInfo.map((data) => (
-          <MainInfo to={`/profile/${data.gid}`}>
-            {console.log("this is my data ", data)}
-            <img
-              src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
-              alt="Profile Image"
-              width="100"
-              srcSet="Profile Image"
-              style={{ borderRadius: "50px", margin: "auto" }}
-            />
-            <h1>Name : {data.name} </h1>
-            <h1>GID : {data.gid} </h1>
-            <h1>Registration fees : {data.paid?"paid":"not paid"}</h1>
-          </MainInfo>
+          <div
+            onClick={() =>
+              navigate("/profile/Profile-Informations", { state: data })
+            }
+          >
+            <MainInfo>
+              {console.log("this is my data ", data)}
+              <img
+                src="https://cdn.pixabay.com/photo/2018/11/13/21/43/avatar-3814049_1280.png"
+                alt="Profile Image"
+                width="100"
+                srcSet="Profile Image"
+                style={{ borderRadius: "50px", margin: "auto" }}
+              />
+              <h1>Name : {data.name} </h1>
+              <h1>GID : {data.gid} </h1>
+              <h1>Registration fees : {data.paid ? "paid" : "not paid"}</h1>
+            </MainInfo>
+          </div>
         ))
       )}
     </StyledContainer>
