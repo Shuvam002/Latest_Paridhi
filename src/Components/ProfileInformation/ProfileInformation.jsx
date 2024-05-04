@@ -44,53 +44,15 @@ const ProfileInformation = () => {
         `http://localhost:6001/megatronix/paridhi/user/profile/getProfile/${GID}`
       );
 
-      // const response = {
-      //   status: 200,
-      //   data: {
-      //     id: 1,
-      //     name: "hello",
-      //     college: "XYZ College",
-      //     year: "2023",
-      //     department: "Computer Science",
-      //     roll: "CS001",
-      //     email: "cocatul11@gmail.com",
-      //     phoneNumber: "9876543210",
-      //     gid: "paridhi2000024020524024",
-      //     megaArchTid: 1234,
-      //     setuBandhanTid: 5678,
-      //     codezenTid: 9101,
-      //     codeQuestTid: 1121,
-      //     webMindsTid: 3141,
-      //     electriQuestTid: 5161,
-      //     electrical2Tid: 7181,
-      //     bgmiLanTid: "paridhi12002105202024",
-      //     valorantLanTid: 9202,
-      //     pesLanTid: 1223,
-      //     bingeQuizTid: 4243,
-      //     tableTennisTid: 6263,
-      //     carromTid: 8283,
-      //     lineTrekkerTid: 23304,
-      //     triathlonTid: 2324,
-      //     roboKlassikerTid: 4344,
-      //     roboWar8kgTid: 6364,
-      //     roboWar15kgTid: 8384,
-      //     trackoteasureTid: 23405,
-      //   },
-      // };
-
-      // const response = await axios.get(
-      //   `https://api.msitparidhi.in/megatronix/paridhi/user/profile/${GID}`
-      // )
-
       console.log(response);
-      if (response.status === 200) {
-        setUserData(response.data);
-        setShowProfile(true);
-      } else if (response.status === 404) {
-        alert("Profile Information not found !!!");
-      } else {
-        alert("Something Went Wrong !!!");
-      }
+      // if (response.status === 200) {
+      setUserData(response.data);
+      setShowProfile(true);
+      // } else if (response.status === 404) {
+      //   alert("Profile Information not found !!!");
+      // } else {
+      //   alert("Something Went Wrong !!!");
+      // }
     } catch (error) {
       console.error("Error fetching data: >>>>", error);
       alert("Something went Wrong While getting the GID Data !!!");
@@ -128,6 +90,7 @@ const ProfileInformation = () => {
     roboWar15kgTid,
     trackoteasureTid,
   } = UserData || {};
+
   const domainCivil = {
     "Mega Arch TID": megaArchTid,
     "Setu Bandhan TID": setuBandhanTid,
@@ -181,10 +144,6 @@ const ProfileInformation = () => {
               <h1>College : {college} </h1>
             </MainInfo>
 
-            {
-              // the cards section
-            }
-
             <CardsSection>
               {showCardHandler(domainCivil) ? (
                 <Domains>
@@ -196,7 +155,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainCoding) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Coding</h1>
-                  <h1>Registration fees : {paid?"paid":"not paid"}</h1>
+                  <h1>Registration fees : {paid ? "paid" : "not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainCoding).map((main) => main)}
                 </Domains>
@@ -204,7 +163,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainGaming) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Gaming</h1>
-                  <h1>Registration fees : {data.paid?"paid":"not paid"}</h1>
+                  <h1>Registration fees : {data.paid ? "paid" : "not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainGaming).map((main) => main)}
                 </Domains>
@@ -212,7 +171,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainElectrical) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Electrical</h1>
-                  <h1>Registration fees : {data.paid?"paid":"not paid"}</h1>
+                  <h1>Registration fees : {data.paid ? "paid" : "not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainElectrical).map((main) => main)}
                 </Domains>
