@@ -179,8 +179,7 @@ const Profile = () => {
       );
     }
   };
-<<<<<<< HEAD
-=======
+
 
   // Submitting the email to get the Profile Information
   const emailSubmittingHandler = async () => {
@@ -263,7 +262,6 @@ const Profile = () => {
     }
   };
 
->>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
   useEffect(() => {
     userEmailExist();
   }, []);
