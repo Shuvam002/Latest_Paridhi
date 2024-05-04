@@ -30,17 +30,20 @@ const Profile = () => {
         alert("Please enter a valid email address.");
       } else {
         // Mock response for testing
-        // const response = await axios.post(`${apiUrl}/generate-otp?name=null&email=${userEmail}`, {
-        //   headers: {
-        //     "Access-Control-Allow-Origin": "*",
-        //     "Access-Control-Allow-Headers": "*",
-        //     "Access-Control-Allow-Credentials": "true",
-        //   }
-        // });
-        const response = {
-          status: 200,
-          data: "Test-Email",
-        };
+        const response = await axios.post(
+          `${apiUrl}/generate-otp?name=null&email=${userEmail}`,
+          {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Headers": "*",
+              "Access-Control-Allow-Credentials": "true",
+            },
+          }
+        );
+        // const response = {
+        //   status: 200,
+        //   data: "Test-Email",
+        // };
         console.log(response);
 
         if (response.status === 200) {
@@ -60,14 +63,16 @@ const Profile = () => {
   const handleOtpSubmit = async (otp) => {
     try {
       // Mock response for testing
-      // const response = await axios.post(
-      //   `${apiUrl}/verify-otp`,
-      //   { email:userEmail, otp }
-      // );
-      const response = {
-        status: 200,
-        data: "test-Verifying-OTP",
-      };
+      const response = await axios.post(`${apiUrl}/verify-otp`, {
+        email: userEmail,
+        otp,
+      });
+
+      console.log(otp);
+      // const response = {
+      //   status: 200,
+      //   data: "test-Verifying-OTP",
+      // };
       console.log(response);
       // Check if the OTP verification is successful
       if (response.status === 200) {
@@ -100,44 +105,44 @@ const Profile = () => {
         const emmailSendToBackend = sessionStorage.getItem("email")
           ? sessionStorage.getItem("email")
           : userEmail;
-        // const response = await axios.get(
-        //   `http://localhost:6001/megatronix/paridhi/user/profile/getProfile?email=${emmailSendToBackend}`
-        // );
-        const response = {
-          status: 200,
-          data: [
-            {
-              id: 1,
-              name: "hello",
-              college: "XYZ College",
-              year: "2023",
-              department: "Computer Science",
-              roll: "CS001",
-              email: "cocatul11@gmail.com",
-              phoneNumber: "9876543210",
-              gid: "paridhi2000022020522024",
-              megaArchTid: "paridhi12002105202024",
-              setuBandhanTid: "paridhi12002105202024",
-              codezenTid: null,
-              codeQuestTid: null,
-              webMindsTid: null,
-              electriQuestTid: null,
-              electrical2Tid: null,
-              bgmiLanTid: "paridhi12002105202024",
-              valorantLanTid: null,
-              pesLanTid: null,
-              bingeQuizTid: null,
-              tableTennisTid: null,
-              carromTid: null,
-              lineTrekkerTid: null,
-              triathlonTid: "paridhi22002205202024",
-              roboKlassikerTid: "paridhi22002205202024",
-              roboWar8kgTid: "paridhi22002205202024",
-              roboWar15kgTid: null,
-              trackoteasureTid: null,
-            },
-          ],
-        };
+        const response = await axios.get(
+          `http://localhost:6001/megatronix/paridhi/user/profile/getProfile?email=${emmailSendToBackend}`
+        );
+        // const response = {
+        //   status: 200,
+        //   data: [
+        //     {
+        //       id: 1,
+        //       name: "hello",
+        //       college: "XYZ College",
+        //       year: "2023",
+        //       department: "Computer Science",
+        //       roll: "CS001",
+        //       email: "cocatul11@gmail.com",
+        //       phoneNumber: "9876543210",
+        //       gid: "paridhi2000022020522024",
+        //       megaArchTid: "paridhi12002105202024",
+        //       setuBandhanTid: "paridhi12002105202024",
+        //       codezenTid: null,
+        //       codeQuestTid: null,
+        //       webMindsTid: null,
+        //       electriQuestTid: null,
+        //       electrical2Tid: null,
+        //       bgmiLanTid: "paridhi12002105202024",
+        //       valorantLanTid: null,
+        //       pesLanTid: null,
+        //       bingeQuizTid: null,
+        //       tableTennisTid: null,
+        //       carromTid: null,
+        //       lineTrekkerTid: null,
+        //       triathlonTid: "paridhi22002205202024",
+        //       roboKlassikerTid: "paridhi22002205202024",
+        //       roboWar8kgTid: "paridhi22002205202024",
+        //       roboWar15kgTid: null,
+        //       trackoteasureTid: null,
+        //     },
+        //   ],
+        // };
 
         if (response.status === 200) {
           const storedEmail = sessionStorage.getItem("email");
