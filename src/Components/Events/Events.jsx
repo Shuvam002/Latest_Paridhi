@@ -34,7 +34,7 @@ const Events = () => {
         "https://i0.wp.com/makezine.com/wp-content/uploads/2022/04/10-rules-robo-combat__JB62062_3-Jon-C-R-Bennett.jpg?fit=1200%2C800&ssl=1",
       link: "/events/combat_robitics",
     },
-    // a7 c 26
+    
     { 
       TitleText: "Autonomous Robotics",
       Description:

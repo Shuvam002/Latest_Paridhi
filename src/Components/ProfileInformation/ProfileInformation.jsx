@@ -34,6 +34,9 @@ const ProfileInformation = () => {
   }
 
   const [UserData, setUserData] = useState({});
+
+  const [ShowProfile, setShowProfile] = useState(false);
+
   const location = useLocation();
   console.log(location + "this is location data");
   //To get the Related Information about Of the GID
