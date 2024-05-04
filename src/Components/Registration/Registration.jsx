@@ -80,8 +80,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1qtMgTyZIsjgQEeKnHA8de3AG7RAkXcP3/view?usp=drive_link",
   },
   striker_clash: {
-    Image:
-      "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    Image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/gallery/6409c273acb67_9.jpg?d=600x600",
     title: "Striker Clash",
     teamSize: 1,
     fee: 40,
@@ -128,47 +127,47 @@ const DomainEvents = {
 
   combowar8_15: {
     Image:
-      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
-    title: "War 8 kg + 15 kg",
-    teamSize: `1 - 5`,
-    fee: 300,
-    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
+  title: "Throne of Bots Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Introducing the 'Titan's Fury' War Combo: 8 kg powerhouse armed with precision strikes and a 15 kg juggernaut built for endurance. Dominate the arena with our lethal dual-bot assault`,
     regLink: "/events/autonomous_robotics/line_trekker/combowar8_15",
   },
   race_soccer: {
     Image:
-      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
-    title: "Race + Soccer",
-    teamSize: `1 - 5`,
-    fee: 300,
-    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    "https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/oscar/news/2022/robo-race4-800.png?sfvrsn=65946e11_2",
+  title: "Manual Robotics Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Join the exhilarating Robo Race and Robo Soccer competitions! Unleash your robot's agility and speed in the ultimate showdown of innovation and teamwork. Experience the future of sports and technology!`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer",
   },
   race_soccer_8kg: {
     Image:
-      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
-    title: "Race + Soccer + 8 Kg",
-    teamSize: `1 - 5`,
-    fee: 300,
-    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    "https://design1st.com/wp-content/uploads/2023/02/battlebots-2018-competition-1.png",
+  title: "Manual + Combat Robotics 8kg Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Join us for the ultimate tech showdown! Compete in Robo Race, Robo Soccer, and the thrilling Throne of Bots, 8 kg division. Test your bots' prowess in these electrifying challenges!`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8kg",
   },
   race_soccer_15kg: {
     Image:
-      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
-    title: "Race + Soccer + 15 Kg",
+      "https://s.hdnux.com/photos/34/47/07/7500252/7/1200x0.jpg",
+    title: "Manual + Combat Robotics 15kg Combo",
     teamSize: `1 - 5`,
     fee: 300,
-    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    Descriptions: `Gear up for adrenaline-fueled action! Join us in the ultimate showdown of Robo Race, Robo Soccer, and Throne of Bots (15kg class). Unleash your bot's prowess in a thrilling competition of speed, skill, and strategy.`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer_15kg",
   },
   race_soccer_8_15kg: {
     Image:
-      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
-    title: "Race + Soccer + 8 Kg + 15 Kg",
-    teamSize: `1 - 5`,
-    fee: 300,
-    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY43of2ZRZySnOMHDOCSSSQJOitKTuJskES6vKmc2zuN5cUgZNwSXD1xhujrECJu8ekNg&usqp=CAU",
+  title: "Manual + Combat Robotics Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Enter the Throne of Bots with our dynamic duo: "War Combo" for 8 kg and 15 kg classes, showcasing power and agility. Also, engage in Robo Race and Robo Soccer for ultimate robotic supremacy!`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8_15kg",
   },
 

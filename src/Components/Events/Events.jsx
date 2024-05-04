@@ -23,7 +23,7 @@ const Events = () => {
       Description:
         "Embark on Paridhi's electrifying robotics challenges, races, mazes, and more... Click for thrilling opportunities!",
       ImageLink:
-        "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "https://responsiblerobotics.eu/wp-content/uploads/2019/11/robot-damer.png",
       link: "/events/Robotics",
     },
     

@@ -101,7 +101,7 @@ const SignUp = () => {
 
   const handleYearChange = (e) => {
     const value = parseInt(e.target.value);
-    if (value > 4) {
+    if (value > 12) {
       alert("Year should not be greater than 4");
     } else {
       setWarning("");

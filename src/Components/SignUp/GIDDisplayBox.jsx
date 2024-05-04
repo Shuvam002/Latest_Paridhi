@@ -23,8 +23,7 @@ const GIDBoxContainer = styled.div`
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative; /* Ensure close button is positioned relative to the container */
-  /* width: 20%; */
+  position: relative; 
   text-align: center;
 `;
 
