@@ -13,6 +13,7 @@ import Codezen from "./Components/Login_coding/Login_coding";
 
 const Hero = React.lazy(() => import("./Components/Hero/Hero"));
 const Events = React.lazy(() => import("./Components/Events/Events"));
+const Robotics = React.lazy(() => import("./Components/Events/Robotics/Robotics"));
 const Profile = React.lazy(() => import("./Components/Profile/Profile"));
 const WorkShop = React.lazy(() => import("./Components/WorkShop/WorkShop"));
 const PrePredhiEvents = React.lazy(() =>
@@ -135,7 +136,16 @@ const router = createBrowserRouter(
           </React.Suspense>
         }
       />
-    </Route>
+
+      <Route
+        path="/events/robotics"
+        element={
+          <React.Suspense fallback={<Spinner />}>
+            <Robotics />
+          </React.Suspense>
+        }
+      />
+     </Route>
   )
 );
 

@@ -17,23 +17,14 @@ import GIDDisplayBox from "./GIDDisplayBox";
 import axios from "axios";
 // import process
 
-import { gapi } from "gapi-script";
+
 
 import OTPVerificationPopup from "./OTPVerificationPopup";
 
 const SignUp = () => {
   const [showGIDBox, setShowGIDBox] = useState(false);
 
-  useEffect(() => {
-    function start() {
-      gapi.client.init({
-        clientId:
-          "79474543031-tmjo35916ufn421ej3u1i2ljao2apr4s.apps.googleusercontent.com",
-        scope: "",
-      });
-    }
-    gapi.load("client: auth2", start);
-  }, []);
+ 
 
   const [popupStyle, showPopup] = useState("hide");
   const [name, setName] = useState("");
@@ -80,7 +71,7 @@ const SignUp = () => {
           },
         }
       );
-      console.log(response);
+      
       setOtpPopup(true);
     }
   };
@@ -90,7 +81,7 @@ const SignUp = () => {
       // Make a POST request to the backend API endpoint to verify OTP
       const response = await axios.post(`${apiUrl}/verify-otp`, { email, otp });
       // console.log(apiUrl)
-      console.log(response);
+     
       // Check if the OTP verification is successful
       if (response.status === 200) {
         // If the OTP is correct, set isVerified to true and close the OTP popup
@@ -102,8 +93,8 @@ const SignUp = () => {
         alert("Incorrect OTP. Please enter the correct OTP.");
       }
     } catch (error) {
-      // Handle error, such as displaying an alert or logging the error
-      console.error("Error verifying OTP:", error);
+  
+      
       alert("Error verifying OTP. Please try again.");
     }
   };
@@ -151,14 +142,11 @@ const SignUp = () => {
           }
         );
 
-       
-
-        console.log("Sign up successful:", response.data);
         setGidResponse(response.data);
         localStorage.setItem("user", response.data);
         //changed
         setShowGIDBox(true);
-        console.log(apiUrl);
+        
       } catch (error) {
         console.error("Error signing up:", error);
       }
@@ -260,12 +248,12 @@ const SignUp = () => {
                   value={email}
                   onChange={(e) => setEmail(e.target.value)}
                 />
-                {/* <Button  className="Verify" onClick={handleVerify}>
-                  Verify
-                </Button> */}
-                <Button  className="Verify" style={{cursor:"not-allowed"}}>
+                <Button  className="Verify" onClick={handleVerify}>
                   Verify
                 </Button>
+                {/* <Button  className="Verify" style={{cursor:"not-allowed"}}>
+                  Verify
+                </Button> */}
               </>
             )}
           </IconContainer>
@@ -281,8 +269,8 @@ const SignUp = () => {
             />
           </IconContainer>
 
-          {/* <SignUpButton  onClick={handleSignUp}>Submit</SignUpButton> */}
-          <SignUpButton disabled style={{cursor:"not-allowed"}}>Submit</SignUpButton>
+          <SignUpButton  onClick={handleSignUp}>Submit</SignUpButton>
+          {/* <SignUpButton disabled style={{cursor:"not-allowed"}}>Submit</SignUpButton> */}
         </Container>
       </Cover>
 

@@ -35,8 +35,8 @@ const InfoBanner = ({
         <TeamSize>Team Size: {teamSize}</TeamSize>
         <Description>{Descriptions}</Description>
         <ButtonSection>
-          {/* <RegisterBtn  to={regLink}>Register</RegisterBtn> */}
-          <RegisterBtn style={{cursor:"not-allowed"}} to={""}>Registration Starts Soon</RegisterBtn>
+          <RegisterBtn  to={regLink}>Register</RegisterBtn>
+          {/* <RegisterBtn style={{cursor:"not-allowed"}} to={""}>Registration Starts Soon</RegisterBtn> */}
 
           {/* <RegisterBtn
               style={{

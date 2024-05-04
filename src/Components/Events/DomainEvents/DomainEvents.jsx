@@ -80,13 +80,13 @@ const DomainEvents = () => {
           "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/manual_robitics/striker_clash",
       },
-      {
-        TitleText: "Triathlon + Robo Klassiker (Combo)",
-        Description:
-          "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
-        ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-           link: "/events/manual_robitics/soccerandrace_combo",
-      },
+      // {
+      //   TitleText: "Triathlon + Robo Klassiker (Combo)",
+      //   Description:
+      //     "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
+      //   ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+      //      link: "/events/manual_robitics/soccerandrace_combo",
+      // },
     ],
       combat_robitics: [
       {
@@ -105,14 +105,14 @@ const DomainEvents = () => {
           
         link: "/events/combat_robitics/throne_of_bots_15kg",
       },
-      {
-        TitleText: "Throne of Bots (Combo 8kg & 15kg)",
-        Description:
-          "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
-        ImageLink:
-        "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-           link: "/events/combat_robitics/throne_of_bots_combo_8_15kg",
-      },
+      // {
+      //   TitleText: "Throne of Bots (Combo 8kg & 15kg)",
+      //   Description:
+      //     "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
+      //   ImageLink:
+      //   "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+      //      link: "/events/combat_robitics/throne_of_bots_combo_8_15kg",
+      // },
      
     ],
     autonomous_robotics: [
@@ -124,6 +124,49 @@ const DomainEvents = () => {
           "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
         link: "/events/autonomous_robotics/line_trekker",
       },
+    ],
+    combo_robotics:[
+      {
+        TitleText: "War 8 kg + 15 kg",
+        Description:
+          "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
+        ImageLink:
+          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+        link: "/events/autonomous_robotics/combowar8_15",
+      },
+      {
+        TitleText: "race + soccer",
+        Description:
+          "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
+        ImageLink:
+          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+        link: "/events/autonomous_robotics/race_soccer",
+      },
+      {
+        TitleText: "race + soccer+ 8 kg",
+        Description:
+          "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
+        ImageLink:
+          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+        link: "/events/autonomous_robotics/race_soccer_8kg",
+      },
+      {
+        TitleText: "race + soccer + 15 kg",
+        Description:
+          "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
+        ImageLink:
+          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+        link: "/events/autonomous_robotics/race_soccer_15kg",
+      },
+      {
+        TitleText: "race + soccer + 8 kg + 15 kg",
+        Description:
+          "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
+        ImageLink:
+          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+        link: "/events/autonomous_robotics/race_soccer_8_15kg",
+      },
+      
     ],
     civil: [
       {
@@ -297,13 +340,13 @@ const DomainEvents = () => {
             </motion.div>
           ))}
           <BottomNavbar>
-          <StyledLink to="/events/coding"><i class="ri-code-s-slash-line"></i></StyledLink>
-          <StyledLink to="/events/manual_robitics"><i class="ri-robot-2-line"></i></StyledLink>
+          <StyledLink to="/events/coding"><i className="ri-code-s-slash-line"></i></StyledLink>
+          <StyledLink to="/events/manual_robitics"><i className="ri-robot-2-line"></i></StyledLink>
           <StyledLink to="/events/combat_robitics"><GiBattleGear /></StyledLink>
           <StyledLink to="/events/autonomous_robitics"><FaUserGear /></StyledLink>
-          <StyledLink to="/events/civil"><i class="ri-building-2-line"></i></StyledLink>
-          <StyledLink to="/events/electrical"><i class="ri-flashlight-line"></i></StyledLink>
-          <StyledLink to="/events/gaming"><i class="ri-gamepad-line"></i></StyledLink>
+          <StyledLink to="/events/civil"><i className="ri-building-2-line"></i></StyledLink>
+          <StyledLink to="/events/electrical"><i className="ri-flashlight-line"></i></StyledLink>
+          <StyledLink to="/events/gaming"><i className="ri-gamepad-line"></i></StyledLink>
           <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
         </BottomNavbar>
       </Main>

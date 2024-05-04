@@ -23,15 +23,24 @@ const ProfileInformation = () => {
     return false;
   }
 
-  function showOptionsHandler(obj) {
+  function showOptionsHandler(obj, paid) {
     let elements = [];
     for (let key in obj) {
+      let tidStyle = {};
+      if (paid && obj[key] !== null) {
+        tidStyle = { color: "green" };
+      } else if (!paid && obj[key] !== null) {
+        tidStyle = { color: "red" };
+      }
       if (obj[key] !== null) {
-        elements.push(<h1 key={key}>{` ${key} : ${obj[key]}`}</h1>);
+        elements.push(
+          <h1 key={key}>{` ${key} : `}<span style={{ color: tidStyle.color }}>{obj[key]}</span></h1>
+        );
       }
     }
     return elements;
   }
+  
 
   const [UserData, setUserData] = useState({});
 
@@ -155,7 +164,6 @@ const ProfileInformation = () => {
               {showCardHandler(domainElectrical) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Electrical</h1>
-                  <h1>Registration fees : {paid ? "paid" : "not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainElectrical).map((main) => main)}
                 </Domains>
