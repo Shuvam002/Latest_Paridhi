@@ -18,11 +18,10 @@ const WorkShop = React.lazy(() => import("./Components/WorkShop/WorkShop"));
 const PrePredhiEvents = React.lazy(() =>
   import("./Components/PreParedhiEvents/PrePredhiEvents")
 );
-// const ProfileInformation = React.lazy(() =>
-//   import("./Components/ProfileInformation/ProfileInformation")
-// );
+const ProfileInformation = React.lazy(() =>
+  import("./Components/ProfileInformation/ProfileInformation")
+);
 
-import ProfileInformation from "./Components/ProfileInformation/ProfileInformation";
 const OurTeam = React.lazy(() => import("./Components/OurTeam/OurTeam"));
 
 const DomainEvents = React.lazy(() =>
@@ -129,7 +128,7 @@ const router = createBrowserRouter(
         }
       />
       <Route
-        path="/profile/:GID"
+        path="/profile/Profile-Informations"
         element={
           <React.Suspense fallback={<Spinner />}>
             <ProfileInformation />
