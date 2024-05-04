@@ -1,6 +1,9 @@
 import React from "react";
 import { StyledContainer,BottomNavbar,StyledLink } from "./Robotics.styled";
 import Card from "../../Cards/Card";
+
+import Card from "../Cards/Card";
+
 import { motion } from "framer-motion";
 import { GiChessQueen, GiBattleGear  } from "react-icons/gi";
 import { FaUserGear } from "react-icons/fa6";
