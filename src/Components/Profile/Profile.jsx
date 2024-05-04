@@ -244,6 +244,7 @@ const Profile = () => {
             />
             <h1>Name : {data.name} </h1>
             <h1>GID : {data.gid} </h1>
+            <h1>Registration fees : {data.paid?"paid":"not paid"}</h1>
           </MainInfo>
         ))
       )}

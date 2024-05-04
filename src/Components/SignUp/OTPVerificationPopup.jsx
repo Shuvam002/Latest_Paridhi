@@ -74,7 +74,7 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
   return (
     <PopupOverlay>
       <PopupContainer>
-        <h2 style={{ textAlign: "center" }}>Enter OTP</h2>
+        <h2 style={{ textAlign: "center" , marginBottom:"5px"}}>Enter OTP</h2>
 
         <InputField
           type="number"
@@ -85,11 +85,13 @@ const OTPVerificationPopup = ({ onSubmit, onClose, wrongOTP }) => {
           style={{
             height: "2rem",
             width: "80%",
-            backgroundColor: "rgb(163, 163, 163)",
-            color: "black",
+            padding: "0.5rem",
+            borderRadius: "5px",
+            backgroundColor: "rgb(42, 42, 42)",
+            color: "rgb(227, 227, 227)",
           }}
         />
-        <Paragraph>*Please check you email</Paragraph>
+        <Paragraph>*Please check your email</Paragraph>
 
         {!wrongOTP ? null : (
           <h4 style={{ textAlign: "center" }}>OTP is Incorrect</h4>

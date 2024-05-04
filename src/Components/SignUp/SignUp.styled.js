@@ -188,7 +188,7 @@ export const InputField = styled.input`
     margin-right: 1rem;
     left: 20px;
   }
-  color: rgb(170, 170, 170);
+  color: rgb(227, 227, 227);
   font-size: 1rem;
 `;
 
@@ -255,7 +255,7 @@ export const MobileInputField = styled(InputField)`
 `;
 
 export const Button = styled.div`
-  margin-bottom: 0.5rem;
+ 
   margin-right: 0.5rem;
   background-color: transparent;
   border: none;

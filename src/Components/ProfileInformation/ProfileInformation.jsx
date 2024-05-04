@@ -104,6 +104,7 @@ const ProfileInformation = () => {
   }, []);
   const {
     name,
+    paid,
     college,
     year,
     department,
@@ -198,6 +199,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainCoding) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Coding</h1>
+                  <h1>Registration fees : {paid?"paid":"not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainCoding).map((main) => main)}
                 </Domains>
@@ -205,6 +207,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainGaming) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Gaming</h1>
+                  <h1>Registration fees : {data.paid?"paid":"not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainGaming).map((main) => main)}
                 </Domains>
@@ -212,6 +215,7 @@ const ProfileInformation = () => {
               {showCardHandler(domainElectrical) ? (
                 <Domains>
                   <h1 style={domainTitleStyle}>Electrical</h1>
+                  <h1>Registration fees : {data.paid?"paid":"not paid"}</h1>
                   <br />
                   {showOptionsHandler(domainElectrical).map((main) => main)}
                 </Domains>

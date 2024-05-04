@@ -67,7 +67,7 @@ export const Domains = styled.span`
   color: white;
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 65%;
 
   font-size: 14px;
   @media (max-width: 400px) {

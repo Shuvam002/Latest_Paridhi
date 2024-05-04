@@ -147,7 +147,7 @@ const SignUp = () => {
             roll: roll,
             email: email,
             phoneNumber: phoneNumber,
-            emailVerified: true,
+            emailVerified: isVerified,
           }
         );
         console.log("Sign up successful:", response.data);
