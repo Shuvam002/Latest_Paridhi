@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import OTPVerificationPopup from "../SignUp/OTPVerificationPopup";
 import axios from "axios";
 import {
@@ -21,6 +21,75 @@ const Profile = () => {
   const [inCorrectOTP, setInCorrectOTP] = useState(false);
   const [showProfile, setShowProfile] = useState();
   const [userProfileInfo, setUserProfileInfo] = useState([]);
+  // Submitting the email to get the Profile Information
+  const emailSubmittingHandler = async () => {
+    if (!sessionStorage.getItem("email")) {
+      alert("Verify The Email First !!!");
+    } else {
+      try {
+        const emmailSendToBackend = sessionStorage.getItem("email")
+          ? sessionStorage.getItem("email")
+          : userEmail;
+        // const response = await axios.get(
+        //   `backend End Point ${emmailSendToBackend}`
+        // );
+        const response = {
+          status: 200,
+          data: [
+            {
+              id: 1,
+              name: "hello",
+              college: "XYZ College",
+              year: "2023",
+              department: "Computer Science",
+              roll: "CS001",
+              email: "cocatul11@gmail.com",
+              phoneNumber: "9876543210",
+              gid: "paridhi2000022020522024",
+              megaArchTid: "paridhi12002105202024",
+              setuBandhanTid: "paridhi12002105202024",
+              codezenTid: null,
+              codeQuestTid: null,
+              webMindsTid: null,
+              electriQuestTid: null,
+              electrical2Tid: null,
+              bgmiLanTid: "paridhi12002105202024",
+              valorantLanTid: null,
+              pesLanTid: null,
+              bingeQuizTid: null,
+              tableTennisTid: null,
+              carromTid: null,
+              lineTrekkerTid: null,
+              triathlonTid: "paridhi22002205202024",
+              roboKlassikerTid: "paridhi22002205202024",
+              roboWar8kgTid: "paridhi22002205202024",
+              roboWar15kgTid: null,
+              trackoteasureTid: null,
+            },
+          ],
+        };
+
+        if (response.status === 200) {
+          const storedEmail = sessionStorage.getItem("email");
+          setUserEmail(storedEmail);
+          setEmailFound(true);
+          setInCorrectOTP(true);
+          setEmailVerified(true);
+          setShowProfile(true);
+
+          setUserProfileInfo(response.data);
+        } else if (response.status === 404) {
+          alert("Email not Found  !!!");
+        } else {
+          alert("Something went wrong !!!");
+        }
+      } catch (error) {
+        console.log("Error while getting the Profile Information >>> ", error);
+        alert("Something Went Wrong while getting the Profile Information");
+      }
+    }
+  };
+
 
   // Email Verification
   const handleVerify = async () => {
@@ -78,86 +147,16 @@ const Profile = () => {
       );
     }
   };
-
-  // Submitting the email to get the Profile Information
-  const emailSubmittingHandler = async () => {
-    if (!sessionStorage.getItem("email")) {
-      alert("Verify The Email First !!!");
-    } else {
-      try {
-        const emmailSendToBackend = sessionStorage.getItem("email")
-          ? sessionStorage.getItem("email")
-          : userEmail;
-        // const response = await axios.get(
-        //   `backend End Point ${emmailSendToBackend}`
-        // );
-        const response = {
-          status: 200,
-          data: [
-            {
-              id: 1,
-              name: "hello",
-              college: "XYZ College",
-              year: "2023",
-              department: "Computer Science",
-              roll: "CS001",
-              email: "cocatul11@gmail.com",
-              phoneNumber: "9876543210",
-              gid: "paridhi2000022020522024",
-              megaArchTid: "paridhi12002105202024",
-              setuBandhanTid: "paridhi12002105202024",
-              codezenTid: null,
-              codeQuestTid: null,
-              webMindsTid: null,
-              electriQuestTid: null,
-              electrical2Tid: null,
-              bgmiLanTid: "paridhi12002105202024",
-              valorantLanTid: null,
-              pesLanTid: null,
-              bingeQuizTid: null,
-              tableTennisTid: null,
-              carromTid: null,
-              lineTrekkerTid: null,
-              triathlonTid: "paridhi22002205202024",
-              roboKlassikerTid: "paridhi22002205202024",
-              roboWar8kgTid: "paridhi22002205202024",
-              roboWar15kgTid: null,
-              trackoteasureTid: null,
-            },
-          ],
-        };
-
-        if (response.status === 200) {
-          const storedEmail = sessionStorage.getItem("email");
-          setUserEmail(storedEmail);
-          setEmailFound(true);
-          setInCorrectOTP(true);
-          setEmailVerified(true);
-          setShowProfile(true);
-          console.log(showProfile);
-          setUserProfileInfo(response.data);
-          console.log(userProfileInfo);
-        } else if (response.status === 404) {
-          alert("Email not Found  !!!");
-        } else {
-          alert("Something went wrong !!!");
-        }
-      } catch (error) {
-        console.log("Error while getting the Profile Information >>> ", error);
-        alert("Something Went Wrong while getting the Profile Information");
-      }
-    }
-  };
-
-  const userEmailExist = () => {
-    if (sessionStorage.getItem("email")) {
-      emailSubmittingHandler();
-    }
-  };
-
   useEffect(() => {
     userEmailExist();
   }, []);
+
+  const userEmailExist = useCallback(() => {
+    console.log("I'm running !!! >>>>>>>");
+    if (sessionStorage.getItem("email")) {
+      emailSubmittingHandler();
+    }
+  }, [emailSubmittingHandler]);
 
   return (
     <StyledContainer>
@@ -165,7 +164,7 @@ const Profile = () => {
         <CenteredContainer>
           <Cover>
             <Container>
-              <h1 style={{ color: "white" }}>Enter Your Email </h1>2
+              <h1 style={{ color: "white" }}>Enter Your Email </h1>
               <IconContainer>
                 <InputField
                   name="email"
