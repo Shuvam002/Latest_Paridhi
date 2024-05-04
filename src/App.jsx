@@ -27,6 +27,9 @@ const OurTeam = React.lazy(() => import("./Components/OurTeam/OurTeam"));
 const DomainEvents = React.lazy(() =>
   import("./Components/Events/DomainEvents/DomainEvents")
 );
+const Robotics = React.lazy(() =>
+  import("./Components/Events/Robotics/Robotics")
+);
 const SignUp = React.lazy(() => import("./Components/SignUp/SignUp"));
 const Merchandise = React.lazy(() =>
   import("./Components/Merchandise/Merchandise")
@@ -132,6 +135,14 @@ const router = createBrowserRouter(
         element={
           <React.Suspense fallback={<Spinner />}>
             <ProfileInformation />
+          </React.Suspense>
+        }
+      />
+      <Route
+        path="/events/Robotics"
+        element={
+          <React.Suspense fallback={<Spinner />}>
+            <Robotics />
           </React.Suspense>
         }
       />
