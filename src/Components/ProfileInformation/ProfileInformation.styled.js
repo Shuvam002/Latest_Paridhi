@@ -76,4 +76,6 @@ export const Domains = styled.span`
     width: 70%;
     height: auto;
   }
+
 `;
+

@@ -1,11 +1,35 @@
 // signup.js
 import React, { useEffect, useState } from "react";
+<<<<<<< HEAD
 import axios from "axios";
 import { Title, CenteredContainer } from "./SignUp.styled";
 
 
 import { gapi } from "gapi-script";
 
+=======
+// import axios from "axios";
+import {
+  Container,
+  Cover,
+  IconContainer,
+  InputField,
+  InputIcon,
+  SignUpButton,
+  Title,
+  Underline,
+  CenteredContainer,
+  Button,
+} from "./SignUp.styled";
+import GIDDisplayBox from "./GIDDisplayBox";
+import axios from "axios";
+// import process 
+
+import { gapi } from "gapi-script";
+
+import OTPVerificationPopup from "./OTPVerificationPopup";
+
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
 const SignUp = () => {
   const [showGIDBox, setShowGIDBox] = useState(false);
 
@@ -33,9 +57,17 @@ const SignUp = () => {
   const [otpPopup, setOtpPopup] = useState(false);
   const [isOtpCorrect, setIsOtpCorrect] = useState(false);
   const [gidResponse, setGidResponse] = useState(null);
+<<<<<<< HEAD
 
   let config = {
     url: `https://api.msitparidhi.in/megatronix/paridhi/user/registration/generate-otp?name=${name}&email=${email}`,
+=======
+  
+  const apiUrl=String(import.meta.env.VITE_API_MAIN);
+
+  let config = {
+    url: `${apiUrl}/generate-otp?name=${name}&email=${email}`,
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
     method: "post",
     headers: {
       "Access-Control-Allow-Origin": "*",
@@ -53,7 +85,17 @@ const SignUp = () => {
     if (!email.includes("@") || !email.includes(".")) {
       alert("Please enter a valid email address.");
     } else {
+<<<<<<< HEAD
       const response = await axios.request(config);
+=======
+      const response = await axios.post(`${apiUrl}/generate-otp?name=${name}&email=${email}`, {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Headers": "*",
+          "Access-Control-Allow-Credentials": "true",
+        }
+      });
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
       console.log(response);
       setOtpPopup(true);
     }
@@ -63,9 +105,16 @@ const SignUp = () => {
     try {
       // Make a POST request to the backend API endpoint to verify OTP
       const response = await axios.post(
+<<<<<<< HEAD
         `https://api.msitparidhi.in/megatronix/paridhi/user/registration/verify-otp`,
         { email, otp }
       );
+=======
+        `${apiUrl}/verify-otp`,
+        { email, otp }
+      );
+      // console.log(apiUrl)
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
       console.log(response);
       // Check if the OTP verification is successful
       if (response.status === 200) {
@@ -114,7 +163,11 @@ const SignUp = () => {
     } else {
       try {
         const response = await axios.post(
+<<<<<<< HEAD
           "https://api.msitparidhi.in/megatronix/paridhi/user/registration",
+=======
+          `${apiUrl}/registration`,
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
           {
             name: name,
             college: college,
@@ -123,7 +176,11 @@ const SignUp = () => {
             roll: roll,
             email: email,
             phoneNumber: phoneNumber,
+<<<<<<< HEAD
             emailVerified: isVerified,
+=======
+            emailVerified: true,
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
           }
         );
         console.log("Sign up successful:", response.data);
@@ -131,6 +188,10 @@ const SignUp = () => {
         localStorage.setItem("user", response.data);
         //changed
         setShowGIDBox(true);
+<<<<<<< HEAD
+=======
+        console.log(apiUrl);
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
       } catch (error) {
         console.error("Error signing up:", error);
       }
@@ -139,7 +200,138 @@ const SignUp = () => {
 
   return (
     <CenteredContainer>
+<<<<<<< HEAD
       <Title>Registration begins soon...</Title>
+=======
+
+      <Cover>
+        <Container>
+          <Title>Register</Title>
+
+          <Underline />
+
+          <IconContainer>
+            <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
+            <InputField
+              name="name"
+              type="text"
+              placeholder="Name"
+              value={name}
+              onChange={(e) => setName(e.target.value)}
+            />
+          </IconContainer>
+
+          <IconContainer>
+            <InputIcon
+              className="fa fa-university"
+              aria-hidden="true"
+            ></InputIcon>
+            <InputField
+              name="college"
+              type="text"
+              placeholder="College"
+              value={college}
+              onChange={(e) => setCollege(e.target.value)}
+            />
+          </IconContainer>
+
+          <IconContainer>
+            <InputIcon
+              className="fa fa-calendar"
+              aria-hidden="true"
+            ></InputIcon>
+            <InputField
+              name="year"
+              type="text"
+              placeholder="Year/Class"
+              value={year}
+              onChange={handleYearChange}
+            />
+            {warning && <p style={{ color: "red" }}>{warning}</p>}
+          </IconContainer>
+
+          <IconContainer>
+            <InputIcon className="fa fa-book" aria-hidden="true"></InputIcon>
+            <InputField
+              name="department"
+              type="text"
+              placeholder="Department"
+              value={department}
+              onChange={(e) => setDepartment(e.target.value)}
+            />
+          </IconContainer>
+
+          <IconContainer>
+            <InputIcon
+              className="fa fa-id-card-o"
+              aria-hidden="true"
+            ></InputIcon>
+            <InputField
+              name="roll"
+              type="number"
+              placeholder="Roll No."
+              value={roll}
+              onChange={(e) => setRoll(e.target.value)}
+            />
+          </IconContainer>
+
+          <IconContainer>
+            <InputIcon
+              className="fa fa-envelope-o"
+              aria-hidden="true"
+            ></InputIcon>
+            {isVerified ? (
+              <InputField
+                name="email"
+                type="email"
+                placeholder="Verified"
+                readOnly
+                value={email}
+              />
+            ) : (
+              <>
+                <InputField
+                  name="email"
+                  type="email"
+                  placeholder="Email id"
+                  value={email}
+                  onChange={(e) => setEmail(e.target.value)}
+                />
+                <Button className="Verify" onClick={handleVerify}>
+                  Verify
+                </Button>
+              </>
+            )}
+          </IconContainer>
+
+          <IconContainer>
+            <InputIcon className="fa fa-phone" aria-hidden="true"></InputIcon>
+            <InputField
+              name="phoneNumber"
+              type="tel"
+              placeholder="Phone Number"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+            />
+          </IconContainer>
+
+          <SignUpButton onClick={handleSignUp}>Submit</SignUpButton>
+        </Container>
+      </Cover>
+
+      {otpPopup && (
+        <OTPVerificationPopup
+          onSubmit={handleOtpSubmit}
+          onClose={() => setOtpPopup(false)}
+        />
+      )}
+      {showGIDBox && (
+        <GIDDisplayBox gid={gidResponse} onClose={() => setShowGIDBox(false)} />
+      )}
+
+    {/* <Title>Registration begins soon...</Title> */}
+
+>>>>>>> f6edae26d5361a56efb0454cb2ac57da8201ad81
     </CenteredContainer>
     // <CenteredContainer>
     //   <Cover>

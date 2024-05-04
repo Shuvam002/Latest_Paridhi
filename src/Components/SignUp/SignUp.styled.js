@@ -75,14 +75,7 @@ export const AltLoginButton = styled.div`
   cursor: pointer;
 `;
 
-export const GoogleButton = styled(AltLoginButton)`
-  margin-left: 2rem;
-  background-image: url("../icons/google.png");
-`;
 
-export const FacebookButton = styled(AltLoginButton)`
-  background-image: url("../icons/facebook.png");
-`;
 
 export const Input = styled.input`
   border: none;

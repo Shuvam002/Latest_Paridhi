@@ -1,3 +1,4 @@
+
 import React, { useState, useEffect } from "react";
 import {
   StyledContainer,
@@ -40,44 +41,50 @@ const ProfileInformation = () => {
   //To get the Related Information about Of the GID
   const backendRequest = async () => {
     try {
+
+      const response = await axios.get(
+        `http://localhost:6001/megatronix/paridhi/user/profile/getProfile/${GID}`
+      );
+
+      // const response = {
+      //   status: 200,
+      //   data: {
+      //     id: 1,
+      //     name: "hello",
+      //     college: "XYZ College",
+      //     year: "2023",
+      //     department: "Computer Science",
+      //     roll: "CS001",
+      //     email: "cocatul11@gmail.com",
+      //     phoneNumber: "9876543210",
+      //     gid: "paridhi2000024020524024",
+      //     megaArchTid: 1234,
+      //     setuBandhanTid: 5678,
+      //     codezenTid: 9101,
+      //     codeQuestTid: 1121,
+      //     webMindsTid: 3141,
+      //     electriQuestTid: 5161,
+      //     electrical2Tid: 7181,
+      //     bgmiLanTid: "paridhi12002105202024",
+      //     valorantLanTid: 9202,
+      //     pesLanTid: 1223,
+      //     bingeQuizTid: 4243,
+      //     tableTennisTid: 6263,
+      //     carromTid: 8283,
+      //     lineTrekkerTid: 23304,
+      //     triathlonTid: 2324,
+      //     roboKlassikerTid: 4344,
+      //     roboWar8kgTid: 6364,
+      //     roboWar15kgTid: 8384,
+      //     trackoteasureTid: 23405,
+      //   },
+      // };
+
       // const response = await axios.get(
       //   `https://api.msitparidhi.in/megatronix/paridhi/user/profile/${GID}`
       // )
 
-      const response = {
-        status: 200,
-        data: {
-          id: 1,
-          name: "hello",
-          college: "XYZ College",
-          year: "2023",
-          department: "Computer Science",
-          roll: "CS001",
-          email: "cocatul11@gmail.com",
-          phoneNumber: "9876543210",
-          gid: "paridhi2000024020524024",
-          megaArchTid: 1234,
-          setuBandhanTid: 5678,
-          codezenTid: 9101,
-          codeQuestTid: 1121,
-          webMindsTid: 3141,
-          electriQuestTid: 5161,
-          electrical2Tid: 7181,
-          bgmiLanTid: "paridhi12002105202024",
-          valorantLanTid: 9202,
-          pesLanTid: 1223,
-          bingeQuizTid: 4243,
-          tableTennisTid: 6263,
-          carromTid: 8283,
-          lineTrekkerTid: 23304,
-          triathlonTid: 2324,
-          roboKlassikerTid: 4344,
-          roboWar8kgTid: 6364,
-          roboWar15kgTid: 8384,
-          trackoteasureTid: 23405,
-        },
-      };
-
+      
       console.log(response);
       if (response.status === 200) {
         setUserData(response.data);
@@ -234,4 +241,6 @@ const ProfileInformation = () => {
   );
 };
 
+
 export default ProfileInformation;
+

@@ -10,7 +10,6 @@ import {
   createRoutesFromElements,
 } from "react-router-dom";
 import Codezen from "./Components/Login_coding/Login_coding";
-import Header from "./Components/Test/Header";
 
 const Hero = React.lazy(() => import("./Components/Hero/Hero"));
 const Events = React.lazy(() => import("./Components/Events/Events"));
