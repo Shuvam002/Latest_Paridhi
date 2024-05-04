@@ -108,23 +108,70 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
     regLink: "/events/combat_robotics/throne_of_bots_15kg/war_15kgReg",
   },
-  throne_of_bots_combo_8_15kg: {
-    Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-    title: "Throne of Bots Combo(8 kg + 15 kg)",
-    teamSize: "1-5",
-    fee: "1500",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: null,
-  },
-  soccerandrace_combo: {
+  // throne_of_bots_combo_8_15kg: {
+  //   Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+  //   title: "Throne of Bots Combo(8 kg + 15 kg)",
+  //   teamSize: "1-5",
+  //   fee: "1500",
+  //   Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+  //   rule: null,
+  // },
+  // soccerandrace_combo: {
+  //   Image:
+  //     "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+  //   title: "Triathlon + Robo Klassiker (Combo)",
+  //   teamSize: "1-5",
+  //   fee: "550",
+  //   Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
+  //   rule: null,
+  // },
+
+  combowar8_15: {
     Image:
-      "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-    title: "Triathlon + Robo Klassiker (Combo)",
-    teamSize: "1-5",
-    fee: "550",
-    Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: null,
+      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+    title: "War 8 kg + 15 kg",
+    teamSize: `1 - 5`,
+    fee: 300,
+    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    regLink: "/events/autonomous_robotics/line_trekker/combowar8_15",
   },
+  race_soccer: {
+    Image:
+      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+    title: "Race + Soccer",
+    teamSize: `1 - 5`,
+    fee: 300,
+    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer",
+  },
+  race_soccer_8kg: {
+    Image:
+      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+    title: "Race + Soccer + 8 Kg",
+    teamSize: `1 - 5`,
+    fee: 300,
+    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8kg",
+  },
+  race_soccer_15kg: {
+    Image:
+      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+    title: "Race + Soccer + 15 Kg",
+    teamSize: `1 - 5`,
+    fee: 300,
+    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer_15kg",
+  },
+  race_soccer_8_15kg: {
+    Image:
+      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+    title: "Race + Soccer + 8 Kg + 15 Kg",
+    teamSize: `1 - 5`,
+    fee: 300,
+    Descriptions: `Compete in our autonomous bot challenge! Navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8_15kg",
+  },
+
   line_trekker: {
     Image:
       "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
