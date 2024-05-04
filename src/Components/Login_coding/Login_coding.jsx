@@ -13,47 +13,19 @@ import {
   Button,
 } from "./Login_coding.styled";
 import TIDDisplayBox from "./TIDDisplayBox";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
-const mapping = {
-  codezen: { min: 1, max: 2 },
-  "code-quest": { min: 1, max: 2 },
-  "web-minds": { min: 1, max: 2 },
-
-  "setu-bandhan": { min: 2, max: 3 },
-  "mega-arch": { min: 3, max: 5 },
-  tot: { min: 2, max: 3 },
-
-  "electri-quest": { min: 1, max: 2 },
-
-  "binge-quiz": { min: 1, max: 2 },
-  "table-tennis": { min: 1, max: 2 },
-  carrom: { min: 1, max: 2 },
-
-  valorant: { min: 5, max: 6 },
-  bgmi: { min: 4, max: 6 },
-  pes: { min: 4, max: 6 },
-
-  "line-trekker": { min: 1, max: 5 },
-  "robo-klassiker": { min: 1, max: 5 },
-  triathlon: { min: 1, max: 5 },
-  "war-8kg": { min: 1, max: 5 },
-  "war-15kg": { min: 1, max: 5 },
-};
 const Codezen = () => {
-  const location = useLocation();
-  const event = location.pathname.split("/")[3];
   const [inputList, setinputList] = useState([]);
-  const [verificationResults, setVerificationResults] = useState([]);
   const [verifiedCount, setVerifiedCount] = useState(0);
   const [val, setVal] = useState("");
-  const [showTIDBox, setShowTIDBox] = useState(false); // State to control visibility of TIDDisplayBox
+  const [showTIDBox, setShowTIDBox] = useState(false);
   const [teamname, setTeamname] = useState("");
   const [TID, setTID] = useState(null);
   const [Phone, setPhone] = useState(null);
   const { eventRegName } = useParams();
 
-  const apiUrl=String(import.meta.env.VITE_API_MAIN);
+  const apiUrl = String(import.meta.env.VITE_API_MAIN);
 
   const eventRegs = {
     // webMindReg: {
@@ -213,41 +185,17 @@ const Codezen = () => {
       min: 1,
       max: 2,
     },
-    
   };
 
   const regData = eventRegs[eventRegName];
 
-  const handleinputchange = (e) => {
-    const { value } = e.target;
-    setinputList([...inputList, value]);
-    console.log(inputList);
-  };
-
   const handleLogin = async () => {
     const [gid1, gid2, gid3, gid4, gid5] = inputList;
-    console.log(
-      "Data that will be send to  Backend >>>> ",
-      " Team Name >>>",
-      teamname,
-      "gid1 >>>",
-      gid1,
-      "gid2 >>>",
-      gid2,
-      "gid3 >>>",
-      gid3,
-      "gid4 >>>",
-      gid4,
-      "gid5 >>>",
-      gid5,
-      "Phone >>> ",
-      Phone
-    );
 
     if (!teamname) {
       alert("Please fill Team Name !!!");
-    } else if (!gid1) {
-      alert("Please give minimum 1 Varified GID !!!");
+    } else if (inputList.length < regData.min) {
+      alert(`Please give minimum ${regData.min} Varified GID !!!`);
     } else if (!Phone) {
       alert("Please Enter the Phone number !!!");
     } else {
@@ -262,19 +210,11 @@ const Codezen = () => {
           phone: Phone,
         });
 
-        console.log("Sign up successful:", response.data);
-        // setGidResponse(response.data);
-        // localStorage.setItem("user", response.data);
-
-        console.log("sending the request !!!!!", inputList);
-        console.log("this is array of gids", inputList);
-
         // Setting TID -----
-
         setTID(response.data);
-        console.log(response.data);
         setShowTIDBox(true);
       } catch (error) {
+        alert("Something went wrong !!!");
         console.error("Error signing up:", error);
       }
     }
@@ -287,21 +227,16 @@ const Codezen = () => {
     setVerifiedCount(verifiedCount - 1);
   };
 
-  const handleaddclick = () => {
-    if (inputList.length < 2) {
-      setinputList([...inputList, { name: "" }]);
-      setVerificationResults([...verificationResults, null]);
-    } else {
-      alert("You can only add up to 2 names");
-    }
-  };
-
   const verifyGID = async (value, index) => {
     try {
       const response = await axios.get(`${regData.gidVerifyApi}${value}`);
-      console.log(response);
-      console.log(response.status);
-      console.log(response.data);
+
+      // const response = {
+      //   status: 200,
+      //   data: {
+      //     message: "GID is valid",
+      //   },
+      // };
 
       if (response.status === 200) {
         if (!inputList.includes(value)) {
@@ -309,7 +244,6 @@ const Codezen = () => {
 
           setVerifiedCount(verifiedCount + 1);
           setVal("");
-          console.log(`GID ${value} is valid`);
         } else {
           alert(`GID ${value} is already verified, Enter a new GID`);
         }
@@ -318,6 +252,7 @@ const Codezen = () => {
       }
       return response.data;
     } catch (error) {
+      alert("Something Went Wrong !!!");
       console.error("Error verifying GID:", error);
     }
   };
@@ -377,7 +312,6 @@ const Codezen = () => {
                 className="Verify"
                 onClick={() => {
                   if (inputList.length < regData.max) {
-                    // console.log(val);
                     verifyGID(val);
                   } else {
                     alert("You can only verify up to 2 GIDs.");
