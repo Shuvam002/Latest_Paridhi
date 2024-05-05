@@ -58,6 +58,8 @@
 
     "react-spinner-loader": "^1.1.1",
 
+    "rsuite": "^5.60.1",
+
     "split-type": "^0.3.4",
 
     "styled": "^1.0.0",

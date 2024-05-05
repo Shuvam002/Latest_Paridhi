@@ -1,6 +1,7 @@
 import { useState, useEffect, useCallback } from "react";
 import OTPVerificationPopup from "../SignUp/OTPVerificationPopup";
 import { useNavigate } from "react-router-dom";
+import { Loader } from "rsuite";
 
 import axios from "axios";
 import {
@@ -17,6 +18,7 @@ import {
 
 const Profile = () => {
   const [emailVerified, setEmailVerified] = useState(false);
+  const [isPending, setIsPending] = useState(false);
   const [userEmail, setUserEmail] = useState("");
   const [otpPopup, setOtpPopup] = useState(false);
   const [emailFound, setEmailFound] = useState(false);
@@ -43,14 +45,18 @@ const Profile = () => {
             },
           }
         );
+        setIsPending(true);
         if (response.status === 200) {
           setOtpPopup(true);
           setEmailFound(false);
+          setIsPending(false);
         } else if (response.status === 404) {
           setEmailFound(true);
+          setIsPending(false);
         }
       }
     } catch (error) {
+      setIsPending(false);
       console.log("Email verification ERROR >>> ", error);
       alert("Something Went Wrong Please Try Again !!!");
     }
@@ -64,12 +70,6 @@ const Profile = () => {
         email: userEmail,
         otp,
       });
-
-      // console.log(otp);
-      // const response = {
-      //   status: 200,
-      //   data: "test-Verifying-OTP",
-      // };
 
       // Check if the OTP verification is successful
       if (response.status === 200) {
@@ -152,7 +152,7 @@ const Profile = () => {
                   onChange={(e) => setUserEmail(e.target.value)}
                 />
                 <Button className="Verify" onClick={handleVerify}>
-                  {!emailVerified ? "Verify" : "Verified"}
+                  {!emailVerified && !isPending ? "Verify" : <Loader/>}
                 </Button>
               </IconContainer>
               {!emailFound ? null : (

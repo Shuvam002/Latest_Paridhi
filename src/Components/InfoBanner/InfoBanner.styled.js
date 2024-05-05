@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Banner = styled.section`
-  height: 60%;
+  height: 70%;
   width: 90%;
   display: flex;
   align-items: center;

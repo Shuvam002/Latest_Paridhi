@@ -110,7 +110,6 @@ export const InputField = styled.input`
 `;
 
 export const Button = styled.div`
-  margin-bottom: 0.5rem;
   margin-right: 0.5rem;
   background-color: transparent;
   border: none;
