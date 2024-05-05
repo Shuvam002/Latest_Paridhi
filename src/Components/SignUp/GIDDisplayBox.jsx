@@ -27,6 +27,7 @@ const GIDBoxContainer = styled.div`
   text-align: center;
 `;
 
+
 const CloseButton = styled(Button)`
   position: absolute;
   top: 10px;

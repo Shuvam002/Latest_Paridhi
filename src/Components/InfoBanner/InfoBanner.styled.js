@@ -2,13 +2,13 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 export const Banner = styled.section`
-  height: 70%;
+  height: 60%;
   width: 90%;
   display: flex;
   align-items: center;
   @media (max-width: 600px) {
     flex-direction: column;
-    height: 600px;
+    height: 90%;
     width: 80%;
   }
   border: 2px solid white;
@@ -27,7 +27,7 @@ export const BannerImage = styled.div`
   background-size: cover;
   @media (max-width: 600px) {
     flex-direction: column;
-    height: 30%;
+    height: 20%;
     width: 100%;
     border-bottom-left-radius: 0px;
     border-top-right-radius: 30px;
@@ -47,7 +47,7 @@ export const BannerInfo = styled.section`
   border-top-right-radius: 30px;
   border: 2px solid white;
   @media (max-width: 600px) {
-    height: 70%;
+    height: 80%;
     border-bottom-right-radius: 30px;
     border-top-right-radius: 0px;
     border-bottom-left-radius: 30px;
@@ -65,6 +65,7 @@ export const Title = styled.h1`
   }
 `;
 export const RegFee = styled.h2`
+text-align: center;
   font-weight: bolder;
   color: white;
   @media (max-width: 600px) {

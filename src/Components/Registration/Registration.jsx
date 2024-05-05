@@ -19,7 +19,6 @@ const DomainEvents = {
     fee: 30,
     Descriptions: `Multi-year 1v1 CP debugging contest open for all participants. Join to showcase your skills in competitive programming and hone your debugging abilities.`,
     rule: "https://drive.google.com/file/d/1exu2-z0zN_d0wk7OTW6LKQIhCqrbFoi5/view?usp=drive_link",
-    
   },
   web_minds: {
     Image: "https://bizmo.al/wp-content/uploads/2022/03/Web-Dev-Blog.png",
@@ -29,7 +28,6 @@ const DomainEvents = {
     Descriptions: `Engage in the Web Development Challenge spanning two rounds. Top performers advance to the finals, crafting captivating web pages. Finalists vie for cash prizes. Open to all years, this competition offers a platform to showcase skills, with excellence leading to recognition and rewards.`,
     rule: "https://drive.google.com/file/d/1QHecZlZLDx7lpyY1SvYiGUHkPvoeaSrs/view?usp=drive_link",
     regLink: "/events/coding/web_minds/web_mindsReg",
-
   },
   code_quest: {
     Image:
@@ -48,7 +46,7 @@ const DomainEvents = {
     fee: 100,
     Descriptions: `Join our exclusive CP contest tailored for first-year students and school attendees. The competition features two rounds: prelims and finals. Top performers advance to the finals for a chance to win enticing cash prizes. Don't miss this opportunity to showcase your skills and compete at the highest level!`,
     rule: "https://drive.google.com/file/d/1vx68j530eil1nM_3qHI3T6jLYQZp4-3p/view?usp=drive_link",
-    regLink: "/events/coding/codezen/codezenReg",
+    regLink: "/events/coding/codezen/code_zenReg",
   },
 
   triathlon: {
@@ -80,7 +78,8 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1qtMgTyZIsjgQEeKnHA8de3AG7RAkXcP3/view?usp=drive_link",
   },
   striker_clash: {
-    Image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/gallery/6409c273acb67_9.jpg?d=600x600",
+    Image:
+      "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/gallery/6409c273acb67_9.jpg?d=600x600",
     title: "Striker Clash",
     teamSize: 1,
     fee: 40,
@@ -126,48 +125,47 @@ const DomainEvents = {
   // },
 
   combowar8_15: {
-    Image:
-    "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
-  title: "Throne of Bots Combo",
-  teamSize: `1 - 5`,
-  fee: 300,
-  Descriptions: `Introducing the 'Titan's Fury' War Combo: 8 kg powerhouse armed with precision strikes and a 15 kg juggernaut built for endurance. Dominate the arena with our lethal dual-bot assault`,
+    Image: "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
+    title: "Throne of Bots Combo",
+    teamSize: `1 - 5`,
+    fee: 1500,
+    Descriptions: `Introducing the 'Titan's Fury' War Combo: 8 kg powerhouse armed with precision strikes and a 15 kg juggernaut built for endurance. Dominate the arena with our lethal dual-bot assault`,
     regLink: "/events/autonomous_robotics/line_trekker/combowar8_15",
   },
   race_soccer: {
     Image:
-    "https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/oscar/news/2022/robo-race4-800.png?sfvrsn=65946e11_2",
-  title: "Manual Robotics Combo",
-  teamSize: `1 - 5`,
-  fee: 300,
-  Descriptions: `Join the exhilarating Robo Race and Robo Soccer competitions! Unleash your robot's agility and speed in the ultimate showdown of innovation and teamwork. Experience the future of sports and technology!`,
+      "https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/oscar/news/2022/robo-race4-800.png?sfvrsn=65946e11_2",
+    title: "Manual Robotics Combo",
+    teamSize: `1 - 5`,
+    fee: 550,
+    Descriptions: `Join the exhilarating Robo Race and Robo Soccer competitions! Unleash your robot's agility and speed in the ultimate showdown of innovation and teamwork. Experience the future of sports and technology!`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer",
   },
   race_soccer_8kg: {
     Image:
-    "https://design1st.com/wp-content/uploads/2023/02/battlebots-2018-competition-1.png",
-  title: "Manual + Combat Robotics 8kg Combo",
-  teamSize: `1 - 5`,
-  fee: 300,
-  Descriptions: `Join us for the ultimate tech showdown! Compete in Robo Race, Robo Soccer, and the thrilling Throne of Bots, 8 kg division. Test your bots' prowess in these electrifying challenges!`,
+      "https://design1st.com/wp-content/uploads/2023/02/battlebots-2018-competition-1.png",
+    title: "Manual + Combat Robotics 8kg Combo",
+    teamSize: `1 - 5`,
+    fee: 1150,
+    Descriptions: `Join us for the ultimate tech showdown! Compete in Robo Race, Robo Soccer, and the thrilling Throne of Bots, 8 kg division. Test your bots' prowess in these electrifying challenges!`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8kg",
   },
+
   race_soccer_15kg: {
-    Image:
-      "https://s.hdnux.com/photos/34/47/07/7500252/7/1200x0.jpg",
+    Image: "https://s.hdnux.com/photos/34/47/07/7500252/7/1200x0.jpg",
     title: "Manual + Combat Robotics 15kg Combo",
     teamSize: `1 - 5`,
-    fee: 300,
+    fee: 1550,
     Descriptions: `Gear up for adrenaline-fueled action! Join us in the ultimate showdown of Robo Race, Robo Soccer, and Throne of Bots (15kg class). Unleash your bot's prowess in a thrilling competition of speed, skill, and strategy.`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer_15kg",
   },
   race_soccer_8_15kg: {
     Image:
-    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY43of2ZRZySnOMHDOCSSSQJOitKTuJskES6vKmc2zuN5cUgZNwSXD1xhujrECJu8ekNg&usqp=CAU",
-  title: "Manual + Combat Robotics Combo",
-  teamSize: `1 - 5`,
-  fee: 300,
-  Descriptions: `Enter the Throne of Bots with our dynamic duo: "War Combo" for 8 kg and 15 kg classes, showcasing power and agility. Also, engage in Robo Race and Robo Soccer for ultimate robotic supremacy!`,
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY43of2ZRZySnOMHDOCSSSQJOitKTuJskES6vKmc2zuN5cUgZNwSXD1xhujrECJu8ekNg&usqp=CAU",
+    title: "Manual + Combat Robotics Combo",
+    teamSize: `1 - 5`,
+    fee: 2150,
+    Descriptions: `Enter the Throne of Bots with our dynamic duo: "War Combo" for 8 kg and 15 kg classes, showcasing power and agility. Also, engage in Robo Race and Robo Soccer for ultimate robotic supremacy!`,
     regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8_15kg",
   },
 
@@ -199,7 +197,7 @@ const DomainEvents = {
     fee: "90(College) / 75(school)",
     Descriptions: `Embark on the challenge, solve riddles, and unearth the treasure in our exclusive treasure hunt adventure. Register now to uncover the rules and join the excitement!`,
     rule: "https://drive.google.com/file/d/1-pr-6ocmzwH-XRaUx8skRWWAtn9a4LzW/view?usp=sharing",
-    regLink: "/events/civil/trackOtreasure/trackOtreasureReg",
+    regLink: "/events/civil/trackOtreasure/totReg",
   },
   cad_O_mania: {
     Image:
@@ -207,9 +205,10 @@ const DomainEvents = {
     title: "Cad O Mania",
     teamSize: 1,
     fee: 60,
-    Descriptions: `ETake on the challenge: an AutoCAD drawing competition open to all. Click to register and uncover the competition rules. Join now and showcase your skills!`,
+    Descriptions: `Take on the challenge: an AutoCAD drawing competition open to all. Click to register and uncover the competition rules. Join now and showcase your skills!`,
     rule: "https://drive.google.com/file/d/1NLg04SjDKFhYqFgy9pQyHnaqOJsRkbDp/view?usp=sharing",
   },
+
   mega_arch: {
     Image:
       "https://static.wixstatic.com/media/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg/v1/fill/w_640,h_640,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/149872_4dc53bb4a2f947069a71604b73b34315~mv2.jpg",
@@ -219,6 +218,16 @@ const DomainEvents = {
     Descriptions: `Build a load-bearing bridge using provided sand and bricks within a set time. The strongest design wins. Register for more details on this exciting challenge!`,
     rule: "https://drive.google.com/file/d/13nbgR0L5Lkf8mmQWeA-La8kbwOjVpMMw/view?usp=sharing",
     regLink: "/events/civil/mega_arch/mega_archReg",
+  },
+  Setu_bandhan_TOT: {
+    Image:
+      "https://www.acsresources.org/wp-content/uploads/2023/01/treasure-hunt.jpg",
+    title: "Setu Bandhan + Track O Treasure",
+    teamSize: 3,
+    fee: `150 (College) / 120 (School)`,
+    Descriptions: `Join us for an exhilarating adventure combining bridge tournaments and thrilling treasure hunts, promising fun, challenge, and hidden riches to uncover!`,
+    rule: "https://drive.google.com/file/d/13nbgR0L5Lkf8mmQWeA-La8kbwOjVpMMw/view?usp=sharing",
+    regLink: "/events/civil/mega_arch/Setu_bandhan_TOTReg",
   },
   valorant_lan: {
     Image: "https://stanforddaily.com/wp-content/uploads/2020/08/image-2.png",
@@ -277,7 +286,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
     regLink: "/events/gaming/carrom/carromReg",
   },
-  
+
   table_tennis: {
     Image:
       "https://img.olympics.com/images/image/private/t_s_pog_staticContent_hero_xl_2x/f_auto/primary/momhllweruehw0ud2m2r",
@@ -305,7 +314,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: " Rs. 30 (10th & 12th May)",
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
+    rule: "",
   },
   chess_tour: {
     Image:
@@ -314,7 +323,7 @@ const DomainEvents = {
     teamSize: "-",
     fee: " 500 ",
     Descriptions: `Register for a chess competition on 11.04.2024 to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: "https://drive.google.com/file/d/1rv5a16TzUJPgErDEyQkLv_7CXl_7CYc9/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/11MKNwBKUxNrV-Fc4I_QDQ7-pwQ_C8XbZ/view?usp=sharing",
   },
   darts: {
     Image:
@@ -364,14 +373,26 @@ const Registration = () => {
           />
         )}
       </Main>
-       <BottomNavbar>
-          <StyledLink to="/events/coding"><i className="ri-code-s-slash-line"></i></StyledLink>
-          <StyledLink to="/events/robotics"><i className="ri-robot-2-line"></i></StyledLink>
-          <StyledLink to="/events/civil"><i className="ri-building-2-line"></i></StyledLink>
-          <StyledLink to="/events/electrical"><i className="ri-flashlight-line"></i></StyledLink>
-          <StyledLink to="/events/gaming"><i className="ri-gamepad-line"></i></StyledLink>
-          <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
-       </BottomNavbar>
+      <BottomNavbar>
+        <StyledLink to="/events/coding">
+          <i className="ri-code-s-slash-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/robotics">
+          <i className="ri-robot-2-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/civil">
+          <i className="ri-building-2-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/electrical">
+          <i className="ri-flashlight-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/gaming">
+          <i className="ri-gamepad-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/general">
+          <GiChessQueen />
+        </StyledLink>
+      </BottomNavbar>
     </>
   );
 };

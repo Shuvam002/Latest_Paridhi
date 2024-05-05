@@ -122,6 +122,14 @@ const Codezen = () => {
       min: 2,
       max: 3,
     },
+    Setu_bandhan_TOTReg: {
+      name: "Setu Bandhan + TOT",
+      gidVerifyApi: `${apiUrl}/civil/setu-tot-combo/`,
+      getTidApi: `${apiUrl}/civil/setu-tot-combo`,
+      min: 2,
+      max: 3,
+
+    },
     code_zenReg: {
       name: "Code Zen",
       gidVerifyApi: `${apiUrl}/coding/codezen/`,

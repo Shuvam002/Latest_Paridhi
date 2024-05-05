@@ -24,8 +24,6 @@ const InfoBanner = ({
     rule ? window.open(rule) : NaN;
   };
 
-  const navigate = useNavigate();
-
   return (
     <Banner>
       <BannerImage $Image={Image}></BannerImage>
@@ -35,7 +33,12 @@ const InfoBanner = ({
         <TeamSize>Team Size: {teamSize}</TeamSize>
         <Description>{Descriptions}</Description>
         <ButtonSection>
-          <RegisterBtn  to={regLink}>Register</RegisterBtn>
+          {regLink != null ? (
+            <RegisterBtn to={regLink}>Register</RegisterBtn>
+          ) : (
+            <RegisterBtn>Register On Spot </RegisterBtn>
+          )}
+
           {/* <RegisterBtn style={{cursor:"not-allowed"}} to={""}>Registration Starts Soon</RegisterBtn> */}
 
           {/* <RegisterBtn
