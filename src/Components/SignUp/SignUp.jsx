@@ -100,13 +100,8 @@ const SignUp = () => {
   };
 
   const handleYearChange = (e) => {
-    const value = parseInt(e.target.value);
-    if (value > 12) {
-      alert("Year should not be greater than 4");
-    } else {
-      setWarning("");
-      setYear(value);
-    }
+    const value = e.target.value;
+    setYear(value);
   };
 
   const handleSignUp = async () => {
@@ -419,4 +414,4 @@ const SignUp = () => {
   );
 };
 
-export default SignUp;
+export default SignUp; 

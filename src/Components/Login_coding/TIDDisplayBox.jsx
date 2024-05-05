@@ -18,10 +18,10 @@ const TIDBoxOverlay = styled.div`
 const TIDBoxContainer = styled.div`
    background-color: rgb(0,0,0);
   color: white;
-  border: 1px solid rgb(255 , 255 , 255);
+  border: 1px solid rgb(62, 62, 62);
   font-family: "Jost", sans-serif;
   font-size: large;
-  padding: 10px;
+  padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   position: relative; 
@@ -47,7 +47,7 @@ const TIDDisplayBox = ({ onClose, TID }) => {
         <CloseButton onClick={onClose}>
           <i class="ri-close-large-line"></i>
         </CloseButton>
-        <h2>TID Number</h2>
+        <h2>Your TID </h2>
         <p>{TID}</p>
       </TIDBoxContainer>
     </TIDBoxOverlay>

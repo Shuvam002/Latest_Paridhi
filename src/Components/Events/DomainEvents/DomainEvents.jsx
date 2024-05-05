@@ -121,7 +121,7 @@ const DomainEvents = () => {
         Description:
           "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
         ImageLink:
-          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+          "https://images.unsplash.com/photo-1634912314704-c646c586b131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDcyfHx3YWxsLWV8ZW58MHx8fHwxNjU3Mzg0MzU5&ixlib=rb-1.2.1&q=80&w=1000",
         link: "/events/autonomous_robotics/line_trekker",
       },
     ],

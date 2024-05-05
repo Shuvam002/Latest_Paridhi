@@ -32,7 +32,7 @@ const Robotics = () => {
           Description:
             "Dive into Paridhi's thrilling autonomous robotics challenges. Click the card for an exciting array of opportunities!",
           ImageLink:
-            "https://www2.deloitte.com/content/dam/Deloitte/us/Images/promo_images/science/us-robot-head.jpg",
+            "https://images.unsplash.com/photo-1634912314704-c646c586b131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDcyfHx3YWxsLWV8ZW58MHx8fHwxNjU3Mzg0MzU5&ixlib=rb-1.2.1&q=80&w=1000",
           link: "/events/autonomous_robotics",
         },
         { 

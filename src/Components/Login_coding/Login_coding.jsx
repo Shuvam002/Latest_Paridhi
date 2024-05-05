@@ -30,15 +30,15 @@ const Codezen = () => {
   const eventRegs = {
     war_8kgReg: {
       name: "Throne of Bots(8kg)",
-      gidVerifyApi: `${apiUrl}/robotics/throne_of_bots_8kg/`,
-      getTidApi: `${apiUrl}/robotics/throne_of_bots_8kg`,
+      gidVerifyApi: `${apiUrl}/robotics/war-8kg/`,
+      getTidApi: `${apiUrl}/robotics/war-8kg`,
       min: 1,
       max: 5,
     },
     war_15kgReg: {
       name: "Throne of Bots(15kg)",
-      gidVerifyApi: `${apiUrl}/robotics/throne_of_bots_15kg/`,
-      getTidApi: `${apiUrl}/robotics/throne_of_bots_15kg`,
+      gidVerifyApi: `${apiUrl}/robotics/war-15kg/`,
+      getTidApi: `${apiUrl}/robotics/war-15kg`,
       min: 1,
       max: 5,
     },
