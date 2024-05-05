@@ -117,6 +117,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/civil/mega-arch`,
       min: 3,
       max: 5,
+      teamname: false,
     },
     setu_bandhanReg: {
       name: "Setu Bandhan",
@@ -124,6 +125,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/civil/setu-bandhan`,
       min: 2,
       max: 3,
+      teamname: false,
     },
     totReg: {
       name: "TOT",
@@ -131,6 +133,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/civil/tot`,
       min: 2,
       max: 3,
+      teamname: false,
     },
     Setu_bandhan_TOTReg: {
       name: "Setu Bandhan + TOT",
@@ -138,6 +141,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/civil/setu-tot-combo`,
       min: 2,
       max: 3,
+      teamname: false,
     },
     code_zenReg: {
       name: "Code Zen",
@@ -169,6 +173,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/electrical/electri-quest`,
       min: 1,
       max: 2,
+      teamname: false,
     },
     table_tennisReg: {
       name: "Table Tennis",
@@ -176,6 +181,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/general/table-tennis`,
       min: 1,
       max: 2,
+      teamname: false,
     },
     carromReg: {
       name: "Carrom",
@@ -183,6 +189,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/general/carrom`,
       min: 1,
       max: 2,
+      teamname: false,
     },
     valorantReg: {
       name: "Valorant",
@@ -214,6 +221,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/general/binge-quiz`,
       min: 1,
       max: 2,
+      teamname: false,
     },
   };
 
@@ -222,14 +230,41 @@ const Codezen = () => {
   const handleLogin = async () => {
     const [gid1, gid2, gid3, gid4, gid5] = inputList;
 
-    if (!teamname) {
-      alert("Please fill Team Name !!!");
+    if (regData.teamname) {
+      if (!teamname) {
+        alert("Please fill Team Name !!!");
+      } else if (inputList.length < regData.min) {
+        alert(`Please give minimum ${regData.min} Verified GID !!!`);
+      } else if (!Phone) {
+        alert("Please Enter the Phone number !!!");
+      } else {
+        try {
+          console.log("iama run team");
+          const response = await axios.post(regData.getTidApi, {
+            teamname: !teamname ? null : teamname,
+            gid1: !gid1 ? null : gid1,
+            gid2: !gid2 ? null : gid2,
+            gid3: !gid3 ? null : gid3,
+            gid4: !gid4 ? null : gid4,
+            gid5: !gid5 ? null : gid5,
+            phone: Phone,
+          });
+
+          // Setting TID -----
+          setTID(response.data);
+          setShowTIDBox(true);
+        } catch (error) {
+          alert("Something went wrong !!!");
+          console.error("Error signing up:", error);
+        }
+      }
     } else if (inputList.length < regData.min) {
       alert(`Please give minimum ${regData.min} Verified GID !!!`);
     } else if (!Phone) {
       alert("Please Enter the Phone number !!!");
     } else {
       try {
+        console.log("iama run");
         const response = await axios.post(regData.getTidApi, {
           teamname: !teamname ? null : teamname,
           gid1: !gid1 ? null : gid1,
@@ -311,19 +346,22 @@ const Codezen = () => {
           <Title>{regData.name.toUpperCase()}</Title>
           <Underline />
 
-         {
-          regData.teamname? <IconContainer>
-          <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
-          <InputField
-            onChange={(e) => {
-              setTeamname(e.target.value);
-            }}
-            name="teamname"
-            type="text"
-            placeholder="Team Name"
-          />
-        </IconContainer>:null
-         }
+          {regData.teamname ? (
+            <IconContainer>
+              <InputIcon
+                className="fa fa-user-o"
+                aria-hidden="true"
+              ></InputIcon>
+              <InputField
+                onChange={(e) => {
+                  setTeamname(e.target.value);
+                }}
+                name="teamname"
+                type="text"
+                placeholder="Team Name"
+              />
+            </IconContainer>
+          ) : null}
 
           {regData.max > verifiedCount && (
             <IconContainer>
