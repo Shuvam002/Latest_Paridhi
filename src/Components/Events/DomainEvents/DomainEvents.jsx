@@ -299,7 +299,7 @@ const DomainEvents = () => {
       {
         TitleText: "ElectriQuest",
         Description:
-          "Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
+          "Dive into Paridhi's dynamic electrical domain events: ElectriQuest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
         ImageLink:
           "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
         link: "/events/electrical/electriQuest",
@@ -307,7 +307,7 @@ const DomainEvents = () => {
       {
         TitleText: "PowerBlitz",
         Description:
-          "Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
+          "Dive into Paridhi's dynamic electrical domain events: ElectriQuest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
         ImageLink:
           "https://images.unsplash.com/photo-1451187863213-d1bcbaae3fa3?q=80&w=2080&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         link: "/events/electrical/powerBlitz",

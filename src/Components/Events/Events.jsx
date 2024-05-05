@@ -1,17 +1,15 @@
 import React from "react";
-import { StyledContainer,BottomNavbar,StyledLink } from "./Events.styled";
+import { StyledContainer, BottomNavbar, StyledLink } from "./Events.styled";
 import Card from "../Cards/Card";
 import { motion } from "framer-motion";
-import { GiChessQueen, GiBattleGear  } from "react-icons/gi";
+import { GiChessQueen, GiBattleGear } from "react-icons/gi";
 import { FaUserGear } from "react-icons/fa6";
-
 
 const Events = () => {
   const eventDataArray = [
     {
       TitleText: "CODING",
       Description:
-
         "Explore Paridhi's exhilarating coding contests—CP, web, debugging—tailored for college as well as school students. Click the card for exciting opportunities!",
 
       ImageLink:
@@ -26,7 +24,7 @@ const Events = () => {
         "https://responsiblerobotics.eu/wp-content/uploads/2019/11/robot-damer.png",
       link: "/events/Robotics",
     },
-    
+
     {
       TitleText: "Civil",
       Description:
@@ -38,7 +36,7 @@ const Events = () => {
     {
       TitleText: "Electrical ",
       Description:
-        "Dive into Paridhi's dynamic electrical domain events: Electroiquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
+        "Dive into Paridhi's dynamic electrical domain events: ElectriQuest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!",
       ImageLink:
         "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2010/04/electrical_component/9636951-4-eng-GB/Electrical_component_pillars.jpg",
       link: "/events/electrical",
@@ -79,12 +77,24 @@ const Events = () => {
         </motion.div>
       ))}
       <BottomNavbar>
-          <StyledLink to="/events/coding"><i className="ri-code-s-slash-line"></i></StyledLink>
-          <StyledLink to="/events/robotics"><i className="ri-robot-2-line"></i></StyledLink>
-          <StyledLink to="/events/civil"><i className="ri-building-2-line"></i></StyledLink>
-          <StyledLink to="/events/electrical"><i className="ri-flashlight-line"></i></StyledLink>
-          <StyledLink to="/events/gaming"><i className="ri-gamepad-line"></i></StyledLink>
-          <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
+        <StyledLink to="/events/coding">
+          <i className="ri-code-s-slash-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/robotics">
+          <i className="ri-robot-2-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/civil">
+          <i className="ri-building-2-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/electrical">
+          <i className="ri-flashlight-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/gaming">
+          <i className="ri-gamepad-line"></i>
+        </StyledLink>
+        <StyledLink to="/events/general">
+          <GiChessQueen />
+        </StyledLink>
       </BottomNavbar>
     </StyledContainer>
   );
