@@ -47,14 +47,14 @@ const DomainEvents = () => {
         link: "/events/coding/codezen",
       },
     ],
-    manual_robitics: [
+    manual_robotics: [
       {
         TitleText: "Triathlon",
         Description:
           "Join our exclusive bot racing competition, open to all years! Click to register and learn the rules for the challenge.",
         ImageLink:
           "https://i.ytimg.com/vi/aCNAoAczJBk/sddefault.jpg",
-        link: "/events/manual_robitics/triathlon",
+        link: "/events/manual_robotics/triathlon",
       },
       {
         TitleText: "Robo Klassiker",
@@ -62,7 +62,7 @@ const DomainEvents = () => {
           "Join our exclusive bot soccer competition! Bots vie for goals while minimizing penalties. Register now and learn the rules!",
         ImageLink:
           "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/mobile_banner/627f59e8450c5_robo-scoccer.jpg",
-        link: "/events/manual_robitics/robo_klassiker",
+        link: "/events/manual_robotics/robo_klassiker",
       },
       {
         TitleText: "Chakravyuh",
@@ -70,31 +70,31 @@ const DomainEvents = () => {
           "Compete in the onspot maze-solving bot challenge, navigate tunnels, reach the exclusive destination. Click to register and learn rules!",
         ImageLink:
           "https://media.istockphoto.com/id/1225230059/photo/3d-illustration-closeup-of-black-dark-black-labyrinth-stone-walls.jpg?s=612x612&w=0&k=20&c=Wz8P936jqq8rVYZrKKuFYjOS5i5SbKI5OdI2JN2HPik=",
-        link: "/events/manual_robitics/chakravyuh",
+        link: "/events/manual_robotics/chakravyuh",
       },
       {
         TitleText: "Striker Clash",
         Description:
           "Join the exclusive onspot robo carrom competition for all, register now, and discover the rules for this thrilling event!",
         ImageLink:
-          "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-        link: "/events/manual_robitics/striker_clash",
+          "https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/gallery/6409c273acb67_9.jpg?d=600x600",
+        link: "/events/manual_robotics/striker_clash",
       },
-      {
-        TitleText: "Triathlon + Robo Klassiker (Combo)",
-        Description:
-          "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
-        ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-           link: "/events/manual_robitics/soccerandrace_combo",
-      },
+      // {
+      //   TitleText: "Triathlon + Robo Klassiker (Combo)",
+      //   Description:
+      //     "Join the heart-pounding bot racing and soccer competition , open to all years! Click to register and learn the rules for the challenge. ",
+      //   ImageLink:"https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+      //      link: "/events/manual_robitics/soccerandrace_combo",
+      // },
     ],
-      combat_robitics: [
+      combat_robotics: [
       {
         TitleText: "Throne of Bots (8kg)",
         Description:
           "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
         ImageLink:"https://media.wired.com/photos/59323349a3126458449936ce/4:3/w_929,h_697,c_limit/IMG_1710-1.jpg",
-          link: "/events/combat_robitics/throne_of_bots_8kg",
+          link: "/events/combat_robotics/throne_of_bots_8kg",
       },
       {
         TitleText: "Throne of Bots (15kg)",
@@ -103,16 +103,16 @@ const DomainEvents = () => {
         ImageLink:
           "https://kurukshetraceg.org.in/assets/Robowars-B60LX8Oq.jpg",
           
-        link: "/events/combat_robitics/throne_of_bots_15kg",
+        link: "/events/combat_robotics/throne_of_bots_15kg",
       },
-      {
-        TitleText: "Throne of Bots (Combo 8kg & 15kg)",
-        Description:
-          "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
-        ImageLink:
-        "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-           link: "/events/combat_robitics/throne_of_bots_combo_8_15kg",
-      },
+      // {
+      //   TitleText: "Throne of Bots (Combo 8kg & 15kg)",
+      //   Description:
+      //     "Join the heart-pounding bot fighting competition , open to all years! Click to register and learn the rules for the challenge. ",
+      //   ImageLink:
+      //   "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+      //      link: "/events/combat_robitics/throne_of_bots_combo_8_15kg",
+      // },
      
     ],
     autonomous_robotics: [
@@ -121,9 +121,52 @@ const DomainEvents = () => {
         Description:
           "Compete in our autonomous bot challenge, navigate a unique path, solve puzzles, and reach the destination. Click to register and learn more!",
         ImageLink:
-          "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+          "https://images.unsplash.com/photo-1634912314704-c646c586b131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDcyfHx3YWxsLWV8ZW58MHx8fHwxNjU3Mzg0MzU5&ixlib=rb-1.2.1&q=80&w=1000",
         link: "/events/autonomous_robotics/line_trekker",
       },
+    ],
+    combo_robotics:[
+      {
+        TitleText: "Throne of Bots Combo",
+        Description:
+          "Introducing the 'Titan's Fury' War Combo: 8 kg powerhouse armed with precision strikes and a 15 kg juggernaut built for endurance. Dominate the arena with our lethal dual-bot assault",
+        ImageLink:
+          "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
+        link: "/events/combo_robotics/combowar8_15",
+      },
+      {
+        TitleText: "Manual Robotics Combo",
+        Description:
+          `Join the exhilarating Robo Race and Robo Soccer competitions! Unleash your robot's agility and speed in the ultimate showdown of innovation and teamwork. Experience the future of sports and technology!`,
+        ImageLink:
+          "https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/oscar/news/2022/robo-race4-800.png?sfvrsn=65946e11_2",
+        link: "/events/combo_robotics/race_soccer",
+      },
+      {
+          TitleText: "Manual + Combat Robotics 8kg Combo",
+          Description:
+            "Join us for the ultimate tech showdown! Compete in Robo Race, Robo Soccer, and the thrilling Throne of Bots, 8 kg division. Test your bots' prowess in these electrifying challenges!",
+          ImageLink:
+            "https://design1st.com/wp-content/uploads/2023/02/battlebots-2018-competition-1.png",
+        link: "/events/combo_robotics/race_soccer_8kg",
+      },
+      {
+        TitleText: "Manual + Combat Robotics 15kg Combo",
+        Description:
+          "Gear up for adrenaline-fueled action! Join us in the ultimate showdown of Robo Race, Robo Soccer, and Throne of Bots (15kg class). Unleash your bot's prowess in a thrilling competition of speed, skill, and strategy.",
+        ImageLink:
+          "https://s.hdnux.com/photos/34/47/07/7500252/7/1200x0.jpg",
+        link: "/events/combo_robotics/race_soccer_15kg",
+      },
+      {
+        TitleText: "Manual + Combat Robotics Combo",
+        Description:
+          `Enter the Throne of Bots with our dynamic duo: "War Combo" for 8 kg and 15 kg classes, showcasing power and agility. Also, engage in Robo Race and Robo Soccer for ultimate robotic supremacy!`,
+        ImageLink:
+          "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY43of2ZRZySnOMHDOCSSSQJOitKTuJskES6vKmc2zuN5cUgZNwSXD1xhujrECJu8ekNg&usqp=CAU",
+        link: "/events/combo_robotics/race_soccer_8_15kg",
+      },
+      
     ],
     civil: [
       {
@@ -296,16 +339,14 @@ const DomainEvents = () => {
               />
             </motion.div>
           ))}
-          <BottomNavbar>
-          <StyledLink to="/events/coding"><i class="ri-code-s-slash-line"></i></StyledLink>
-          <StyledLink to="/events/manual_robitics"><i class="ri-robot-2-line"></i></StyledLink>
-          <StyledLink to="/events/combat_robitics"><GiBattleGear /></StyledLink>
-          <StyledLink to="/events/autonomous_robitics"><FaUserGear /></StyledLink>
-          <StyledLink to="/events/civil"><i class="ri-building-2-line"></i></StyledLink>
-          <StyledLink to="/events/electrical"><i class="ri-flashlight-line"></i></StyledLink>
-          <StyledLink to="/events/gaming"><i class="ri-gamepad-line"></i></StyledLink>
+      <BottomNavbar>
+          <StyledLink to="/events/coding"><i className="ri-code-s-slash-line"></i></StyledLink>
+          <StyledLink to="/events/robotics"><i className="ri-robot-2-line"></i></StyledLink>
+          <StyledLink to="/events/civil"><i className="ri-building-2-line"></i></StyledLink>
+          <StyledLink to="/events/electrical"><i className="ri-flashlight-line"></i></StyledLink>
+          <StyledLink to="/events/gaming"><i className="ri-gamepad-line"></i></StyledLink>
           <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
-        </BottomNavbar>
+      </BottomNavbar>
       </Main>
     </>
   );

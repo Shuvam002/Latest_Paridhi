@@ -18,7 +18,7 @@ const PopupOverlay = styled.div`
 const PopupContainer = styled.div`
   font-family: "Jost", sans-serif;
   background-color: rgb(0, 0, 0);
-  color: rgb(255, 255, 255);
+  color: rgba(255, 255, 255,0.6);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);

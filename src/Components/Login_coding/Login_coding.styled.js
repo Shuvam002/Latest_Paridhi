@@ -35,7 +35,7 @@ export const Container = styled.div`
   border-radius: 12px;
   border: 1px solid rgba(209, 213, 219, 0.9);
   position: relative;
-  border-radius: 0.1rem;
+  border-radius: 2rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -124,7 +124,7 @@ export const SignUpButton = styled.div`
   justify-content: center;
   align-items: center;
   transition: 0.05s;
-  border-radius: 4rem;
+  border-radius: 1rem;
   cursor: pointer;
   margin-bottom: 2%;
 

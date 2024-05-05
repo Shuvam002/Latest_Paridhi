@@ -80,8 +80,7 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1qtMgTyZIsjgQEeKnHA8de3AG7RAkXcP3/view?usp=drive_link",
   },
   striker_clash: {
-    Image:
-      "https://images.unsplash.com/photo-1581090466144-8ed89ea98b25?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    Image:"https://d8it4huxumps7.cloudfront.net/uploads/images/opportunity/gallery/6409c273acb67_9.jpg?d=600x600",
     title: "Striker Clash",
     teamSize: 1,
     fee: 40,
@@ -108,26 +107,73 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
     regLink: "/events/combat_robotics/throne_of_bots_15kg/war_15kgReg",
   },
-  throne_of_bots_combo_8_15kg: {
-    Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-    title: "Throne of Bots Combo(8 kg + 15 kg)",
-    teamSize: "1-5",
-    fee: "1500",
-    Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: null,
-  },
-  soccerandrace_combo: {
+  // throne_of_bots_combo_8_15kg: {
+  //   Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
+  //   title: "Throne of Bots Combo(8 kg + 15 kg)",
+  //   teamSize: "1-5",
+  //   fee: "1500",
+  //   Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
+  //   rule: null,
+  // },
+  // soccerandrace_combo: {
+  //   Image:
+  //     "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
+  //   title: "Triathlon + Robo Klassiker (Combo)",
+  //   teamSize: "1-5",
+  //   fee: "550",
+  //   Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
+  //   rule: null,
+  // },
+
+  combowar8_15: {
     Image:
-      "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-    title: "Triathlon + Robo Klassiker (Combo)",
-    teamSize: "1-5",
-    fee: "550",
-    Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
-    rule: null,
+    "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
+  title: "Throne of Bots Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Introducing the 'Titan's Fury' War Combo: 8 kg powerhouse armed with precision strikes and a 15 kg juggernaut built for endurance. Dominate the arena with our lethal dual-bot assault`,
+    regLink: "/events/autonomous_robotics/line_trekker/combowar8_15",
   },
+  race_soccer: {
+    Image:
+    "https://imechewebresources.blob.core.windows.net/imeche-web-content/images/default-source/oscar/news/2022/robo-race4-800.png?sfvrsn=65946e11_2",
+  title: "Manual Robotics Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Join the exhilarating Robo Race and Robo Soccer competitions! Unleash your robot's agility and speed in the ultimate showdown of innovation and teamwork. Experience the future of sports and technology!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer",
+  },
+  race_soccer_8kg: {
+    Image:
+    "https://design1st.com/wp-content/uploads/2023/02/battlebots-2018-competition-1.png",
+  title: "Manual + Combat Robotics 8kg Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Join us for the ultimate tech showdown! Compete in Robo Race, Robo Soccer, and the thrilling Throne of Bots, 8 kg division. Test your bots' prowess in these electrifying challenges!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8kg",
+  },
+  race_soccer_15kg: {
+    Image:
+      "https://s.hdnux.com/photos/34/47/07/7500252/7/1200x0.jpg",
+    title: "Manual + Combat Robotics 15kg Combo",
+    teamSize: `1 - 5`,
+    fee: 300,
+    Descriptions: `Gear up for adrenaline-fueled action! Join us in the ultimate showdown of Robo Race, Robo Soccer, and Throne of Bots (15kg class). Unleash your bot's prowess in a thrilling competition of speed, skill, and strategy.`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer_15kg",
+  },
+  race_soccer_8_15kg: {
+    Image:
+    "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY43of2ZRZySnOMHDOCSSSQJOitKTuJskES6vKmc2zuN5cUgZNwSXD1xhujrECJu8ekNg&usqp=CAU",
+  title: "Manual + Combat Robotics Combo",
+  teamSize: `1 - 5`,
+  fee: 300,
+  Descriptions: `Enter the Throne of Bots with our dynamic duo: "War Combo" for 8 kg and 15 kg classes, showcasing power and agility. Also, engage in Robo Race and Robo Soccer for ultimate robotic supremacy!`,
+    regLink: "/events/autonomous_robotics/line_trekker/race_soccer_8_15kg",
+  },
+
   line_trekker: {
     Image:
-      "https://www.electronicshub.org/wp-content/uploads/2017/03/Arduino-Line-Follower-Robot-Image-7-760x440.jpg",
+      "https://images.unsplash.com/photo-1634912314704-c646c586b131?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxMTc3M3wwfDF8c2VhcmNofDcyfHx3YWxsLWV8ZW58MHx8fHwxNjU3Mzg0MzU5&ixlib=rb-1.2.1&q=80&w=1000",
     title: "Line Trekker",
     teamSize: 1 - 5,
     fee: 300,
@@ -318,32 +364,14 @@ const Registration = () => {
           />
         )}
       </Main>
-      <BottomNavbar>
-        <StyledLink to="/events/coding">
-          <i class="ri-code-s-slash-line"></i>
-        </StyledLink>
-        <StyledLink to="/events/manual_robitics">
-          <i class="ri-robot-2-line"></i>
-        </StyledLink>
-        <StyledLink to="/events/combat_robitics">
-          <GiBattleGear />
-        </StyledLink>
-        <StyledLink to="/events/autonomous_robitics">
-          <FaUserGear />
-        </StyledLink>
-        <StyledLink to="/events/civil">
-          <i class="ri-building-2-line"></i>
-        </StyledLink>
-        <StyledLink to="/events/electrical">
-          <i class="ri-flashlight-line"></i>
-        </StyledLink>
-        <StyledLink to="/events/gaming">
-          <i class="ri-gamepad-line"></i>
-        </StyledLink>
-        <StyledLink to="/events/general">
-          <GiChessQueen />
-        </StyledLink>
-      </BottomNavbar>
+       <BottomNavbar>
+          <StyledLink to="/events/coding"><i className="ri-code-s-slash-line"></i></StyledLink>
+          <StyledLink to="/events/robotics"><i className="ri-robot-2-line"></i></StyledLink>
+          <StyledLink to="/events/civil"><i className="ri-building-2-line"></i></StyledLink>
+          <StyledLink to="/events/electrical"><i className="ri-flashlight-line"></i></StyledLink>
+          <StyledLink to="/events/gaming"><i className="ri-gamepad-line"></i></StyledLink>
+          <StyledLink to="/events/general"><GiChessQueen /></StyledLink>
+       </BottomNavbar>
     </>
   );
 };

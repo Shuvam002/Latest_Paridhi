@@ -17,14 +17,13 @@ const GIDBoxOverlay = styled.div`
 const GIDBoxContainer = styled.div`
   background-color: rgb(0,0,0);
   color: white;
-  border: 1px solid rgb(255 , 255 , 255);
+  border: 1px solid rgb(62, 62, 62);
   font-family: "Jost", sans-serif;
   font-size: large;
   padding: 10px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  position: relative; /* Ensure close button is positioned relative to the container */
-  /* width: 20%; */
+  position: relative; 
   text-align: center;
 `;
 

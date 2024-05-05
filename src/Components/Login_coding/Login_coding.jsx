@@ -28,36 +28,20 @@ const Codezen = () => {
   const apiUrl = String(import.meta.env.VITE_API_MAIN);
 
   const eventRegs = {
-    // webMindReg: {
-    //   api: "",
-    //   min: 1,
-    //   max: 2,
-    // },
-    // codeZenReg: {
-    //   api: "",
-    //   min: 1,
-    //   max: 2,
-    // },
-    // codeQuest: {
-    //   api: "",
-    //   min: 1,
-    //   max: 2,
-    // },
-    // triathlonReg:{
-    //   api:"",
-    //   min:,
-    //   max:,
-    // },
-    // roboKlassikarReg:{
-    //   api:"",
-    //   min:,
-    //   max:,
-    // }
-    // triathlonReg:{
-    //   api:"",
-    //   min:,
-    //   max:,
-    // }
+    war_8kgReg: {
+      name: "Throne of Bots(8kg)",
+      gidVerifyApi: `${apiUrl}/robotics/war-8kg/`,
+      getTidApi: `${apiUrl}/robotics/war-8kg`,
+      min: 1,
+      max: 5,
+    },
+    war_15kgReg: {
+      name: "Throne of Bots(15kg)",
+      gidVerifyApi: `${apiUrl}/robotics/war-15kg/`,
+      getTidApi: `${apiUrl}/robotics/war-15kg`,
+      min: 1,
+      max: 5,
+    },
 
     line_trekkerReg: {
       name: "Line Trekker",
@@ -80,20 +64,43 @@ const Codezen = () => {
       min: 1,
       max: 5,
     },
-    war_8kgReg: {
-      name: "War 8kg",
-      gidVerifyApi: `${apiUrl}/robotics/war-8kg/`,
-      getTidApi: `${apiUrl}/robotics/war-8kg`,
+
+    combowar8_15: {
+      name: "War 8kg + 15kg",
+      gidVerifyApi: `${apiUrl}/robotics/war-combo/`,
+      getTidApi: `${apiUrl}/robotics/war-combo`,
       min: 1,
       max: 5,
     },
-    war_15kgReg: {
-      name: "War 15kg",
-      gidVerifyApi: `${apiUrl}/robotics/war-15kg/`,
-      getTidApi: `${apiUrl}/robotics/war-15kg`,
+    race_soccer: {
+      name: "Race + Soccer",
+      gidVerifyApi: `${apiUrl}/robotics/robotics-combo/`,
+      getTidApi: `${apiUrl}/robotics/robotics-combo`,
       min: 1,
       max: 5,
     },
+    race_soccer_8kg: {
+      name: "Race + Soccer + 8 kg",
+      gidVerifyApi: `${apiUrl}/robotics/robotics-and-war-8kg-combo/`,
+      getTidApi: `${apiUrl}/robotics/robotics-and-war-8kg-combo`,
+      min: 1,
+      max: 5,
+    },
+    race_soccer_15kg: {
+      name: "Race Soccer + 15kg",
+      gidVerifyApi: `${apiUrl}/robotics/robotics-and-war-15kg-combo/`,
+      getTidApi: `${apiUrl}/robotics/robotics-and-war-15kg-combo`,
+      min: 1,
+      max: 5,
+    },
+    race_soccer_8_15kg: {
+      name: "Race Soccer + War (8 + 15)kg",
+      gidVerifyApi: `${apiUrl}/robotics/total-robotics-combo/`,
+      getTidApi: `${apiUrl}/robotics/total-robotics-combo`,
+      min: 1,
+      max: 5,
+    },
+
     mega_archReg: {
       name: "Mega Arch",
       gidVerifyApi: `${apiUrl}/civil/mega-arch/`,

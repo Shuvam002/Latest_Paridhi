@@ -177,8 +177,8 @@ export const NavLinkName = styled(NavLink)`
 export const DropdownMenu = styled.ul`
   list-style: none;
   position: absolute;
-  top: 200%;
-  left: 0;
+  top: 100%;
+  margin-left:-40px;
   background-color: rgb(16 , 16 , 16,0.99);
   padding: 10px;
   border-radius: 10px;
