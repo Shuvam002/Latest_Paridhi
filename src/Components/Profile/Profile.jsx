@@ -34,7 +34,7 @@ const Profile = () => {
       } else {
         // Mock response for testing
         const response = await axios.post(
-          `${apiUrl}/generate-otp?name=null&email=${userEmail}`,
+          `${apiUrl}/profile/generate-otp?email=${userEmail}`,
           {
             headers: {
               "Access-Control-Allow-Origin": "*",
@@ -43,12 +43,6 @@ const Profile = () => {
             },
           }
         );
-        // const response = {
-        //   status: 200,
-        //   data: "Test-Email",
-        // };
-        // console.log(response);
-
         if (response.status === 200) {
           setOtpPopup(true);
           setEmailFound(false);
