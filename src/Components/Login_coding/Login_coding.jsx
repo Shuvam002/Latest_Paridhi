@@ -225,7 +225,7 @@ const Codezen = () => {
     if (!teamname) {
       alert("Please fill Team Name !!!");
     } else if (inputList.length < regData.min) {
-      alert(`Please give minimum ${regData.min} Varified GID !!!`);
+      alert(`Please give minimum ${regData.min} Verified GID !!!`);
     } else if (!Phone) {
       alert("Please Enter the Phone number !!!");
     } else {
