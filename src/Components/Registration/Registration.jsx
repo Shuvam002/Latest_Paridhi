@@ -314,7 +314,7 @@ const DomainEvents = {
     teamSize: 1,
     fee: " Rs. 30 (10th & 12th May)",
     Descriptions: `Register for a chess competition to test your skills and intellect. Click to unravel the challenge and learn the rules elegantly.`,
-    rule: "",
+    rule: "https://drive.google.com/file/d/11MKNwBKUxNrV-Fc4I_QDQ7-pwQ_C8XbZ/view",
   },
   chess_tour: {
     Image:
