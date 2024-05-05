@@ -340,8 +340,9 @@ const DomainEvents = {
     title: "ElectriQuest",
     teamSize: " Maximum 2",
     fee: "60",
-    Descriptions: `Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!`,
+    Descriptions: `Dive into Paridhi's dynamic electrical domain events: ElectriQuest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!`,
     rule: "https://drive.google.com/file/d/1R8-ihJ0IVapK4m3ogxHBWmHs-g454q--/view?usp=sharing",
+    regLink: "/events/electrical/electriquest/electri_questReg",
   },
   powerBlitz: {
     Image:
@@ -349,7 +350,7 @@ const DomainEvents = {
     title: "PowerBlitz",
     teamSize: "1",
     fee: "40",
-    Descriptions: `Dive into Paridhi's dynamic electrical domain events: Electroquest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!`,
+    Descriptions: `Dive into Paridhi's dynamic electrical domain events: ElectriQuest, Powerblitz. Discover thrilling opportunities by clicking the card. Join us now!`,
     rule: "https://drive.google.com/file/d/1NAubPc8fuwFogeJn886qMYfu3BJRoQ8R/view?usp=sharing",
   },
 };

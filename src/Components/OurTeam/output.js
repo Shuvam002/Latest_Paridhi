@@ -229,16 +229,7 @@ export const team_data = [
         gmail: "kaustubhupadhyay1@gmail.com"
       },
      
-      {
-        Timestamp: "3/2/2024 0:17:45",
-        Image: "https://drive.google.com/uc?id=1gxihuaSgwsW-lRQf-zqw69IYUt02zJtQ",
-        Name: "Moumita Bag",
-        Year: "2nd ",
-        
-        insta_link: "https://www.instagram.com/bag__x__mou?igsh=aXJ4dmRpdWdqOGZm",
-        
-        gmail: "moumita04bag@gmail.com"
-      },
+     
       {
         Timestamp: "3/2/2024 9:46:50",
         Image: "https://drive.google.com/uc?id=14s38C0ZIP80WPhC6loyuEq7IZr0RW6Iv",
@@ -349,16 +340,7 @@ export const team_data = [
         li_link: "https://www.linkedin.com/in/sahil-kumar-singh-664549244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         gmail: "singhsahilkumar10@gmail.com"
       },
-      {
-        Timestamp: "3/23/2024 13:42:52",
-        Image: "https://drive.google.com/uc?id=10dybiVCPbWS3LXm_a2x-Sqg8mifvBrEE",
-        Name: "Samadrita Bhowmick",
-        Year: "2nd ",
-        
-        insta_link: "https://www.instagram.com/samadrita._here?igsh=MXhiNmdmcHZ5aG0zcg==",
-        li_link: "https://www.linkedin.com/in/samadrita-bhowmick-78ba85282?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        gmail: "bhowmicksamadrita5@gmail.com"
-      },
+      
       {
         Timestamp: "3/2/2024 13:37:42",
         Image: "https://drive.google.com/uc?id=1P3eOgho-NFnAmzGdu8_MlfhubwhgeLXI",
@@ -379,16 +361,7 @@ export const team_data = [
         li_link: "https://www.linkedin.com/in/reshma-khatun-50702a229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         gmail: "reshmakhatun0412@gmail.com"
       },
-      {
-        Timestamp: "3/2/2024 0:43:20",
-        Image: "https://drive.google.com/uc?id=1AQ9Tte3pFS2Mjz-2LIXa8e9imafiEDPw",
-        Name: "Sampreeti Basu Mallick",
-        Year: "2nd ",
-        
-        insta_link: "https://www.instagram.com/__.sampreeti._?igsh=dmdremd4dXZudW9v",
-       
-        gmail: "itsmesampreeti@gmail.com"
-      },
+     
       {
         Timestamp: "3/6/2024 1:10:53",
         Image: "https://drive.google.com/uc?id=1nuutSM7zEPvPucoPLXae8Sx6HhLFASXN",
@@ -558,14 +531,7 @@ export const team_data = [
         li_link: "www.linkedin.com/in/srinjan-tambuli-1a1997224",
         gmail: "srinjant@gmail.com"
       },
-      {
-        Timestamp: "2/26/2024 21:51:56",
-        
-        Name: "Subham Upadhyaya",
-        Year: "2nd ",
-        
-        gmail: "subham.info333@gmail.com"
-      },
+     
       {
         Timestamp: "3/8/2024 23:31:28",
         Image: "https://drive.google.com/uc?id=17kkW193U2CFX37cWeJ-wkKtUTFOvSydn",
@@ -657,16 +623,7 @@ export const team_data = [
         li_link: "https://www.linkedin.com/in/ankit-ghosh-b6baa9247?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         gmail: "ankit.ghosh.2k3@gmail.com"
       },
-      {
-        Timestamp: "3/24/2024 9:57:30",
-        Image: "https://drive.google.com/uc?id=1jIqp7YrxrwjhDQvVJ_v7eBbRsQjsOSPC",
-        Name: "Ayush Chakraborty",
-        Year: "4th ",
-        fb_link: "https://www.facebook.com/profile.php?id=100008164297955",
-        insta_link: "https://www.instagram.com/cjsponge/",
-        li_link: "https://www.linkedin.com/in/ayush-chakraborty-158962201/",
-        gmail: "ayushchakraborty2001@gmail.com"
-      },
+     
       {
         Timestamp: "4/8/2024 17:12:47",
         Image: "https://drive.google.com/uc?id=1o4S_YnLPBptAGzf4sBJCF9k1ATOeTxcy",
@@ -706,16 +663,7 @@ export const team_data = [
         li_link: "https://www.linkedin.com/in/debanic-haldar-36960a229?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
         gmail: "deb156hal@gmail.com"
       },
-      {
-        Timestamp: "4/10/2024 2:36:38",
-        Image: "https://drive.google.com/uc?id=1j4hrkTiMRPDufOHENys2MarFSDx0vfXY",
-        Name: "Tanmoy karmakar",
-        Year: "2nd ",
-        fb_link: "https://www.facebook.com/tanmoy.karmakar.1217",
-        insta_link: "https://www.instagram.com/draw_with_tanmoy?igsh=MTRmdHRjem5pMjlzMQ==",
-        li_link: "https://www.linkedin.com/in/tanmoy-karmakar-7b372628a?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        gmail: "tanmoykarmakar2004@gmail.com"
-      },
+      
       {
         Timestamp: "4/10/2024 11:12:47",
         Image: "https://drive.google.com/uc?id=1eqY3QvOJe2zuu7okKNBu0mNoxsK861bn",

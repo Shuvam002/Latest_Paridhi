@@ -8,7 +8,7 @@ export const Banner = styled.section`
   align-items: center;
   @media (max-width: 600px) {
     flex-direction: column;
-    height: 90%;
+    height: 80%;
     width: 80%;
   }
   border: 2px solid white;
