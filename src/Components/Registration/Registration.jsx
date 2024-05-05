@@ -65,7 +65,7 @@ const DomainEvents = {
     teamSize: "1-5",
     fee: 350,
     Descriptions: `Participate in our exclusive bot soccer contest! Bots compete for goals while avoiding penalties. Enroll now and familiarize yourself with the regulations!`,
-    rule: "https://drive.google.com/file/d/1g8ZYiyuAsYPBuMxPOchBKbDc1xPN3-59/view?usp=drive_link",
+    rule: "https://drive.google.com/file/d/1NLd5J-rlUr75qstTNvaoW_rKfzy3sa_R/view?usp=sharing",
     regLink: "/events/manual_robotics/robo_klassiker/robo_klassikerReg",
   },
   chakravyuh: {
