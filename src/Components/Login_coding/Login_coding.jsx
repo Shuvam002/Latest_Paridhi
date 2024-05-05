@@ -34,6 +34,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/war-8kg`,
       min: 1,
       max: 5,
+      teamname: true,
     },
     war_15kgReg: {
       name: "Throne of Bots(15kg)",
@@ -41,6 +42,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/war-15kg`,
       min: 1,
       max: 5,
+      teamname: true,
     },
 
     line_trekkerReg: {
@@ -49,6 +51,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/line-trekker`,
       min: 1,
       max: 2,
+      teamname: true,
     },
     robo_klassikerReg: {
       name: "Robo Klassiker",
@@ -56,6 +59,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/robo-klassiker`,
       min: 1,
       max: 5,
+      teamname: true,
     },
     triathlonReg: {
       name: "Triathlon",
@@ -63,6 +67,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/triathlon`,
       min: 1,
       max: 5,
+      teamname: true,
     },
 
     combowar8_15: {
@@ -71,6 +76,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/war-combo`,
       min: 1,
       max: 5,
+      teamname: true,
     },
     race_soccer: {
       name: "Race + Soccer",
@@ -78,6 +84,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/robotics-combo`,
       min: 1,
       max: 5,
+      teamname: true,
     },
     race_soccer_8kg: {
       name: "Race + Soccer + 8 kg",
@@ -85,6 +92,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/robotics-and-war-8kg-combo`,
       min: 1,
       max: 5,
+      teamname: true,
     },
     race_soccer_15kg: {
       name: "Race Soccer + 15kg",
@@ -92,6 +100,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/robotics-and-war-15kg-combo`,
       min: 1,
       max: 5,
+      teamname: true,
     },
     race_soccer_8_15kg: {
       name: "Race Soccer + War (8 + 15)kg",
@@ -99,6 +108,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/robotics/total-robotics-combo`,
       min: 1,
       max: 5,
+      teamname: true,
     },
 
     mega_archReg: {
@@ -128,7 +138,6 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/civil/setu-tot-combo`,
       min: 2,
       max: 3,
-
     },
     code_zenReg: {
       name: "Code Zen",
@@ -136,6 +145,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/coding/codezen`,
       min: 1,
       max: 2,
+      teamname: true,
     },
     code_questReg: {
       name: "Code Quest",
@@ -143,6 +153,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/coding/code-quest`,
       min: 1,
       max: 2,
+      teamname: true,
     },
     web_mindsReg: {
       name: "Web Minds",
@@ -150,6 +161,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/coding/web-minds`,
       min: 1,
       max: 2,
+      teamname: true,
     },
     electri_questReg: {
       name: "Electri Quest",
@@ -178,6 +190,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/gaming/valorant`,
       min: 5,
       max: 6,
+      teamname: true,
     },
     bgmiReg: {
       name: "BGMI",
@@ -185,6 +198,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/gaming/bgmi`,
       min: 4,
       max: 6,
+      teamname: true,
     },
     pesReg: {
       name: "PES",
@@ -192,6 +206,7 @@ const Codezen = () => {
       getTidApi: `${apiUrl}/gaming/pes`,
       min: 4,
       max: 6,
+      teamname: true,
     },
     binge_quizReg: {
       name: "Binge Quiz",
@@ -216,7 +231,7 @@ const Codezen = () => {
     } else {
       try {
         const response = await axios.post(regData.getTidApi, {
-          teamname: teamname,
+          teamname: !teamname ? null : teamname,
           gid1: !gid1 ? null : gid1,
           gid2: !gid2 ? null : gid2,
           gid3: !gid3 ? null : gid3,
@@ -296,17 +311,19 @@ const Codezen = () => {
           <Title>{regData.name.toUpperCase()}</Title>
           <Underline />
 
-          <IconContainer>
-            <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
-            <InputField
-              onChange={(e) => {
-                setTeamname(e.target.value);
-              }}
-              name="teamname"
-              type="text"
-              placeholder="Team Name"
-            />
-          </IconContainer>
+         {
+          regData.teamname? <IconContainer>
+          <InputIcon className="fa fa-user-o" aria-hidden="true"></InputIcon>
+          <InputField
+            onChange={(e) => {
+              setTeamname(e.target.value);
+            }}
+            name="teamname"
+            type="text"
+            placeholder="Team Name"
+          />
+        </IconContainer>:null
+         }
 
           {regData.max > verifiedCount && (
             <IconContainer>
