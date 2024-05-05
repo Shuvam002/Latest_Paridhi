@@ -45,11 +45,6 @@ const SignUp = () => {
   let config = {
     url: `${apiUrl}/generate-otp?name=${name}&email=${email}`,
     method: "post",
-    headers: {
-      "Access-Control-Allow-Origin": "*",
-      "Access-Control-Allow-Headers": "*",
-      "Access-Control-Allow-Credentials": "true",
-    },
   };
 
   const popup = () => {
@@ -63,13 +58,6 @@ const SignUp = () => {
     } else {
       const response = await axios.post(
         `${apiUrl}/generate-otp?name=${name}&email=${email}`,
-        {
-          headers: {
-            "Access-Control-Allow-Origin": "*",
-            "Access-Control-Allow-Headers": "*",
-            "Access-Control-Allow-Credentials": "true",
-          },
-        }
       );
       
       setOtpPopup(true);
