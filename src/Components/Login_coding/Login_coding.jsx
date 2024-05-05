@@ -261,13 +261,6 @@ const Codezen = () => {
     try {
       const response = await axios.get(`${regData.gidVerifyApi}${value}`);
 
-      // const response = {
-      //   status: 200,
-      //   data: {
-      //     message: "GID is valid",
-      //   },
-      // };
-
       if (response.status === 200) {
         if (!inputList.includes(value)) {
           setinputList([...inputList, value]);
@@ -282,8 +275,9 @@ const Codezen = () => {
       }
       return response.data;
     } catch (error) {
-      alert("Something Went Wrong !!!");
-      console.error("Error verifying GID:", error);
+      alert("Something Went Wrong!!!\n"+error.response.data.split(":")[1]);
+      console.error("Error verifying GID:",error);
+      console.log(error.response.data);
     }
   };
 
