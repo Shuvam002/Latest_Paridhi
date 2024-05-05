@@ -64,7 +64,7 @@ const Navbar = () => {
                 borderBottom: isActive ? "#ff0000" : "",
               })}
               to="events"
-              onClick={toggleEventsDropdown,handleClick}
+              onClick={handleClick}
             >
               Events
             </NavLinkName>
