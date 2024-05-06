@@ -252,7 +252,7 @@ const DomainEvents = {
     Image:
       "https://news.elbadil.com/wp-content/uploads/2023/09/eFootball-2024-4.jpg",
     title: "E-Football(PES)",
-    teamSize: "NA",
+    teamSize: "3 + 1(substitute)",
     fee: "NA",
     Descriptions: `E-Football: Dive into the virtual pitch with skill, strategy, and teamwork.`,
     rule: "https://drive.google.com/file/d/1wz5WkNk80bkb3z9ylR6s5710eZB36aLp/view?usp=drive_link",
@@ -262,7 +262,7 @@ const DomainEvents = {
     Image:
       "https://prod.assets.earlygamecdn.com/images/EA-FC-24-Cover-standard-edition.jpg?transform=banner2x_webp",
     title: "EAFC 2024",
-    teamSize: "NA",
+    teamSize: "1",
     fee: "70",
     Descriptions: `FIFA 2024: Showcase your football mastery in thrilling global competitions.`,
     rule: "https://drive.google.com/file/d/1si2MJcA3p8CEZReBoag9qZQo3vbLC8eR/view?usp=drive_link",
@@ -271,8 +271,8 @@ const DomainEvents = {
     Image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgAzRDCGMgSw6OjSIX-7Cn1tOwiAfU8c37Mw&s",
     title: "8 Ball Pool",
-    teamSize: "NA",
-    fee: "NA",
+    teamSize: "1",
+    fee: "70",
     Descriptions: `8 Ball Pool 2024: Showcase your cue-sport finesse in electrifying international tournaments`,
     rule: "https://drive.google.com/file/d/19gcr15BNxgdyW-g9S7_VwbSMKYOQyTlC/view?usp=drive_link",
   },
