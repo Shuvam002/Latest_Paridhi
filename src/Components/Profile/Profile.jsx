@@ -15,6 +15,7 @@ import {
   IconContainer,
   SubmitButton,
 } from "./Profile.styled";
+import { Spinnerdiv2 } from "../Spinner/Spinner.styled";
 
 const Profile = () => {
   const [emailVerified, setEmailVerified] = useState(false);
@@ -35,6 +36,7 @@ const Profile = () => {
         alert("Please enter a valid email address.");
       } else {
         // Mock response for testing
+        setEmailVerified("pending");
         const response = await axios.post(
           `${apiUrl}/profile/generate-otp?email=${userEmail}`,
           {
@@ -45,14 +47,14 @@ const Profile = () => {
             },
           }
         );
-        setIsPending(true);
+        // setIsPending(true);
         if (response.status === 200) {
           setOtpPopup(true);
+          setEmailVerified(false)
           setEmailFound(false);
-          setIsPending(false);
+          // setIsPending(false);
         } else if (response.status === 404) {
           setEmailFound(true);
-          setIsPending(false);
         }
       }
     } catch (error) {
@@ -81,6 +83,7 @@ const Profile = () => {
         setOtpPopup(false);
         setInCorrectOTP(true);
       } else if (response.status === 404) {
+        setEmailVerified(false)
         setInCorrectOTP(false);
       }
     } catch (error) {
@@ -152,7 +155,13 @@ const Profile = () => {
                   onChange={(e) => setUserEmail(e.target.value)}
                 />
                 <Button className="Verify" onClick={handleVerify}>
-                  {!emailVerified && !isPending ? "Verify" : <Loader/>}
+                  {!emailVerified? (
+                    "Verify"
+                  ) : emailVerified=="pending" ? (
+                    <Spinnerdiv2 />
+                  ) : (
+                    "Verified"
+                  )}
                 </Button>
               </IconContainer>
               {!emailFound ? null : (

@@ -35,3 +35,33 @@ export const Spinnerdiv = styled.div`
     margin: 8.9px;
   }
 `;
+
+export const Spinnerdiv2 = styled.div`
+  width: 30px;
+  height: 30px;
+  display: grid;
+  border: 4.5px solid #0000;
+  border-radius: 50%;
+  border-color: #F5F5F5 #0000;
+  animation: ${spinnerAnimation} 1s infinite linear;
+
+  /* &::before,
+  &::after {
+    content: "";
+    grid-area: 1/1;
+    margin: 2.2px;
+    border: inherit;
+    border-radius: 50%;
+  } */
+
+  /* &::before {
+    border-color: #e70000 #0000;
+    animation: inherit;
+    animation-duration: 0.5s;
+    animation-direction: reverse;
+  } */
+
+  /* &::after {
+    margin: 8.9px;
+  } */
+`;

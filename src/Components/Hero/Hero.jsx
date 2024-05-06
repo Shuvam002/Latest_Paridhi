@@ -104,7 +104,7 @@ export const CountdownTimer = ({ targetDate }) => {
 };
 
 const Hero = () => {
-  const targetDate = new Date("2024-05-05T23:59:59");
+  const targetDate = new Date("2024-05-10T11:00:00");
 
   const [videoPlayed, setVideoPlayed] = useState(false);
   const [showContent, setShowContent] = useState(false);
@@ -155,7 +155,9 @@ const Hero = () => {
                   fontSize: "1rem",
                 }}
               >
-                Registration Begins in
+                <span style={{fontWeight:"bold",fontSize:"1.2rem"}}>REGISTRATION IS LIVE!!</span>
+                <br/>
+                The wait for <span style={{color:"#e70000"}}> paridhi'24</span> will be over in
               </HeroText>
               <CountdownTimer targetDate={targetDate} />
             </div>
