@@ -315,3 +315,38 @@ export const FontAwesomeIconStyled = styled(FontAwesomeIcon)`
   font-size: 20px;
   padding: 10px;
 `;
+export const HowtoRegBtn = styled.a`
+  position: absolute;
+  text-align: center;
+  right: 20px;
+  /* bottom: 20px; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  font-size: 0.8rem;
+  border-radius: 50%;
+  background: #e70000;
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  animation: example 2s ease-in-out infinite;
+  cursor: pointer;
+  /* animation-duration: 2s;
+  animation-iteration-count: infinite; */
+  @keyframes example {
+    0% {
+      background-color: red;
+      bottom: 50px;
+    }
+    50% {
+      /* background-color: blue; */
+      bottom: 70px;
+    }
+    100% {
+      background-color: red;
+      bottom: 50px;
+    }
+  }
+`;
