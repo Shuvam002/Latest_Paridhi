@@ -319,7 +319,7 @@ export const HowtoRegBtn = styled.a`
   position: absolute;
   text-align: center;
   right: 20px;
-  bottom: 20px;
+  /* bottom: 20px; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -338,15 +338,15 @@ export const HowtoRegBtn = styled.a`
   @keyframes example {
     0% {
       background-color: red;
-      bottom: 10px;
+      bottom: 2%;
     }
     50% {
       /* background-color: blue; */
-      bottom: 30px;
+      bottom: 5%;
     }
     100% {
       background-color: red;
-      bottom: 10px;
+      bottom: 2%;
     }
   }
 `;
