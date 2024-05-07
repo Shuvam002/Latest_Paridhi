@@ -281,6 +281,17 @@ export const team_data = [
         gmail: "rajkchandra2004@gmail.com"
       },
       {
+        Timestamp: "3/6/2024 1:02:47",
+        Image: "https://drive.google.com/open?id=1jIqp7YrxrwjhDQvVJ_v7eBbRsQjsOSPC",
+        Name: "Ayush Chackraborty",
+        Year: "4th ",
+        fb_link: "https://www.facebook.com/profile.php?id=100008164297955",
+        insta_link: "https://www.instagram.com/cjsponge/",
+        li_link: "https://www.linkedin.com/in/ayush-chakraborty-158962201/",
+        gmail: "ayushchakraborty2001@gmail.com"
+      },
+
+      {
         Timestamp: "3/2/2024 0:08:28",
         Image: "https://drive.google.com/open?id=1a-SDvRg1lsmdHJK6VlUjRMQRGuH3nZse",
         Name: "Priyanka Banerjee",
