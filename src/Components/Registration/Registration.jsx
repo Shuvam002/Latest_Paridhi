@@ -106,23 +106,6 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
     regLink: "/events/combat_robotics/throne_of_bots_15kg/war_15kgReg",
   },
-  // throne_of_bots_combo_8_15kg: {
-  //   Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-  //   title: "Throne of Bots Combo(8 kg + 15 kg)",
-  //   teamSize: "1-5",
-  //   fee: "1500",
-  //   Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-  //   rule: null,
-  // },
-  // soccerandrace_combo: {
-  //   Image:
-  //     "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-  //   title: "Triathlon + Robo Klassiker (Combo)",
-  //   teamSize: "1-5",
-  //   fee: "550",
-  //   Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
-  //   rule: null,
-  // },
 
   combowar8_15: {
     Image: "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
@@ -236,6 +219,7 @@ const DomainEvents = {
     fee: 750,
     Descriptions: `"Valorant: Where tactical prowess meets precise aim in dynamic multiplayer battles."`,
     rule: "https://drive.google.com/file/d/1Q_A8Hw-w6iLLZq6gxgaUJ159C6-UTmvd/view?usp=sharing",
+    // regLink: "/events/gaming/valorant_lan/valorantReg",
     regLink: "/events/gaming/valorant_lan/valorantReg",
   },
   bgmi_lan: {

@@ -270,7 +270,6 @@ export const team_data = [
         li_link: "www.linkedin.com/in/pushpal-banerjee-0073162b1",
         gmail: "pushpalb2003@gmail.com"
       },
-      
       {
         Timestamp: "3/6/2024 1:02:47",
         Image: "https://drive.google.com/uc?id=1LDVz14PUZr4jmlr7JCvQMU5E0sZyLwi2",
