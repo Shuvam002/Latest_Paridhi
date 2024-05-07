@@ -338,15 +338,15 @@ export const HowtoRegBtn = styled.a`
   @keyframes example {
     0% {
       background-color: red;
-      bottom: 30px;
+      bottom: 50px;
     }
     50% {
       /* background-color: blue; */
-      bottom: 50px;
+      bottom: 70px;
     }
     100% {
       background-color: red;
-      bottom: 30px;
+      bottom: 50px;
     }
   }
 `;
