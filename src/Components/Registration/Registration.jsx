@@ -220,7 +220,7 @@ const DomainEvents = {
     Descriptions: `"Valorant: Where tactical prowess meets precise aim in dynamic multiplayer battles."`,
     rule: "https://drive.google.com/file/d/1Q_A8Hw-w6iLLZq6gxgaUJ159C6-UTmvd/view?usp=sharing",
     // regLink: "/events/gaming/valorant_lan/valorantReg",
-    regLink: "/events/gaming/valorant_lan/valorantReg",
+    regLink: "https://forms.gle/X8cLbhjghQLjC4ut8",
   },
   bgmi_lan: {
     Image:
@@ -230,7 +230,7 @@ const DomainEvents = {
     fee: 500,
     Descriptions: `BGMI: Experience strategic survival, intense firefights, and victory in immersive battlegrounds.`,
     rule: "https://drive.google.com/file/d/1Mb4TLR9zdxfa6GvpvZjfXbK-J5RTrK1-/view?usp=drive_link",
-    regLink: "/events/gaming/bgmi_lan/bgmiReg",
+    regLink: "https://forms.gle/byVCAocoW1SG6sSX9",
   },
   eFootball: {
     Image:
@@ -240,7 +240,7 @@ const DomainEvents = {
     fee: "NA",
     Descriptions: `E-Football: Dive into the virtual pitch with skill, strategy, and teamwork.`,
     rule: "https://drive.google.com/file/d/1wz5WkNk80bkb3z9ylR6s5710eZB36aLp/view?usp=drive_link",
-    regLink: "/events/gaming/eFootball/pesReg",
+    regLink: "https://forms.gle/Q2HAG4aRUpmzBkCT6",
   },
   fifa: {
     Image:
