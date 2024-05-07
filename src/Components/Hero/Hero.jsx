@@ -22,6 +22,7 @@ import {
   DrippingDigit,
   StyledContainer,
   HT1,
+  HowtoRegBtn,
 } from "./Hero.styled.js";
 
 export const CountdownTimer = ({ targetDate }) => {
@@ -124,16 +125,18 @@ const Hero = () => {
           <HeroContainer>
             <div className="light-source" />
             <Title>
-              <Typewriter className="baffle" style={{fontFamily:"MyFont",textAlign:"center",width:"100%"}}>
+              <Typewriter
+                className="baffle"
+                style={{
+                  fontFamily: "MyFont",
+                  textAlign: "center",
+                  width: "100%",
+                }}
+              >
                 Paridhi <span style={{ color: "#e70000" }}>{"'24"}</span>
               </Typewriter>
             </Title>
-            <HT1
-              id="HT1"
-              style={{
-                
-              }}
-            >
+            <HT1 id="HT1" style={{}}>
               The Annual{" "}
               <span style={{ color: "#ce0000" }}> technical fest</span> of MSIT
             </HT1>
@@ -155,9 +158,13 @@ const Hero = () => {
                   fontSize: "1rem",
                 }}
               >
-                <span style={{fontWeight:"bold",fontSize:"1.2rem"}}>REGISTRATION IS LIVE!!</span>
-                <br/>
-                The wait for <span style={{color:"#e70000"}}> paridhi'24</span> will be over in
+                <span style={{ fontWeight: "bold", fontSize: "1.2rem" }}>
+                  REGISTRATION IS LIVE!!
+                </span>
+                <br />
+                The wait for{" "}
+                <span style={{ color: "#e70000" }}> paridhi'24</span> will be
+                over in
               </HeroText>
               <CountdownTimer targetDate={targetDate} />
             </div>
@@ -184,6 +191,7 @@ const Hero = () => {
               </Btn>
             </Middle>
           </Footer>
+          <HowtoRegBtn href="https://youtu.be/WM2TmCw0VS0" target="_blank">How to Register</HowtoRegBtn>
         </HeroMain>
       </StyledContainer>
     </>
