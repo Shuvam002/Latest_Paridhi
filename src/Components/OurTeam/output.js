@@ -271,16 +271,6 @@ export const team_data = [
         gmail: "pushpalb2003@gmail.com"
       },
       {
-        Timestamp: "3/23/2024 15:19:20",
-        Image: "https://drive.google.com/uc?id=1dtm6uW8WBD0KEEb-xD2G_dvOREv9bT0N",
-        Name: "Raghawendra Dev Pathak",
-        Year: "2nd ",
-        fb_link: "Don't have an account",
-        insta_link: "https://www.instagram.com/tarunpathak8536?igsh=MWRxcnQ2dmpnemxlZA==",
-        li_link: "https://www.linkedin.com/in/raghawendra-dev-pathak-90b93a272?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app",
-        gmail: "tarunpathak4347@gmail.com"
-      },
-      {
         Timestamp: "3/6/2024 1:02:47",
         Image: "https://drive.google.com/uc?id=1LDVz14PUZr4jmlr7JCvQMU5E0sZyLwi2",
         Name: "Raj Kumar Chandra",

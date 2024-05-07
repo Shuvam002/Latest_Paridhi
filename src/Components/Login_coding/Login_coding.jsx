@@ -347,6 +347,7 @@ const Codezen = () => {
                 aria-hidden="true"
               ></InputIcon>
               <InputField
+                required
                 onChange={(e) => {
                   setTeamname(e.target.value);
                 }}
@@ -421,6 +422,7 @@ const Codezen = () => {
             ></InputIcon>
             <InputField
               name="GID"
+              required
               placeholder="Phone "
               type="text"
               onChange={(e) => {

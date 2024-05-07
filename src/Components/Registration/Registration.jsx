@@ -106,23 +106,6 @@ const DomainEvents = {
     rule: "https://drive.google.com/file/d/1TzAbylDA8yM-ELJnszae5mlW-jFea9Oi/view?usp=drive_link",
     regLink: "/events/combat_robotics/throne_of_bots_15kg/war_15kgReg",
   },
-  // throne_of_bots_combo_8_15kg: {
-  //   Image: "https://techfest.org/static/media/link2.81d14472b51ddf59813a.jpg",
-  //   title: "Throne of Bots Combo(8 kg + 15 kg)",
-  //   teamSize: "1-5",
-  //   fee: "1500",
-  //   Descriptions: `Join our heart-throbbing bot war competition open for all!Register now and uncover the rules for this thrilling event!`,
-  //   rule: null,
-  // },
-  // soccerandrace_combo: {
-  //   Image:
-  //     "https://images.squarespace-cdn.com/content/v1/5971b972f9a61e57bd29b3bf/cd797d32-02d9-4e3b-a696-4dba9a1ae367/Desktop+Banner+rev1.png",
-  //   title: "Triathlon + Robo Klassiker (Combo)",
-  //   teamSize: "1-5",
-  //   fee: "550",
-  //   Descriptions: `Join our heart-throbbing bot race plus soccer competition open for all!Register now and uncover the rules for this thrilling event!`,
-  //   rule: null,
-  // },
 
   combowar8_15: {
     Image: "https://sa-asimov.nl/wp-content/uploads/2022/06/battlebots.png",
@@ -236,7 +219,8 @@ const DomainEvents = {
     fee: 750,
     Descriptions: `"Valorant: Where tactical prowess meets precise aim in dynamic multiplayer battles."`,
     rule: "https://drive.google.com/file/d/1Q_A8Hw-w6iLLZq6gxgaUJ159C6-UTmvd/view?usp=sharing",
-    regLink: "/events/gaming/valorant_lan/valorantReg",
+    // regLink: "/events/gaming/valorant_lan/valorantReg",
+    regLink: "https://forms.gle/X8cLbhjghQLjC4ut8",
   },
   bgmi_lan: {
     Image:
@@ -246,23 +230,23 @@ const DomainEvents = {
     fee: 500,
     Descriptions: `BGMI: Experience strategic survival, intense firefights, and victory in immersive battlegrounds.`,
     rule: "https://drive.google.com/file/d/1Mb4TLR9zdxfa6GvpvZjfXbK-J5RTrK1-/view?usp=drive_link",
-    regLink: "/events/gaming/bgmi_lan/bgmiReg",
+    regLink: "https://forms.gle/byVCAocoW1SG6sSX9",
   },
   eFootball: {
     Image:
       "https://news.elbadil.com/wp-content/uploads/2023/09/eFootball-2024-4.jpg",
     title: "E-Football(PES)",
-    teamSize: "NA",
+    teamSize: "3 + 1(substitute)",
     fee: "NA",
     Descriptions: `E-Football: Dive into the virtual pitch with skill, strategy, and teamwork.`,
     rule: "https://drive.google.com/file/d/1wz5WkNk80bkb3z9ylR6s5710eZB36aLp/view?usp=drive_link",
-    regLink: "/events/gaming/eFootball/pesReg",
+    regLink: "https://forms.gle/Q2HAG4aRUpmzBkCT6",
   },
   fifa: {
     Image:
       "https://prod.assets.earlygamecdn.com/images/EA-FC-24-Cover-standard-edition.jpg?transform=banner2x_webp",
     title: "EAFC 2024",
-    teamSize: "NA",
+    teamSize: "1",
     fee: "70",
     Descriptions: `FIFA 2024: Showcase your football mastery in thrilling global competitions.`,
     rule: "https://drive.google.com/file/d/1si2MJcA3p8CEZReBoag9qZQo3vbLC8eR/view?usp=drive_link",
@@ -271,8 +255,8 @@ const DomainEvents = {
     Image:
       "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSgAzRDCGMgSw6OjSIX-7Cn1tOwiAfU8c37Mw&s",
     title: "8 Ball Pool",
-    teamSize: "NA",
-    fee: "NA",
+    teamSize: "1",
+    fee: "70",
     Descriptions: `8 Ball Pool 2024: Showcase your cue-sport finesse in electrifying international tournaments`,
     rule: "https://drive.google.com/file/d/19gcr15BNxgdyW-g9S7_VwbSMKYOQyTlC/view?usp=drive_link",
   },
