@@ -239,6 +239,9 @@ const Codezen = () => {
         alert("Please Enter the Phone number !!!");
       } else {
         try {
+          const headers = {
+'Content-Type': 'application/json',
+}
           console.log("iama run team");
           const response = await axios.post(regData.getTidApi, {
             teamname: !teamname ? null : teamname,
@@ -248,9 +251,7 @@ const Codezen = () => {
             gid4: !gid4 ? null : gid4,
             gid5: !gid5 ? null : gid5,
             phone: Phone,
-          },headers:{
-            'Content-Type': 'application/json'
-          });
+          },headers:headers);
 
           // Setting TID -----
           setTID(response.data);
