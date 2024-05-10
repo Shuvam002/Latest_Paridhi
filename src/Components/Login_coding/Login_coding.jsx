@@ -248,7 +248,10 @@ const Codezen = () => {
             gid4: !gid4 ? null : gid4,
             gid5: !gid5 ? null : gid5,
             phone: Phone,
-          });
+          },headers:{
+            'Content-Type': 'application/json'
+          }
+          );
 
           // Setting TID -----
           setTID(response.data);
