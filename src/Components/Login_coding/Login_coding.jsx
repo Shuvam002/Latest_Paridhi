@@ -250,8 +250,7 @@ const Codezen = () => {
             phone: Phone,
           },headers:{
             'Content-Type': 'application/json'
-          }
-          );
+          });
 
           // Setting TID -----
           setTID(response.data);
